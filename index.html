@@ -63,6 +63,9 @@
             background: white;
             transform: scale(1.05);
         }
+        .hero img{
+    animation: floatLogo 4s ease-in-out infinite;
+        }
 
         .section-title {
             text-align: center;
@@ -87,6 +90,7 @@
             text-align: center;
             transition: 0.3s;
             box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            animation: floatCard 5s ease-in-out infinite;
         }
 
         .card:hover {
@@ -333,7 +337,36 @@ setTimeout(type, 120);
         transform: translateY(-500px);
     }
 }
+@keyframes floatLogo{
 
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+    @keyframes floatCard{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+    }
 </style>
 </body>
 
