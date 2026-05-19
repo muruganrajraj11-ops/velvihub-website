@@ -43,7 +43,7 @@
 
         .hero p {
             font-size: 22px;
-            color: #cbd5e1;
+            color: #38bdf8;
         }
 
         .hero button {
@@ -161,7 +161,7 @@
 
 <h1>VelviHub</h1>
 
-        <p>Technology • Networking • Learning • Digital Growth</p>
+        <p id="typing"></p>
 
         <button>Explore Now</button>
     </div>
@@ -250,7 +250,49 @@
     transform: scale(1.1);
 }
 </style>
+<script>
 
+const texts = [
+"Technology 🚀",
+"Networking 🌐",
+"Learning 📚",
+"Digital Growth 💡",
+"VelviHub 🔥"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+
+if(count === texts.length){
+count = 0;
+}
+
+currentText = texts[count];
+
+letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+
+count++;
+index = 0;
+
+setTimeout(type, 1200);
+
+}else{
+
+setTimeout(type, 120);
+
+}
+
+})();
+
+    </script>
 </body>
 
 </html>
