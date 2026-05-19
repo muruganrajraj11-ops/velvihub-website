@@ -11,6 +11,7 @@
             color: white;
             font-family: Arial, sans-serif;
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         .navbar {
@@ -293,6 +294,44 @@ setTimeout(type, 120);
 })();
 
     </script>
+    <div class="stars"></div>
+
+<style>
+
+.stars{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.stars::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveStars 60s linear infinite;
+    opacity: 0.25;
+}
+
+@keyframes moveStars{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-500px);
+    }
+}
+
+</style>
 </body>
 
 </html>
