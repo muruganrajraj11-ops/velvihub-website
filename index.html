@@ -168,6 +168,41 @@ position: relative;
         .contact p {
             color: #cbd5e1;
             font-size: 18px;
+            .contact-form{
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form button{
+
+    background: #38bdf8;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(56,189,248,0.7);
+}
+
+.contact-form button:hover{
+
+    transform: scale(1.05);
+    background: white;
+}
         }
 .social-buttons{
     margin-top: 30px;
@@ -338,6 +373,17 @@ directly from VelviHub.
 
     <div class="footer">
     © 2026 VelviHub | Built with GitHub Pages
+        <form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message" rows="5" required></textarea>
+
+<button type="submit">Send Message 🚀</button>
+
+        </form>
 </div>
 
 <a href="https://wa.me/6379875488" class="whatsapp" target="_blank">
@@ -532,6 +578,18 @@ btn.innerHTML = "🌙 Dark Mode";
 }
 
 }
+
+    </script>
+    <script>
+
+document.querySelector(".contact-form")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("🚀 Message Sent Successfully!");
+
+});
 
     </script>
 </body>
