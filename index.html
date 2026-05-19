@@ -7,14 +7,14 @@
     <style>
         body {
             margin: 0;
-            background-color: #0f172a;
+            background: #0f172a;
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
         }
 
         .navbar {
-            background-color: #020617;
-            padding: 15px;
+            background: #020617;
+            padding: 18px;
             text-align: center;
         }
 
@@ -23,40 +23,101 @@
             text-decoration: none;
             margin: 15px;
             font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: white;
         }
 
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 90px 20px;
         }
 
-        h1 {
-            font-size: 50px;
+        .hero h1 {
+            font-size: 55px;
             color: #38bdf8;
         }
 
-        p {
+        .hero p {
             font-size: 22px;
             color: #cbd5e1;
         }
 
-        button {
-            background-color: #38bdf8;
-            color: black;
+        .hero button {
+            background: #38bdf8;
             border: none;
-            padding: 15px 30px;
+            padding: 15px 35px;
+            border-radius: 12px;
             font-size: 18px;
-            border-radius: 10px;
             margin-top: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-top: 50px;
+            color: #38bdf8;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            width: 260px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #334155;
+        }
+
+        .card h3 {
+            color: #38bdf8;
         }
 
         .about {
-            padding: 40px;
             text-align: center;
+            padding: 50px 25px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            font-size: 18px;
         }
 
         .footer {
-            background-color: #020617;
+            background: #020617;
             text-align: center;
             padding: 20px;
             margin-top: 50px;
@@ -69,6 +130,7 @@
 
     <div class="navbar">
         <a href="#">Home</a>
+        <a href="#">Services</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </div>
@@ -76,18 +138,48 @@
     <div class="hero">
         <h1>🚀 VelviHub</h1>
 
-        <p>Technology • Networking • Learning</p>
+        <p>Technology • Networking • Learning • Digital Growth</p>
 
-        <button>Explore</button>
+        <button>Explore Now</button>
+    </div>
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🌐 Networking</h3>
+            <p>Learn IP networking, routing, switching, and telecom technologies.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Web Development</h3>
+            <p>Create modern websites using HTML, CSS, GitHub, and Vercel.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Digital Growth</h3>
+            <p>Build your online presence and improve your technical skills.</p>
+        </div>
+
     </div>
 
     <div class="about">
-        <h2>About VelviHub</h2>
+        <h2 class="section-title">About VelviHub</h2>
 
         <p>
-            VelviHub is a learning and technology platform focused on networking,
-            web development, and digital growth.
+            VelviHub is a technology and learning platform focused on networking,
+            web development, and digital innovation. Our mission is to help learners
+            grow step-by-step with practical knowledge.
         </p>
+    </div>
+
+    <div class="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <p>📧 Email: velvihub@gmail.com</p>
+
+        <p>📱 Phone: +91 98765 43210</p>
     </div>
 
     <div class="footer">
