@@ -3,6 +3,8 @@
 
 <head>
 <input type="text"
+id="searchInput"
+onkeyup="searchBlog()"
 placeholder="Search articles..."
 style="
 margin-top:20px;
@@ -287,7 +289,22 @@ Internet போக எல்லா trafficயும் முதல்ல gatewa
 
 </div>
     
+<script>
+function searchBlog() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let posts = document.querySelectorAll(".blog-post");
 
+    posts.forEach(post => {
+        let text = post.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            post.style.display = "block";
+        } else {
+            post.style.display = "none";
+        }
+    });
+}
+</script>
 </body>
 
 </html>
