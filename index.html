@@ -667,8 +667,9 @@ setTimeout(type, 120);
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
-      pageLanguage: 'ta',
-      autoDisplay: true
+      pageLanguage: 'en',
+      includedLanguages: 'ta,en,te,hi',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     },
     'google_translate_element'
   );
