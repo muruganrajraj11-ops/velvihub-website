@@ -253,6 +253,7 @@ z-index: 1;
 </head>
 
 <body>
+    <div id="google_translate_element"></div>
 <div id="loader">
 
     <h1>🚀 VelviHub</h1>
@@ -662,6 +663,19 @@ setTimeout(type, 120);
 })();
 
     </script>
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'ta',
+      autoDisplay: true
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
