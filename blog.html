@@ -292,7 +292,7 @@ Internet போக எல்லா trafficயும் முதல்ல gatewa
 <script>
 function searchBlog() {
     let input = document.getElementById("searchInput").value.toLowerCase();
-    let posts = document.querySelectorAll(".blog-card");
+    let posts = document.querySelectorAll(".blog-card, .post");
 
     posts.forEach(post => {
         let text = post.innerText.toLowerCase();
