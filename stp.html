@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What is STP? - VelviHub</title>
+
+<style>
+
+body{
+background:#000c3a;
+color:white;
+font-family:Arial,sans-serif;
+line-height:1.8;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+h1,h2{
+color:#27b3ff;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#2dafff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<h1>🌳 STP என்றால் என்ன? – தமிழில் எளிமையாக</h1>
+
+<p>
+STP (Spanning Tree Protocol) என்பது Switch Network-களில் Loop ஏற்படாமல் தடுக்க பயன்படும் Protocol ஆகும்.
+</p>
+
+<h2>🏠 Real-Life Example</h2>
+
+<p>
+ஒரு நகரத்தில் இரண்டு சாலைகள் ஒரே இடத்துக்கு செல்லும் போது Traffic Loop ஏற்பட்டால் குழப்பம் வரும்.
+</p>
+
+<p>
+அதேபோல் Network-ல் Loop ஏற்பட்டால் Broadcast Storm உருவாகும்.
+</p>
+
+<p>
+அதைத் தடுக்க STP பயன்படுகிறது.
+</p>
+
+<h2>⚠️ Network Loop என்றால் என்ன?</h2>
+
+<p>
+இரண்டு அல்லது அதற்கு மேற்பட்ட Switch-கள் பல Link-களால் இணைக்கப்பட்டு Packet மீண்டும் மீண்டும் சுற்றுவது Loop ஆகும்.
+</p>
+
+<h2>💥 Broadcast Storm</h2>
+
+<p>
+Loop காரணமாக Broadcast Packets தொடர்ந்து Network-ல் சுற்றிக்கொண்டே இருக்கும்.
+</p>
+
+<p>
+இதனால் Network Slow ஆகலாம் அல்லது Down ஆகலாம்.
+</p>
+
+<h2>⚙️ STP எப்படி வேலை செய்கிறது?</h2>
+
+<p>
+STP ஒரு Root Bridge-ஐ தேர்வு செய்கிறது.
+</p>
+
+<p>
+பிறகு தேவையில்லாத Link-களை Block செய்து Loop-ஐ தடுக்கிறது.
+</p>
+
+<h2>📌 STP முக்கிய Terms</h2>
+
+<ul>
+<li>Root Bridge</li>
+<li>Root Port</li>
+<li>Designated Port</li>
+<li>Blocked Port</li>
+</ul>
+
+<h2>📊 STP Port States</h2>
+
+<table>
+
+<tr>
+<th>State</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Blocking</td>
+<td>Loop Prevention</td>
+</tr>
+
+<tr>
+<td>Listening</td>
+<td>STP Calculation</td>
+</tr>
+
+<tr>
+<td>Learning</td>
+<td>MAC Learning</td>
+</tr>
+
+<tr>
+<td>Forwarding</td>
+<td>Normal Traffic</td>
+</tr>
+
+</table>
+
+<h2>🎯 Interview Questions</h2>
+
+<p>
+Q: STP என்பதன் விரிவாக்கம் என்ன?
+</p>
+
+<p>
+A: Spanning Tree Protocol
+</p>
+
+<p>
+Q: STP ஏன் பயன்படுத்தப்படுகிறது?
+</p>
+
+<p>
+A: Network Loop Prevention
+</p>
+
+<p>
+Q: STP எந்த Layer-ல் வேலை செய்கிறது?
+</p>
+
+<p>
+A: Layer 2 (Data Link Layer)
+</p>
+
+<h2>🚦 Easy Analogy</h2>
+
+<p>
+ஒரு Traffic Police தேவையில்லாத சாலையை மூடி Traffic Jam-ஐ தடுக்கிறார்.
+</p>
+
+<p>
+அதேபோல் STP தேவையில்லாத Network Path-ஐ Block செய்கிறது.
+</p>
+
+<h2>🎯 முடிவு</h2>
+
+<p>
+STP என்பது Switch Network-களில் Loop Prevention மற்றும் Stability-க்கு மிகவும் முக்கியமான Protocol ஆகும்.
+</p>
+
+<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'ta'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
