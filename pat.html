@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What is PAT? - VelviHub</title>
+
+<style>
+
+body{
+background:#000c3a;
+color:white;
+font-family:Arial,sans-serif;
+line-height:1.8;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+h1,h2{
+color:#27b3ff;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#2dafff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<h1>🔄 PAT என்றால் என்ன? – தமிழில் எளிமையாக</h1>
+
+<p>
+PAT (Port Address Translation) என்பது NAT-ன் ஒரு வகை.
+</p>
+
+<p>
+பல Private IP Devices ஒரு Public IP Address-ஐ Port Numbers மூலம் பகிர்ந்து பயன்படுத்த PAT உதவுகிறது.
+</p>
+
+<h2>🏠 Real-Life Example</h2>
+
+<p>
+ஒரு Apartment-க்கு ஒரே முகவரி இருக்கும்.
+</p>
+
+<p>
+ஆனால் ஒவ்வொரு வீட்டுக்கும் தனித்தனி Flat Number இருக்கும்.
+</p>
+
+<p>
+அதேபோல் PAT-ல் Public IP ஒன்று இருந்தாலும் Port Number மூலம் Device-கள் தனித்தனியாக அடையாளம் காணப்படும்.
+</p>
+
+<h2>⚙️ PAT எப்படி வேலை செய்கிறது?</h2>
+
+<p>
+192.168.1.10 → Public IP:203.0.113.1:5001
+</p>
+
+<p>
+192.168.1.20 → Public IP:203.0.113.1:5002
+</p>
+
+<p>
+192.168.1.30 → Public IP:203.0.113.1:5003
+</p>
+
+<p>
+இவ்வாறு ஒரே Public IP-க்கு வெவ்வேறு Port Numbers வழங்கப்படும்.
+</p>
+
+<h2>📌 PAT ஏன் முக்கியம்?</h2>
+
+<ul>
+
+<li>✅ Public IP Save செய்கிறது</li>
+
+<li>✅ Home Broadband-ல் அதிகம் பயன்படுத்தப்படுகிறது</li>
+
+<li>✅ IPv4 Address Shortage-ஐ சமாளிக்க உதவுகிறது</li>
+
+<li>✅ Multiple Devices Support</li>
+
+</ul>
+
+<h2>📊 NAT vs PAT</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>NAT</th>
+<th>PAT</th>
+</tr>
+
+<tr>
+<td>Public IP Usage</td>
+<td>One or Many</td>
+<td>Single Public IP</td>
+</tr>
+
+<tr>
+<td>Port Translation</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Efficiency</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+
+</table>
+
+<h2>🎯 Interview Questions</h2>
+
+<p>
+Q: PAT என்பதன் விரிவாக்கம் என்ன?
+</p>
+
+<p>
+A: Port Address Translation
+</p>
+
+<p>
+Q: PAT-ன் முக்கிய நன்மை என்ன?
+</p>
+
+<p>
+A: ஒரு Public IP மூலம் பல Devices Internet Access பெற முடியும்.
+</p>
+
+<p>
+Q: Home Router-ல் அதிகம் பயன்படுத்தப்படுவது NAT ஆ PAT ஆ?
+</p>
+
+<p>
+A: PAT
+</p>
+
+<h2>🚦 Easy Analogy</h2>
+
+<p>
+ஒரு பெரிய அலுவலகத்திற்கு ஒரே Telephone Number இருக்கும்.
+</p>
+
+<p>
+ஆனால் ஒவ்வொரு ஊழியருக்கும் Extension Number இருக்கும்.
+</p>
+
+<p>
+அதேபோல் PAT Public IP + Port Number பயன்படுத்துகிறது.
+</p>
+
+<h2>🎯 முடிவு</h2>
+
+<p>
+PAT என்பது NAT-ன் மிகவும் பிரபலமான வடிவமாகும்.
+</p>
+
+<p>
+Home Broadband மற்றும் Enterprise Networks-ல் இது பரவலாக பயன்படுத்தப்படுகிறது.
+</p>
+
+<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'ta'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
