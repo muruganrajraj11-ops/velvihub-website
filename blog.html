@@ -1,411 +1,260 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ta">
 <head>
-<input type="text"
-id="searchInput"
-onkeyup="searchBlog()"
-placeholder="Search articles..."
-style="
-margin-top:20px;
-padding:12px;
-width:280px;
-border:none;
-border-radius:12px;
-font-size:16px;
-text-align:center;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>VelviHub Blog</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    background:#020617;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
+background:#020617;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
 }
 
 .navbar{
-    background:#0f172a;
-    padding:20px;
+background:#0f172a;
+padding:20px;
 }
 
 .navbar a{
-    color:#38bdf8;
-    text-decoration:none;
-    margin:15px;
-    font-size:18px;
+color:#38bdf8;
+text-decoration:none;
+margin:10px;
+font-size:18px;
+font-weight:bold;
 }
 
 h1{
-    color:#38bdf8;
-    margin-top:40px;
-    text-shadow:0 0 20px rgba(56,189,248,1);
+color:#38bdf8;
+margin-top:30px;
+text-shadow:0 0 20px rgba(56,189,248,1);
+}
+
+.search-box{
+margin:20px;
+}
+
+.search-box input{
+padding:12px;
+width:280px;
+border:none;
+border-radius:12px;
+font-size:16px;
+text-align:center;
 }
 
 .blog-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    padding:40px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:30px;
 }
 
 .blog-card{
-    background:#1e293b;
-    width:300px;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 0 25px rgba(56,189,248,0.4);
-    transition:0.3s;
-    <div class="blog-card">
-    <img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
-    <h3>🎥 Velvi2020 Latest Video</h3>
-    <p>Watch our latest educational and entertainment videos from VelviHub.</p>
-    <a href="https://youtu.be/5yeZ3BI9JnI?si=KSPZ3tJVz0p9JLvn"target="_blank">
-    <button>Watch Now</button>
-    </a>
-    </div>
-    }
-.blog-card a{
-             color:white;
-             font-weight:bold;
-             text-decoration:none;
-            }
+background:#1e293b;
+width:320px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+transition:0.3s;
+}
 
 .blog-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 35px rgba(56,189,248,0.9);
+transform:translateY(-8px);
+box-shadow:0 0 35px rgba(56,189,248,0.9);
+}
+
+.blog-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
 }
 
 .blog-card h3{
-    color:#38bdf8;
+color:#38bdf8;
+margin-bottom:10px;
 }
 
-.blog-card button{
-    margin-top:15px;
-    background:#38bdf8;
-    border:none;
-    padding:12px 20px;
-    font-weight:bold;
-}
-    
-.blog-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
+.blog-card p{
 margin-bottom:15px;
-display:block;
-    }
+line-height:1.6;
+}
+
+.blog-card a{
+display:inline-block;
+padding:10px 18px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
 .footer{
-    margin-top:50px;
-    padding:20px;
-    background:#0f172a;
-    color:gray;
+margin-top:40px;
+padding:20px;
+background:#0f172a;
+color:gray;
 }
 
 </style>
-
 </head>
 
 <body>
-    <div id="google_translate_element"></div>
+
+<div id="google_translate_element"></div>
 
 <div class="navbar">
-
 <a href="index.html">Home</a>
-
 <a href="videos.html">Videos</a>
-
 <a href="courses.html">Courses</a>
-
 <a href="gallery.html">Gallery</a>
-
 <a href="blog.html">Blog</a>
-    
 <a href="privacy.html">Privacy Policy</a>
-
 </div>
 
 <h1>📝 VelviHub Blog</h1>
 
-<p>Latest updates, tips and learning articles.</p>
+<p>Networking Knowledge Portal</p>
+
+<div class="search-box">
+<input type="text"
+id="searchInput"
+onkeyup="searchBlog()"
+placeholder="Search Articles...">
+</div>
 
 <div class="blog-container">
 
-<div class="blog-card">    
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-width="100%" style="border-radius:15px;">   
-<h3>🌐 What is IP Address?</h3>
-
-<p>
-An IP address is the identity of a device on a network.
-It helps devices connect and communicate.
-</p>
-
-<button onclick="alert('IP address is the identity of a device on a network.')">
-Read More
-</button>
-
-</div>
-
-<div class="blog-card">    
-<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500"
-width="100%" style="border-radius:15px;">
-<h3>💻 GitHub Pages</h3>
-
-<p>
-GitHub Pages helps us host websites online
-for free using HTML and CSS.
-</p>
-
-<button onclick="alert('GitHub Pages lets us host websites free using HTML and CSS.')">
-Read More
-</button>
-
-</div>
-
+<!-- IP Address -->
 <div class="blog-card">
-<img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?w=500"
-width="100%" style="border-radius:15px;">
-<h3>🚀 VelviHub Journey</h3>
-<div class="card">
-
-<img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
-
-<h3>🎥 Velvi2020 Latest Video</h3>
-
-<p>
-Watch our latest educational and entertainment videos from VelviHub.
-</p>
-
-<a href="https://youtube.com/@velvi2020"
-target="_blank">
-
-<button>Watch Now</button>
-
-</a>
-
-</div>
-
-<p>
-Building a modern website step-by-step with
-learning and creativity.
-</p>
-
-<button onclick="alert('VelviHub is growing step-by-step with learning and creativity.')">
-Read More
-</button>
-
-</div>
-
-</div>
-    <div class="blog-card">
-    
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+<h3>🌐 What is IP Address?</h3>
+<p>IP Address என்பது Network-ல் ஒரு Device-ன் அடையாளம்.</p>
+<a href="ip-address.html">Read More</a>
+</div>
 
-<h3>🖥️ What is an IP Address?</h3>
+<!-- DNS -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
+<h3>🌍 What is DNS?</h3>
+<p>DNS website பெயரை IP Address-ஆ மாற்றுகிறது.</p>
+<a href="dns.html">Read More</a>
+</div>
 
-<p>
-IP address என்பது internet-ல ஒரு device-க்கு இருக்கும் தனி address மாதிரி.
+<!-- Gateway -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?w=800">
+<h3>🚪 What is Gateway?</h3>
+<p>Gateway Internet-க்கு செல்லும் Network Exit Door ஆகும்.</p>
+<a href="gateway.html">Read More</a>
+</div>
 
-Mobile, laptop, router எல்லாத்துக்கும் IP இருக்கும்.
-
-அதனால devices connect ஆகும்.
-</p>
-        <a href="ip-address.html">Read More</a>
-
-        <h2>🌐 What is DNS? – தமிழில் எளிமையாக</h2>
-
-        <p>
-DNS என்றால் Domain Name System.
-இது internet-ல website பெயரை IP address-ஆ மாற்றும் system.
-</p>
-
-<p>
-உதாரணம்:
-நாம் browser-ல google.com type பண்ணுறோம்.
-ஆனா computerக்கு பெயர் புரியாது.
-அதுக்கு number தான் புரியும்.
-DNS அந்த பெயரை IP address-ஆ மாற்றி சரியான website-க்கு connect பண்ணும்.
-</p>
-
-<p>
-Real-life example:
-உங்க mobileல ஒருத்தர பெயர் “Ravi”ன்னு save பண்ணி இருக்கீங்க.
-நீங்க Raviன்னு press பண்ணினா call போகும்.
-உள்ளே phone number இருக்கும்.
-அதே மாதிரி:
-Website name = google.com
-Phone number = IP address
-DNS = contact book
-</p>
-
-<p>
-Google DNS example:
-8.8.8.8
-8.8.4.4
-</p>
-
-<p>
-DNS இல்லனா website open ஆகாது.
-அதனால internet-ல ரொம்ப முக்கியமான service இதுதான்.
-</p>
-        <a href="dns.html">Read More</a>
-
-        <h2>🚪 What is Gateway? – தமிழில் எளிமையாக</h2>
-
-<p>
-Gateway என்பது நம்ம device வெளியே internet-க்கு போகும் வழி.
-</p>
-
-<p>
-உதாரணம்:
-வீட்டிலிருந்து வெளியே போக main gate use பண்ணுறோம்.
-அதே மாதிரி mobile அல்லது laptop internet போக router gateway use பண்ணும்.
-</p>
-
-<p>
-Router IP பொதுவா:
-192.168.1.1
-அல்லது
-192.168.0.1
-</p>
-
-<p>
-உங்க device:
-IP = 192.168.1.10
-
-Gateway = 192.168.1.1
-</p>
-
-<p>
-Internet போக எல்லா trafficயும் முதல்ல gatewayக்கு போகும்.
-அதுக்கப்புறம் வெளியே செல்லும்.
-</p>
-        <a href="gateway.html">Read More</a>
-      </div>
-    <div class="blog-card">
-
+<!-- DHCP -->
+<div class="blog-card">
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
-
 <h3>📡 What is DHCP?</h3>
-
-<p>
-DHCP என்பது network-ல் device-களுக்கு தானாக IP address வழங்கும் service.
-</p>
-
+<p>DHCP தானாக IP Address வழங்கும் Service.</p>
 <a href="dhcp.html">Read More</a>
+</div>
 
-    </div>
-    <div class="blog-card">
-
+<!-- Subnet Mask -->
+<div class="blog-card">
 <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
-
 <h3>🌐 What is Subnet Mask?</h3>
-
-<p>
-Subnet Mask என்பது Network மற்றும் Host பகுதியை பிரிக்கும் Addressing Tool.
-</p>
-
+<p>Subnet Mask Network மற்றும் Host பகுதிகளை பிரிக்கிறது.</p>
 <a href="subnet-mask.html">Read More</a>
+</div>
 
-    </div>
-    <div class="blog-card">
-
-<img src="images/static-ip.jpg" alt="Static IP vs Dynamic IP">
-
+<!-- Static IP -->
+<div class="blog-card">
+<img src="images/static-ip.jpg">
 <h3>🔄 Static IP vs Dynamic IP</h3>
-
-<p>
-Static IP மற்றும் Dynamic IP இடையேயான வித்தியாசத்தை எளிமையாக அறியுங்கள்.
-</p>
-
+<p>Static IP மற்றும் Dynamic IP வித்தியாசங்களை அறியுங்கள்.</p>
 <a href="static-vs-dynamic-ip.html">Read More</a>
+</div>
 
-    </div>
-    <div class="blog-card">
-
+<!-- Router -->
+<div class="blog-card">
 <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800">
-
 <h3>🌐 What is Router?</h3>
-
-<p>
-Router என்பது Internet மற்றும் Local Network-ஐ இணைக்கும் முக்கிய Networking Device.
-</p>
-
+<p>Router Internet மற்றும் Local Network-ஐ இணைக்கிறது.</p>
 <a href="router.html">Read More</a>
+</div>
 
-    </div>
-    <div class="blog-card">
-  <img src="images/network switch. jpg" alt="network switch">      
-<h2>🔀 What is Network Switch?</h2>
-
-<p>
-Network Switch எப்படி Devices-ஐ இணைத்து Data-வை சரியான இடத்திற்கு அனுப்புகிறது என்பதை அறியுங்கள்.
-</p>
-
+<!-- Switch -->
+<div class="blog-card">
+<img src="images/network-switch.jpg">
+<h3>🔀 What is Network Switch?</h3>
+<p>Switch Data-வை சரியான Device-க்கு அனுப்புகிறது.</p>
 <a href="switch.html">Read More</a>
 </div>
-    <div class="blog-card">
-        <img src="images/firewall.jpg" alt="Firewall">
-<h2>🛡️ What is Firewall?</h2>
 
-<p>
-Firewall எப்படி Network-ஐ Hackers மற்றும் Unauthorized Access-லிருந்து பாதுகாக்கிறது என்பதை அறியுங்கள்.
-</p>
-
+<!-- Firewall -->
+<div class="blog-card">
+<img src="images/firewall.jpg">
+<h3>🛡️ What is Firewall?</h3>
+<p>Firewall Network-ஐ Hackers-லிருந்து பாதுகாக்கிறது.</p>
 <a href="firewall.html">Read More</a>
-    </div>
-    <div class="blog-card">
-<img src="images/vpn.jpg" alt="VPN">        
-<h2>🔐 What is VPN?</h2>
+</div>
 
-<p>
-VPN எப்படி பாதுகாப்பான Private Connection உருவாக்குகிறது மற்றும் Data-வை Encrypt செய்கிறது என்பதை அறியுங்கள்.
-</p>
-
+<!-- VPN -->
+<div class="blog-card">
+<img src="images/vpn.jpg">
+<h3>🔐 What is VPN?</h3>
+<p>VPN பாதுகாப்பான Private Connection உருவாக்குகிறது.</p>
 <a href="vpn.html">Read More</a>
-    </div>
+</div>
+
+</div>
 
 <div class="footer">
-    
-© 2026 VelviHub | Blog Section
- 
+© 2026 VelviHub | Networking Knowledge Portal
 </div>
-    
+
 <script>
 function searchBlog() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let posts = document.querySelectorAll(".blog-card, .post");
+let input = document.getElementById("searchInput").value.toLowerCase();
+let cards = document.querySelectorAll(".blog-card");
 
-    posts.forEach(post => {
-        let text = post.innerText.toLowerCase();
+cards.forEach(card => {
+let text = card.innerText.toLowerCase();
 
-        if (text.includes(input)) {
-            post.style.display = "block";
-        } else {
-            post.style.display = "none";
-        }
-    });
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+});
 }
 </script>
-    <script type="text/javascript">
+
+<script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: 'ta',
-      autoDisplay: true
-    },
-    'google_translate_element'
-  );
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+autoDisplay:true
+},
+'google_translate_element'
+);
 }
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</body>
 
+</body>
 </html>
