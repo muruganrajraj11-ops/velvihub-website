@@ -103,7 +103,51 @@ text-decoration:none;
 font-weight:bold;
 border-radius:8px;
 }
+.specials-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
 
+.special-card{
+background:#1e293b;
+width:320px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+text-align:center;
+}
+
+.special-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.special-card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.special-card a{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+margin-top:15px;
+}
+
+.center-card{
+margin-top:50px;
+}
+  
 .footer{
 margin-top:40px;
 padding:20px;
@@ -218,12 +262,22 @@ placeholder="Search Articles...">
 </div>
 
   <!-- START -->
-  <h2 style="color:#38bdf8; margin-top:50px; width:100%;">
-🎬 VelviHub Specials
-</h2>
-  <!-- GitHub Pages -->
+<h2 style="
+width:100%;
+text-align:center;
+color:#38bdf8;
+margin-top:60px;
+margin-bottom:30px;
+text-shadow:0 0 15px #38bdf8;
+">
 
-<div class="blog-card">
+🎬 VelviHub Specials
+
+</h2>
+
+<div class="specials-container">
+
+<div class="special-card">
 
 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
 
@@ -237,9 +291,7 @@ GitHub Pages helps us host websites online for free using HTML and CSS.
 
 </div>
 
-<!-- VelviHub Journey -->
-
-<div class="blog-card">
+<div class="special-card">
 
 <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
 
@@ -253,9 +305,7 @@ Building a modern website step-by-step with learning and creativity.
 
 </div>
 
-<!-- Velvi2020 Video -->
-
-<div class="blog-card">
+<div class="special-card center-card">
 
 <img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
 
@@ -268,6 +318,8 @@ Watch our latest educational and entertainment videos from VelviHub.
 <a href="https://youtube.com/@velvi2020" target="_blank">
 Watch Now
 </a>
+
+</div>
 
 </div>
   
