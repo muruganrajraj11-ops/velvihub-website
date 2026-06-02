@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What is HSRP? - VelviHub</title>
+
+<style>
+
+body{
+background:#000c3a;
+color:white;
+font-family:Arial,sans-serif;
+line-height:1.8;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+h1,h2{
+color:#27b3ff;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#2dafff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<h1>🏆 HSRP என்றால் என்ன? – தமிழில் எளிமையாக</h1>
+
+<p>
+HSRP (Hot Standby Router Protocol) என்பது Cisco உருவாக்கிய First Hop Redundancy Protocol ஆகும்.
+</p>
+
+<p>
+Main Router Down ஆனால் Backup Router உடனடியாக பொறுப்பேற்று Network-ஐ தொடர்ந்து இயங்க வைக்கிறது.
+</p>
+
+<h2>🏠 Real-Life Example</h2>
+
+<p>
+ஒரு பேருந்து ஓட்டுனர் திடீரென உடல்நலக்குறைவால் ஓட்ட முடியாத நிலை வந்தால், அருகில் இருக்கும் மாற்று ஓட்டுனர் உடனே பொறுப்பேற்பார்.
+</p>
+
+<p>
+அதேபோல் HSRP-ல் Standby Router உடனே செயல்படும்.
+</p>
+
+<h2>⚙️ HSRP எப்படி வேலை செய்கிறது?</h2>
+
+<p>
+இரண்டு அல்லது அதற்கு மேற்பட்ட Routers ஒரு Virtual IP Address-ஐ பகிர்ந்து கொள்கின்றன.
+</p>
+
+<p>
+ஒரு Router Active Router ஆக இருக்கும்.
+</p>
+
+<p>
+மற்றொன்று Standby Router ஆக காத்திருக்கும்.
+</p>
+
+<h2>📌 HSRP முக்கிய Terms</h2>
+
+<ul>
+<li>Active Router</li>
+<li>Standby Router</li>
+<li>Virtual IP Address</li>
+<li>Priority</li>
+<li>Preemption</li>
+</ul>
+
+<h2>📊 Router States</h2>
+
+<table>
+
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Active</td>
+<td>Traffic Handle செய்கிறது</td>
+</tr>
+
+<tr>
+<td>Standby</td>
+<td>Backup ஆக காத்திருக்கிறது</td>
+</tr>
+
+<tr>
+<td>Listen</td>
+<td>HSRP Messages கேட்கிறது</td>
+</tr>
+
+</table>
+
+<h2>🚀 HSRP நன்மைகள்</h2>
+
+<ul>
+<li>✅ High Availability</li>
+<li>✅ Automatic Failover</li>
+<li>✅ Reduced Downtime</li>
+<li>✅ Gateway Redundancy</li>
+<li>✅ Better Network Reliability</li>
+</ul>
+
+<h2>🎯 Interview Questions</h2>
+
+<p>
+Q: HSRP என்பதன் விரிவாக்கம் என்ன?
+</p>
+
+<p>
+A: Hot Standby Router Protocol
+</p>
+
+<p>
+Q: HSRP யாருடைய Protocol?
+</p>
+
+<p>
+A: Cisco Proprietary Protocol
+</p>
+
+<p>
+Q: HSRP-ன் முக்கிய நோக்கம் என்ன?
+</p>
+
+<p>
+A: Gateway Redundancy மற்றும் High Availability.
+</p>
+
+<h2>🚦 Easy Analogy</h2>
+
+<p>
+ஒரு பள்ளியில் முதல்வர் இல்லாதபோது துணை முதல்வர் பொறுப்பேற்பது போல HSRP-ல் Standby Router செயல்படும்.
+</p>
+
+<h2>🎯 முடிவு</h2>
+
+<p>
+HSRP என்பது Network Downtime குறைக்க பயன்படுத்தப்படும் மிகவும் முக்கியமான High Availability Technology ஆகும்.
+</p>
+
+<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'ta'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
