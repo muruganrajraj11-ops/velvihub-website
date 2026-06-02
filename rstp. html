@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What is RSTP? - VelviHub</title>
+
+<style>
+
+body{
+background:#000c3a;
+color:white;
+font-family:Arial,sans-serif;
+line-height:1.8;
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+h1,h2{
+color:#27b3ff;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#2dafff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<h1>⚡ RSTP என்றால் என்ன? – தமிழில் எளிமையாக</h1>
+
+<p>
+RSTP (Rapid Spanning Tree Protocol) என்பது STP-ன் மேம்படுத்தப்பட்ட Version ஆகும்.
+</p>
+
+<p>
+Network Loop-களை STP போலவே தடுக்கிறது. ஆனால் மிகவும் வேகமாக Network-ஐ Recovery செய்ய உதவுகிறது.
+</p>
+
+<h2>🏠 Real-Life Example</h2>
+
+<p>
+ஒரு Road மூடப்பட்டால் பழைய Map மாற்று வழியை கண்டுபிடிக்க நேரம் எடுக்கும்.
+</p>
+
+<p>
+Google Maps உடனே புதிய Route காட்டுவது போல RSTP வேகமாக புதிய Path-ஐ தேர்வு செய்கிறது.
+</p>
+
+<h2>⚙️ RSTP எப்படி வேலை செய்கிறது?</h2>
+
+<p>
+STP போல Root Bridge தேர்வு செய்யும்.
+</p>
+
+<p>
+ஆனால் Port State மாற்றங்களை மிக வேகமாக செய்கிறது.
+</p>
+
+<h2>🚀 RSTP நன்மைகள்</h2>
+
+<ul>
+<li>✅ Fast Convergence</li>
+<li>✅ Quick Recovery</li>
+<li>✅ Loop Prevention</li>
+<li>✅ Better Network Availability</li>
+<li>✅ Enterprise Network Support</li>
+</ul>
+
+<h2>📊 STP vs RSTP</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>STP</th>
+<th>RSTP</th>
+</tr>
+
+<tr>
+<td>Standard</td>
+<td>802.1D</td>
+<td>802.1w</td>
+</tr>
+
+<tr>
+<td>Convergence</td>
+<td>30-50 Seconds</td>
+<td>1-6 Seconds</td>
+</tr>
+
+<tr>
+<td>Recovery Speed</td>
+<td>Slow</td>
+<td>Fast</td>
+</tr>
+
+</table>
+
+<h2>📌 RSTP Port Roles</h2>
+
+<ul>
+<li>Root Port</li>
+<li>Designated Port</li>
+<li>Alternate Port</li>
+<li>Backup Port</li>
+</ul>
+
+<h2>🎯 Interview Questions</h2>
+
+<p>
+Q: RSTP என்பதன் விரிவாக்கம் என்ன?
+</p>
+
+<p>
+A: Rapid Spanning Tree Protocol
+</p>
+
+<p>
+Q: RSTP எந்த Standard?
+</p>
+
+<p>
+A: IEEE 802.1w
+</p>
+
+<p>
+Q: RSTP ஏன் உருவாக்கப்பட்டது?
+</p>
+
+<p>
+A: STP Convergence Time குறைக்க.
+</p>
+
+<h2>🚦 Easy Analogy</h2>
+
+<p>
+STP ஒரு பழைய Traffic System என்றால்,
+RSTP ஒரு Smart Traffic System.
+</p>
+
+<p>
+Road Block ஏற்பட்டவுடன் உடனே மாற்று வழி திறக்கும்.
+</p>
+
+<h2>🎯 முடிவு</h2>
+
+<p>
+RSTP என்பது STP-ஐ விட வேகமான மற்றும் திறமையான Loop Prevention Protocol ஆகும்.
+</p>
+
+<p>
+இன்றைய Enterprise Networks-ல் RSTP அதிகமாக பயன்படுத்தப்படுகிறது.
+</p>
+
+<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'ta'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
