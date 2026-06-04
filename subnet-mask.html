@@ -2,22 +2,21 @@
 <html lang="ta">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>What is Subnet Mask?</title>
+<title>What is Subnet Mask? - VelviHub</title>
 
 <style>
+
 body{
 background:#020b2d;
 color:white;
 font-family:Arial,sans-serif;
 padding:20px;
 line-height:1.8;
-}
-
-.container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
@@ -25,57 +24,82 @@ h1,h2{
 color:#3db8ff;
 }
 
-a{
-color:#3db8ff;
-font-weight:bold;
-text-decoration:none;
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
 }
 
 .back-btn{
 display:inline-block;
 margin-top:20px;
-padding:10px 15px;
+padding:12px 20px;
 background:#3db8ff;
 color:black;
+text-decoration:none;
 border-radius:8px;
+font-weight:bold;
 }
+
+.related-links{
+line-height:2.2;
+}
+
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<!-- Google Translate -->
 <div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({
-pageLanguage:'ta',
-includedLanguages:'en,ta,hi,te,ml,kn',
-layout:google.translate.TranslateElement.InlineLayout.SIMPLE
-}, 'google_translate_element');
-}
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<div class="container">
 
 <h1>🌐 What is Subnet Mask? – தமிழில் எளிமையாக</h1>
 
 <p>
-Subnet Mask என்பது ஒரு IP Address-ல் எந்த பகுதி Network மற்றும் எந்த பகுதி Host என்பதை பிரிக்கும் Addressing Tool ஆகும்.
+Subnet Mask என்பது ஒரு IP Address-ல் எந்த பகுதி Network என்றும் எந்த பகுதி Host என்றும் பிரித்து காட்டும் Addressing Tool ஆகும்.
 </p>
 
 <h2>🏠 Real-Life Example</h2>
 
 <p>
 ஒரு Apartment Address-ல்:
+</p>
+
+<p>
 Block A = Network
+</p>
 
+<p>
 Flat No 101 = Host
+</p>
 
+<p>
 என்பது போல Subnet Mask IP Address-ஐ பிரிக்கிறது.
 </p>
 
@@ -91,13 +115,67 @@ Subnet Mask = 255.255.255.0
 
 <p>
 இதில் 192.168.1 என்பது Network பகுதி.
+</p>
+
+<p>
 10 என்பது Host பகுதி.
 </p>
 
+<h2>📊 Common Subnet Masks</h2>
+
+<table>
+
+<tr>
+<th>Subnet Mask</th>
+<th>CIDR</th>
+<th>Hosts</th>
+</tr>
+
+<tr>
+<td>255.255.255.0</td>
+<td>/24</td>
+<td>254</td>
+</tr>
+
+<tr>
+<td>255.255.0.0</td>
+<td>/16</td>
+<td>65,534</td>
+</tr>
+
+<tr>
+<td>255.0.0.0</td>
+<td>/8</td>
+<td>16 Million+</td>
+</tr>
+
+</table>
+
 <h2>✅ ஏன் Subnet Mask தேவை?</h2>
 
+<ul>
+<li>Network மற்றும் Host பகுதியை பிரிக்க</li>
+<li>IP Address Planning செய்ய</li>
+<li>Broadcast Traffic குறைக்க</li>
+<li>Network Management எளிதாக்க</li>
+</ul>
+
+<h2>🎯 Interview Questions</h2>
+
+<p><b>Q:</b> Subnet Mask என்றால் என்ன?</p>
+<p><b>A:</b> Network மற்றும் Host பகுதியை பிரிக்கும் Address.</p>
+
+<p><b>Q:</b> 255.255.255.0 எந்த CIDR?</p>
+<p><b>A:</b> /24</p>
+
+<p><b>Q:</b> Subnet Mask ஏன் பயன்படுத்தப்படுகிறது?</p>
+<p><b>A:</b> Network Identification மற்றும் IP Planning-க்காக.</p>
+
+<h2>🚦 Easy Analogy</h2>
+
 <p>
-ஒரே Network-ல் இருக்கும் Devices யாரெல்லாம் என்பதை கண்டுபிடிக்க உதவுகிறது.
+ஒரு பெரிய Apartment-ல் Block Number மற்றும் Flat Number இருப்பது போல,
+Subnet Mask Network மற்றும் Host பகுதியை பிரிக்கிறது.
 </p>
 
 <h2>🎯 முடிவு</h2>
@@ -106,28 +184,58 @@ Subnet Mask = 255.255.255.0
 Subnet Mask என்பது Network மற்றும் Host பகுதியை பிரிக்கும் மிகவும் முக்கியமான Networking Concept ஆகும்.
 </p>
 
+<p>
+IP Addressing, Routing மற்றும் Subnetting ஆகிய அனைத்திற்கும் இது அடிப்படையாக செயல்படுகிறது.
+</p>
+
 <a href="blog.html" class="back-btn">
 ⬅ Back to Blog
 </a>
 
-</div>
-<hr>
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
 
-<ul style="line-height:2;">
+<ul class="related-links">
+
 <li><a href="ip-address.html">🌐 What is IP Address?</a></li>
+<li><a href="static-vs-dynamic-ip.html">🔄 Static IP vs Dynamic IP</a></li>
+<li><a href="ipv4-vs-ipv6.html">🌍 IPv4 vs IPv6</a></li>
+<li><a href="gateway.html">🚪 What is Gateway?</a></li>
+<li><a href="dhcp.html">📡 What is DHCP?</a></li>
+<li><a href="dns.html">🌐 What is DNS?</a></li>
+<li><a href="nat.html">🌐 What is NAT?</a></li>
 <li><a href="router.html">🌍 What is Router?</a></li>
-<li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
-<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
-<li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
+
 </ul>
 
-<br>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
+'google_translate_element'
+);
+}
+</script>
 
-<a href="blog.html">⬅ Back to Blog</a>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
