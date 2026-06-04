@@ -9,6 +9,22 @@
 
 <style>
 
+.related-links a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.related-links a:hover{
+    color:#ffffff;
+    padding-left:5px;
+}
+
+.related-links a:visited{
+    color:#38bdf8;
+}
+
 body{
 background:#000c3a;
 color:white;
@@ -223,9 +239,11 @@ new google.translate.TranslateElement(
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <hr>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
+<h3 style="color:#38bdf8; margin-top:30px;">
+📚 Explore More Articles
+</h3>
 
-<ul style="line-height:2;">
+<ul class="related-links">
 <li><a href="ip-address.html">🌐 What is IP Address?</a></li>
 <li><a href="router.html">🌍 What is Router?</a></li>
 <li><a href="switch.html">🔀 What is Switch?</a></li>
