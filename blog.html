@@ -129,6 +129,185 @@ margin-bottom:15px;
 }
 
 .special-card h3{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+
+.navbar{
+position:sticky;
+top:0;
+z-index:999;
+background:#0f172a;
+padding:18px;
+box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+.navbar a{
+color:#38bdf8;
+text-decoration:none;
+margin:12px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:white;
+}
+
+.hero{
+padding:60px 20px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+border-bottom:2px solid #38bdf8;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:42px;
+color:#38bdf8;
+text-shadow:0 0 20px #38bdf8;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin:30px;
+}
+
+.stat-box{
+background:#1e293b;
+padding:20px;
+width:180px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+.stat-box h2{
+color:#38bdf8;
+}
+
+.search-box{
+margin:30px;
+}
+
+.search-box input{
+padding:15px;
+width:320px;
+border:none;
+border-radius:12px;
+font-size:16px;
+text-align:center;
+outline:none;
+}
+
+.section-title{
+color:#38bdf8;
+margin:40px 0 20px;
+text-shadow:0 0 15px #38bdf8;
+}
+
+.blog-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:20px;
+}
+
+.blog-card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.08);
+width:320px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,0.25);
+transition:.4s;
+margin-bottom:30px;
+}
+
+.blog-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 45px rgba(56,189,248,0.8);
+}
+
+.blog-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.blog-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.blog-card p{
+line-height:1.7;
+margin-bottom:15px;
+}
+
+.blog-card a{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.blog-card a:hover{
+transform:scale(1.05);
+}
+
+.specials-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.special-card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+padding:20px;
+width:320px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,.25);
+}
+
+.special-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.special-card h3{
 color:#38bdf8;
 margin-bottom:15px;
 }
@@ -138,23 +317,60 @@ display:inline-block;
 padding:10px 20px;
 background:#38bdf8;
 color:black;
-font-weight:bold;
 text-decoration:none;
+font-weight:bold;
 border-radius:8px;
 margin-top:15px;
 }
 
-.center-card{
-margin-top:30px;
-}
-  
+  <button onclick="window.scrollTo(0,0)" id="topBtn">
+⬆
+</button>
 .footer{
-margin-top:40px;
-padding:20px;
+margin-top:50px;
+padding:30px;
 background:#0f172a;
-color:gray;
+border-top:1px solid rgba(255,255,255,.1);
 }
 
+.footer h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#38bdf8;
+color:black;
+border:none;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 0 20px #38bdf8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+.search-box input{
+width:90%;
+}
+
+.blog-card{
+width:95%;
+}
+
+.stat-box{
+width:140px;
+}
+
+  }
 </style>
 </head>
 <body>
@@ -162,6 +378,39 @@ color:gray;
 <div id="google_translate_element"></div>
 
 <div class="navbar">
+  <div class="hero">
+
+<h1>🚀 VelviHub Networking Academy</h1>
+
+<p>
+Learn Networking, CCNA, MPLS, BGP, SD-WAN, Security, Cloud & Automation in Simple Tamil
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>30+</h2>
+<p>Articles</p>
+</div>
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>MCQs</p>
+</div>
+
+<div class="stat-box">
+<h2>CCNA</h2>
+<p>Learning Path</p>
+</div>
+
+<div class="stat-box">
+<h2>FREE</h2>
+<p>Learning</p>
+</div>
+
+</div>
 <a href="index.html">Home</a>
 <a href="videos.html">Videos</a>
 <a href="courses.html">Courses</a>
