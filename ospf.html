@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ta">
+
 <head>
 
 <meta charset="UTF-8">
@@ -23,6 +24,22 @@ h1,h2{
 color:#27b3ff;
 }
 
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
 .back-btn{
 display:inline-block;
 margin-top:20px;
@@ -34,18 +51,24 @@ border-radius:8px;
 font-weight:bold;
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
+.related-links{
+line-height:2.2;
 }
 
-table,th,td{
-border:1px solid white;
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
 }
 
-th,td{
-padding:10px;
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
 }
 
 </style>
@@ -128,29 +151,14 @@ Routers ஒன்றுக்கொன்று Routing Information-ஐ பக�
 
 <h2>🎯 Interview Questions</h2>
 
-<p>
-Q: OSPF என்பதன் விரிவாக்கம் என்ன?
-</p>
+<p><b>Q:</b> OSPF என்பதன் விரிவாக்கம் என்ன?</p>
+<p><b>A:</b> Open Shortest Path First</p>
 
-<p>
-A: Open Shortest Path First
-</p>
+<p><b>Q:</b> OSPF எந்த வகை Routing Protocol?</p>
+<p><b>A:</b> Link State Routing Protocol</p>
 
-<p>
-Q: OSPF எந்த வகை Routing Protocol?
-</p>
-
-<p>
-A: Link State Routing Protocol
-</p>
-
-<p>
-Q: OSPF எந்த Algorithm பயன்படுத்துகிறது?
-</p>
-
-<p>
-A: SPF (Dijkstra) Algorithm
-</p>
+<p><b>Q:</b> OSPF எந்த Algorithm பயன்படுத்துகிறது?</p>
+<p><b>A:</b> SPF (Dijkstra) Algorithm</p>
 
 <h2>🚦 Easy Analogy</h2>
 
@@ -164,35 +172,58 @@ Google Maps எந்த சாலை வேகமாக இருக்கி�
 OSPF என்பது Enterprise Network-களில் மிகவும் அதிகமாக பயன்படுத்தப்படும் Dynamic Routing Protocol ஆகும்.
 </p>
 
-<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+<p>
+பெரிய நிறுவனங்கள், ISP Networks மற்றும் Data Centers-ல் OSPF முக்கிய பங்கு வகிக்கிறது.
+</p>
+
+<a href="blog.html" class="back-btn">
+⬅ Back to Blog
+</a>
+
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
+
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
+
+<ul class="related-links">
+
+<li><a href="bgp.html">🌎 What is BGP?</a></li>
+<li><a href="mpls.html">☁️ What is MPLS?</a></li>
+<li><a href="router.html">🌍 What is Router?</a></li>
+<li><a href="switch.html">🔀 What is Switch?</a></li>
+<li><a href="vlan.html">📡 What is VLAN?</a></li>
+<li><a href="inter-vlan-routing.html">🌐 Inter-VLAN Routing</a></li>
+<li><a href="qos.html">⚡ What is QoS?</a></li>
+<li><a href="sd-wan.html">🌐 What is SD-WAN?</a></li>
+
+</ul>
 
 <script>
 function googleTranslateElementInit() {
 new google.translate.TranslateElement(
-{pageLanguage:'ta'},
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
 'google_translate_element'
 );
 }
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<hr>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
-
-<ul style="line-height:2;">
-<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
-<li><a href="router.html">🌍 What is Router?</a></li>
-<li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
-<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
-<li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
-</ul>
-
-<br>
-
-<a href="blog.html">⬅ Back to Blog</a>
 </body>
 </html>
