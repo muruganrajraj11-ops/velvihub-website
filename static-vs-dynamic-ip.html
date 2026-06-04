@@ -2,22 +2,21 @@
 <html lang="ta">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Static IP vs Dynamic IP</title>
+<title>Static IP vs Dynamic IP - VelviHub</title>
 
 <style>
+
 body{
 background:#020b2d;
 color:white;
 font-family:Arial,sans-serif;
 padding:20px;
 line-height:1.8;
-}
-
-.container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
@@ -25,16 +24,53 @@ h1,h2{
 color:#3db8ff;
 }
 
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
 .back-btn{
 display:inline-block;
 margin-top:20px;
-padding:10px 15px;
+padding:12px 20px;
 background:#3db8ff;
 color:black;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 }
+
+.related-links{
+line-height:2.2;
+}
+
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
+}
+
 </style>
 
 </head>
@@ -43,36 +79,25 @@ font-weight:bold;
 
 <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({
-pageLanguage:'ta',
-includedLanguages:'en,ta,hi,te,ml,kn',
-layout:google.translate.TranslateElement.InlineLayout.SIMPLE
-}, 'google_translate_element');
-}
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<div class="container">
-
 <h1>🔄 Static IP vs Dynamic IP – தமிழில் எளிமையாக</h1>
 
 <p>
-IP Address இரண்டு வகைப்படும்:
+IP Address பொதுவாக இரண்டு வகைப்படும்:
 </p>
 
 <ul>
-<li>Static IP</li>
-<li>Dynamic IP</li>
+<li>Static IP Address</li>
+<li>Dynamic IP Address</li>
 </ul>
 
 <h2>📌 Static IP என்றால் என்ன?</h2>
 
 <p>
-Static IP என்பது மாறாத IP Address.
-ஒருமுறை configure செய்தால் அதே IP எப்போதும் இருக்கும்.
+Static IP என்பது மாறாத IP Address ஆகும்.
+</p>
+
+<p>
+ஒருமுறை Configure செய்தால் அதே IP எப்போதும் இருக்கும்.
 </p>
 
 <p>
@@ -81,13 +106,13 @@ Static IP என்பது மாறாத IP Address.
 </p>
 
 <p>
-Server, CCTV, Printer போன்றவற்றில் Static IP அதிகம் பயன்படுத்தப்படும்.
+Server, CCTV, Printer மற்றும் Network Devices-ல் Static IP அதிகம் பயன்படுத்தப்படுகிறது.
 </p>
 
 <h2>🔄 Dynamic IP என்றால் என்ன?</h2>
 
 <p>
-Dynamic IP என்பது DHCP மூலம் தானாக வழங்கப்படும் IP Address.
+Dynamic IP என்பது DHCP மூலம் தானாக வழங்கப்படும் IP Address ஆகும்.
 </p>
 
 <p>
@@ -112,52 +137,149 @@ Static IP = உங்களுடைய வீட்டு நிரந்தர
 
 <p>
 Dynamic IP = Hotel Room Number.
-இன்று ஒரு Room, நாளை வேறு Room.
-</p>
-
-<h2>⚖️ ஒப்பீடு</h2>
-
-<p>
-Static IP:
-✔ மாறாது
-✔ Server-க்கு சிறந்தது
-✔ Manual Configuration
 </p>
 
 <p>
-Dynamic IP:
-✔ தானாக கிடைக்கும்
-✔ Home Users-க்கு சிறந்தது
-✔ DHCP மூலம் வழங்கப்படும்
+இன்று ஒரு Room, நாளை வேறு Room கிடைக்கலாம்.
+</p>
+
+<h2>📊 Static IP vs Dynamic IP</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Static IP</th>
+<th>Dynamic IP</th>
+</tr>
+
+<tr>
+<td>IP Address</td>
+<td>மாறாது</td>
+<td>மாறக்கூடும்</td>
+</tr>
+
+<tr>
+<td>Configuration</td>
+<td>Manual</td>
+<td>Automatic (DHCP)</td>
+</tr>
+
+<tr>
+<td>Best For</td>
+<td>Servers, CCTV</td>
+<td>Home Users</td>
+</tr>
+
+<tr>
+<td>Management</td>
+<td>More Control</td>
+<td>Easy Management</td>
+</tr>
+
+</table>
+
+<h2>✅ Static IP நன்மைகள்</h2>
+
+<ul>
+<li>Server Hosting-க்கு சிறந்தது</li>
+<li>Remote Access எளிது</li>
+<li>Network Devices-க்கு ஏற்றது</li>
+<li>IP எப்போதும் மாறாது</li>
+</ul>
+
+<h2>✅ Dynamic IP நன்மைகள்</h2>
+
+<ul>
+<li>Automatic Configuration</li>
+<li>Easy Management</li>
+<li>Home Networks-க்கு ஏற்றது</li>
+<li>DHCP மூலம் தானாக வழங்கப்படும்</li>
+</ul>
+
+<h2>🎯 Interview Questions</h2>
+
+<p><b>Q:</b> Static IP என்றால் என்ன?</p>
+<p><b>A:</b> மாறாத IP Address.</p>
+
+<p><b>Q:</b> Dynamic IP யார் வழங்குவார்கள்?</p>
+<p><b>A:</b> DHCP Server.</p>
+
+<p><b>Q:</b> Server-க்கு எந்த IP சிறந்தது?</p>
+<p><b>A:</b> Static IP.</p>
+
+<h2>🚦 Easy Analogy</h2>
+
+<p>
+Static IP என்பது உங்கள் நிரந்தர வீட்டு முகவரி போன்றது.
+</p>
+
+<p>
+Dynamic IP என்பது Hotel Room Number போன்றது.
+</p>
+
+<p>
+தேவைக்கு ஏற்ப மாறிக்கொண்டே இருக்கும்.
 </p>
 
 <h2>🎯 முடிவு</h2>
 
 <p>
-Server, CCTV போன்றவற்றுக்கு Static IP நல்லது.
-சாதாரண Mobile, Laptop, Home WiFi பயன்பாட்டிற்கு Dynamic IP போதுமானது.
+Server, CCTV மற்றும் Network Infrastructure-க்கு Static IP சிறந்தது.
 </p>
 
-<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+<p>
+Mobile, Laptop மற்றும் Home WiFi பயன்பாட்டிற்கு Dynamic IP போதுமானது.
+</p>
 
-</div>
-<hr>
+<a href="blog.html" class="back-btn">
+⬅ Back to Blog
+</a>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
 
-<ul style="line-height:2;">
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
+
+<ul class="related-links">
+
 <li><a href="ip-address.html">🌐 What is IP Address?</a></li>
+<li><a href="subnet-mask.html">📡 What is Subnet Mask?</a></li>
+<li><a href="gateway.html">🚪 What is Gateway?</a></li>
+<li><a href="dhcp.html">📡 What is DHCP?</a></li>
+<li><a href="dns.html">🌐 What is DNS?</a></li>
+<li><a href="nat.html">🌍 What is NAT?</a></li>
+<li><a href="ipv4-vs-ipv6.html">🌐 IPv4 vs IPv6</a></li>
 <li><a href="router.html">🌍 What is Router?</a></li>
-<li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
-<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
-<li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
+
 </ul>
 
-<br>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
+'google_translate_element'
+);
+}
+</script>
 
-<a href="blog.html">⬅ Back to Blog</a>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
