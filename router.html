@@ -2,22 +2,21 @@
 <html lang="ta">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>What is Router?</title>
+<title>What is Router? - VelviHub</title>
 
 <style>
+
 body{
 background:#020b2d;
 color:white;
 font-family:Arial,sans-serif;
 padding:20px;
 line-height:1.8;
-}
-
-.container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
@@ -25,16 +24,53 @@ h1,h2{
 color:#3db8ff;
 }
 
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
 .back-btn{
 display:inline-block;
 margin-top:20px;
-padding:10px 15px;
+padding:12px 20px;
 background:#3db8ff;
 color:black;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 }
+
+.related-links{
+line-height:2.2;
+}
+
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
+}
+
 </style>
 
 </head>
@@ -43,30 +79,20 @@ font-weight:bold;
 
 <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({
-pageLanguage:'ta',
-includedLanguages:'en,ta,hi,te,ml,kn',
-layout:google.translate.TranslateElement.InlineLayout.SIMPLE
-}, 'google_translate_element');
-}
-</script>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<div class="container">
-
 <h1>🌐 What is Router? – தமிழில் எளிமையாக</h1>
 
 <p>
 Router என்பது இரண்டு அல்லது அதற்கு மேற்பட்ட Networks-ஐ இணைக்கும் Networking Device ஆகும்.
 </p>
 
+<p>
+இது ஒரு Network-லிருந்து மற்றொரு Network-க்கு Data Packets-ஐ சரியான பாதையில் அனுப்புகிறது.
+</p>
+
 <h2>🏠 Real-Life Example</h2>
 
 <p>
-உங்கள் வீட்டில் Mobile, Laptop, Smart TV ஆகியவை WiFi மூலம் Router-க்கு connect ஆகும்.
+உங்கள் வீட்டில் Mobile, Laptop, Smart TV ஆகியவை WiFi மூலம் Router-க்கு Connect ஆகும்.
 </p>
 
 <p>
@@ -76,10 +102,11 @@ Router தான் Internet-லிருந்து வரும் Data-வ�
 <h2>📶 Router என்ன செய்கிறது?</h2>
 
 <ul>
-<li>Internet Connection வழங்குகிறது</li>
-<li>DHCP மூலம் IP Address கொடுக்கிறது</li>
-<li>DNS Requests அனுப்புகிறது</li>
-<li>Network Traffic-ஐ நிர்வகிக்கிறது</li>
+<li>✅ Internet Connection வழங்குகிறது</li>
+<li>✅ DHCP மூலம் IP Address கொடுக்கிறது</li>
+<li>✅ DNS Requests அனுப்புகிறது</li>
+<li>✅ Network Traffic-ஐ நிர்வகிக்கிறது</li>
+<li>✅ Different Networks-ஐ இணைக்கிறது</li>
 </ul>
 
 <h2>📌 பொதுவான Router IP</h2>
@@ -96,7 +123,48 @@ Router தான் Internet-லிருந்து வரும் Data-வ�
 192.168.0.1
 </p>
 
-<h2>🚦 Router = Traffic Police</h2>
+<h2>📊 Router vs Switch</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Router</th>
+<th>Switch</th>
+</tr>
+
+<tr>
+<td>Works On</td>
+<td>IP Address</td>
+<td>MAC Address</td>
+</tr>
+
+<tr>
+<td>Purpose</td>
+<td>Connect Networks</td>
+<td>Connect Devices</td>
+</tr>
+
+<tr>
+<td>OSI Layer</td>
+<td>Layer 3</td>
+<td>Layer 2</td>
+</tr>
+
+</table>
+
+<h2>🎯 Interview Questions</h2>
+
+<p><b>Q:</b> Router-ன் முக்கிய பணி என்ன?</p>
+<p><b>A:</b> Different Networks-ஐ இணைத்து Data Routing செய்வது.</p>
+
+<p><b>Q:</b> Router எந்த OSI Layer-ல் வேலை செய்கிறது?</p>
+<p><b>A:</b> Layer 3 (Network Layer).</p>
+
+<p><b>Q:</b> Router எதை அடிப்படையாக கொண்டு Forwarding செய்கிறது?</p>
+<p><b>A:</b> IP Address.</p>
+
+<h2>🚦 Easy Analogy</h2>
 
 <p>
 ஒரு Traffic Police எந்த வாகனம் எந்த வழியில் செல்ல வேண்டும் என்று வழிகாட்டுவார்.
@@ -112,26 +180,58 @@ Router தான் Internet-லிருந்து வரும் Data-வ�
 Router என்பது Local Network மற்றும் Internet இடையே இணைப்பை வழங்கும் மிக முக்கியமான Networking Device ஆகும்.
 </p>
 
-<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+<p>
+வீட்டு WiFi முதல் பெரிய ISP Networks வரை Router முக்கிய பங்கு வகிக்கிறது.
+</p>
 
-</div>
-<hr>
+<a href="blog.html" class="back-btn">
+⬅ Back to Blog
+</a>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
 
-<ul style="line-height:2;">
-<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
-<li><a href="router.html">🌍 What is Router?</a></li>
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
+
+<ul class="related-links">
+
 <li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
+<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
+<li><a href="gateway.html">🚪 What is Gateway?</a></li>
+<li><a href="dhcp.html">📡 What is DHCP?</a></li>
+<li><a href="dns.html">🌐 What is DNS?</a></li>
+<li><a href="nat.html">🌐 What is NAT?</a></li>
 <li><a href="ospf.html">🗺️ What is OSPF?</a></li>
 <li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
+
 </ul>
 
-<br>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
+'google_translate_element'
+);
+}
+</script>
 
-<a href="blog.html">⬅ Back to Blog</a>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
