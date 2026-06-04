@@ -564,22 +564,7 @@ IP Address பற்றிய 25 முக்கிய MCQ Questions மற்�
 
   <!-- START -->
 
-
-  <div class="blog-card">
-
-<h3>🌐 IP Addressing Fundamentals</h3>
-
-<p>
-IP Address, Gateway, DHCP,
-Subnet Mask, IPv4/IPv6
-பற்றிய முழு அடிப்படை பாடங்கள்.
-</p>
-
-<a href="ip-fundamentals.html">
-Start Learning
-</a>
-  </div>
-<h2 style="
+  <h2 style="
 width:100%;
 text-align:center;
 color:#38bdf8;
@@ -593,48 +578,63 @@ text-shadow:0 0 15px #38bdf8;
 <div class="learning-container">
 
 <div class="learning-card">
-<h3>🌐 IP Addressing Fundamentals</h3>
+<h3>🌐 IP Fundamentals</h3>
 <p>
-IP Address, Gateway, DHCP,
-Subnet Mask, IPv4, IPv6
+IP Address, IPv4, IPv6,
+Subnet Mask, Gateway,
+DHCP, DNS, NAT, PAT
 </p>
-<a href="ip-address.html">Start Learning</a>
+<a href="ip-fundamentals.html">
+Start Learning
+</a>
 </div>
 
 <div class="learning-card">
 <h3>🔀 Switching Technologies</h3>
 <p>
-Switch, VLAN, STP,
-RSTP, EtherChannel
+Switch, VLAN,
+STP, RSTP,
+EtherChannel
 </p>
-<a href="switch.html">Start Learning</a>
+<a href="switching-technologies.html">
+Start Learning
+</a>
 </div>
 
 <div class="learning-card">
 <h3>🌍 Routing Technologies</h3>
 <p>
 Router, OSPF,
-BGP, MPLS
+BGP, MPLS,
+Inter-VLAN Routing
 </p>
-<a href="router.html">Start Learning</a>
+<a href="routing-technologies.html">
+Start Learning
+</a>
 </div>
 
 <div class="learning-card">
 <h3>🛡️ Network Security</h3>
 <p>
 Firewall, VPN,
-ACL, IDS, IPS
+ACL, IDS,
+IPS
 </p>
-<a href="firewall.html">Start Learning</a>
+<a href="network-security.html">
+Start Learning
+</a>
 </div>
 
 <div class="learning-card">
 <h3>⚡ High Availability</h3>
 <p>
 HSRP, VRRP,
-Load Balancer
+Load Balancer,
+QoS
 </p>
-<a href="vrrp.html">Start Learning</a>
+<a href="high-availability.html">
+Start Learning
+</a>
 </div>
 
 <div class="learning-card">
@@ -642,21 +642,30 @@ Load Balancer
 <p>
 SD-WAN,
 Cloud Computing,
+Data Center,
 Network Automation
 </p>
-<a href="network-automation.html">Start Learning</a>
+<a href="cloud-automation.html">
+Start Learning
+</a>
 </div>
 
 </div>
-  
+
+<h2 style="
+width:100%;
+text-align:center;
+color:#38bdf8;
+margin-top:60px;
+margin-bottom:30px;
+text-shadow:0 0 15px #38bdf8;
+">
 🎬 VelviHub Specials
-
 </h2>
 
 <div class="specials-container">
 
 <div class="special-card">
-
 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
 
 <h3>💻 GitHub Pages</h3>
@@ -665,12 +674,12 @@ Network Automation
 GitHub Pages helps us host websites online for free using HTML and CSS.
 </p>
 
-<a href="#">Read More</a>
-
+<a href="#">
+Read More
+</a>
 </div>
 
 <div class="special-card">
-
 <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
 
 <h3>🚀 VelviHub Journey</h3>
@@ -679,12 +688,12 @@ GitHub Pages helps us host websites online for free using HTML and CSS.
 Building a modern website step-by-step with learning and creativity.
 </p>
 
-<a href="#">Read More</a>
-
+<a href="#">
+Read More
+</a>
 </div>
 
-<div class="special-card center-card">
-
+<div class="special-card">
 <img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
 
 <h3>🎥 Velvi2020 Latest Video</h3>
@@ -696,66 +705,66 @@ Watch our latest educational and entertainment videos from VelviHub.
 <a href="https://youtube.com/@velvi2020" target="_blank">
 Watch Now
 </a>
-
 </div>
 
 </div>
-  
-<!-- END -->
-  
+
 <div class="footer">
 © 2026 VelviHub | Networking Knowledge Portal
 </div>
 
+<button id="topBtn">⬆</button>
+
 <script>
 
-const btn =
-document.getElementById("topBtn");
+function searchBlog(){
 
-window.onscroll=function(){
+let input =
+document.getElementById("searchInput")
+.value.toLowerCase();
 
-if(window.scrollY>300){
-
-btn.style.display="block";
-
-}else{
-
-btn.style.display="none";
-
-}
-
-}
-
-btn.onclick=function(){
-
-window.scrollTo({
-top:0,
-behavior:'smooth'
-});
-
-}
-
-</script>
-  
-<script>
-function searchBlog() {
-let input = document.getElementById("searchInput").value.toLowerCase();
-let cards = document.querySelectorAll(".blog-card");
+let cards =
+document.querySelectorAll(".blog-card");
 
 cards.forEach(card => {
-let text = card.innerText.toLowerCase();
+
+let text =
+card.innerText.toLowerCase();
 
 if(text.includes(input)){
 card.style.display="block";
 }else{
 card.style.display="none";
 }
-});
-}
-</script>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
+});
+
+}
+
+const btn =
+document.getElementById("topBtn");
+
+window.onscroll = function(){
+
+if(window.scrollY > 300){
+btn.style.display = "block";
+}else{
+btn.style.display = "none";
+}
+
+}
+
+btn.onclick = function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+function googleTranslateElementInit(){
+
 new google.translate.TranslateElement(
 {
 pageLanguage:'ta',
@@ -763,44 +772,12 @@ autoDisplay:true
 },
 'google_translate_element'
 );
+
 }
+
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<button id="topBtn">
-⬆
-</button>
-  <script>
 
-const btn =
-document.getElementById("topBtn");
-
-window.onscroll=function(){
-
-if(window.scrollY>300){
-
-btn.style.display="block";
-
-}else{
-
-btn.style.display="none";
-
-}
-
-}
-
-btn.onclick=function(){
-
-window.scrollTo({
-top:0,
-behavior:'smooth'
-});
-
-}
-
-  </script>
-
-
-  
 </body>
 </html>
