@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ta">
+
 <head>
 
 <meta charset="UTF-8">
@@ -27,6 +28,22 @@ color:#27b3ff;
 margin-bottom:20px;
 }
 
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
 .back-btn{
 display:inline-block;
 margin-top:20px;
@@ -40,6 +57,26 @@ font-weight:bold;
 
 .back-btn:hover{
 background:#1492e6;
+}
+
+.related-links{
+line-height:2.2;
+}
+
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
 }
 
 </style>
@@ -57,8 +94,7 @@ Network Switch என்பது ஒரு LAN (Local Area Network) உள்�
 </p>
 
 <p>
-Router Internet-க்கு வழிகாட்டினால்,
-Switch ஒரே Network-க்குள் உள்ள Devices ஒன்றுக்கொன்று பேச உதவுகிறது.
+Router Internet-க்கு வழிகாட்டினால், Switch ஒரே Network-க்குள் உள்ள Devices ஒன்றுக்கொன்று தொடர்பு கொள்ள உதவுகிறது.
 </p>
 
 <h2>🏢 Real-Life Example</h2>
@@ -72,8 +108,7 @@ Switch ஒரே Network-க்குள் உள்ள Devices ஒன்று
 </p>
 
 <p>
-Computer A → Computer B-க்கு Data அனுப்பினால்,
-Switch அந்த Data-வை நேராக Computer B-க்கு மட்டும் அனுப்பும்.
+Computer A → Computer B-க்கு Data அனுப்பினால், Switch அந்த Data-வை நேராக Computer B-க்கு மட்டும் அனுப்பும்.
 </p>
 
 <p>
@@ -108,47 +143,69 @@ Switch-ன் Memory-யில் இருக்கும் ஒரு பட�
 இதனால் Data சரியான இடத்துக்கு விரைவாக செல்கிறது.
 </p>
 
+<h2>📊 Switch vs Hub</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Hub</th>
+<th>Switch</th>
+</tr>
+
+<tr>
+<td>Data Forwarding</td>
+<td>All Devices</td>
+<td>Specific Device</td>
+</tr>
+
+<tr>
+<td>Speed</td>
+<td>Slow</td>
+<td>Fast</td>
+</tr>
+
+<tr>
+<td>Security</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+
+<tr>
+<td>Efficiency</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+
+</table>
+
 <h2>⚡ Switch-ன் நன்மைகள்</h2>
 
 <ul>
 
 <li>✅ Network Speed அதிகரிக்கும்</li>
-
 <li>✅ Unnecessary Traffic குறையும்</li>
-
 <li>✅ Multiple Devices Connect செய்யலாம்</li>
-
 <li>✅ Hub-ஐ விட அதிக Security</li>
-
 <li>✅ Efficient Communication</li>
 
 </ul>
 
-<h2>🆚 Switch vs Hub</h2>
+<h2>🎯 Interview Questions</h2>
 
-<p>
-Hub Data-வை எல்லா Devices-க்கும் அனுப்பும்.
-</p>
+<p><b>Q:</b> Switch எந்த Address-ஐ பயன்படுத்தி Data Forward செய்கிறது?</p>
 
-<p>
-Switch Data-வை தேவையான Device-க்கு மட்டும் அனுப்பும்.
-</p>
+<p><b>A:</b> MAC Address</p>
 
-<p>
-அதனால் Switch மிகவும் Fast மற்றும் Smart Device ஆகும்.
-</p>
+<p><b>Q:</b> Switch எந்த OSI Layer-ல் வேலை செய்கிறது?</p>
 
-<h2>🎯 Interview Question</h2>
+<p><b>A:</b> Layer 2 (Data Link Layer)</p>
 
-<p>
-Q: Switch எந்த Address-ஐ பயன்படுத்தி Data Forward செய்கிறது?
-</p>
+<p><b>Q:</b> Switch மற்றும் Hub இடையேயான முக்கிய வித்தியாசம் என்ன?</p>
 
-<p>
-A: MAC Address
-</p>
+<p><b>A:</b> Switch தேவையான Device-க்கு மட்டும் Data அனுப்பும்.</p>
 
-<h2>🚦 Switch = Traffic Controller</h2>
+<h2>🚦 Easy Analogy</h2>
 
 <p>
 ஒரு Traffic Police எந்த வாகனம் எந்த வழியில் செல்ல வேண்டும் என்று வழிகாட்டுவார்.
@@ -170,12 +227,46 @@ Network Switch என்பது LAN Network-களில் மிகவும
 
 <a href="blog.html" class="back-btn">⬅ Back to Blog</a>
 
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
+
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
+
+<ul class="related-links">
+
+<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
+<li><a href="router.html">🌍 What is Router?</a></li>
+<li><a href="vlan.html">📡 What is VLAN?</a></li>
+<li><a href="inter-vlan-routing.html">🌐 Inter-VLAN Routing</a></li>
+<li><a href="stp.html">🌳 What is STP?</a></li>
+<li><a href="rstp.html">⚡ What is RSTP?</a></li>
+<li><a href="etherchannel.html">🔗 What is EtherChannel?</a></li>
+<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
+
+</ul>
+
 <script type="text/javascript">
 
 function googleTranslateElementInit() {
 
 new google.translate.TranslateElement(
-{pageLanguage:'ta'},
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
 'google_translate_element'
 );
 
@@ -184,23 +275,6 @@ new google.translate.TranslateElement(
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<hr>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
-
-<ul style="line-height:2;">
-<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
-<li><a href="router.html">🌍 What is Router?</a></li>
-<li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
-<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
-<li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
-</ul>
-
-<br>
-
-<a href="blog.html">⬅ Back to Blog</a>
 </body>
 </html>
