@@ -7,6 +7,44 @@
 <title>VelviHub Blog</title>
 
 <style>
+  .learning-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin:50px 0;
+}
+
+.learning-card{
+width:320px;
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+text-align:center;
+transition:.3s;
+}
+
+.learning-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 40px rgba(56,189,248,0.9);
+}
+
+.learning-card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.learning-card a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
 
 
 <style>
@@ -879,6 +917,75 @@ Subnet Mask, IPv4/IPv6
 Start Learning
 </a>
   </div>
+<h2 style="
+width:100%;
+text-align:center;
+color:#38bdf8;
+margin-top:60px;
+margin-bottom:30px;
+text-shadow:0 0 15px #38bdf8;
+">
+🎓 VelviHub Learning Paths
+</h2>
+
+<div class="learning-container">
+
+<div class="learning-card">
+<h3>🌐 IP Addressing Fundamentals</h3>
+<p>
+IP Address, Gateway, DHCP,
+Subnet Mask, IPv4, IPv6
+</p>
+<a href="ip-address.html">Start Learning</a>
+</div>
+
+<div class="learning-card">
+<h3>🔀 Switching Technologies</h3>
+<p>
+Switch, VLAN, STP,
+RSTP, EtherChannel
+</p>
+<a href="switch.html">Start Learning</a>
+</div>
+
+<div class="learning-card">
+<h3>🌍 Routing Technologies</h3>
+<p>
+Router, OSPF,
+BGP, MPLS
+</p>
+<a href="router.html">Start Learning</a>
+</div>
+
+<div class="learning-card">
+<h3>🛡️ Network Security</h3>
+<p>
+Firewall, VPN,
+ACL, IDS, IPS
+</p>
+<a href="firewall.html">Start Learning</a>
+</div>
+
+<div class="learning-card">
+<h3>⚡ High Availability</h3>
+<p>
+HSRP, VRRP,
+Load Balancer
+</p>
+<a href="vrrp.html">Start Learning</a>
+</div>
+
+<div class="learning-card">
+<h3>☁️ Cloud & Automation</h3>
+<p>
+SD-WAN,
+Cloud Computing,
+Network Automation
+</p>
+<a href="network-automation.html">Start Learning</a>
+</div>
+
+</div>
   
 🎬 VelviHub Specials
 
