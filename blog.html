@@ -8,6 +8,21 @@
 
 <style>
 
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#020617;
+color:white;
+}
+
+...
 *{
 margin:0;
 padding:0;
@@ -143,6 +158,21 @@ font-family:Arial,sans-serif;
 text-align:center;
 }
 
+<section class="hero">
+
+<h1>🚀 VelviHub Networking Academy</h1>
+
+<p>
+Learn CCNA, MPLS, BGP, SD-WAN, Security,
+Cloud & Automation in Simple Tamil
+</p>
+
+<a href="#articles" class="hero-btn">
+Start Learning
+</a>
+
+</section>
+
 .navbar{
 position:sticky;
 top:0;
@@ -166,29 +196,66 @@ color:white;
 }
 
 .hero{
-padding:60px 20px;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-border-bottom:2px solid #38bdf8;
-margin-bottom:30px;
+padding:70px 20px;
+background:linear-gradient(
+135deg,
+#0f172a,
+#1e3a8a
+);
 }
 
 .hero h1{
-font-size:42px;
+font-size:48px;
 color:#38bdf8;
-text-shadow:0 0 20px #38bdf8;
-margin-bottom:15px;
+text-shadow:0 0 25px #38bdf8;
 }
 
 .hero p{
+margin-top:15px;
 font-size:18px;
 color:#cbd5e1;
 }
 
+.hero-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+}
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>30+</h2>
+<p>Articles</p>
+</div>
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>MCQs</p>
+</div>
+
+<div class="stat-box">
+<h2>CCNA</h2>
+<p>Learning Path</p>
+</div>
+
+<div class="stat-box">
+<h2>FREE</h2>
+<p>Learning</p>
+</div>
+
+</div>
+
 .stats{
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
 gap:20px;
+flex-wrap:wrap;
 margin:30px;
 }
 
@@ -197,7 +264,7 @@ background:#1e293b;
 padding:20px;
 width:180px;
 border-radius:15px;
-box-shadow:0 0 20px rgba(56,189,248,.3);
+box-shadow:0 0 20px rgba(56,189,248,.4);
 }
 
 .stat-box h2{
@@ -207,6 +274,8 @@ color:#38bdf8;
 .search-box{
 margin:30px;
 }
+
+<div class="blog-container">
 
 .search-box input{
 padding:15px;
@@ -233,13 +302,37 @@ padding:20px;
 }
 
 .blog-card{
-background:rgba(255,255,255,0.05);
+
+background:rgba(
+255,
+255,
+255,
+0.05
+);
+
 backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.08);
+
+border:1px solid rgba(
+255,
+255,
+255,
+0.08
+);
+
 width:320px;
+
 padding:20px;
+
 border-radius:20px;
-box-shadow:0 0 25px rgba(56,189,248,0.25);
+
+box-shadow:
+0 0 25px rgba(
+56,
+189,
+248,
+0.25
+);
+
 transition:.4s;
 margin-bottom:30px;
 }
@@ -326,6 +419,11 @@ margin-top:15px;
   <button onclick="window.scrollTo(0,0)" id="topBtn">
 ⬆
 </button>
+
+<button id="topBtn">
+⬆
+</button>
+  
 .footer{
 margin-top:50px;
 padding:30px;
@@ -371,6 +469,22 @@ width:140px;
 }
 
   }
+
+#topBtn{
+display:none;
+position:fixed;
+right:20px;
+bottom:20px;
+background:#38bdf8;
+border:none;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+box-shadow:0 0 20px #38bdf8;
+}
+  
+</style>
 </style>
 </head>
 <body>
@@ -756,6 +870,9 @@ margin-bottom:30px;
 text-shadow:0 0 15px #38bdf8;
 ">
 
+</div>
+
+
 🎬 VelviHub Specials
 
 </h2>
@@ -815,6 +932,36 @@ Watch Now
 </div>
 
 <script>
+
+const btn =
+document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(window.scrollY>300){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+}
+
+btn.onclick=function(){
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+}
+
+</script>
+  
+<script>
 function searchBlog() {
 let input = document.getElementById("searchInput").value.toLowerCase();
 let cards = document.querySelectorAll(".blog-card");
@@ -844,6 +991,39 @@ autoDisplay:true
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<button id="topBtn">
+⬆
+</button>
 </body>
+
+<script>
+
+const btn =
+document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(window.scrollY>300){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+}
+
+btn.onclick=function(){
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+}
+
+</script>
+
 </html>
