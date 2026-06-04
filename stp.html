@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ta">
+
 <head>
 
 <meta charset="UTF-8">
@@ -27,6 +28,7 @@ table{
 width:100%;
 border-collapse:collapse;
 margin-top:20px;
+margin-bottom:20px;
 }
 
 table,th,td{
@@ -35,6 +37,7 @@ border:1px solid white;
 
 th,td{
 padding:10px;
+text-align:left;
 }
 
 .back-btn{
@@ -48,6 +51,26 @@ border-radius:8px;
 font-weight:bold;
 }
 
+.related-links{
+line-height:2.2;
+}
+
+.related-links a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.related-links a:hover{
+color:#ffffff;
+padding-left:5px;
+}
+
+.related-links a:visited{
+color:#38bdf8;
+}
+
 </style>
 
 </head>
@@ -56,10 +79,14 @@ font-weight:bold;
 
 <div id="google_translate_element"></div>
 
-<h1>🌳 STP என்றால் என்ன? – தமிழில் எளிமையாக</h1>
+<h1>🌳 STP (Spanning Tree Protocol) – தமிழில் எளிமையாக</h1>
 
 <p>
 STP (Spanning Tree Protocol) என்பது Switch Network-களில் Loop ஏற்படாமல் தடுக்க பயன்படும் Protocol ஆகும்.
+</p>
+
+<p>
+Layer 2 Network-ல் ஏற்படும் Broadcast Storm மற்றும் Switching Loop-களை தடுக்க STP பயன்படுத்தப்படுகிறது.
 </p>
 
 <h2>🏠 Real-Life Example</h2>
@@ -79,7 +106,7 @@ STP (Spanning Tree Protocol) என்பது Switch Network-களில் L
 <h2>⚠️ Network Loop என்றால் என்ன?</h2>
 
 <p>
-இரண்டு அல்லது அதற்கு மேற்பட்ட Switch-கள் பல Link-களால் இணைக்கப்பட்டு Packet மீண்டும் மீண்டும் சுற்றுவது Loop ஆகும்.
+இரண்டு அல்லது அதற்கு மேற்பட்ட Switch-கள் பல Link-களால் இணைக்கப்பட்டு Packet மீண்டும் மீண்டும் சுற்றுவது Network Loop ஆகும்.
 </p>
 
 <h2>💥 Broadcast Storm</h2>
@@ -89,17 +116,17 @@ Loop காரணமாக Broadcast Packets தொடர்ந்து Network
 </p>
 
 <p>
-இதனால் Network Slow ஆகலாம் அல்லது Down ஆகலாம்.
+இதனால் Network Slow ஆகலாம் அல்லது முழுமையாக Down ஆகலாம்.
 </p>
 
 <h2>⚙️ STP எப்படி வேலை செய்கிறது?</h2>
 
 <p>
-STP ஒரு Root Bridge-ஐ தேர்வு செய்கிறது.
+STP முதலில் ஒரு Root Bridge-ஐ தேர்வு செய்கிறது.
 </p>
 
 <p>
-பிறகு தேவையில்லாத Link-களை Block செய்து Loop-ஐ தடுக்கிறது.
+பிறகு தேவையில்லாத Link-களை Block செய்து Loop இல்லாத Path உருவாக்குகிறது.
 </p>
 
 <h2>📌 STP முக்கிய Terms</h2>
@@ -132,41 +159,26 @@ STP ஒரு Root Bridge-ஐ தேர்வு செய்கிறது.
 
 <tr>
 <td>Learning</td>
-<td>MAC Learning</td>
+<td>MAC Address Learning</td>
 </tr>
 
 <tr>
 <td>Forwarding</td>
-<td>Normal Traffic</td>
+<td>Normal Traffic Forwarding</td>
 </tr>
 
 </table>
 
 <h2>🎯 Interview Questions</h2>
 
-<p>
-Q: STP என்பதன் விரிவாக்கம் என்ன?
-</p>
+<p><b>Q:</b> STP என்பதன் விரிவாக்கம் என்ன?</p>
+<p><b>A:</b> Spanning Tree Protocol</p>
 
-<p>
-A: Spanning Tree Protocol
-</p>
+<p><b>Q:</b> STP ஏன் பயன்படுத்தப்படுகிறது?</p>
+<p><b>A:</b> Network Loop Prevention.</p>
 
-<p>
-Q: STP ஏன் பயன்படுத்தப்படுகிறது?
-</p>
-
-<p>
-A: Network Loop Prevention
-</p>
-
-<p>
-Q: STP எந்த Layer-ல் வேலை செய்கிறது?
-</p>
-
-<p>
-A: Layer 2 (Data Link Layer)
-</p>
+<p><b>Q:</b> STP எந்த Layer-ல் வேலை செய்கிறது?</p>
+<p><b>A:</b> Layer 2 (Data Link Layer).</p>
 
 <h2>🚦 Easy Analogy</h2>
 
@@ -181,38 +193,61 @@ A: Layer 2 (Data Link Layer)
 <h2>🎯 முடிவு</h2>
 
 <p>
-STP என்பது Switch Network-களில் Loop Prevention மற்றும் Stability-க்கு மிகவும் முக்கியமான Protocol ஆகும்.
+STP என்பது Switch Network-களில் Loop Prevention மற்றும் Network Stability-க்கு மிகவும் முக்கியமான Protocol ஆகும்.
 </p>
 
-<a href="blog.html" class="back-btn">⬅ Back to Blog</a>
+<p>
+RSTP போன்ற மேம்பட்ட Protocol-களின் அடிப்படை தொழில்நுட்பமாகவும் STP செயல்படுகிறது.
+</p>
+
+<a href="blog.html" class="back-btn">
+⬅ Back to Blog
+</a>
+
+<hr style="
+border:0;
+height:2px;
+background:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+box-shadow:0 0 10px #38bdf8;
+">
+
+<h3 style="
+color:#38bdf8;
+font-size:28px;
+text-shadow:0 0 10px #38bdf8;
+">
+📚 Explore More Articles
+</h3>
+
+<ul class="related-links">
+
+<li><a href="rstp.html">⚡ What is RSTP?</a></li>
+<li><a href="switch.html">🔀 What is Switch?</a></li>
+<li><a href="vlan.html">📡 What is VLAN?</a></li>
+<li><a href="inter-vlan-routing.html">🌐 Inter-VLAN Routing</a></li>
+<li><a href="etherchannel.html">🔗 What is EtherChannel?</a></li>
+<li><a href="hsrp.html">🏆 What is HSRP?</a></li>
+<li><a href="vrrp.html">🔄 What is VRRP?</a></li>
+<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
+
+</ul>
 
 <script>
 function googleTranslateElementInit() {
 new google.translate.TranslateElement(
-{pageLanguage:'ta'},
+{
+pageLanguage:'ta',
+includedLanguages:'en,ta,hi,te,ml,kn',
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+},
 'google_translate_element'
 );
 }
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<hr>
 
-<h3 style="color:#38bdf8;">📚 Related Articles</h3>
-
-<ul style="line-height:2;">
-<li><a href="ip-address.html">🌐 What is IP Address?</a></li>
-<li><a href="router.html">🌍 What is Router?</a></li>
-<li><a href="switch.html">🔀 What is Switch?</a></li>
-<li><a href="vlan.html">📡 What is VLAN?</a></li>
-<li><a href="ospf.html">🗺️ What is OSPF?</a></li>
-<li><a href="bgp.html">🌎 What is BGP?</a></li>
-<li><a href="firewall.html">🛡️ What is Firewall?</a></li>
-<li><a href="vpn.html">🔐 What is VPN?</a></li>
-</ul>
-
-<br>
-
-<a href="blog.html">⬅ Back to Blog</a>
 </body>
 </html>
