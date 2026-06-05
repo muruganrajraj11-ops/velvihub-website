@@ -8,6 +8,22 @@
 
 <style>
 
+ #google_translate_element{
+text-align:center;
+padding:15px;
+background:#0f172a;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
 *{
 margin:0;
 padding:0;
@@ -98,12 +114,16 @@ color:gray;
 
 <body>
 
+
+<div id="google_translate_element"></div>
+
 <div class="header">
 
 <h1>🎬 VelviHub Specials</h1>
 
 <p>
-Motivation, Success, Productivity மற்றும் Self Growth Content
+Motivation, Success Stories,
+Productivity மற்றும் Self Growth Content
 </p>
 
 <a href="blog.html" class="back-btn">
@@ -169,6 +189,18 @@ Motivation, Success, Productivity மற்றும் Self Growth Content
 <div class="footer">
 © 2026 VelviHub | Specials
 </div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+autoDisplay:true
+},
+'google_translate_element'
+);
+}
+</script>
 
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
