@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,7 +14,35 @@ gtag('config', 'G-WRENY46HW4');
 </script>
 <title>VelviHub</title>
 
-    <style>
+<style>
+
+    .voice-btn{
+padding:12px 20px;
+background:#22c55e;
+color:white;
+border:none;
+border-radius:8px;
+margin:15px;
+    }
+.search-box{
+text-align:center;
+margin:30px;
+}
+
+.search-box input{
+padding:12px;
+width:250px;
+border:none;
+border-radius:8px;
+}
+
+.search-box button{
+padding:12px 20px;
+background:#38bdf8;
+border:none;
+border-radius:8px;
+margin-left:5px;
+}
         #loader{
     position: fixed;
     width: 100%;
@@ -191,6 +219,30 @@ position: relative;
     gap: 15px;
 }
 
+.contact-form-section{
+text-align:center;
+padding:50px 20px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea{
+width:90%;
+max-width:500px;
+padding:12px;
+margin:10px;
+border-radius:8px;
+border:none;
+}
+
+.contact-form-section button{
+padding:12px 25px;
+background:#38bdf8;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+            
 .contact-form input,
 .contact-form textarea{
 
@@ -240,6 +292,26 @@ position: relative;
     color: black;
     transform: scale(1.05);
 }
+
+ <section class="contact-form-section">
+
+<h2>📩 Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message 🚀
+</button>
+
+</form>
+
+</section>       
     .footer {
             background: #020617;
             text-align: center;
@@ -314,7 +386,8 @@ text-shadow:0 0 10px #38bdf8;
 <div class="services">
         <div class="card">
             <h3>🌐 Networking</h3>
-            <p>Learn IP networking, routing, switching, and telecom technologies.</p>
+            <p>Learn Networking, AI, Career Growth,
+Online Earning & Technology in Tamil</p>       
         </div>
 
         <div class="card">
@@ -427,6 +500,26 @@ directly from VelviHub.
 
         </form>
 </div>
+<button
+onclick="speakPage()"
+class="voice-btn">
+
+🎙️ Listen Page
+
+</button>
+    <div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Articles..."
+>
+
+<button onclick="searchPage()">
+Search
+</button>
+
+    </div>
 
 <a href="https://wa.me/9025777032" class="whatsapp" target="_blank">
     💬
@@ -694,6 +787,49 @@ function googleTranslateElementInit() {
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</body>
 
+<script>
+
+function searchPage(){
+
+let q =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+if(q=="ccna"){
+window.location.href="ccna-career-path.html";
+}
+
+else if(q=="ai"){
+window.location.href="ai-future.html";
+}
+
+else if(q=="network"){
+window.location.href="networking-career.html";
+}
+
+else{
+alert("Article Not Found");
+}
+
+}
+<script>
+
+function speakPage(){
+
+let text =
+document.body.innerText;
+
+let speech =
+new SpeechSynthesisUtterance(text);
+
+speech.lang="en-US";
+
+window.speechSynthesis.speak(speech);
+
+}
+
+</script>
+</script>
+</body>
 </html>
