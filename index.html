@@ -665,7 +665,85 @@ font-weight:bold;
 cursor:pointer;
 
 }
-  
+
+/* HUB SECTIONS */
+
+.academy-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.academy-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0,191,255,0.8);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,191,255,0.35);
+    border-color: rgba(0,191,255,0.6);
+}
+
+.card h3 {
+    color: #4fc3ff;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#00bfff,#0080ff);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,191,255,0.7);
+}
+
+@media (max-width: 768px) {
+
+    .academy-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+}  
 </style>
 
 </head>
@@ -1146,88 +1224,580 @@ Learn More →
 
 </section>
 
-<!-- Technology Hub -->
-<section class="category-section">
-    <h2>🌐 Technology Hub</h2>
-    <p>Networking, AI, Cloud, Cyber Security, Linux, Programming</p>
-    <a href="networking.html">Explore Technology</a>
+<!-- TECHNOLOGY HUB -->
+
+<section class="academy-section">
+
+<h2>🌐 Technology Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🌐 Networking</h3>
+<p>CCNA, Routing, Switching, MPLS, Security</p>
+<a href="networking.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>☁️ Cloud Computing</h3>
+<p>AWS, Azure, Google Cloud, Virtualization</p>
+<a href="cloud.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🛡️ Cyber Security</h3>
+<p>Firewalls, IDS/IPS, VPN, Security Basics</p>
+<a href="security.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🐧 Linux</h3>
+<p>Linux Commands, Administration, Networking</p>
+<a href="linux-networking.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💻 Programming</h3>
+<p>HTML, CSS, JavaScript, Python Basics</p>
+<a href="github.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🤖 AI & Automation</h3>
+<p>ChatGPT, Gemini, AI Tools, Automation</p>
+<a href="ai.html">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- Government Exams Hub -->
-<section class="category-section">
-    <h2>🏛 Government Exams Hub</h2>
-    <p>TNPSC, TRB, TET, RRB, SSC, UPSC</p>
-    <a href="government-exams.html">Explore Exams</a>
+<!-- GOVERNMENT EXAMS HUB -->
+
+<section class="academy-section">
+
+<h2>🏛 Government Exams Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🏛 TNPSC</h3>
+<p>Group 1, Group 2, Group 4, VAO</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>👨‍🏫 TRB</h3>
+<p>Teacher Recruitment Board</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📖 TET</h3>
+<p>Teacher Eligibility Test</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🚆 RRB</h3>
+<p>Railway Recruitment Board</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📋 SSC</h3>
+<p>Staff Selection Commission</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎯 UPSC</h3>
+<p>Civil Services Examination</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Education Hub -->
-<section class="category-section">
-    <h2>🎓 Education Hub</h2>
-    <p>School, College, GK, Study Techniques</p>
-    <a href="education.html">Explore Education</a>
+
+<section class="academy-section">
+
+<h2>🎓 Education Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🏫 School Education</h3>
+<p>6th to 12th Standard Learning</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎓 College Education</h3>
+<p>Degree, Diploma & Higher Studies</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📚 Study Techniques</h3>
+<p>Learning Methods & Exam Preparation</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🌍 General Knowledge</h3>
+<p>GK, Current Affairs & Awareness</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🇬🇧 English Learning</h3>
+<p>Grammar, Vocabulary & Speaking</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📖 Tamil Learning</h3>
+<p>Tamil Grammar & Literature</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Career Hub -->
-<section class="category-section">
-    <h2>💼 Career Hub</h2>
-    <p>Resume, Interview, Career Growth, Jobs</p>
-    <a href="career-guidance.html">Explore Careers</a>
+
+<section class="academy-section">
+
+<h2>💼 Career Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📝 Resume Building</h3>
+<p>Create Professional Resumes & CVs</p>
+<a href="resume-building.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎤 Interview Preparation</h3>
+<p>HR, Technical & Government Interviews</p>
+<a href="interview-tips.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📈 Career Planning</h3>
+<p>Career Growth & Professional Development</p>
+<a href="career-planning.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🏢 Government Jobs</h3>
+<p>Central & State Government Opportunities</p>
+<a href="government-jobs.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🌐 IT Career Roadmap</h3>
+<p>Networking, Cloud, Security & AI Careers</p>
+<a href="it-career-growth.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🚀 Career Success Tips</h3>
+<p>Skills, Leadership & Workplace Success</p>
+<a href="career-success-tips.html">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Online Income Hub -->
-<section class="category-section">
-    <h2>💰 Online Income Hub</h2>
-    <p>Affiliate Marketing, Blogging, YouTube, Freelancing</p>
-    <a href="online-earning.html">Explore Income</a>
+
+<section class="academy-section">
+
+<h2>💰 Online Income Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🤝 Affiliate Marketing</h3>
+<p>Amazon, Flipkart & Other Affiliate Programs</p>
+<a href="affiliate-marketing.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>✍️ Blogging</h3>
+<p>Create Blogs & Earn Online</p>
+<a href="blogging.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>▶️ YouTube Income</h3>
+<p>YouTube Channel Growth & Monetization</p>
+<a href="youtube-income.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💼 Freelancing</h3>
+<p>Work Online & Earn from Anywhere</p>
+<a href="freelancing.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎯 Fiverr</h3>
+<p>Sell Digital Services on Fiverr</p>
+<a href="fiverr.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🚀 Upwork</h3>
+<p>Find Global Freelance Opportunities</p>
+<a href="upwork.html">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- Finance Hub -->
-<section class="category-section">
-    <h2>🏦 Finance & Banking Hub</h2>
-    <p>Savings, Banking, Mutual Funds, Insurance</p>
-    <a href="finance.html">Explore Finance</a>
+<!-- Finance & Banking Hub -->
+
+<section class="academy-section">
+
+<h2>🏦 Finance & Banking Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🏦 Banking Basics</h3>
+<p>Bank Accounts, Loans & Banking Services</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💰 Savings</h3>
+<p>Smart Saving Habits & Financial Planning</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📈 Mutual Funds</h3>
+<p>Investment Basics & Wealth Creation</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🛡️ Insurance</h3>
+<p>Life, Health & General Insurance</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💳 Digital Payments</h3>
+<p>UPI, Cards & Online Transactions</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💵 Personal Finance</h3>
+<p>Budgeting, Expenses & Money Management</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Life Skills Hub -->
-<section class="category-section">
-    <h2>🌱 Life Skills Hub</h2>
-    <p>Self Growth, Productivity, Communication, Leadership</p>
-    <a href="self-growth.html">Explore Life Skills</a>
+
+<section class="academy-section">
+
+<h2>🌱 Life Skills Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🚀 Self Growth</h3>
+<p>Personal Development & Improvement</p>
+<a href="self-growth.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>⏰ Productivity</h3>
+<p>Time Management & Efficiency</p>
+<a href="productivity-hacks.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎯 Goal Setting</h3>
+<p>Achieve Personal & Professional Goals</p>
+<a href="goal-setting.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🗣️ Communication Skills</h3>
+<p>Speaking, Writing & Presentation Skills</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>👑 Leadership</h3>
+<p>Leadership & Team Management</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🧠 Problem Solving</h3>
+<p>Critical Thinking & Decision Making</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- Motivation Hub -->
-<section class="category-section">
-    <h2>📚 Motivation & Philosophy Hub</h2>
-    <p>Success Stories, Daily Motivation, Life Lessons</p>
-    <a href="daily-motivation.html">Explore Motivation</a>
+<!-- Motivation & Philosophy Hub -->
+
+<section class="academy-section">
+
+<h2>📚 Motivation & Philosophy Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🌟 Daily Motivation</h3>
+<p>Inspiring Thoughts for Every Day</p>
+<a href="daily-motivation.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🏆 Success Stories</h3>
+<p>Learn from Successful People</p>
+<a href="success-stories.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🌱 Life Philosophy</h3>
+<p>Wisdom, Values & Meaningful Living</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>📖 Thirukkural</h3>
+<p>Timeless Tamil Wisdom</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💡 Positive Mindset</h3>
+<p>Build Confidence & Mental Strength</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🙏 Inspirational Lessons</h3>
+<p>Motivation for Life & Career</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Health & Cooking Hub -->
-<section class="category-section">
-    <h2>🍲 Health & Cooking Hub</h2>
-    <p>Healthy Living, Nutrition, Cooking Recipes</p>
-    <a href="cooking.html">Explore Health</a>
+
+<section class="academy-section">
+
+<h2>🍲 Health & Cooking Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🥗 Healthy Living</h3>
+<p>Healthy Lifestyle & Daily Wellness</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>💪 Fitness</h3>
+<p>Exercise & Physical Health</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🥦 Nutrition</h3>
+<p>Balanced Diet & Food Awareness</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🍛 Cooking Recipes</h3>
+<p>Traditional & Modern Recipes</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🍱 Healthy Recipes</h3>
+<p>Nutritious & Family-Friendly Meals</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🩺 Health Awareness</h3>
+<p>General Health & Wellness Tips</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- Family Hub -->
-<section class="category-section">
-    <h2>👨‍👩‍👧 Family & Parenting Hub</h2>
-    <p>Parenting, Child Development, Family Life</p>
-    <a href="family.html">Explore Family</a>
+<!-- Family & Parenting Hub -->
+
+<section class="academy-section">
+
+<h2>👨‍👩‍👧 Family & Parenting Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>👨‍👩‍👧 Parenting</h3>
+<p>Raising Children with Care & Confidence</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🧒 Child Development</h3>
+<p>Growth, Learning & Development</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🏡 Family Life</h3>
+<p>Healthy & Happy Family Relationships</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>❤️ Relationships</h3>
+<p>Understanding & Strengthening Bonds</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎓 Education Support</h3>
+<p>Guidance for Children's Learning</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🌈 Family Wellness</h3>
+<p>Better Living for Every Family</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- Kids Hub -->
-<section class="category-section">
-    <h2>🧒 Kids Zone</h2>
-    <p>Stories, Rhymes, GK, Educational Activities</p>
-    <a href="kids-zone.html">Explore Kids Zone</a>
+<!-- Kids Zone -->
+
+<section class="academy-section">
+
+<h2>🧒 Kids Zone</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📚 Stories</h3>
+<p>Fun & Educational Stories</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎵 Rhymes</h3>
+<p>Kids Songs & Rhymes</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🌍 General Knowledge</h3>
+<p>Interesting Facts for Children</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎨 Activities</h3>
+<p>Creative Learning Activities</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🔬 Science for Kids</h3>
+<p>Simple Science Concepts</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🧩 Educational Games</h3>
+<p>Learning Through Fun</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
 </section>
 
 <!-- Community Hub -->
-<section class="category-section">
-    <h2>👥 Community Hub</h2>
-    <p>YouTube, Telegram, WhatsApp Channel</p>
-    <a href="community.html">Join Community</a>
+
+<section class="academy-section">
+
+<h2>👥 Community Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>▶️ YouTube Channel</h3>
+<p>Videos, Tutorials & Learning Content</p>
+<a href="#">Join Now →</a>
+</div>
+
+<div class="card">
+<h3>📢 Telegram Channel</h3>
+<p>Latest Updates & Resources</p>
+<a href="#">Join Now →</a>
+</div>
+
+<div class="card">
+<h3>💬 WhatsApp Channel</h3>
+<p>Daily Learning Updates</p>
+<a href="#">Join Now →</a>
+</div>
+
+<div class="card">
+<h3>🌐 Blog Updates</h3>
+<p>Latest Articles & Announcements</p>
+<a href="blog.html">Explore →</a>
+</div>
+
+<div class="card">
+<h3>📨 Newsletter</h3>
+<p>Get Learning Resources by Email</p>
+<a href="#">Subscribe →</a>
+</div>
+
+<div class="card">
+<h3>🤝 VelviHub Community</h3>
+<p>Learn, Share & Grow Together</p>
+<a href="#">Join Community →</a>
+</div>
+
+</div>
+
 </section>
   
 <!-- LATEST UPDATES -->
