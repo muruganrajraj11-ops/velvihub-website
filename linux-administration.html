@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Linux Administration | VelviHub</title>
+
+<meta name="description" content="Linux Administration Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>⚙ Linux Administration</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="linux.html" class="btn">⬅ Linux Hub</a>
+<a href="technology.html" class="btn">🌐 Technology Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>⚙ Linux System Administration</h2>
+<p>Manage, Maintain and Secure Linux Systems</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is Linux Administration?</h2>
+
+<p>
+Linux Administration என்பது Linux Server மற்றும் Operating System-ஐ நிர்வகிக்கும் செயல்முறை ஆகும்.
+</p>
+
+<div class="highlight">
+Linux Admin = Manage Users + Services + Security + Servers
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>👥 User Management</h2>
+
+<pre>
+useradd raj
+passwd raj
+usermod raj
+userdel raj
+</pre>
+
+<p>✔ Create Users</p>
+<p>✔ Modify Users</p>
+<p>✔ Delete Users</p>
+
+</div>
+
+<div class="section">
+
+<h2>👨‍👩‍👦 Group Management</h2>
+
+<pre>
+groupadd network
+groupdel network
+usermod -aG network raj
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>📂 File Permissions</h2>
+
+<pre>
+chmod 755 file.sh
+chmod 777 file.sh
+chown user file.txt
+chgrp network file.txt
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ Service Management</h2>
+
+<pre>
+systemctl status ssh
+systemctl start ssh
+systemctl stop ssh
+systemctl restart ssh
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>💾 Disk Management</h2>
+
+<pre>
+df -h
+du -sh
+lsblk
+fdisk -l
+</pre>
+
+<p>✔ Monitor Storage</p>
+<p>✔ Manage Partitions</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Process Management</h2>
+
+<pre>
+ps -ef
+top
+htop
+kill PID
+kill -9 PID
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Log Management</h2>
+
+<pre>
+/var/log
+
+tail -f /var/log/messages
+journalctl
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🔐 Security Administration</h2>
+
+<p>✔ Password Policies</p>
+<p>✔ User Access Control</p>
+<p>✔ Firewall Management</p>
+<p>✔ SSH Security</p>
+<p>✔ Audit Logs</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Backup & Recovery</h2>
+
+<pre>
+tar -cvf backup.tar /home
+
+tar -xvf backup.tar
+</pre>
+
+<p>✔ Backup Files</p>
+<p>✔ Restore Data</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>✔ Data Centers</p>
+<p>✔ Telecom Networks</p>
+<p>✔ ISP Infrastructure</p>
+<p>✔ Cloud Platforms</p>
+<p>✔ Banking Systems</p>
+<p>✔ Government Networks</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is Linux Administration?</p>
+<p>How to create a user?</p>
+<p>What is chmod?</p>
+<p>What is chown?</p>
+<p>How to restart a service?</p>
+<p>What is systemctl?</p>
+<p>How to monitor processes?</p>
+<p>How to check disk usage?</p>
+<p>What is journalctl?</p>
+<p>Explain Linux Security Basics.</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+Linux Administration என்பது Linux Server Management-ன் முக்கியமான பகுதி ஆகும்.
+</p>
+
+<p>
+Users, Services, Security, Storage மற்றும் System Resources ஆகியவற்றை நிர்வகிப்பது Linux Administrator-ன் முக்கிய பொறுப்பாகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="linux-networking.html" class="btn">
+🌐 Linux Networking →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VelviHub | Linux Administration</p>
+
+<p>Learn • Practice • Master</p>
+
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
