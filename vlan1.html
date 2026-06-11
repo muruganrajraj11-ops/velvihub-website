@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VLAN | VelviHub</title>
+
+<meta name="description" content="VLAN Complete Guide, VLAN Configuration and Switching Concepts">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.4rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:2rem;
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+footer{
+margin-top:40px;
+background:#001233;
+padding:20px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🏢 VLAN</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="switching.html" class="btn">⬅ Switching Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🏢 VLAN Learning Hub</h2>
+<p>Virtual Local Area Network Concepts & Configuration</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is VLAN?</h2>
+
+<p>
+VLAN (Virtual Local Area Network) என்பது ஒரு Physical Switch-ஐ பல Logical Networks ஆக பிரிப்பது.
+</p>
+
+<div class="highlight">
+VLAN = One Switch, Multiple Networks
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Advantages of VLAN</h2>
+
+<p>✔ Better Security</p>
+<p>✔ Reduced Broadcast Traffic</p>
+<p>✔ Easy Network Management</p>
+<p>✔ Improved Performance</p>
+
+</div>
+
+<div class="section">
+
+<h2>🏷 VLAN Types</h2>
+
+<p>Default VLAN</p>
+<p>Data VLAN</p>
+<p>Management VLAN</p>
+<p>Voice VLAN</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 Basic Configuration</h2>
+
+<p>vlan 10</p>
+<p>name SALES</p>
+
+<p>interface fa0/1</p>
+<p>switchport access vlan 10</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌐 VLAN Trunking</h2>
+
+<p>
+Trunk Port மூலம் Multiple VLAN Traffic அனுப்பப்படுகிறது.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>📚 Next Lesson</h2>
+
+<a href="stp.html" class="btn">
+🌉 Learn STP →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | VLAN</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
