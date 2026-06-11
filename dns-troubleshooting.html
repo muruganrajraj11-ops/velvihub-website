@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DNS Troubleshooting | VelviHub</title>
+
+<meta name="description" content="DNS Troubleshooting Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🌐 DNS Troubleshooting</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="network-troubleshooting.html" class="btn">⬅ Troubleshooting Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🌐 Domain Name Resolution Troubleshooting</h2>
+<p>DNS Issues Detection & Resolution</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is DNS?</h2>
+
+<p>
+DNS (Domain Name System) என்பது Domain Name-ஐ IP Address-ஆக மாற்றும் Internet Service ஆகும்.
+</p>
+
+<div class="highlight">
+DNS = Internet Phone Book
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why DNS is Important?</h2>
+
+<p>✔ Website Access</p>
+<p>✔ Email Services</p>
+<p>✔ Internet Browsing</p>
+<p>✔ Application Connectivity</p>
+<p>✔ Domain Resolution</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ How DNS Works?</h2>
+
+<p>
+User google.com என Type செய்தால் DNS Server அதற்கான IP Address-ஐ கண்டுபிடித்து வழங்குகிறது.
+</p>
+
+<p>
+பிறகு Browser அந்த IP Address-ஐ பயன்படுத்தி Website-ஐ திறக்கிறது.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 DNS Commands</h2>
+
+<pre>
+nslookup google.com
+
+nslookup openai.com
+
+ipconfig /flushdns
+
+ipconfig /displaydns
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 Common DNS Problems</h2>
+
+<p>DNS Server Not Responding</p>
+<p>Name Resolution Failure</p>
+<p>Incorrect DNS Configuration</p>
+<p>DNS Cache Issues</p>
+<p>Slow Website Access</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔧 Troubleshooting Steps</h2>
+
+<p>✔ Verify DNS Server IP</p>
+<p>✔ Run nslookup Test</p>
+<p>✔ Flush DNS Cache</p>
+<p>✔ Test Internet Connectivity</p>
+<p>✔ Change Alternate DNS Server</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Popular DNS Servers</h2>
+
+<p>Google DNS : 8.8.8.8</p>
+<p>Google DNS : 8.8.4.4</p>
+<p>Cloudflare DNS : 1.1.1.1</p>
+<p>Cloudflare DNS : 1.0.0.1</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>Enterprise Networks</p>
+<p>Data Centers</p>
+<p>ISP Networks</p>
+<p>Cloud Platforms</p>
+<p>Internet Services</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is DNS?</p>
+<p>What is nslookup?</p>
+<p>What is DNS Cache?</p>
+<p>How to Troubleshoot DNS Issues?</p>
+<p>Difference Between DNS and DHCP?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+DNS Troubleshooting என்பது Website Access மற்றும் Internet Connectivity பிரச்சினைகளை சரிசெய்ய மிகவும் முக்கியமான Skill ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="dhcp-troubleshooting.html" class="btn">
+⚙ DHCP Troubleshooting →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | DNS Troubleshooting</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
