@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DHCP Troubleshooting | VelviHub</title>
+
+<meta name="description" content="DHCP Troubleshooting Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>⚙ DHCP Troubleshooting</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="network-troubleshooting.html" class="btn">⬅ Troubleshooting Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>⚙ Dynamic Host Configuration Protocol</h2>
+<p>IP Address Assignment Troubleshooting</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is DHCP?</h2>
+
+<p>
+DHCP (Dynamic Host Configuration Protocol) என்பது Devices-க்கு Automatic-ஆக IP Address, Gateway மற்றும் DNS வழங்கும் Protocol ஆகும்.
+</p>
+
+<div class="highlight">
+DHCP = Automatic IP Address Assignment
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why DHCP?</h2>
+
+<p>✔ Automatic IP Assignment</p>
+<p>✔ Easy Network Management</p>
+<p>✔ Prevent Manual Errors</p>
+<p>✔ Centralized Control</p>
+<p>✔ Faster Deployment</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ DHCP Process (DORA)</h2>
+
+<p>Discover</p>
+<p>Offer</p>
+<p>Request</p>
+<p>Acknowledge</p>
+
+<p>
+இந்த 4 Steps மூலமே DHCP IP Address வழங்குகிறது.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 Useful Commands</h2>
+
+<pre>
+ipconfig /all
+
+ipconfig /release
+
+ipconfig /renew
+
+ipconfig /flushdns
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 Common DHCP Problems</h2>
+
+<p>IP Address Not Assigned</p>
+<p>169.254.x.x APIPA Address</p>
+<p>DHCP Server Down</p>
+<p>Address Pool Exhausted</p>
+<p>Wrong Gateway Assigned</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔧 Troubleshooting Steps</h2>
+
+<p>✔ Verify DHCP Server Status</p>
+<p>✔ Check DHCP Scope</p>
+<p>✔ Verify VLAN Configuration</p>
+<p>✔ Renew IP Address</p>
+<p>✔ Check Relay Agent Settings</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 APIPA Address</h2>
+
+<p>
+169.254.x.x Address வந்தால் DHCP Server-லிருந்து IP கிடைக்கவில்லை என்று அர்த்தம்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>Enterprise Networks</p>
+<p>Campus Networks</p>
+<p>Wi-Fi Networks</p>
+<p>Data Centers</p>
+<p>ISP Customer Networks</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is DHCP?</p>
+<p>What is DORA Process?</p>
+<p>What is APIPA?</p>
+<p>How to Renew DHCP Address?</p>
+<p>Difference Between Static IP and DHCP?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+DHCP Troubleshooting என்பது Network Support Engineer மற்றும் Network Administrator-களுக்கு மிகவும் முக்கியமான Skill ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="network-diagnostics.html" class="btn">
+🔍 Network Diagnostics →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | DHCP Troubleshooting</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
