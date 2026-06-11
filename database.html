@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Database | VelviHub</title>
+
+<meta name="description" content="Database Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🗄 Database</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="programming.html" class="btn">⬅ Programming Hub</a>
+<a href="technology.html" class="btn">🌐 Technology Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🗄 Database Management Systems</h2>
+<p>Store, Manage and Retrieve Data Efficiently</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is a Database?</h2>
+
+<p>
+Database என்பது தகவல்களை (Data) சேமித்து, நிர்வகித்து, தேவைப்படும் போது மீட்டெடுக்க உதவும் அமைப்பு ஆகும்.
+</p>
+
+<div class="highlight">
+Database = Organized Data Storage System
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why Database?</h2>
+
+<p>✔ Store Large Amount of Data</p>
+<p>✔ Fast Retrieval</p>
+<p>✔ Data Security</p>
+<p>✔ Data Consistency</p>
+<p>✔ Multi User Access</p>
+
+</div>
+
+<div class="section">
+
+<h2>🗄 Popular Databases</h2>
+
+<p>✔ MySQL</p>
+<p>✔ PostgreSQL</p>
+<p>✔ Oracle Database</p>
+<p>✔ Microsoft SQL Server</p>
+<p>✔ MongoDB</p>
+<p>✔ SQLite</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Database Components</h2>
+
+<p>✔ Tables</p>
+<p>✔ Rows</p>
+<p>✔ Columns</p>
+<p>✔ Records</p>
+<p>✔ Keys</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔑 Primary Key</h2>
+
+<p>
+Primary Key என்பது ஒரு Table-ல் ஒவ்வொரு Record-ஐ தனித்தனியாக அடையாளம் காண பயன்படும் Unique Value ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Create Table Example</h2>
+
+<pre>
+CREATE TABLE students (
+
+id INT,
+
+name VARCHAR(50),
+
+course VARCHAR(50)
+
+);
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>➕ Insert Data</h2>
+
+<pre>
+INSERT INTO students
+VALUES (1,'Raj','Networking');
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🔍 Select Data</h2>
+
+<pre>
+SELECT * FROM students;
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>✏ Update Data</h2>
+
+<pre>
+UPDATE students
+
+SET course='Linux'
+
+WHERE id=1;
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>❌ Delete Data</h2>
+
+<pre>
+DELETE FROM students
+
+WHERE id=1;
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>✔ Banking Systems</p>
+<p>✔ Railway Reservation</p>
+<p>✔ E-Commerce Websites</p>
+<p>✔ Hospital Management</p>
+<p>✔ Telecom Billing Systems</p>
+<p>✔ Government Portals</p>
+<p>✔ Learning Platforms</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is a Database?</p>
+<p>What is DBMS?</p>
+<p>What is Primary Key?</p>
+<p>Difference Between SQL and NoSQL?</p>
+<p>What is a Table?</p>
+<p>What is a Record?</p>
+<p>What is Normalization?</p>
+<p>What is MySQL?</p>
+<p>What is MongoDB?</p>
+<p>What is SQL?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+Database என்பது அனைத்து நவீன Applications மற்றும் Websites-ன் அடிப்படை கூறுகளில் ஒன்றாகும்.
+</p>
+
+<p>
+Data Storage, Security மற்றும் Retrieval ஆகியவற்றை Database திறமையாக நிர்வகிக்கிறது.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎉 Programming Hub Completed</h2>
+
+<p>
+Congratulations! You have successfully completed the Programming Learning Hub.
+</p>
+
+<a href="ai-tools.html" class="btn">
+🤖 Continue to AI Tools →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VelviHub | Database</p>
+
+<p>Learn • Practice • Master</p>
+
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
