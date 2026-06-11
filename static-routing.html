@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Static Routing | VelviHub</title>
+
+<meta name="description" content="Static Routing Configuration, Concepts and Examples">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.4rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:2rem;
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+margin-top:15px;
+font-weight:bold;
+}
+
+footer{
+margin-top:40px;
+background:#001233;
+padding:20px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>📌 Static Routing</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="routing1.html" class="btn">⬅ Routing Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>📌 Static Routing Learning Hub</h2>
+<p>Manual Route Configuration & Routing Fundamentals</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is Static Routing?</h2>
+
+<p>
+Static Routing என்பது Administrator கைமுறையாக Route Entry செய்வது.
+</p>
+
+<div class="highlight">
+Static Route = Manually Configured Route
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ Configuration Example</h2>
+
+<p>
+ip route 192.168.2.0 255.255.255.0 10.1.1.2
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>✅ Advantages</h2>
+
+<p>Easy Configuration</p>
+<p>Low CPU Usage</p>
+<p>More Secure</p>
+
+</div>
+
+<div class="section">
+
+<h2>❌ Disadvantages</h2>
+
+<p>Manual Updates Required</p>
+<p>Not Suitable for Large Networks</p>
+
+</div>
+
+<div class="section">
+
+<h2>📚 Next Lesson</h2>
+
+<a href="ospf.html" class="btn">
+🌐 Learn OSPF →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | Static Routing</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
