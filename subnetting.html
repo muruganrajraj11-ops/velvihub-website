@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Subnetting | VelviHub</title>
+
+<meta name="description" content="Subnetting Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🧮 Subnetting</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="ipv4-ipv6.html" class="btn">⬅ IPv4 & IPv6 Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🧮 IP Subnetting Learning Hub</h2>
+<p>Subnet Masks, Network Division & Address Planning</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is Subnetting?</h2>
+
+<p>
+Subnetting என்பது ஒரு பெரிய Network-ஐ பல சிறிய Networks (Subnets) ஆக பிரிக்கும் செயல்முறை ஆகும்.
+</p>
+
+<div class="highlight">
+Subnetting = Divide One Network Into Multiple Smaller Networks
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why Subnetting?</h2>
+
+<p>✔ Better IP Utilization</p>
+<p>✔ Reduced Broadcast Traffic</p>
+<p>✔ Improved Security</p>
+<p>✔ Easy Network Management</p>
+<p>✔ Efficient Address Allocation</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌐 Subnet Mask</h2>
+
+<p>255.0.0.0 = /8</p>
+<p>255.255.0.0 = /16</p>
+<p>255.255.255.0 = /24</p>
+<p>255.255.255.192 = /26</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ How Subnetting Works?</h2>
+
+<p>
+Host Bits-ஐ Borrow செய்து புதிய Subnets உருவாக்கப்படுகிறது.
+</p>
+
+<p>
+ஒவ்வொரு Subnet-க்கும் தனி Network Address மற்றும் Broadcast Address இருக்கும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Example</h2>
+
+<p>Network: 192.168.1.0/24</p>
+<p>Subnet: /26</p>
+
+<p>Subnet 1 : 192.168.1.0</p>
+<p>Subnet 2 : 192.168.1.64</p>
+<p>Subnet 3 : 192.168.1.128</p>
+<p>Subnet 4 : 192.168.1.192</p>
+
+</div>
+
+<div class="section">
+
+<h2>📡 Important Terms</h2>
+
+<p>Network Address</p>
+<p>Host Address</p>
+<p>Broadcast Address</p>
+<p>Usable Hosts</p>
+<p>Subnet Mask</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is Subnetting?</p>
+<p>Why do we use Subnetting?</p>
+<p>What is a Broadcast Address?</p>
+<p>What is CIDR?</p>
+<p>How many Hosts in /24?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+Subnetting என்பது CCNA, Network Engineering மற்றும் Telecom Networking-ல் மிக முக்கியமான அடிப்படை Topic ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="cidr.html" class="btn">
+📏 Learn CIDR →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | Subnetting</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
