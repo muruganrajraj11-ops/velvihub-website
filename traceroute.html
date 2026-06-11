@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Traceroute | VelviHub</title>
+
+<meta name="description" content="Traceroute Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🗺 Traceroute</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="network-troubleshooting.html" class="btn">⬅ Troubleshooting Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🗺 Path Discovery & Route Analysis</h2>
+<p>Track the Complete Network Path</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is Traceroute?</h2>
+
+<p>
+Traceroute என்பது Source Device-லிருந்து Destination Device வரை Packet எந்த Routers வழியாக செல்கிறது என்பதை கண்டறியும் Diagnostic Tool ஆகும்.
+</p>
+
+<div class="highlight">
+Traceroute = Discover Every Hop Between Source and Destination
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why Use Traceroute?</h2>
+
+<p>✔ Identify Routing Path</p>
+<p>✔ Detect Network Delays</p>
+<p>✔ Locate Faulty Routers</p>
+<p>✔ Analyze Internet Routes</p>
+<p>✔ Advanced Troubleshooting</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ How Traceroute Works?</h2>
+
+<p>
+Traceroute TTL (Time To Live) Value-ஐ படிப்படியாக உயர்த்தி Packets அனுப்புகிறது.
+</p>
+
+<p>
+ஒவ்வொரு Router-மும் TTL Expire ஆனபோது பதில் அனுப்பும்.
+</p>
+
+<p>
+இதனால் முழு Route தெரியும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 Basic Commands</h2>
+
+<pre>
+Windows:
+
+tracert google.com
+
+tracert 8.8.8.8
+
+Linux:
+
+traceroute google.com
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Sample Output</h2>
+
+<pre>
+1   1ms    Router
+2   8ms    ISP Router
+3   15ms   Core Router
+4   20ms   Google Network
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 Common Issues Found</h2>
+
+<p>High Latency</p>
+<p>Packet Loss</p>
+<p>Routing Loops</p>
+<p>Broken Paths</p>
+<p>ISP Routing Issues</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔧 Troubleshooting Steps</h2>
+
+<p>✔ Check Hop Delays</p>
+<p>✔ Identify Last Reachable Router</p>
+<p>✔ Verify ISP Connectivity</p>
+<p>✔ Check Routing Tables</p>
+<p>✔ Analyze Packet Loss</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>Internet Troubleshooting</p>
+<p>ISP Support Teams</p>
+<p>Enterprise Networks</p>
+<p>Data Centers</p>
+<p>RailTel Networks</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is Traceroute?</p>
+<p>What is TTL?</p>
+<p>Difference Between Ping and Traceroute?</p>
+<p>How Does Traceroute Work?</p>
+<p>Why Use Traceroute?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+Traceroute என்பது Network Path மற்றும் Routing Issues-ஐ கண்டறிய பயன்படும் முக்கியமான Diagnostic Tool ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="dns-troubleshooting.html" class="btn">
+🌐 DNS Troubleshooting →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | Traceroute</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
