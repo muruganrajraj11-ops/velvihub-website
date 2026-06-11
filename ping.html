@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ping | VelviHub</title>
+
+<meta name="description" content="Ping Troubleshooting Complete Learning Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.5rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+color:#4fc3ff;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+pre{
+background:#0d1117;
+padding:15px;
+border-radius:10px;
+overflow:auto;
+margin-top:10px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>📡 Ping</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="network-troubleshooting.html" class="btn">⬅ Troubleshooting Hub</a>
+<a href="networking1.html" class="btn">🌐 Networking Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>📡 Ping Connectivity Testing</h2>
+<p>Basic Network Reachability Verification Tool</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is Ping?</h2>
+
+<p>
+Ping என்பது ஒரு Device மற்றொரு Device-ஐ Network மூலம் Reach செய்ய முடியுமா என்பதை சரிபார்க்க பயன்படும் Diagnostic Command ஆகும்.
+</p>
+
+<div class="highlight">
+Ping = Test Network Connectivity
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Why Use Ping?</h2>
+
+<p>✔ Verify Connectivity</p>
+<p>✔ Check Network Reachability</p>
+<p>✔ Measure Response Time</p>
+<p>✔ Detect Network Issues</p>
+<p>✔ Initial Troubleshooting Tool</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚙ How Ping Works?</h2>
+
+<p>
+Ping ICMP Echo Request அனுப்புகிறது.
+</p>
+
+<p>
+Destination Device ICMP Echo Reply அனுப்புகிறது.
+</p>
+
+<p>
+Reply வந்தால் Connectivity உள்ளது என்று அர்த்தம்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 Basic Commands</h2>
+
+<pre>
+ping 8.8.8.8
+
+ping google.com
+
+ping 192.168.1.1
+</pre>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Sample Output</h2>
+
+<pre>
+Reply from 8.8.8.8:
+bytes=32
+time=15ms
+TTL=118
+</pre>
+
+<p>
+time = Response Time
+</p>
+
+<p>
+TTL = Time To Live
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 Common Problems</h2>
+
+<p>Request Timed Out</p>
+<p>Destination Host Unreachable</p>
+<p>General Failure</p>
+<p>DNS Resolution Failure</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔧 Troubleshooting Steps</h2>
+
+<p>✔ Check IP Address</p>
+<p>✔ Verify Gateway</p>
+<p>✔ Verify Network Cable</p>
+<p>✔ Check Firewall Rules</p>
+<p>✔ Verify DNS Settings</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌍 Real World Usage</h2>
+
+<p>Internet Testing</p>
+<p>Router Verification</p>
+<p>Server Monitoring</p>
+<p>ISP Troubleshooting</p>
+<p>Enterprise Networks</p>
+
+</div>
+
+<div class="section">
+
+<h2>🎤 Interview Questions</h2>
+
+<p>What is Ping?</p>
+<p>Which Protocol Does Ping Use?</p>
+<p>What is ICMP?</p>
+<p>What is TTL?</p>
+<p>What Does Request Timed Out Mean?</p>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Summary</h2>
+
+<p>
+Ping என்பது Network Troubleshooting-ல் முதலில் பயன்படுத்தப்படும் மிக முக்கியமான Diagnostic Tool ஆகும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Next Lesson</h2>
+
+<a href="traceroute.html" class="btn">
+🗺 Learn Traceroute →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | Ping</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
