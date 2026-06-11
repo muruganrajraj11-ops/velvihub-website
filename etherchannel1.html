@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EtherChannel | VelviHub</title>
+
+<meta name="description" content="EtherChannel, Link Aggregation, LACP and PAgP Complete Guide">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+header h1{
+color:#4fc3ff;
+font-size:2.4rem;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:5px;
+}
+
+.top-buttons{
+text-align:center;
+margin-bottom:25px;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:2rem;
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.section h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#00bfff;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+footer{
+margin-top:40px;
+background:#001233;
+padding:20px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="google_translate_element"></div>
+
+<header>
+<h1>🔗 EtherChannel</h1>
+</header>
+
+<div class="container">
+
+<div class="top-buttons">
+<a href="switching.html" class="btn">⬅ Switching Hub</a>
+<a href="index.html" class="btn">🏠 Home</a>
+</div>
+
+<section class="hero">
+<h2>🔗 EtherChannel Learning Hub</h2>
+<p>Link Aggregation, LACP & PAgP Technologies</p>
+</section>
+
+<div class="section">
+
+<h2>📖 What is EtherChannel?</h2>
+
+<p>
+EtherChannel என்பது பல Physical Links-ஐ ஒரு Logical Link ஆக இணைக்கும் Technology ஆகும்.
+</p>
+
+<div class="highlight">
+EtherChannel = Multiple Links → Single Logical Link
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Benefits</h2>
+
+<p>✔ Increased Bandwidth</p>
+<p>✔ Load Balancing</p>
+<p>✔ Redundancy</p>
+<p>✔ High Availability</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔧 EtherChannel Protocols</h2>
+
+<p>🔹 PAgP (Cisco Proprietary)</p>
+<p>🔹 LACP (IEEE 802.3ad)</p>
+
+</div>
+
+<div class="section">
+
+<h2>💻 Basic Configuration</h2>
+
+<p>interface range fa0/1 - 2</p>
+<p>channel-group 1 mode active</p>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Load Balancing</h2>
+
+<p>
+Traffic பல Links-ல் பகிரப்பட்டு செல்லும்.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>📚 Next Lesson</h2>
+
+<a href="layer2-switching.html" class="btn">
+🌐 Learn Layer 2 Switching →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VelviHub | EtherChannel</p>
+<p>Learn • Practice • Master</p>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage:'en'},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
