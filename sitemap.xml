@@ -1,20 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://muruganrajraj11-ops.github.io/velvihub-website/</loc>
-  </url>
+<url><loc>https://velvihub.in/</loc></url>
+<url><loc>https://velvihub.in/index.html</loc></url>
 
-  <url>
-    <loc>https://muruganrajraj11-ops.github.io/velvihub-website/blog.html</loc>
-  </url>
+<url><loc>https://velvihub.in/group1.html</loc></url>
+<url><loc>https://velvihub.in/deputy-collector.html</loc></url>
+<url><loc>https://velvihub.in/tnpsc-hub.html</loc></url>
+<url><loc>https://velvihub.in/current-affairs.html</loc></url>
 
-  <url>
-    <loc>https://muruganrajraj11-ops.github.io/velvihub-website/ip-address.html</loc>
-  </url>
+<url><loc>https://velvihub.in/networking.html</loc></url>
+<url><loc>https://velvihub.in/what-is-networking.html</loc></url>
+<url><loc>https://velvihub.in/network-devices.html</loc></url>
+<url><loc>https://velvihub.in/osi-model.html</loc></url>
+<url><loc>https://velvihub.in/tcp-ip-model.html</loc></url>
+<url><loc>https://velvihub.in/ip-address.html</loc></url>
+<url><loc>https://velvihub.in/ip-addressing.html</loc></url>
+<url><loc>https://velvihub.in/subnet-mask.html</loc></url>
+<url><loc>https://velvihub.in/subnetting.html</loc></url>
+<url><loc>https://velvihub.in/cidr.html</loc></url>
+<url><loc>https://velvihub.in/vlsm.html</loc></url>
+<url><loc>https://velvihub.in/ipv4-basics.html</loc></url>
+<url><loc>https://velvihub.in/ipv6.html</loc></url>
+<url><loc>https://velvihub.in/ipv4-vs-ipv6.html</loc></url>
 
-  <url>
-    <loc>https://muruganrajraj11-ops.github.io/velvihub-website/privacy.html</loc>
-  </url>
+<url><loc>https://velvihub.in/router.html</loc></url>
+<url><loc>https://velvihub.in/switch.html</loc></url>
+<url><loc>https://velvihub.in/vlan.html</loc></url>
+<url><loc>https://velvihub.in/inter-vlan-routing.html</loc></url>
+<url><loc>https://velvihub.in/stp.html</loc></url>
+<url><loc>https://velvihub.in/rstp.html</loc></url>
+<url><loc>https://velvihub.in/etherchannel.html</loc></url>
+
+<url><loc>https://velvihub.in/static-routing.html</loc></url>
+<url><loc>https://velvihub.in/ospf.html</loc></url>
+<url><loc>https://velvihub.in/eigrp.html</loc></url>
+<url><loc>https://velvihub.in/bgp.html</loc></url>
+<url><loc>https://velvihub.in/mpls.html</loc></url>
+<url><loc>https://velvihub.in/ldp.html</loc></url>
+<url><loc>https://velvihub.in/rsvp-te.html</loc></url>
+
+<url><loc>https://velvihub.in/sdh.html</loc></url>
+<url><loc>https://velvihub.in/dwdm.html</loc></url>
+<url><loc>https://velvihub.in/otn.html</loc></url>
+<url><loc>https://velvihub.in/ptn1.html</loc></url>
+
+<url><loc>https://velvihub.in/linux.html</loc></url>
+<url><loc>https://velvihub.in/linux-basics.html</loc></url>
+<url><loc>https://velvihub.in/linux-commands.html</loc></url>
+<url><loc>https://velvihub.in/linux-networking.html</loc></url>
+
+<url><loc>https://velvihub.in/firewall.html</loc></url>
+<url><loc>https://velvihub.in/network-security.html</loc></url>
+<url><loc>https://velvihub.in/ids-ips.html</loc></url>
+<url><loc>https://velvihub.in/vpn.html</loc></url>
+
+<url><loc>https://velvihub.in/ccna.html</loc></url>
+<url><loc>https://velvihub.in/ccna-fundamentals.html</loc></url>
+<url><loc>https://velvihub.in/railtel.html</loc></url>
+
+<url><loc>https://velvihub.in/blog.html</loc></url>
+<url><loc>https://velvihub.in/about.html</loc></url>
+<url><loc>https://velvihub.in/contact.html</loc></url>
+<url><loc>https://velvihub.in/privacy.html</loc></url>
+<url><loc>https://velvihub.in/terms.html</loc></url>
+<url><loc>https://velvihub.in/disclaimer.html</loc></url>
 
 </urlset>
