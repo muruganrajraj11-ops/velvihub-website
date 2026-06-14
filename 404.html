@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 - Page Not Found | VelviHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0a192f;
+color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+width:100%;
+text-align:center;
+}
+
+.card{
+background:#152238;
+padding:40px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.error-code{
+font-size:120px;
+font-weight:bold;
+color:#ff4d4d;
+line-height:1;
+}
+
+.logo{
+font-size:60px;
+margin-bottom:10px;
+}
+
+h1{
+color:#4fc3ff;
+margin:15px 0;
+}
+
+p{
+color:#d9d9d9;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.search-box{
+width:100%;
+padding:14px;
+border:none;
+border-radius:8px;
+font-size:16px;
+margin-bottom:20px;
+background:#1d2f4f;
+color:white;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+margin:8px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+cursor:pointer;
+border:none;
+}
+
+.home-btn{
+background:#00bfff;
+color:white;
+}
+
+.back-btn{
+background:#00c853;
+color:white;
+}
+
+.search-btn{
+background:#ff9800;
+color:white;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.footer{
+margin-top:25px;
+font-size:14px;
+color:#999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+🏛
+</div>
+
+<div class="error-code">
+404
+</div>
+
+<h1>பக்கம் கிடைக்கவில்லை</h1>
+
+<p>
+
+நீங்கள் தேடும் பக்கம் நகர்த்தப்பட்டிருக்கலாம்,
+நீக்கப்பட்டிருக்கலாம் அல்லது URL தவறாக இருக்கலாம்.
+
+VelviHub இன் மற்ற பகுதிகளுக்கு கீழே உள்ள
+விருப்பங்களை பயன்படுத்துங்கள்.
+
+</p>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="🔍 Search Courses, Tests, Pages..."
+>
+
+<button
+class="btn search-btn"
+onclick="searchPage()"
+>
+Search
+</button>
+
+<br>
+
+<a
+href="index.html"
+class="btn home-btn"
+>
+🏠 Home Page
+</a>
+
+<button
+class="btn back-btn"
+onclick="goBack()"
+>
+⬅ Back
+</button>
+
+<div class="footer">
+
+VelviHub Error Handling System
+
+<br>
+
+© 2026 VelviHub
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function goBack(){
+
+window.history.back();
+
+}
+
+function searchPage(){
+
+let query =
+document.getElementById(
+"searchInput"
+).value.trim();
+
+if(query===""){
+
+alert(
+"Please enter a search term"
+);
+
+return;
+
+}
+
+window.location.href =
+"index.html?search=" +
+encodeURIComponent(query);
+
+}
+
+document
+.getElementById("searchInput")
+.addEventListener(
+"keypress",
+function(event){
+
+if(event.key==="Enter"){
+
+searchPage();
+
+}
+
+}
+);
+
+</script>
+
+</body>
+</html>
