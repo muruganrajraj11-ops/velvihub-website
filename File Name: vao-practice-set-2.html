@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VAO Practice Set 2 | VelviHub</title>
+
+<style>
+
+body{
+background:#071a35;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+}
+
+header{
+background:#001a44;
+padding:30px;
+text-align:center;
+border-bottom:3px solid #00c8ff;
+}
+
+header h1{
+color:#4fc3ff;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#1a2945;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 0 10px rgba(0,191,255,.25);
+}
+
+.question{
+background:#22385c;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.question h3{
+color:#4fc3ff;
+}
+
+.btn{
+background:#12bfff;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+margin:5px;
+}
+
+.result{
+display:none;
+background:#0d4f2f;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+}
+
+footer{
+background:#001a44;
+padding:25px;
+text-align:center;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📝 VAO Practice Set 2</h1>
+
+<p>VelviHub Practice Examination</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📚 Practice Set 2</h2>
+
+<p>
+10 கேள்விகள் கொண்ட பயிற்சி தேர்வு.
+</p>
+
+</div>
+
+<form id="quiz">
+
+<div class="question">
+
+<h3>1. இந்தியாவின் தேசிய மலர்?</h3>
+
+<label><input type="radio" name="q1" value="0"> ரோஜா</label><br>
+<label><input type="radio" name="q1" value="1"> தாமரை</label><br>
+<label><input type="radio" name="q1" value="0"> மல்லிகை</label><br>
+<label><input type="radio" name="q1" value="0"> செம்பருத்தி</label>
+
+</div>
+
+<div class="question">
+
+<h3>2. இந்தியாவின் தேசிய மரம்?</h3>
+
+<label><input type="radio" name="q2" value="0"> வேம்பு</label><br>
+<label><input type="radio" name="q2" value="1"> ஆலமரம்</label><br>
+<label><input type="radio" name="q2" value="0"> பனை</label><br>
+<label><input type="radio" name="q2" value="0"> அரசு</label>
+
+</div>
+
+<div class="question">
+
+<h3>3. தமிழ்நாட்டின் மாநில மரம்?</h3>
+
+<label><input type="radio" name="q3" value="1"> பனைமரம்</label><br>
+<label><input type="radio" name="q3" value="0"> வேம்பு</label><br>
+<label><input type="radio" name="q3" value="0"> தென்னை</label><br>
+<label><input type="radio" name="q3" value="0"> மா</label>
+
+</div>
+
+<div class="question">
+
+<h3>4. 15 × 5 = ?</h3>
+
+<label><input type="radio" name="q4" value="0"> 65</label><br>
+<label><input type="radio" name="q4" value="0"> 70</label><br>
+<label><input type="radio" name="q4" value="1"> 75</label><br>
+<label><input type="radio" name="q4" value="0"> 80</label>
+
+</div>
+
+<div class="question">
+
+<h3>5. இந்தியாவின் தேசிய விளையாட்டு?</h3>
+
+<label><input type="radio" name="q5" value="0"> கிரிக்கெட்</label><br>
+<label><input type="radio" name="q5" value="1"> ஹாக்கி</label><br>
+<label><input type="radio" name="q5" value="0"> கால்பந்து</label><br>
+<label><input type="radio" name="q5" value="0"> டென்னிஸ்</label>
+
+</div>
+
+<div class="question">
+
+<h3>6. தமிழ்நாட்டின் மாநில பறவை?</h3>
+
+<label><input type="radio" name="q6" value="1"> மரகதப் புறா</label><br>
+<label><input type="radio" name="q6" value="0"> மயில்</label><br>
+<label><input type="radio" name="q6" value="0"> கிளி</label><br>
+<label><input type="radio" name="q6" value="0"> குருவி</label>
+
+</div>
+
+<div class="question">
+
+<h3>7. 100 ÷ 4 = ?</h3>
+
+<label><input type="radio" name="q7" value="1"> 25</label><br>
+<label><input type="radio" name="q7" value="0"> 20</label><br>
+<label><input type="radio" name="q7" value="0"> 15</label><br>
+<label><input type="radio" name="q7" value="0"> 30</label>
+
+</div>
+
+<div class="question">
+
+<h3>8. இந்திய தேசிய கீதத்தை எழுதியவர்?</h3>
+
+<label><input type="radio" name="q8" value="0"> பாரதியார்</label><br>
+<label><input type="radio" name="q8" value="1"> ரவீந்திரநாத் தாகூர்</label><br>
+<label><input type="radio" name="q8" value="0"> நேரு</label><br>
+<label><input type="radio" name="q8" value="0"> காந்தி</label>
+
+</div>
+
+<div class="question">
+
+<h3>9. 50% of 200 = ?</h3>
+
+<label><input type="radio" name="q9" value="0"> 50</label><br>
+<label><input type="radio" name="q9" value="1"> 100</label><br>
+<label><input type="radio" name="q9" value="0"> 150</label><br>
+<label><input type="radio" name="q9" value="0"> 200</label>
+
+</div>
+
+<div class="question">
+
+<h3>10. தமிழ்நாட்டின் தலைநகர்?</h3>
+
+<label><input type="radio" name="q10" value="1"> சென்னை</label><br>
+<label><input type="radio" name="q10" value="0"> மதுரை</label><br>
+<label><input type="radio" name="q10" value="0"> கோவை</label><br>
+<label><input type="radio" name="q10" value="0"> திருச்சி</label>
+
+</div>
+
+<button type="button" class="btn" onclick="calculateScore()">
+🏆 Submit Test
+</button>
+
+</form>
+
+<div id="result" class="result"></div>
+
+<div class="card">
+
+<h2>🚀 Next Page</h2>
+
+<a href="vao-grand-test-1.html" class="btn">
+🏆 Grand Test 1 →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 VelviHub | VAO Practice Set 2
+
+</footer>
+
+<script>
+
+function calculateScore(){
+
+let score=0;
+
+document.querySelectorAll(
+'input[type="radio"]:checked'
+).forEach(function(ans){
+
+score+=parseInt(ans.value);
+
+});
+
+document.getElementById("result").style.display="block";
+
+document.getElementById("result").innerHTML=
+"🎉 Your Score : "+score+" / 10";
+
+}
+
+</script>
+
+</body>
+</html>
