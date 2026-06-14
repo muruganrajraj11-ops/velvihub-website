@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VAO Rank List | VelviHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#0a192f;
+color:white;
+padding:20px;
+}
+
+header{
+text-align:center;
+padding:20px;
+}
+
+header h1{
+color:#4fc3ff;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.form-box{
+background:#152238;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+}
+
+button{
+background:#00bfff;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:#152238;
+}
+
+th{
+background:#001233;
+color:#4fc3ff;
+padding:12px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #2f4f6f;
+}
+
+.topper{
+background:#1f4d1f;
+font-weight:bold;
+}
+
+.gold{
+color:gold;
+font-weight:bold;
+}
+
+.silver{
+color:silver;
+font-weight:bold;
+}
+
+.bronze{
+color:#cd7f32;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏆 VAO Rank List</h1>
+
+<p>VelviHub Ranking System</p>
+
+</header>
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>➕ Add Candidate</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Candidate Name"
+>
+
+<input
+type="number"
+id="score"
+placeholder="Enter Score"
+max="100"
+min="0"
+>
+
+<button onclick="addCandidate()">
+Add Score
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Rank</th>
+<th>Badge</th>
+<th>Name</th>
+<th>Score</th>
+
+</tr>
+
+</thead>
+
+<tbody id="rankTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script>
+
+function loadRankList(){
+
+let data=
+JSON.parse(
+localStorage.getItem("vaoRanks")
+) || [];
+
+data.sort(
+(a,b)=>b.score-a.score
+);
+
+let table="";
+
+data.forEach((user,index)=>{
+
+let badge="";
+
+if(index===0){
+badge="🥇";
+}
+else if(index===1){
+badge="🥈";
+}
+else if(index===2){
+badge="🥉";
+}
+
+let rowClass="";
+
+if(index===0){
+rowClass="topper";
+}
+
+table += `
+
+<tr class="${rowClass}">
+
+<td>${index+1}</td>
+
+<td>${badge}</td>
+
+<td>${user.name}</td>
+
+<td>${user.score}</td>
+
+</tr>
+
+`;
+
+});
+
+document.getElementById(
+"rankTable"
+).innerHTML=table;
+
+}
+
+function addCandidate(){
+
+let name=
+document.getElementById("name").value;
+
+let score=
+parseInt(
+document.getElementById("score").value
+);
+
+if(!name || isNaN(score)){
+
+alert(
+"Please enter Name and Score"
+);
+
+return;
+
+}
+
+let data=
+JSON.parse(
+localStorage.getItem("vaoRanks")
+) || [];
+
+data.push({
+name:name,
+score:score
+});
+
+localStorage.setItem(
+"vaoRanks",
+JSON.stringify(data)
+);
+
+document.getElementById("name").value="";
+document.getElementById("score").value="";
+
+loadRankList();
+
+}
+
+loadRankList();
+
+</script>
+
+</body>
+</html>
