@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VAO Final Mega Test | VelviHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#0a192f;
+color:white;
+}
+
+header{
+background:#001233;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+color:#4fc3ff;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.timer{
+background:#ff4d4d;
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.question{
+background:#152238;
+padding:20px;
+margin-bottom:15px;
+border-radius:10px;
+}
+
+.question h3{
+color:#4fc3ff;
+margin-bottom:10px;
+}
+
+label{
+display:block;
+padding:7px;
+cursor:pointer;
+}
+
+.btn{
+background:#00bfff;
+color:white;
+border:none;
+padding:14px 30px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.result{
+margin-top:25px;
+padding:20px;
+background:#152238;
+border-radius:10px;
+text-align:center;
+font-size:22px;
+display:none;
+}
+
+.review{
+margin-top:20px;
+background:#152238;
+padding:20px;
+border-radius:10px;
+display:none;
+}
+
+.wrong{
+padding:10px;
+margin-bottom:10px;
+background:#1d2f4f;
+border-left:5px solid red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏆 VAO FINAL MEGA TEST</h1>
+
+<p>100 Questions | Full Syllabus | 90 Minutes</p>
+
+</header>
+
+<div class="container">
+
+<div class="timer">
+⏳ Time Left :
+<span id="time">90:00</span>
+</div>
+
+<form id="quizForm">
+
+<!-- QUESTION 1 -->
+
+<div class="question">
+<h3>1. திருக்குறளை இயற்றியவர்?</h3>
+
+<label><input type="radio" name="q1" value="a"> கம்பர்</label>
+<label><input type="radio" name="q1" value="b"> திருவள்ளுவர்</label>
+<label><input type="radio" name="q1" value="c"> பாரதி</label>
+<label><input type="radio" name="q1" value="d"> அவ்வையார்</label>
+
+</div>
+
+<!-- QUESTION 2 -->
+
+<div class="question">
+<h3>2. இந்திய அரசியலமைப்பின் தந்தை?</h3>
+
+<label><input type="radio" name="q2" value="a"> காந்தி</label>
+<label><input type="radio" name="q2" value="b"> அம்பேத்கர்</label>
+<label><input type="radio" name="q2" value="c"> நேரு</label>
+<label><input type="radio" name="q2" value="d"> பட்டேல்</label>
+
+</div>
+
+<!-- QUESTION 3 -->
+
+<div class="question">
+<h3>3. இந்தியாவின் தேசிய நதி?</h3>
+
+<label><input type="radio" name="q3" value="a"> கங்கை</label>
+<label><input type="radio" name="q3" value="b"> காவிரி</label>
+<label><input type="radio" name="q3" value="c"> யமுனை</label>
+<label><input type="radio" name="q3" value="d"> கோதாவரி</label>
+
+</div>
+
+<!-- QUESTION 4 -->
+
+<div class="question">
+<h3>4. H₂O என்பது?</h3>
+
+<label><input type="radio" name="q4" value="a"> ஆக்சிஜன்</label>
+<label><input type="radio" name="q4" value="b"> நீர்</label>
+<label><input type="radio" name="q4" value="c"> உப்பு</label>
+<label><input type="radio" name="q4" value="d"> ஹைட்ரஜன்</label>
+
+</div>
+
+<!-- QUESTION 5 -->
+
+<div class="question">
+<h3>5. PM-KISAN திட்டம் யாருக்கானது?</h3>
+
+<label><input type="radio" name="q5" value="a"> மாணவர்கள்</label>
+<label><input type="radio" name="q5" value="b"> விவசாயிகள்</label>
+<label><input type="radio" name="q5" value="c"> ஆசிரியர்கள்</label>
+<label><input type="radio" name="q5" value="d"> தொழிலாளர்கள்</label>
+
+</div>
+
+<h2 style="text-align:center;color:#ffd700;padding:25px;">
+
+⚠️ கேள்விகள் 6 முதல் 100 வரை இதே வடிவத்தில் தொடரவும்
+
+<br><br>
+
+📚 General Tamil (20)
+
+<br>
+
+📚 History (10)
+
+<br>
+
+📚 Geography (10)
+
+<br>
+
+📚 Polity (10)
+
+<br>
+
+📚 Economy (10)
+
+<br>
+
+📚 Science (10)
+
+<br>
+
+📚 Current Affairs (10)
+
+<br>
+
+📚 Aptitude (10)
+
+<br>
+
+📚 VAO Special (10)
+
+</h2>
+
+<button type="button" class="btn" onclick="submitTest()">
+
+Submit Mega Test
+
+</button>
+
+<div class="result" id="result"></div>
+
+<div class="review" id="review">
+
+<h2>❌ Wrong Answer Review</h2>
+
+<div id="reviewContent"></div>
+
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+let time=5400;
+
+let timer=setInterval(function(){
+
+let minutes=Math.floor(time/60);
+
+let seconds=time%60;
+
+document.getElementById("time").innerHTML=
+minutes + ":" +
+(seconds<10 ? "0"+seconds : seconds);
+
+time--;
+
+if(time<0){
+
+clearInterval(timer);
+
+alert("Time Up! Test Submitted");
+
+submitTest();
+
+}
+
+},1000);
+
+function submitTest(){
+
+let answers={
+
+q1:"b",
+q2:"b",
+q3:"a",
+q4:"b",
+q5:"b"
+
+/* q6 - q100 answer key */
+
+};
+
+let score=0;
+
+let wrong=[];
+
+for(let key in answers){
+
+let selected=document.querySelector(
+'input[name="'+key+'"]:checked'
+);
+
+if(selected && selected.value===answers[key]){
+
+score++;
+
+}else{
+
+wrong.push(
+key.toUpperCase()+
+" → Correct Answer : "+
+answers[key].toUpperCase()
+);
+
+}
+
+}
+
+let total=100;
+
+let percentage=
+((score/total)*100).toFixed(2);
+
+let grade="FAIL";
+
+if(percentage>=90){
+grade="A+";
+}
+else if(percentage>=80){
+grade="A";
+}
+else if(percentage>=70){
+grade="B";
+}
+else if(percentage>=60){
+grade="C";
+}
+else if(percentage>=50){
+grade="D";
+}
+
+let rank="Beginner";
+
+if(percentage>=90){
+rank="State Topper Level";
+}
+else if(percentage>=80){
+rank="Excellent";
+}
+else if(percentage>=70){
+rank="Very Good";
+}
+else if(percentage>=60){
+rank="Good";
+}
+else if(percentage>=50){
+rank="Average";
+}
+
+document.getElementById("result").style.display="block";
+
+document.getElementById("result").innerHTML=
+
+`
+🏆 Score : ${score}/${total}
+
+<br><br>
+
+📊 Percentage : ${percentage}%
+
+<br><br>
+
+🎖 Grade : ${grade}
+
+<br><br>
+
+🏅 Rank : ${rank}
+
+`;
+
+if(wrong.length>0){
+
+document.getElementById("review").style.display="block";
+
+document.getElementById("reviewContent").innerHTML=
+
+wrong.map(item =>
+`<div class="wrong">${item}</div>`
+).join("");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
