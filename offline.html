@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Offline | VelviHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0a192f;
+color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+text-align:center;
+max-width:600px;
+}
+
+.logo{
+font-size:80px;
+margin-bottom:20px;
+}
+
+h1{
+color:#4fc3ff;
+font-size:38px;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+color:#d9d9d9;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.card{
+background:#152238;
+padding:35px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.retry-btn{
+background:#00c853;
+color:white;
+}
+
+.home-btn{
+background:#00bfff;
+color:white;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.status{
+margin-top:20px;
+font-size:16px;
+color:#ffd700;
+}
+
+.footer{
+margin-top:25px;
+font-size:14px;
+color:#999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+📡
+</div>
+
+<h1>இணைய இணைப்பு இல்லை</h1>
+
+<p>
+
+VelviHub சேவையை தற்போது அணுக முடியவில்லை.
+
+உங்கள் Internet Connection-ஐ சரிபார்த்து
+மீண்டும் முயற்சிக்கவும்.
+
+Offline Mode-இல் சில Cache செய்யப்பட்ட
+பக்கங்கள் மட்டும் கிடைக்கக்கூடும்.
+
+</p>
+
+<a
+href="#"
+class="btn retry-btn"
+onclick="retryConnection()"
+>
+
+🔄 Retry
+
+</a>
+
+<a
+href="index.html"
+class="btn home-btn"
+>
+
+🏠 Go Home
+
+</a>
+
+<div
+class="status"
+id="status"
+>
+
+⚠️ Waiting for Internet Connection...
+
+</div>
+
+<div class="footer">
+
+VelviHub Offline Support Page
+
+<br>
+
+© 2026 VelviHub
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function retryConnection(){
+
+document.getElementById(
+"status"
+).innerHTML=
+"🔍 Checking Connection...";
+
+setTimeout(()=>{
+
+if(navigator.onLine){
+
+document.getElementById(
+"status"
+).innerHTML=
+"✅ Internet Connected";
+
+window.location.href=
+"index.html";
+
+}else{
+
+document.getElementById(
+"status"
+).innerHTML=
+"❌ Still Offline. Please Try Again.";
+
+}
+
+},1500);
+
+}
+
+window.addEventListener(
+"online",
+function(){
+
+document.getElementById(
+"status"
+).innerHTML=
+"✅ Internet Restored";
+
+setTimeout(()=>{
+
+window.location.href=
+"index.html";
+
+},1000);
+
+}
+);
+
+window.addEventListener(
+"offline",
+function(){
+
+document.getElementById(
+"status"
+).innerHTML=
+"⚠️ Internet Disconnected";
+
+}
+);
+
+</script>
+
+</body>
+</html>
