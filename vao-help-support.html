@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VAO Help & Support | VelviHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0a192f;
+color:white;
+padding:20px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.header{
+text-align:center;
+margin-bottom:25px;
+}
+
+.header h1{
+color:#4fc3ff;
+}
+
+.card{
+background:#152238;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.card h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.faq-item{
+padding:12px;
+margin-bottom:10px;
+background:#1d2f4f;
+border-radius:8px;
+}
+
+.faq-question{
+font-weight:bold;
+color:#ffd700;
+margin-bottom:5px;
+}
+
+input,
+textarea{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+margin-bottom:12px;
+background:#1d2f4f;
+color:white;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+margin-right:10px;
+margin-top:10px;
+}
+
+.submit-btn{
+background:#00c853;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.email{
+background:#ff9800;
+color:white;
+}
+
+.telegram{
+background:#0088cc;
+color:white;
+}
+
+.rating{
+font-size:35px;
+cursor:pointer;
+text-align:center;
+}
+
+.rating span{
+padding:5px;
+}
+
+.success{
+margin-top:15px;
+color:#7CFC00;
+font-weight:bold;
+display:none;
+}
+
+.footer{
+text-align:center;
+margin-top:25px;
+color:#ccc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🆘 Help & Support Center</h1>
+
+<p>VelviHub VAO Learning Portal</p>
+
+</div>
+
+<!-- FAQ -->
+
+<div class="card">
+
+<h2>❓ Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+Q1. How do I start VAO preparation?
+</div>
+<div>
+Begin with General Tamil, History, Geography, Polity and then attend Mock Tests.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Q2. How are ranks calculated?
+</div>
+<div>
+Ranks are calculated based on total score and percentage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Q3. How can I download certificates?
+</div>
+<div>
+Go to Certificate Page and generate your certificate.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Q4. Is my progress saved automatically?
+</div>
+<div>
+Yes. Progress is stored using LocalStorage.
+</div>
+</div>
+
+</div>
+
+<!-- CONTACT FORM -->
+
+<div class="card">
+
+<h2>📩 Contact Support</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+>
+
+<textarea
+id="message"
+placeholder="Type Your Message"
+></textarea>
+
+<button
+class="submit-btn"
+onclick="sendMessage()"
+>
+Send Message
+</button>
+
+<div
+class="success"
+id="successMsg"
+>
+✅ Message Submitted Successfully
+</div>
+
+</div>
+
+<!-- ISSUE REPORT -->
+
+<div class="card">
+
+<h2>🐞 Report an Issue</h2>
+
+<textarea
+id="issue"
+placeholder="Describe the issue here..."
+></textarea>
+
+<button
+class="submit-btn"
+onclick="reportIssue()"
+>
+Report Issue
+</button>
+
+<div
+class="success"
+id="issueMsg"
+>
+✅ Issue Report Submitted
+</div>
+
+</div>
+
+<!-- SUPPORT BUTTONS -->
+
+<div class="card">
+
+<h2>📞 Support Channels</h2>
+
+<button
+class="whatsapp"
+onclick="window.open('https://wa.me/919999999999')"
+>
+WhatsApp Support
+</button>
+
+<button
+class="email"
+onclick="window.location.href='mailto:support@velvihub.com'"
+>
+Email Support
+</button>
+
+<button
+class="telegram"
+onclick="window.open('https://t.me/velvihub')"
+>
+Telegram Support
+</button>
+
+</div>
+
+<!-- FEEDBACK -->
+
+<div class="card">
+
+<h2>⭐ Feedback Rating</h2>
+
+<div class="rating">
+
+<span onclick="rate(1)">⭐</span>
+<span onclick="rate(2)">⭐</span>
+<span onclick="rate(3)">⭐</span>
+<span onclick="rate(4)">⭐</span>
+<span onclick="rate(5)">⭐</span>
+
+</div>
+
+<p id="ratingResult" style="text-align:center;margin-top:10px;">
+No Rating Selected
+</p>
+
+</div>
+
+<div class="footer">
+
+© 2026 VelviHub Help & Support Center
+
+</div>
+
+</div>
+
+<script>
+
+function sendMessage(){
+
+document.getElementById(
+"successMsg"
+).style.display="block";
+
+setTimeout(()=>{
+document.getElementById(
+"successMsg"
+).style.display="none";
+},3000);
+
+}
+
+function reportIssue(){
+
+document.getElementById(
+"issueMsg"
+).style.display="block";
+
+setTimeout(()=>{
+document.getElementById(
+"issueMsg"
+).style.display="none";
+},3000);
+
+}
+
+function rate(stars){
+
+document.getElementById(
+"ratingResult"
+).innerHTML=
+"Thank You! You Rated "
++ stars + " Star(s)";
+
+localStorage.setItem(
+"vaoRating",
+stars
+);
+
+}
+
+</script>
+
+</body>
+</html>
