@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VelviHub VAO Learning Hub</title>
+
+<meta name="description" content="VelviHub VAO Learning Hub">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#071a35;
+color:white;
+line-height:1.8;
+}
+
+/* GOOGLE TRANSLATE */
+
+#google_translate_element{
+background:white;
+padding:8px;
+text-align:right;
+}
+
+/* HEADER */
+
+header{
+background:#001a44;
+padding:30px;
+text-align:center;
+border-bottom:4px solid #00c8ff;
+}
+
+header h1{
+font-size:42px;
+color:#4fc3ff;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+color:#d9d9d9;
+}
+
+/* STICKY NAVIGATION */
+
+.top-nav{
+position:sticky;
+top:0;
+z-index:999;
+background:#0b224f;
+padding:12px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
+
+.btn{
+display:inline-block;
+background:#12bfff;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:4px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* PAGE */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#1a2945;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 0 15px rgba(0,191,255,.25);
+}
+
+.card h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.card p{
+margin-bottom:12px;
+}
+
+.card ul{
+padding-left:25px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+/* HIGHLIGHT */
+
+.highlight{
+background:#12bfff;
+color:black;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+margin-top:15px;
+}
+
+/* QUICK MENU */
+
+.quick-menu{
+background:#102952;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.quick-menu h3{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.quick-menu a{
+display:block;
+color:white;
+text-decoration:none;
+padding:8px;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+/* NEXT PREVIOUS */
+
+.lesson-nav{
+text-align:center;
+margin-top:30px;
+}
+
+/* FOOTER */
+
+.footer{
+background:#001a44;
+text-align:center;
+padding:30px;
+margin-top:40px;
+border-top:3px solid #00c8ff;
+}
+
+/* FLOAT BUTTON */
+
+.float-home{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#12bfff;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,191,255,.7);
+z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.btn{
+display:block;
+margin:8px auto;
+width:90%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- GOOGLE TRANSLATE -->
+
+<div id="google_translate_element"></div>
+
+<!-- HEADER -->
+
+<header>
+
+<h1>🏛️ VAO Learning Hub</h1>
+
+<p>
+VelviHub Complete VAO Preparation Portal
+</p>
+
+</header>
+
+<!-- STICKY NAVIGATION -->
+
+<div class="top-nav">
+
+<a href="index.html" class="btn">🏠 Home</a>
+
+<a href="vao.html" class="btn">📚 VAO Hub</a>
+
+<a href="government-schemes.html" class="btn">⬅ Previous</a>
+
+<a href="disaster-management.html" class="btn">➡ Next</a>
+
+</div>
+
+<div class="container">
+
+<!-- QUICK MENU -->
+
+<div class="quick-menu">
+
+<h3>📖 Quick Navigation</h3>
+
+<a href="#intro">Introduction</a>
+
+<a href="#important">Important Points</a>
+
+<a href="#notes">Exam Notes</a>
+
+<a href="#summary">Summary</a>
+
+</div>
+
+<!-- CONTENT START -->
+
+<div class="card" id="intro">
+
+<h2>📘 Topic Title Here</h2>
+
+<p>
+
+இங்கே Topic Content போட வேண்டும்.
+
+</p>
+
+<div class="highlight">
+
+Important Highlight Point
+
+</div>
+
+</div>
+
+<div class="card" id="important">
+
+<h2>🎯 Important Points</h2>
+
+<ul>
+
+<li>Point 1</li>
+
+<li>Point 2</li>
+
+<li>Point 3</li>
+
+<li>Point 4</li>
+
+</ul>
+
+</div>
+
+<div class="card" id="notes">
+
+<h2>📝 VAO Exam Notes</h2>
+
+<p>
+
+Exam Notes Here
+
+</p>
+
+</div>
+
+<div class="card" id="summary">
+
+<h2>📖 Summary</h2>
+
+<p>
+
+Topic Summary Here
+
+</p>
+
+</div>
+
+<!-- LESSON NAVIGATION -->
+
+<div class="lesson-nav">
+
+<a href="government-schemes.html" class="btn">
+
+⬅ Previous Lesson
+
+</a>
+
+<a href="vao-learning-hub.html" class="btn">
+
+📚 VAO Hub
+
+</a>
+
+<a href="disaster-management.html" class="btn">
+
+Next Lesson ➡
+
+</a>
+
+</div>
+
+</div>
+
+<!-- FLOAT HOME -->
+
+<a href="index.html" class="float-home">
+
+🏠
+
+</a>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h3>VelviHub</h3>
+
+<p>
+
+Learn • Build • Grow
+
+</p>
+
+<p>
+
+© 2026 VelviHub. All Rights Reserved.
+
+</p>
+
+</div>
+
+<!-- GOOGLE TRANSLATE -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'en,hi,ta,te,ml,kn'
+},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
