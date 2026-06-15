@@ -83,18 +83,122 @@ padding:20px;
 text-align:center;
 margin-top:30px;
 }
+#google_translate_element{
+background:#fff;
+padding:8px;
+text-align:left;
+}
 
+.top-nav{
+text-align:center;
+padding:15px;
+background:#001233;
+border-bottom:2px solid #00bfff;
+}
+
+.nav-btn{
+display:inline-block;
+padding:12px 20px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin:5px;
+font-weight:bold;
+transition:.3s;
+}
+
+.nav-btn:hover{
+background:#4fc3ff;
+transform:translateY(-2px);
+}
+
+header{
+background:linear-gradient(90deg,#001233,#003566);
+padding:35px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,191,255,.4);
+}
+
+header h1{
+font-size:3rem;
+color:#4fc3ff;
+margin-bottom:10px;
+}
+
+header p{
+color:#ddd;
+font-size:1.1rem;
+}
+
+.section{
+background:#152238;
+padding:25px;
+margin-bottom:25px;
+border-radius:18px;
+border:1px solid rgba(0,191,255,.2);
+box-shadow:0 0 15px rgba(0,191,255,.15);
+}
+
+.section:hover{
+transform:translateY(-3px);
+transition:.3s;
+}
+
+.question{
+background:#1d2f4d;
+padding:20px;
+border-radius:12px;
+margin-top:15px;
+border-left:5px solid #00bfff;
+}
+
+.question:hover{
+background:#22385c;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#00bfff;
+color:#fff;
+text-decoration:none;
+border-radius:10px;
+margin:5px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#4fc3ff;
+transform:translateY(-2px);
+}
+
+footer{
+background:#001233;
+padding:25px;
+text-align:center;
+border-top:2px solid #00bfff;
+}
 </style>
 
 </head>
 
 <body>
+<div id="google_translate_element"></div>
 
+<div class="top-nav">
+<a href="government-schemes.html" class="nav-btn">⬅ Previous</a>
+<a href="vao-learning-hub.html" class="nav-btn">📚 VAO Hub</a>
+<a href="index.html" class="nav-btn">🏠 Home</a>
+</div>
 <header>
 
-<h1>📝 VAO Model Questions</h1>
+<h1>📝 VAO Model Questions Bank</h1>
 
-<p>Practice Makes Perfect</p>
+<p>
+Subject Wise MCQs • Practice Sets • Grand Tests
+</p>
 
 </header>
 
@@ -493,7 +597,19 @@ Answer: C) நில உரிமை ஆவணம்
 </div>
 
 </div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'ta,en,hi,te,ml,kn'
+},
+'google_translate_element'
+);
+}
+</script>
 
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <footer>
 
 <p>© 2026 VelviHub | VAO Model Questions</p>
