@@ -1,10 +1,15 @@
+<!-- ========================================= -->
+<!-- FILE NAME : vao-general-english.html -->
+<!-- ========================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>General English Test | VelviHub VAO</title>
+<title>General English Test | VelviHub</title>
 
 <style>
 
@@ -12,62 +17,119 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#0a192f;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
 color:white;
+line-height:1.8;
+}
+
+#google_translate_element{
+background:white;
+padding:10px;
+text-align:center;
+}
+
+.top-nav{
+background:#001233;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.nav-btn{
+display:inline-block;
+padding:12px 20px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin:5px;
+font-weight:bold;
 }
 
 header{
 background:#001233;
-padding:25px;
+padding:30px;
 text-align:center;
+border-bottom:3px solid #00bfff;
 }
 
 header h1{
 color:#4fc3ff;
+font-size:2.5rem;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:20px;
 }
 
-.question{
+.section{
 background:#152238;
-padding:20px;
+padding:25px;
+border-radius:15px;
 margin-bottom:20px;
-border-radius:12px;
+box-shadow:0 0 15px rgba(0,191,255,.25);
 }
 
-.question h3{
+.timer{
+background:#00bfff;
+color:#001233;
+padding:15px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.question-box{
+background:#1f3558;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.question{
+font-size:18px;
+font-weight:bold;
 margin-bottom:15px;
-color:#4fc3ff;
 }
 
-label{
+.option{
 display:block;
-padding:8px;
+background:#0d223f;
+padding:12px;
+margin:8px 0;
+border-radius:10px;
+}
+
+.option input{
+margin-right:10px;
 }
 
 .btn{
-padding:12px 25px;
+display:inline-block;
+padding:12px 20px;
 background:#00bfff;
-border:none;
-border-radius:8px;
 color:white;
+text-decoration:none;
+border-radius:10px;
 font-weight:bold;
-cursor:pointer;
+margin-top:10px;
 }
 
-.result{
-margin-top:20px;
-font-size:22px;
-font-weight:bold;
-color:#7CFC00;
+footer{
+background:#001233;
+padding:25px;
+text-align:center;
+margin-top:30px;
 }
 
 </style>
@@ -76,240 +138,627 @@ color:#7CFC00;
 
 <body>
 
+<div id="google_translate_element"></div>
+
+<div class="top-nav">
+
+<a href="vao-subject-tests.html" class="nav-btn">
+📚 Subject Tests
+</a>
+
+<a href="vao-general-tamil.html" class="nav-btn">
+📖 Tamil Test
+</a>
+
+<a href="index.html" class="nav-btn">
+🏠 Home
+</a>
+
+</div>
+
 <header>
 
 <h1>📘 General English Test</h1>
 
-<p>20 Questions Practice Test</p>
+<p>VAO English Practice Examination</p>
 
 </header>
 
 <div class="container">
 
-<form id="quizForm">
+<div class="timer">
 
+⏱ Time Remaining :
+<span id="time">60:00</span>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Instructions</h2>
+
+<ul>
+
+<li>✔ Total Questions : 50</li>
+<li>✔ Total Marks : 50</li>
+<li>✔ Duration : 60 Minutes</li>
+<li>✔ Select One Correct Answer</li>
+
+</ul>
+
+</div>
+
+
+<label class="option">
+
+<!-- ========================================= -->
+<!-- GENERAL ENGLISH TEST -->
+<!-- QUESTIONS 1 - 25 -->
+<!-- Paste inside vao-general-english.html -->
+<!-- ========================================= -->
+
+<!-- QUESTION 1 -->
+
+<div class="question-box">
 <div class="question">
-<h3>1. Choose the synonym of "Brave".</h3>
-<label><input type="radio" name="q1" value="a"> Coward</label>
-<label><input type="radio" name="q1" value="b"> Bold</label>
-<label><input type="radio" name="q1" value="c"> Weak</label>
-<label><input type="radio" name="q1" value="d"> Lazy</label>
+1. Choose the synonym of "Brave".
 </div>
 
+<label class="option"><input type="radio" name="q1"> Coward</label>
+<label class="option"><input type="radio" name="q1"> Courageous</label>
+<label class="option"><input type="radio" name="q1"> Weak</label>
+<label class="option"><input type="radio" name="q1"> Fearful</label>
+</div>
+
+<!-- QUESTION 2 -->
+
+<div class="question-box">
 <div class="question">
-<h3>2. Choose the antonym of "Ancient".</h3>
-<label><input type="radio" name="q2" value="a"> Old</label>
-<label><input type="radio" name="q2" value="b"> Historic</label>
-<label><input type="radio" name="q2" value="c"> Modern</label>
-<label><input type="radio" name="q2" value="d"> Traditional</label>
+2. Choose the antonym of "Happy".
 </div>
 
+<label class="option"><input type="radio" name="q2"> Joyful</label>
+<label class="option"><input type="radio" name="q2"> Cheerful</label>
+<label class="option"><input type="radio" name="q2"> Sad</label>
+<label class="option"><input type="radio" name="q2"> Glad</label>
+</div>
+
+<!-- QUESTION 3 -->
+
+<div class="question-box">
 <div class="question">
-<h3>3. Identify the noun.</h3>
-<p>Ravi plays cricket every day.</p>
-<label><input type="radio" name="q3" value="a"> plays</label>
-<label><input type="radio" name="q3" value="b"> every</label>
-<label><input type="radio" name="q3" value="c"> Ravi</label>
-<label><input type="radio" name="q3" value="d"> day</label>
+3. He _____ to school every day.
 </div>
 
+<label class="option"><input type="radio" name="q3"> go</label>
+<label class="option"><input type="radio" name="q3"> goes</label>
+<label class="option"><input type="radio" name="q3"> going</label>
+<label class="option"><input type="radio" name="q3"> gone</label>
+</div>
+
+<!-- QUESTION 4 -->
+
+<div class="question-box">
 <div class="question">
-<h3>4. Choose the correct article.</h3>
-<p>He is ___ honest man.</p>
-<label><input type="radio" name="q4" value="a"> a</label>
-<label><input type="radio" name="q4" value="b"> an</label>
-<label><input type="radio" name="q4" value="c"> the</label>
-<label><input type="radio" name="q4" value="d"> no article</label>
+4. I _____ a book yesterday.
 </div>
 
+<label class="option"><input type="radio" name="q4"> read</label>
+<label class="option"><input type="radio" name="q4"> reads</label>
+<label class="option"><input type="radio" name="q4"> reading</label>
+<label class="option"><input type="radio" name="q4"> reader</label>
+</div>
+
+<!-- QUESTION 5 -->
+
+<div class="question-box">
 <div class="question">
-<h3>5. Past tense of "Go"?</h3>
-<label><input type="radio" name="q5" value="a"> Gone</label>
-<label><input type="radio" name="q5" value="b"> Going</label>
-<label><input type="radio" name="q5" value="c"> Went</label>
-<label><input type="radio" name="q5" value="d"> Goes</label>
+5. Expand UNESCO.
 </div>
 
+<label class="option"><input type="radio" name="q5"> United Nations Educational Scientific and Cultural Organization</label>
+<label class="option"><input type="radio" name="q5"> Universal National Education Service Council Office</label>
+<label class="option"><input type="radio" name="q5"> United Nation Science Council Organization</label>
+<label class="option"><input type="radio" name="q5"> None</label>
+</div>
+
+<!-- QUESTION 6 -->
+
+<div class="question-box">
 <div class="question">
-<h3>6. Choose the correct spelling.</h3>
-<label><input type="radio" name="q6" value="a"> Recieve</label>
-<label><input type="radio" name="q6" value="b"> Receive</label>
-<label><input type="radio" name="q6" value="c"> Receeve</label>
-<label><input type="radio" name="q6" value="d"> Receve</label>
+6. Choose the correctly spelled word.
 </div>
 
+<label class="option"><input type="radio" name="q6"> Accomodation</label>
+<label class="option"><input type="radio" name="q6"> Accommodation</label>
+<label class="option"><input type="radio" name="q6"> Acommodation</label>
+<label class="option"><input type="radio" name="q6"> Accommadation</label>
+</div>
+
+<!-- QUESTION 7 -->
+
+<div class="question-box">
 <div class="question">
-<h3>7. Opposite of "Success".</h3>
-<label><input type="radio" name="q7" value="a"> Victory</label>
-<label><input type="radio" name="q7" value="b"> Failure</label>
-<label><input type="radio" name="q7" value="c"> Growth</label>
-<label><input type="radio" name="q7" value="d"> Progress</label>
+7. The sun _____ in the east.
 </div>
 
+<label class="option"><input type="radio" name="q7"> rise</label>
+<label class="option"><input type="radio" name="q7"> rises</label>
+<label class="option"><input type="radio" name="q7"> rising</label>
+<label class="option"><input type="radio" name="q7"> rose</label>
+</div>
+
+<!-- QUESTION 8 -->
+
+<div class="question-box">
 <div class="question">
-<h3>8. Choose the adjective.</h3>
-<p>She is a beautiful girl.</p>
-<label><input type="radio" name="q8" value="a"> She</label>
-<label><input type="radio" name="q8" value="b"> Girl</label>
-<label><input type="radio" name="q8" value="c"> Beautiful</label>
-<label><input type="radio" name="q8" value="d"> Is</label>
+8. Opposite of "Ancient".
 </div>
 
+<label class="option"><input type="radio" name="q8"> Old</label>
+<label class="option"><input type="radio" name="q8"> Antique</label>
+<label class="option"><input type="radio" name="q8"> Modern</label>
+<label class="option"><input type="radio" name="q8"> Historic</label>
+</div>
+
+<!-- QUESTION 9 -->
+
+<div class="question-box">
 <div class="question">
-<h3>9. Expand RBI.</h3>
-<label><input type="radio" name="q9" value="a"> Reserve Bank of India</label>
-<label><input type="radio" name="q9" value="b"> Rural Bank of India</label>
-<label><input type="radio" name="q9" value="c"> Revenue Bank of India</label>
-<label><input type="radio" name="q9" value="d"> Regional Bank of India</label>
+9. Choose the noun.
 </div>
 
+<label class="option"><input type="radio" name="q9"> Quickly</label>
+<label class="option"><input type="radio" name="q9"> Honest</label>
+<label class="option"><input type="radio" name="q9"> Teacher</label>
+<label class="option"><input type="radio" name="q9"> Running</label>
+</div>
+
+<!-- QUESTION 10 -->
+
+<div class="question-box">
 <div class="question">
-<h3>10. Choose the correct sentence.</h3>
-<label><input type="radio" name="q10" value="a"> He go to school.</label>
-<label><input type="radio" name="q10" value="b"> He goes to school.</label>
-<label><input type="radio" name="q10" value="c"> He going school.</label>
-<label><input type="radio" name="q10" value="d"> He gone school.</label>
+10. Which is a pronoun?
 </div>
 
+<label class="option"><input type="radio" name="q10"> Ravi</label>
+<label class="option"><input type="radio" name="q10"> He</label>
+<label class="option"><input type="radio" name="q10"> School</label>
+<label class="option"><input type="radio" name="q10"> Book</label>
+</div>
+
+<!-- QUESTION 11 -->
+
+<div class="question-box">
 <div class="question">
-<h3>11. Synonym of "Happy".</h3>
-<label><input type="radio" name="q11" value="a"> Sad</label>
-<label><input type="radio" name="q11" value="b"> Joyful</label>
-<label><input type="radio" name="q11" value="c"> Angry</label>
-<label><input type="radio" name="q11" value="d"> Weak</label>
+11. Choose the plural form of "Child".
 </div>
 
+<label class="option"><input type="radio" name="q11"> Childs</label>
+<label class="option"><input type="radio" name="q11"> Children</label>
+<label class="option"><input type="radio" name="q11"> Childes</label>
+<label class="option"><input type="radio" name="q11"> Childrens</label>
+</div>
+
+<!-- QUESTION 12 -->
+
+<div class="question-box">
 <div class="question">
-<h3>12. Which is a pronoun?</h3>
-<label><input type="radio" name="q12" value="a"> School</label>
-<label><input type="radio" name="q12" value="b"> Run</label>
-<label><input type="radio" name="q12" value="c"> He</label>
-<label><input type="radio" name="q12" value="d"> Book</label>
+12. He is _____ honest man.
 </div>
 
+<label class="option"><input type="radio" name="q12"> a</label>
+<label class="option"><input type="radio" name="q12"> an</label>
+<label class="option"><input type="radio" name="q12"> the</label>
+<label class="option"><input type="radio" name="q12"> no article</label>
+</div>
+
+<!-- QUESTION 13 -->
+
+<div class="question-box">
 <div class="question">
-<h3>13. Choose the plural form of "Child".</h3>
-<label><input type="radio" name="q13" value="a"> Childs</label>
-<label><input type="radio" name="q13" value="b"> Children</label>
-<label><input type="radio" name="q13" value="c"> Childrens</label>
-<label><input type="radio" name="q13" value="d"> Childes</label>
+13. Find the adjective.
 </div>
 
+<label class="option"><input type="radio" name="q13"> Beautiful</label>
+<label class="option"><input type="radio" name="q13"> Beauty</label>
+<label class="option"><input type="radio" name="q13"> Beautify</label>
+<label class="option"><input type="radio" name="q13"> Beautifully</label>
+</div>
+
+<!-- QUESTION 14 -->
+
+<div class="question-box">
 <div class="question">
-<h3>14. Who wrote Hamlet?</h3>
-<label><input type="radio" name="q14" value="a"> Shakespeare</label>
-<label><input type="radio" name="q14" value="b"> Milton</label>
-<label><input type="radio" name="q14" value="c"> Dickens</label>
-<label><input type="radio" name="q14" value="d"> Frost</label>
+14. Choose the correct sentence.
 </div>
 
+<label class="option"><input type="radio" name="q14"> She go to market.</label>
+<label class="option"><input type="radio" name="q14"> She goes to market.</label>
+<label class="option"><input type="radio" name="q14"> She going market.</label>
+<label class="option"><input type="radio" name="q14"> She gone market.</label>
+</div>
+
+<!-- QUESTION 15 -->
+
+<div class="question-box">
 <div class="question">
-<h3>15. Choose the correct preposition.</h3>
-<p>The book is ___ the table.</p>
-<label><input type="radio" name="q15" value="a"> on</label>
-<label><input type="radio" name="q15" value="b"> in</label>
-<label><input type="radio" name="q15" value="c"> under</label>
-<label><input type="radio" name="q15" value="d"> by</label>
+15. Synonym of "Quick".
 </div>
 
+<label class="option"><input type="radio" name="q15"> Slow</label>
+<label class="option"><input type="radio" name="q15"> Fast</label>
+<label class="option"><input type="radio" name="q15"> Weak</label>
+<label class="option"><input type="radio" name="q15"> Lazy</label>
+</div>
+
+<!-- QUESTION 16 -->
+
+<div class="question-box">
 <div class="question">
-<h3>16. Identify the verb.</h3>
-<p>The boy runs fast.</p>
-<label><input type="radio" name="q16" value="a"> Boy</label>
-<label><input type="radio" name="q16" value="b"> Fast</label>
-<label><input type="radio" name="q16" value="c"> Runs</label>
-<label><input type="radio" name="q16" value="d"> The</label>
+16. Antonym of "Victory".
 </div>
 
+<label class="option"><input type="radio" name="q16"> Success</label>
+<label class="option"><input type="radio" name="q16"> Win</label>
+<label class="option"><input type="radio" name="q16"> Defeat</label>
+<label class="option"><input type="radio" name="q16"> Achievement</label>
+</div>
+
+<!-- QUESTION 17 -->
+
+<div class="question-box">
 <div class="question">
-<h3>17. Antonym of "Rich".</h3>
-<label><input type="radio" name="q17" value="a"> Wealthy</label>
-<label><input type="radio" name="q17" value="b"> Prosperous</label>
-<label><input type="radio" name="q17" value="c"> Poor</label>
-<label><input type="radio" name="q17" value="d"> Strong</label>
+17. Which is a verb?
 </div>
 
+<label class="option"><input type="radio" name="q17"> Run</label>
+<label class="option"><input type="radio" name="q17"> Runner</label>
+<label class="option"><input type="radio" name="q17"> Running Track</label>
+<label class="option"><input type="radio" name="q17"> Fast</label>
+</div>
+
+<!-- QUESTION 18 -->
+
+<div class="question-box">
 <div class="question">
-<h3>18. Which is an adverb?</h3>
-<p>She sings beautifully.</p>
-<label><input type="radio" name="q18" value="a"> She</label>
-<label><input type="radio" name="q18" value="b"> Sings</label>
-<label><input type="radio" name="q18" value="c"> Beautifully</label>
-<label><input type="radio" name="q18" value="d"> Song</label>
+18. Expand RBI.
 </div>
 
+<label class="option"><input type="radio" name="q18"> Reserve Bank of India</label>
+<label class="option"><input type="radio" name="q18"> Rural Bank of India</label>
+<label class="option"><input type="radio" name="q18"> Regional Bank Institution</label>
+<label class="option"><input type="radio" name="q18"> None</label>
+</div>
+
+<!-- QUESTION 19 -->
+
+<div class="question-box">
 <div class="question">
-<h3>19. Full form of UNO?</h3>
-<label><input type="radio" name="q19" value="a"> United Nations Organization</label>
-<label><input type="radio" name="q19" value="b"> Universal Nations Organization</label>
-<label><input type="radio" name="q19" value="c"> Union National Office</label>
-<label><input type="radio" name="q19" value="d"> United National Office</label>
+19. Choose the correct preposition.
+The cat is _____ the table.
 </div>
 
+<label class="option"><input type="radio" name="q19"> on</label>
+<label class="option"><input type="radio" name="q19"> in</label>
+<label class="option"><input type="radio" name="q19"> at</label>
+<label class="option"><input type="radio" name="q19"> by</label>
+</div>
+
+<!-- QUESTION 20 -->
+
+<div class="question-box">
 <div class="question">
-<h3>20. Choose the correct tense.</h3>
-<p>I am reading a book.</p>
-<label><input type="radio" name="q20" value="a"> Past</label>
-<label><input type="radio" name="q20" value="b"> Future</label>
-<label><input type="radio" name="q20" value="c"> Present Continuous</label>
-<label><input type="radio" name="q20" value="d"> Present Perfect</label>
+20. Opposite of "Rich".
 </div>
 
-<button type="button" class="btn" onclick="checkAnswers()">
-Submit Test
-</button>
+<label class="option"><input type="radio" name="q20"> Wealthy</label>
+<label class="option"><input type="radio" name="q20"> Poor</label>
+<label class="option"><input type="radio" name="q20"> Prosperous</label>
+<label class="option"><input type="radio" name="q20"> Strong</label>
+</div>
 
-<div id="result" class="result"></div>
+<!-- QUESTIONS 21-25 -->
 
-</form>
+<div class="question-box"><div class="question">21. National animal of India?</div>
+<label class="option"><input type="radio" name="q21"> Tiger</label>
+<label class="option"><input type="radio" name="q21"> Lion</label>
+<label class="option"><input type="radio" name="q21"> Elephant</label>
+<label class="option"><input type="radio" name="q21"> Deer</label>
+</div>
+
+<div class="question-box"><div class="question">22. Opposite of "Strong".</div>
+<label class="option"><input type="radio" name="q22"> Powerful</label>
+<label class="option"><input type="radio" name="q22"> Weak</label>
+<label class="option"><input type="radio" name="q22"> Mighty</label>
+<label class="option"><input type="radio" name="q22"> Bold</label>
+</div>
+
+<div class="question-box"><div class="question">23. Choose the correct spelling.</div>
+<label class="option"><input type="radio" name="q23"> Environment</label>
+<label class="option"><input type="radio" name="q23"> Enviroment</label>
+<label class="option"><input type="radio" name="q23"> Environmant</label>
+<label class="option"><input type="radio" name="q23"> Envirnoment</label>
+</div>
+
+<div class="question-box"><div class="question">24. Which is a conjunction?</div>
+<label class="option"><input type="radio" name="q24"> and</label>
+<label class="option"><input type="radio" name="q24"> quickly</label>
+<label class="option"><input type="radio" name="q24"> book</label>
+<label class="option"><input type="radio" name="q24"> happy</label>
+</div>
+
+<div class="question-box"><div class="question">25. Choose the synonym of "Begin".</div>
+<label class="option"><input type="radio" name="q25"> End</label>
+<label class="option"><input type="radio" name="q25"> Finish</label>
+<label class="option"><input type="radio" name="q25"> Start</label>
+<label class="option"><input type="radio" name="q25"> Stop</label>
+  </div>
+<!-- ========================================= -->
+<!-- QUESTIONS 26 - 50 -->
+<!-- ========================================= -->
+
+<div class="question-box">
+<div class="question">26. Opposite of "Early".</div>
+<label class="option"><input type="radio" name="q26"> Late</label>
+<label class="option"><input type="radio" name="q26"> Fast</label>
+<label class="option"><input type="radio" name="q26"> Soon</label>
+<label class="option"><input type="radio" name="q26"> Quick</label>
+</div>
+
+<div class="question-box">
+<div class="question">27. Choose the correct article: ___ apple a day keeps the doctor away.</div>
+<label class="option"><input type="radio" name="q27"> A</label>
+<label class="option"><input type="radio" name="q27"> An</label>
+<label class="option"><input type="radio" name="q27"> The</label>
+<label class="option"><input type="radio" name="q27"> No article</label>
+</div>
+
+<div class="question-box">
+<div class="question">28. Which is an adverb?</div>
+<label class="option"><input type="radio" name="q28"> Quick</label>
+<label class="option"><input type="radio" name="q28"> Quickly</label>
+<label class="option"><input type="radio" name="q28"> Beauty</label>
+<label class="option"><input type="radio" name="q28"> Strong</label>
+</div>
+
+<div class="question-box">
+<div class="question">29. Synonym of "Big".</div>
+<label class="option"><input type="radio" name="q29"> Small</label>
+<label class="option"><input type="radio" name="q29"> Huge</label>
+<label class="option"><input type="radio" name="q29"> Tiny</label>
+<label class="option"><input type="radio" name="q29"> Little</label>
+</div>
+
+<div class="question-box">
+<div class="question">30. Antonym of "Hot".</div>
+<label class="option"><input type="radio" name="q30"> Warm</label>
+<label class="option"><input type="radio" name="q30"> Cold</label>
+<label class="option"><input type="radio" name="q30"> Heat</label>
+<label class="option"><input type="radio" name="q30"> Boiling</label>
+</div>
+
+<div class="question-box">
+<div class="question">31. Choose the correct sentence.</div>
+<label class="option"><input type="radio" name="q31"> They is playing.</label>
+<label class="option"><input type="radio" name="q31"> They are playing.</label>
+<label class="option"><input type="radio" name="q31"> They playing.</label>
+<label class="option"><input type="radio" name="q31"> They plays.</label>
+</div>
+
+<div class="question-box">
+<div class="question">32. Expand ATM.</div>
+<label class="option"><input type="radio" name="q32"> Automatic Teller Machine</label>
+<label class="option"><input type="radio" name="q32"> Auto Transfer Machine</label>
+<label class="option"><input type="radio" name="q32"> Account Teller Mode</label>
+<label class="option"><input type="radio" name="q32"> None</label>
+</div>
+
+<div class="question-box">
+<div class="question">33. Which is a noun?</div>
+<label class="option"><input type="radio" name="q33"> Honesty</label>
+<label class="option"><input type="radio" name="q33"> Honest</label>
+<label class="option"><input type="radio" name="q33"> Honestly</label>
+<label class="option"><input type="radio" name="q33"> Honestness</label>
+</div>
+
+<div class="question-box">
+<div class="question">34. Plural of "Woman".</div>
+<label class="option"><input type="radio" name="q34"> Womans</label>
+<label class="option"><input type="radio" name="q34"> Women</label>
+<label class="option"><input type="radio" name="q34"> Womanes</label>
+<label class="option"><input type="radio" name="q34"> Womens</label>
+</div>
+
+<div class="question-box">
+<div class="question">35. Opposite of "Friend".</div>
+<label class="option"><input type="radio" name="q35"> Partner</label>
+<label class="option"><input type="radio" name="q35"> Enemy</label>
+<label class="option"><input type="radio" name="q35"> Brother</label>
+<label class="option"><input type="radio" name="q35"> Helper</label>
+</div>
+
+<div class="question-box">
+<div class="question">36. Synonym of "Beautiful".</div>
+<label class="option"><input type="radio" name="q36"> Ugly</label>
+<label class="option"><input type="radio" name="q36"> Pretty</label>
+<label class="option"><input type="radio" name="q36"> Bad</label>
+<label class="option"><input type="radio" name="q36"> Dirty</label>
+</div>
+
+<div class="question-box">
+<div class="question">37. Choose the correct tense: She ____ a song now.</div>
+<label class="option"><input type="radio" name="q37"> sing</label>
+<label class="option"><input type="radio" name="q37"> sings</label>
+<label class="option"><input type="radio" name="q37"> is singing</label>
+<label class="option"><input type="radio" name="q37"> sang</label>
+</div>
+
+<div class="question-box">
+<div class="question">38. Which is a preposition?</div>
+<label class="option"><input type="radio" name="q38"> Under</label>
+<label class="option"><input type="radio" name="q38"> Run</label>
+<label class="option"><input type="radio" name="q38"> Quickly</label>
+<label class="option"><input type="radio" name="q38"> Happy</label>
+</div>
+
+<div class="question-box">
+<div class="question">39. Opposite of "Success".</div>
+<label class="option"><input type="radio" name="q39"> Victory</label>
+<label class="option"><input type="radio" name="q39"> Achievement</label>
+<label class="option"><input type="radio" name="q39"> Failure</label>
+<label class="option"><input type="radio" name="q39"> Win</label>
+</div>
+
+<div class="question-box">
+<div class="question">40. Choose the correct spelling.</div>
+<label class="option"><input type="radio" name="q40"> Governmant</label>
+<label class="option"><input type="radio" name="q40"> Government</label>
+<label class="option"><input type="radio" name="q40"> Goverment</label>
+<label class="option"><input type="radio" name="q40"> Govenment</label>
+</div>
+
+<div class="question-box">
+<div class="question">41. Expand CPU.</div>
+<label class="option"><input type="radio" name="q41"> Central Processing Unit</label>
+<label class="option"><input type="radio" name="q41"> Central Program Unit</label>
+<label class="option"><input type="radio" name="q41"> Computer Processing Unit</label>
+<label class="option"><input type="radio" name="q41"> None</label>
+</div>
+
+<div class="question-box">
+<div class="question">42. Which is an adjective?</div>
+<label class="option"><input type="radio" name="q42"> Strong</label>
+<label class="option"><input type="radio" name="q42"> Strength</label>
+<label class="option"><input type="radio" name="q42"> Strongly</label>
+<label class="option"><input type="radio" name="q42"> Strengthen</label>
+</div>
+
+<div class="question-box">
+<div class="question">43. Synonym of "Smart".</div>
+<label class="option"><input type="radio" name="q43"> Intelligent</label>
+<label class="option"><input type="radio" name="q43"> Dull</label>
+<label class="option"><input type="radio" name="q43"> Slow</label>
+<label class="option"><input type="radio" name="q43"> Weak</label>
+</div>
+
+<div class="question-box">
+<div class="question">44. Antonym of "Clean".</div>
+<label class="option"><input type="radio" name="q44"> Pure</label>
+<label class="option"><input type="radio" name="q44"> Dirty</label>
+<label class="option"><input type="radio" name="q44"> Fresh</label>
+<label class="option"><input type="radio" name="q44"> Neat</label>
+</div>
+
+<div class="question-box">
+<div class="question">45. Choose the correct sentence.</div>
+<label class="option"><input type="radio" name="q45"> I have finished my work.</label>
+<label class="option"><input type="radio" name="q45"> I has finished my work.</label>
+<label class="option"><input type="radio" name="q45"> I finishing my work.</label>
+<label class="option"><input type="radio" name="q45"> I finish yesterday.</label>
+</div>
+
+<div class="question-box">
+<div class="question">46. Which is a conjunction?</div>
+<label class="option"><input type="radio" name="q46"> But</label>
+<label class="option"><input type="radio" name="q46"> Run</label>
+<label class="option"><input type="radio" name="q46"> Happy</label>
+<label class="option"><input type="radio" name="q46"> Quickly</label>
+</div>
+
+<div class="question-box">
+<div class="question">47. Opposite of "Open".</div>
+<label class="option"><input type="radio" name="q47"> Start</label>
+<label class="option"><input type="radio" name="q47"> Close</label>
+<label class="option"><input type="radio" name="q47"> Begin</label>
+<label class="option"><input type="radio" name="q47"> Enter</label>
+</div>
+
+<div class="question-box">
+<div class="question">48. Synonym of "End".</div>
+<label class="option"><input type="radio" name="q48"> Finish</label>
+<label class="option"><input type="radio" name="q48"> Start</label>
+<label class="option"><input type="radio" name="q48"> Begin</label>
+<label class="option"><input type="radio" name="q48"> Open</label>
+</div>
+
+<div class="question-box">
+<div class="question">49. Which is an interjection?</div>
+<label class="option"><input type="radio" name="q49"> Wow!</label>
+<label class="option"><input type="radio" name="q49"> Run</label>
+<label class="option"><input type="radio" name="q49"> Book</label>
+<label class="option"><input type="radio" name="q49"> Beautiful</label>
+</div>
+
+<div class="question-box">
+<div class="question">50. Choose the correct sentence.</div>
+<label class="option"><input type="radio" name="q50"> The children are playing.</label>
+<label class="option"><input type="radio" name="q50"> The children is playing.</label>
+<label class="option"><input type="radio" name="q50"> The children plays.</label>
+<label class="option"><input type="radio" name="q50"> The children plays.</label>
+  </div>
+<center>
+
+<a href="vao-general-english-result.html" class="btn">
+
+📊 Submit Test
+
+</a>
+
+</center>
 
 </div>
+
+<footer>
+
+<p>© 2026 VelviHub | General English Test</p>
+
+<p>Learn • Build • Grow</p>
+
+</footer>
 
 <script>
 
-function checkAnswers(){
+let minutes=60;
+let seconds=0;
 
-let answers={
-q1:"b",
-q2:"c",
-q3:"c",
-q4:"b",
-q5:"c",
-q6:"b",
-q7:"b",
-q8:"c",
-q9:"a",
-q10:"b",
-q11:"b",
-q12:"c",
-q13:"b",
-q14:"a",
-q15:"a",
-q16:"c",
-q17:"c",
-q18:"c",
-q19:"a",
-q20:"c"
-};
+setInterval(function(){
 
-let score=0;
+if(seconds==0){
 
-for(let key in answers){
+if(minutes>0){
 
-let selected=document.querySelector('input[name="'+key+'"]:checked');
-
-if(selected && selected.value===answers[key]){
-score++;
-}
+minutes--;
+seconds=59;
 
 }
 
-document.getElementById("result").innerHTML =
-"🎯 Your Score : " + score + " / 20";
+}else{
+
+seconds--;
 
 }
+
+document.getElementById("time").innerHTML=
+minutes+":"+(seconds<10?"0":"")+seconds;
+
+},1000);
 
 </script>
 
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'en',
+includedLanguages:'ta,en,hi,te,ml,kn'
+},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
-  </html>
+</html>
