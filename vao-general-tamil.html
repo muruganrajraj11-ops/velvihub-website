@@ -1745,11 +1745,11 @@ margin-top:30px;
 
 <center>
 
-<a href="vao-general-tamil-result.html" class="btn">
+<button class="btn" onclick="calculateScore()">
 
 📊 Submit Test
 
-</a>
+</button>
 
 </center>
 
@@ -1758,7 +1758,50 @@ margin-top:30px;
 <!-- ========================================= -->
 <!-- FOOTER -->
 <!-- ========================================= -->
+<script>
 
+function calculateScore(){
+
+let score = 0;
+
+for(let i=1;i<=50;i++){
+
+let selected =
+document.querySelector(
+'input[name="q'+i+'"]:checked'
+);
+
+if(selected){
+
+score += Number(selected.value);
+
+}
+
+}
+
+localStorage.setItem(
+"tamilScore",
+score
+);
+
+window.location.href =
+"vao-general-tamil-result.html";
+
+}
+
+</script>
+
+<script>
+
+let score =
+localStorage.getItem("tamilScore") || 0;
+
+document.getElementById(
+"scoreBox"
+).innerHTML =
+score + " / 50";
+
+</script>
 <footer>
 
 <p>© 2026 VelviHub | General Tamil Test</p>
