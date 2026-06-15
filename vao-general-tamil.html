@@ -1,15 +1,20 @@
 <!-- ========================================= -->
-<!-- FILE NAME : general-tamil-test.html -->
+<!-- FILE NAME : vao-general-tamil.html -->
+<!-- PART 1 -->
 <!-- ========================================= -->
 
 <!DOCTYPE html>
 <html lang="ta">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>General Tamil Test | VelviHub VAO</title>
+<title>General Tamil Test | VelviHub</title>
+
+<meta name="description" content="VAO General Tamil Subject Test">
 
 <style>
 
@@ -32,6 +37,8 @@ padding:10px;
 text-align:center;
 }
 
+/* NAVIGATION */
+
 .top-nav{
 background:#001233;
 padding:15px;
@@ -39,18 +46,25 @@ text-align:center;
 position:sticky;
 top:0;
 z-index:999;
+box-shadow:0 0 15px rgba(0,191,255,.4);
 }
 
 .nav-btn{
 display:inline-block;
 padding:12px 20px;
+margin:5px;
 background:#00bfff;
 color:white;
 text-decoration:none;
 border-radius:10px;
-margin:5px;
 font-weight:bold;
 }
+
+.nav-btn:hover{
+background:#4fc3ff;
+}
+
+/* HEADER */
 
 header{
 background:#001233;
@@ -60,15 +74,24 @@ border-bottom:3px solid #00bfff;
 }
 
 header h1{
+font-size:2.6rem;
 color:#4fc3ff;
-font-size:2.5rem;
 }
 
+header p{
+color:#ddd;
+margin-top:10px;
+}
+
+/* CONTAINER */
+
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 padding:20px;
 }
+
+/* SECTION */
 
 .section{
 background:#152238;
@@ -83,16 +106,20 @@ color:#4fc3ff;
 margin-bottom:15px;
 }
 
+/* TIMER */
+
 .timer{
 background:#00bfff;
 color:#001233;
 padding:15px;
-text-align:center;
-font-size:22px;
+font-size:24px;
 font-weight:bold;
+text-align:center;
 border-radius:10px;
 margin-bottom:20px;
 }
+
+/* QUESTION */
 
 .question-box{
 background:#1f3558;
@@ -109,7 +136,7 @@ margin-bottom:15px;
 
 .option{
 display:block;
-background:#0d223f;
+background:#0f2747;
 padding:12px;
 margin:8px 0;
 border-radius:10px;
@@ -122,24 +149,17 @@ margin-right:10px;
 
 .btn{
 display:inline-block;
-padding:14px 25px;
+padding:12px 20px;
 background:#00bfff;
 color:white;
 text-decoration:none;
-border:none;
 border-radius:10px;
 font-weight:bold;
-cursor:pointer;
-margin-top:15px;
-}
-
-.btn:hover{
-background:#4fc3ff;
 }
 
 footer{
 background:#001233;
-padding:25px;
+padding:20px;
 text-align:center;
 margin-top:30px;
 }
@@ -172,7 +192,7 @@ margin-top:30px;
 
 <h1>📖 General Tamil Test</h1>
 
-<p>VAO Subject Wise Practice Test</p>
+<p>VAO Tamil Practice Examination</p>
 
 </header>
 
@@ -181,9 +201,7 @@ margin-top:30px;
 <div class="timer">
 
 ⏱ Time Remaining :
-<span id="time">
-60:00
-</span>
+<span id="time">60:00</span>
 
 </div>
 
@@ -199,7 +217,7 @@ margin-top:30px;
 
 <li>✔ Duration : 60 Minutes</li>
 
-<li>✔ Select One Answer</li>
+<li>✔ Select One Correct Answer</li>
 
 <li>✔ Click Submit After Completion</li>
 
@@ -207,14 +225,14 @@ margin-top:30px;
 
 </div>
 
+<!-- ========================================= -->
 <!-- QUESTION 1 -->
+<!-- ========================================= -->
 
 <div class="question-box">
 
 <div class="question">
-
 1. திருக்குறளை இயற்றியவர் யார்?
-
 </div>
 
 <label class="option">
@@ -244,9 +262,7 @@ margin-top:30px;
 <div class="question-box">
 
 <div class="question">
-
 2. சிலப்பதிகாரத்தை இயற்றியவர் யார்?
-
 </div>
 
 <label class="option">
@@ -276,9 +292,7 @@ margin-top:30px;
 <div class="question-box">
 
 <div class="question">
-
-3. தமிழ் மொழியின் முதல் இலக்கண நூல்?
-
+3. தமிழ் மொழியின் முதல் இலக்கண நூல் எது?
 </div>
 
 <label class="option">
@@ -308,9 +322,7 @@ margin-top:30px;
 <div class="question-box">
 
 <div class="question">
-
-4. ‘தேசியக் கவிஞர்’ என்று அழைக்கப்படுபவர்?
-
+4. தேசியக் கவிஞர் என்று அழைக்கப்படுபவர் யார்?
 </div>
 
 <label class="option">
@@ -340,9 +352,7 @@ margin-top:30px;
 <div class="question-box">
 
 <div class="question">
-
-5. ‘யாதும் ஊரே யாவரும் கேளிர்’ என்ற வரியை எழுதியவர்?
-
+5. யாதும் ஊரே யாவரும் கேளிர் என்ற பாடலை இயற்றியவர்?
 </div>
 
 <label class="option">
@@ -367,9 +377,1375 @@ margin-top:30px;
 
 </div>
 
+<!-- QUESTION 6 -->
+
+<div class="question-box">
+
+<div class="question">
+6. நாலடியார் எந்த வகை நூல்?
+</div>
+
+<label class="option">
+<input type="radio" name="q6">
+எட்டுத்தொகை
+</label>
+
+<label class="option">
+<input type="radio" name="q6">
+பதினெண்கீழ்க்கணக்கு
+</label>
+
+<label class="option">
+<input type="radio" name="q6">
+காப்பியம்
+</label>
+
+<label class="option">
+<input type="radio" name="q6">
+இலக்கண நூல்
+</label>
+
+</div>
+
+<!-- QUESTION 7 -->
+
+<div class="question-box">
+
+<div class="question">
+7. அகர முதல எழுத்தெல்லாம் என தொடங்கும் நூல் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q7">
+தொல்காப்பியம்
+</label>
+
+<label class="option">
+<input type="radio" name="q7">
+திருக்குறள்
+</label>
+
+<label class="option">
+<input type="radio" name="q7">
+நன்னூல்
+</label>
+
+<label class="option">
+<input type="radio" name="q7">
+சிலப்பதிகாரம்
+</label>
+
+</div>
+
+<!-- QUESTION 8 -->
+
+<div class="question-box">
+
+<div class="question">
+8. தமிழ்த்தாத்தா என்று அழைக்கப்படுபவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q8">
+மறைமலை அடிகள்
+</label>
+
+<label class="option">
+<input type="radio" name="q8">
+உ.வே.சாமிநாத ஐயர்
+</label>
+
+<label class="option">
+<input type="radio" name="q8">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q8">
+பாரதிதாசன்
+</label>
+
+</div>
+
+<!-- QUESTION 9 -->
+
+<div class="question-box">
+
+<div class="question">
+9. திருக்குறளில் உள்ள குறள்களின் எண்ணிக்கை?
+</div>
+
+<label class="option">
+<input type="radio" name="q9">
+133
+</label>
+
+<label class="option">
+<input type="radio" name="q9">
+1330
+</label>
+
+<label class="option">
+<input type="radio" name="q9">
+1300
+</label>
+
+<label class="option">
+<input type="radio" name="q9">
+1033
+</label>
+
+</div>
+
+<!-- QUESTION 10 -->
+
+<div class="question-box">
+
+<div class="question">
+10. பாஞ்சாலி சபதம் எழுதியவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q10">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q10">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q10">
+கண்ணதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q10">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- PART 1 END -->
+<!-- ========================================= -->
+<!-- QUESTION 11 -->
+<!-- ========================================= -->
+
+<div class="question-box">
+
+<div class="question">
+11. திருவள்ளுவர் எந்த மாவட்டத்தில் பிறந்தவர் என்று கருதப்படுகிறார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q11">
+சென்னை
+</label>
+
+<label class="option">
+<input type="radio" name="q11">
+மயிலாப்பூர்
+</label>
+
+<label class="option">
+<input type="radio" name="q11">
+மதுரை
+</label>
+
+<label class="option">
+<input type="radio" name="q11">
+திருச்சி
+</label>
+
+</div>
+
+<!-- QUESTION 12 -->
+
+<div class="question-box">
+
+<div class="question">
+12. 'அறம் செய விரும்பு' என்ற நூல் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q12">
+ஆத்திசூடி
+</label>
+
+<label class="option">
+<input type="radio" name="q12">
+நாலடியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q12">
+திருக்குறள்
+</label>
+
+<label class="option">
+<input type="radio" name="q12">
+நன்னூல்
+</label>
+
+</div>
+
+<!-- QUESTION 13 -->
+
+<div class="question-box">
+
+<div class="question">
+13. கம்பராமாயணத்தை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q13">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q13">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q13">
+ஒட்டக்கூத்தர்
+</label>
+
+<label class="option">
+<input type="radio" name="q13">
+பாரதி
+</label>
+
+</div>
+
+<!-- QUESTION 14 -->
+
+<div class="question-box">
+
+<div class="question">
+14. தமிழ் மொழியின் பழமையான இலக்கண நூல்?
+</div>
+
+<label class="option">
+<input type="radio" name="q14">
+நன்னூல்
+</label>
+
+<label class="option">
+<input type="radio" name="q14">
+தொல்காப்பியம்
+</label>
+
+<label class="option">
+<input type="radio" name="q14">
+திருக்குறள்
+</label>
+
+<label class="option">
+<input type="radio" name="q14">
+சிலப்பதிகாரம்
+</label>
+
+</div>
+
+<!-- QUESTION 15 -->
+
+<div class="question-box">
+
+<div class="question">
+15. மணிமேகலை நூலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q15">
+இளங்கோ அடிகள்
+</label>
+
+<label class="option">
+<input type="radio" name="q15">
+சீத்தலைச் சாத்தனார்
+</label>
+
+<label class="option">
+<input type="radio" name="q15">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q15">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 16 -->
+
+<div class="question-box">
+
+<div class="question">
+16. 'தமிழுக்கு அமுதென்று பேர்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q16">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q16">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q16">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q16">
+கம்பர்
+</label>
+
+</div>
+
+<!-- QUESTION 17 -->
+
+<div class="question-box">
+
+<div class="question">
+17. பெரியபுராணத்தை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q17">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q17">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q17">
+ஒட்டக்கூத்தர்
+</label>
+
+<label class="option">
+<input type="radio" name="q17">
+இளங்கோ அடிகள்
+</label>
+
+</div>
+
+<!-- QUESTION 18 -->
+
+<div class="question-box">
+
+<div class="question">
+18. 'வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q18">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q18">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q18">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q18">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 19 -->
+
+<div class="question-box">
+
+<div class="question">
+19. கலிங்கத்துப்பரணி நூலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q19">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q19">
+ஜெயங்கொண்டார்
+</label>
+
+<label class="option">
+<input type="radio" name="q19">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q19">
+ஒட்டக்கூத்தர்
+</label>
+
+</div>
+
+<!-- QUESTION 20 -->
+
+<div class="question-box">
+
+<div class="question">
+20. 'யாமறிந்த மொழிகளிலே தமிழ் மொழிபோல் இனிதாவது எங்கும் காணோம்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q20">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q20">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q20">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q20">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- PART 2 END -->
+ <!-- ========================================= -->
+<!-- QUESTION 21 -->
+<!-- ========================================= -->
+
+<div class="question-box">
+
+<div class="question">
+21. நாலடியார் எந்த வகை நூலாகும்?
+</div>
+
+<label class="option">
+<input type="radio" name="q21">
+எட்டுத்தொகை
+</label>
+
+<label class="option">
+<input type="radio" name="q21">
+பதினெண்கீழ்க்கணக்கு
+</label>
+
+<label class="option">
+<input type="radio" name="q21">
+காப்பியம்
+</label>
+
+<label class="option">
+<input type="radio" name="q21">
+இலக்கண நூல்
+</label>
+
+</div>
+
+<!-- QUESTION 22 -->
+
+<div class="question-box">
+
+<div class="question">
+22. 'தமிழ்த்தாத்தா' என்று அழைக்கப்படுபவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q22">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q22">
+உ.வே.சாமிநாத ஐயர்
+</label>
+
+<label class="option">
+<input type="radio" name="q22">
+மறைமலை அடிகள்
+</label>
+
+<label class="option">
+<input type="radio" name="q22">
+கம்பர்
+</label>
+
+</div>
+
+<!-- QUESTION 23 -->
+
+<div class="question-box">
+
+<div class="question">
+23. திருக்குறளில் எத்தனை அதிகாரங்கள் உள்ளன?
+</div>
+
+<label class="option">
+<input type="radio" name="q23">
+108
+</label>
+
+<label class="option">
+<input type="radio" name="q23">
+120
+</label>
+
+<label class="option">
+<input type="radio" name="q23">
+133
+</label>
+
+<label class="option">
+<input type="radio" name="q23">
+150
+</label>
+
+</div>
+
+<!-- QUESTION 24 -->
+
+<div class="question-box">
+
+<div class="question">
+24. 'பாஞ்சாலி சபதம்' எழுதியவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q24">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q24">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q24">
+கண்ணதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q24">
+வள்ளலார்
+</label>
+
+</div>
+
+<!-- QUESTION 25 -->
+
+<div class="question-box">
+
+<div class="question">
+25. 'குயில்பாட்டு' இயற்றியவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q25">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q25">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q25">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q25">
+வள்ளலார்
+</label>
+
+</div>
+
+<!-- QUESTION 26 -->
+
+<div class="question-box">
+
+<div class="question">
+26. தமிழின் முதல் காப்பியம் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q26">
+மணிமேகலை
+</label>
+
+<label class="option">
+<input type="radio" name="q26">
+சிலப்பதிகாரம்
+</label>
+
+<label class="option">
+<input type="radio" name="q26">
+சீவகசிந்தாமணி
+</label>
+
+<label class="option">
+<input type="radio" name="q26">
+வளையாபதி
+</label>
+
+</div>
+
+<!-- QUESTION 27 -->
+
+<div class="question-box">
+
+<div class="question">
+27. 'அறம் செய விரும்பு' என்ற தொடர் எந்த நூலில் உள்ளது?
+</div>
+
+<label class="option">
+<input type="radio" name="q27">
+ஆத்திசூடி
+</label>
+
+<label class="option">
+<input type="radio" name="q27">
+நாலடியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q27">
+திருக்குறள்
+</label>
+
+<label class="option">
+<input type="radio" name="q27">
+நன்னூல்
+</label>
+
+</div>
+
+<!-- QUESTION 28 -->
+
+<div class="question-box">
+
+<div class="question">
+28. 'தேமதுரத் தமிழோசை உலகமெல்லாம் பரவும்வகை செய்தல் வேண்டும்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q28">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q28">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q28">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q28">
+கம்பர்
+</label>
+
+</div>
+
+<!-- QUESTION 29 -->
+
+<div class="question-box">
+
+<div class="question">
+29. 'தமிழுக்கு அமுதென்று பேர்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q29">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q29">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q29">
+அவ்வையார்
+</label>
+
+<label class="option">
+<input type="radio" name="q29">
+வள்ளலார்
+</label>
+
+</div>
+
+<!-- QUESTION 30 -->
+
+<div class="question-box">
+
+<div class="question">
+30. தமிழ் மொழியின் பழமையான இலக்கண நூல்?
+</div>
+
+<label class="option">
+<input type="radio" name="q30">
+நன்னூல்
+</label>
+
+<label class="option">
+<input type="radio" name="q30">
+தொல்காப்பியம்
+</label>
+
+<label class="option">
+<input type="radio" name="q30">
+திருக்குறள்
+</label>
+
+<label class="option">
+<input type="radio" name="q30">
+சிலப்பதிகாரம்
+</label>
+
+</div>
+
+<!-- PART 3 END --> 
+<!-- ========================================= -->
+<!-- QUESTION 31 -->
+<!-- ========================================= -->
+
+<div class="question-box">
+
+<div class="question">
+31. பெரியபுராணத்தை இயற்றியவர் யார்?
+</div>
+
+<label class="option">
+<input type="radio" name="q31">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q31">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q31">
+ஒட்டக்கூத்தர்
+</label>
+
+<label class="option">
+<input type="radio" name="q31">
+இளங்கோ அடிகள்
+</label>
+
+</div>
+
+<!-- QUESTION 32 -->
+
+<div class="question-box">
+
+<div class="question">
+32. 'வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q32">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q32">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q32">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q32">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 33 -->
+
+<div class="question-box">
+
+<div class="question">
+33. கலிங்கத்துப்பரணி நூலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q33">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q33">
+ஜெயங்கொண்டார்
+</label>
+
+<label class="option">
+<input type="radio" name="q33">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q33">
+ஒட்டக்கூத்தர்
+</label>
+
+</div>
+
+<!-- QUESTION 34 -->
+
+<div class="question-box">
+
+<div class="question">
+34. 'யாமறிந்த மொழிகளிலே தமிழ் மொழிபோல் இனிதாவது எங்கும் காணோம்' என்றவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q34">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q34">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q34">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q34">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 35 -->
+
+<div class="question-box">
+
+<div class="question">
+35. தமிழ் மொழியின் சிறப்பை உலகறியச் செய்த கவிஞர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q35">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q35">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q35">
+சேக்கிழார்
+</label>
+
+<label class="option">
+<input type="radio" name="q35">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 36 -->
+
+<div class="question-box">
+
+<div class="question">
+36. 'குடியரசு' என்ற இதழை நடத்தியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q36">
+பெரியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q36">
+அண்ணா
+</label>
+
+<label class="option">
+<input type="radio" name="q36">
+கலைஞர்
+</label>
+
+<label class="option">
+<input type="radio" name="q36">
+பாரதி
+</label>
+
+</div>
+
+<!-- QUESTION 37 -->
+
+<div class="question-box">
+
+<div class="question">
+37. 'பொன்னியின் செல்வன்' எழுதியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q37">
+கல்கி
+</label>
+
+<label class="option">
+<input type="radio" name="q37">
+ஜெயகாந்தன்
+</label>
+
+<label class="option">
+<input type="radio" name="q37">
+சாண்டில்யன்
+</label>
+
+<label class="option">
+<input type="radio" name="q37">
+அகிலன்
+</label>
+
+</div>
+
+<!-- QUESTION 38 -->
+
+<div class="question-box">
+
+<div class="question">
+38. 'சிவகாமியின் சபதம்' எழுதியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q38">
+கல்கி
+</label>
+
+<label class="option">
+<input type="radio" name="q38">
+அகிலன்
+</label>
+
+<label class="option">
+<input type="radio" name="q38">
+சாண்டில்யன்
+</label>
+
+<label class="option">
+<input type="radio" name="q38">
+ஜெயகாந்தன்
+</label>
+
+</div>
+
+<!-- QUESTION 39 -->
+
+<div class="question-box">
+
+<div class="question">
+39. திருக்குறள் எத்தனை பாகங்களாக பிரிக்கப்பட்டுள்ளது?
+</div>
+
+<label class="option">
+<input type="radio" name="q39">
+2
+</label>
+
+<label class="option">
+<input type="radio" name="q39">
+3
+</label>
+
+<label class="option">
+<input type="radio" name="q39">
+4
+</label>
+
+<label class="option">
+<input type="radio" name="q39">
+5
+</label>
+
+</div>
+
+<!-- QUESTION 40 -->
+
+<div class="question-box">
+
+<div class="question">
+40. திருக்குறளின் முதல் பால் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q40">
+பொருட்பால்
+</label>
+
+<label class="option">
+<input type="radio" name="q40">
+அறத்துப்பால்
+</label>
+
+<label class="option">
+<input type="radio" name="q40">
+காமத்துப்பால்
+</label>
+
+<label class="option">
+<input type="radio" name="q40">
+இன்பத்துப்பால்
+</label>
+
+</div>
+
+<!-- PART 4 END -->  
+<!-- ========================================= -->
+<!-- QUESTION 41 -->
+<!-- ========================================= -->
+
+<div class="question-box">
+
+<div class="question">
+41. திருக்குறளின் கடைசி அதிகாரம் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q41">
+ஊடல் உவகை
+</label>
+
+<label class="option">
+<input type="radio" name="q41">
+நட்பு
+</label>
+
+<label class="option">
+<input type="radio" name="q41">
+கல்வி
+</label>
+
+<label class="option">
+<input type="radio" name="q41">
+அறம்
+</label>
+
+</div>
+
+<!-- QUESTION 42 -->
+
+<div class="question-box">
+
+<div class="question">
+42. ஆத்திசூடியை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q42">
+அவ்வையார்
+</label>
+
+<label class="option">
+<input type="radio" name="q42">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q42">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q42">
+சேக்கிழார்
+</label>
+
+</div>
+
+<!-- QUESTION 43 -->
+
+<div class="question-box">
+
+<div class="question">
+43. 'அச்சமில்லை அச்சமில்லை' பாடலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q43">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q43">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q43">
+வள்ளலார்
+</label>
+
+<label class="option">
+<input type="radio" name="q43">
+கண்ணதாசன்
+</label>
+
+</div>
+
+<!-- QUESTION 44 -->
+
+<div class="question-box">
+
+<div class="question">
+44. 'தமிழுக்கும் அமுதென்று பேர்' பாடலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q44">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q44">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q44">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q44">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 45 -->
+
+<div class="question-box">
+
+<div class="question">
+45. தமிழின் தேசியப் புலவர் என்று அழைக்கப்படுபவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q45">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q45">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q45">
+கண்ணதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q45">
+கல்கி
+</label>
+
+</div>
+
+<!-- QUESTION 46 -->
+
+<div class="question-box">
+
+<div class="question">
+46. 'மனோன்மணியம்' நூலை இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q46">
+மனோன்மணியம் சுந்தரனார்
+</label>
+
+<label class="option">
+<input type="radio" name="q46">
+கம்பர்
+</label>
+
+<label class="option">
+<input type="radio" name="q46">
+பாரதி
+</label>
+
+<label class="option">
+<input type="radio" name="q46">
+அவ்வையார்
+</label>
+
+</div>
+
+<!-- QUESTION 47 -->
+
+<div class="question-box">
+
+<div class="question">
+47. தமிழ் தாய் வாழ்த்தை எழுதியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q47">
+மனோன்மணியம் சுந்தரனார்
+</label>
+
+<label class="option">
+<input type="radio" name="q47">
+பாரதியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q47">
+பாரதிதாசன்
+</label>
+
+<label class="option">
+<input type="radio" name="q47">
+கம்பர்
+</label>
+
+</div>
+
+<!-- QUESTION 48 -->
+
+<div class="question-box">
+
+<div class="question">
+48. 'குறிஞ்சிப்பாட்டு' இயற்றியவர்?
+</div>
+
+<label class="option">
+<input type="radio" name="q48">
+கபிலர்
+</label>
+
+<label class="option">
+<input type="radio" name="q48">
+நக்கீரர்
+</label>
+
+<label class="option">
+<input type="radio" name="q48">
+அவ்வையார்
+</label>
+
+<label class="option">
+<input type="radio" name="q48">
+பரணர்
+</label>
+
+</div>
+
+<!-- QUESTION 49 -->
+
+<div class="question-box">
+
+<div class="question">
+49. எட்டுத்தொகையில் இடம்பெறாத நூல் எது?
+</div>
+
+<label class="option">
+<input type="radio" name="q49">
+அகநானூறு
+</label>
+
+<label class="option">
+<input type="radio" name="q49">
+புறநானூறு
+</label>
+
+<label class="option">
+<input type="radio" name="q49">
+நாலடியார்
+</label>
+
+<label class="option">
+<input type="radio" name="q49">
+குறுந்தொகை
+</label>
+
+</div>
+
+<!-- QUESTION 50 -->
+
+<div class="question-box">
+
+<div class="question">
+50. தமிழின் மிகப் பழமையான இலக்கிய காலம்?
+</div>
+
+<label class="option">
+<input type="radio" name="q50">
+பக்தி காலம்
+</label>
+
+<label class="option">
+<input type="radio" name="q50">
+சங்க காலம்
+</label>
+
+<label class="option">
+<input type="radio" name="q50">
+நாயக்கர் காலம்
+</label>
+
+<label class="option">
+<input type="radio" name="q50">
+சோழர் காலம்
+</label>
+
+</div>
+
+<!-- ========================================= -->
+<!-- SUBMIT BUTTON -->
+<!-- ========================================= -->
+
 <center>
 
-<a href="general-tamil-result.html" class="btn">
+<a href="vao-general-tamil-result.html" class="btn">
 
 📊 Submit Test
 
@@ -379,6 +1755,10 @@ margin-top:30px;
 
 </div>
 
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
 <footer>
 
 <p>© 2026 VelviHub | General Tamil Test</p>
@@ -387,19 +1767,23 @@ margin-top:30px;
 
 </footer>
 
+<!-- ========================================= -->
+<!-- TIMER SCRIPT -->
+<!-- ========================================= -->
+
 <script>
 
-let minutes=60;
-let seconds=0;
+let minutes = 60;
+let seconds = 0;
 
 setInterval(function(){
 
-if(seconds==0){
+if(seconds == 0){
 
-if(minutes>0){
+if(minutes > 0){
 
 minutes--;
-seconds=59;
+seconds = 59;
 
 }
 
@@ -409,12 +1793,16 @@ seconds--;
 
 }
 
-document.getElementById("time").innerHTML=
-minutes+":"+(seconds<10?"0":"")+seconds;
+document.getElementById("time").innerHTML =
+minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
 },1000);
 
 </script>
+
+<!-- ========================================= -->
+<!-- GOOGLE TRANSLATE -->
+<!-- ========================================= -->
 
 <script>
 function googleTranslateElementInit() {
@@ -431,4 +1819,4 @@ includedLanguages:'ta,en,hi,te,ml,kn'
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
-</html>
+  </html>  
