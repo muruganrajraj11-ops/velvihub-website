@@ -67,7 +67,47 @@ border-radius:15px;
 text-align:center;
 transition:0.3s;
 }
+.top-nav{
+text-align:center;
+padding:15px;
+background:#001233;
+border-bottom:2px solid #00bfff;
+box-shadow:0 0 15px rgba(0,191,255,.5);
+}
 
+.nav-btn{
+display:inline-block;
+padding:12px 22px;
+margin:5px;
+background:linear-gradient(45deg,#00bfff,#4fc3ff);
+color:#fff !important;
+text-decoration:none;
+font-weight:bold;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,191,255,.6);
+transition:.3s;
+}
+
+.nav-btn:hover{
+transform:translateY(-3px);
+background:linear-gradient(45deg,#4fc3ff,#00e5ff);
+}
+
+#google_translate_element{
+text-align:center;
+margin:15px 0;
+}
+
+.goog-te-gadget{
+color:white !important;
+}
+
+.goog-te-combo{
+padding:8px;
+border-radius:8px;
+font-weight:bold;
+background:white;
+}
 .card:hover{
 transform:translateY(-5px);
 box-shadow:0 0 20px rgba(0,191,255,.5);
@@ -140,29 +180,26 @@ margin-top:30px;
 <body>
 
 
+<!-- HEADER BUTTONS -->
 <div class="top-nav">
 <a href="vao.html" class="nav-btn">📚 VAO Hub</a>
 <a href="vao-model-questions.html" class="nav-btn">📝 Model Questions</a>
 <a href="index.html" class="nav-btn">🏠 Home</a>
 </div>
 
-<header>
+<!-- GOOGLE TRANSLATE -->
 <div id="google_translate_element"></div>
 
 <script>
 function googleTranslateElementInit() {
-new google.translate.TranslateElement(
-{
+new google.translate.TranslateElement({
 pageLanguage:'ta',
-includedLanguages:'ta,en,hi,te,ml,kn'
-},
-'google_translate_element'
-);
+includedLanguages:'en,ta,hi,te,ml,kn'
+}, 'google_translate_element');
 }
 </script>
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<h1>📚 VAO Subject Tests</h1>
 
 <p>Subject Wise Online Practice Center</p>
 
