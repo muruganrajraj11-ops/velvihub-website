@@ -1758,7 +1758,30 @@ margin-top:30px;
 <!-- ========================================= -->
 <!-- FOOTER -->
 <!-- ========================================= -->
+<!-- ========================================= -->
+<!-- AUTO SCORING SYSTEM -->
+<!-- ========================================= -->
+
 <script>
+
+const answerKey = {
+
+q1:3,q2:1,q3:2,q4:2,q5:2,
+q6:2,q7:2,q8:2,q9:2,q10:1,
+
+q11:2,q12:1,q13:2,q14:2,q15:2,
+q16:2,q17:1,q18:1,q19:2,q20:1,
+
+q21:2,q22:2,q23:3,q24:2,q25:1,
+q26:2,q27:1,q28:1,q29:2,q30:2,
+
+q31:1,q32:1,q33:2,q34:1,q35:1,
+q36:1,q37:1,q38:1,q39:2,q40:2,
+
+q41:1,q42:1,q43:1,q44:1,q45:1,
+q46:1,q47:1,q48:1,q49:3,q50:2
+
+};
 
 function calculateScore(){
 
@@ -1773,7 +1796,16 @@ document.querySelector(
 
 if(selected){
 
-score += Number(selected.value);
+let selectedOption =
+Array.from(
+document.getElementsByName("q"+i)
+).indexOf(selected)+1;
+
+if(
+selectedOption === answerKey["q"+i]
+){
+score++;
+}
 
 }
 
@@ -1788,18 +1820,6 @@ window.location.href =
 "vao-general-tamil-result.html";
 
 }
-
-</script>
-
-<script>
-
-let score =
-localStorage.getItem("tamilScore") || 0;
-
-document.getElementById(
-"scoreBox"
-).innerHTML =
-score + " / 50";
 
 </script>
 <footer>
