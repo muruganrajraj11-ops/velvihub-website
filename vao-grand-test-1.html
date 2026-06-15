@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,63 +13,115 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#0a192f;
+background:linear-gradient(180deg,#000814,#001d3d,#000814);
 color:white;
+line-height:1.8;
+}
+
+#google_translate_element{
+background:white;
+padding:8px;
+text-align:center;
+}
+
+.top-nav{
+background:#001233;
+padding:15px;
+text-align:center;
+}
+
+.nav-btn{
+display:inline-block;
+padding:12px 20px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin:5px;
+font-weight:bold;
 }
 
 header{
 background:#001233;
-padding:25px;
+padding:30px;
 text-align:center;
+box-shadow:0 0 20px rgba(0,191,255,.5);
 }
 
 header h1{
 color:#4fc3ff;
+font-size:2.5rem;
 }
 
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 padding:20px;
 }
 
-.question{
+.section{
 background:#152238;
-padding:20px;
+padding:25px;
+border-radius:15px;
 margin-bottom:20px;
-border-radius:10px;
+box-shadow:0 0 15px rgba(0,191,255,.25);
 }
 
-.question h3{
+.section h2{
 color:#4fc3ff;
-margin-bottom:12px;
+margin-bottom:15px;
 }
 
-label{
+.card{
+background:#1f3558;
+padding:20px;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.question{
+font-size:18px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.option{
 display:block;
-padding:6px;
+background:#0f2747;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
 }
 
 .btn{
-padding:12px 25px;
+display:inline-block;
+padding:12px 20px;
 background:#00bfff;
-border:none;
-border-radius:8px;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
 color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin-top:10px;
 }
 
-.result{
-margin-top:20px;
-font-size:26px;
+.highlight{
+background:#00bfff;
+color:black;
+padding:15px;
+border-radius:10px;
 font-weight:bold;
-color:#7CFC00;
+margin-top:15px;
+}
+
+footer{
+background:#001233;
+padding:20px;
+text-align:center;
+margin-top:30px;
 }
 
 </style>
@@ -77,236 +130,195 @@ color:#7CFC00;
 
 <body>
 
+<div id="google_translate_element"></div>
+
+<div class="top-nav">
+
+<a href="vao-subject-tests.html" class="nav-btn">
+📚 Subject Tests
+</a>
+
+<a href="vao-model-questions.html" class="nav-btn">
+📝 Model Questions
+</a>
+
+<a href="index.html" class="nav-btn">
+🏠 Home
+</a>
+
+</div>
+
 <header>
 
-<h1>🏆 VAO GRAND TEST - 1</h1>
+<h1>🏆 VAO Grand Test 1</h1>
 
-<p>50 Questions | Full Syllabus Practice Test</p>
+<p>Full Syllabus Mock Examination</p>
 
 </header>
 
 <div class="container">
 
-<form id="quizForm">
+<div class="section">
 
-<!-- GENERAL TAMIL -->
+<h2>📋 Test Instructions</h2>
+
+<ul>
+
+<li>✔ Total Questions : 100</li>
+
+<li>✔ Total Marks : 100</li>
+
+<li>✔ Duration : 90 Minutes</li>
+
+<li>✔ Attempt All Questions</li>
+
+<li>✔ Read Carefully Before Answering</li>
+
+</ul>
+
+<div class="highlight">
+
+🎯 Real VAO Exam Simulation
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Sample Questions</h2>
+
+<div class="card">
 
 <div class="question">
-<h3>1. திருக்குறளை இயற்றியவர் யார்?</h3>
-<label><input type="radio" name="q1" value="a"> அவ்வையார்</label>
-<label><input type="radio" name="q1" value="b"> திருவள்ளுவர்</label>
-<label><input type="radio" name="q1" value="c"> கம்பர்</label>
-<label><input type="radio" name="q1" value="d"> பாரதி</label>
+
+1. இந்திய அரசியலமைப்பின் தந்தை யார்?
+
 </div>
+
+<label class="option">
+A) நேரு
+</label>
+
+<label class="option">
+B) காந்தி
+</label>
+
+<label class="option">
+C) அம்பேத்கர்
+</label>
+
+<label class="option">
+D) ராஜாஜி
+</label>
+
+</div>
+
+<div class="card">
 
 <div class="question">
-<h3>2. சிலப்பதிகாரத்தை இயற்றியவர்?</h3>
-<label><input type="radio" name="q2" value="a"> இளங்கோ அடிகள்</label>
-<label><input type="radio" name="q2" value="b"> சீத்தலைச் சாத்தனார்</label>
-<label><input type="radio" name="q2" value="c"> கம்பர்</label>
-<label><input type="radio" name="q2" value="d"> பாரதிதாசன்</label>
+
+2. இந்தியாவின் தேசிய நதி எது?
+
 </div>
+
+<label class="option">
+A) காவிரி
+</label>
+
+<label class="option">
+B) கங்கை
+</label>
+
+<label class="option">
+C) நர்மதா
+</label>
+
+<label class="option">
+D) யமுனை
+</label>
+
+</div>
+
+<div class="card">
 
 <div class="question">
-<h3>3. தமிழ் உயிரெழுத்துக்கள் எத்தனை?</h3>
-<label><input type="radio" name="q3" value="a"> 10</label>
-<label><input type="radio" name="q3" value="b"> 11</label>
-<label><input type="radio" name="q3" value="c"> 12</label>
-<label><input type="radio" name="q3" value="d"> 13</label>
-</div>
 
-<div class="question">
-<h3>4. தமிழ் மெய்யெழுத்துக்கள் எத்தனை?</h3>
-<label><input type="radio" name="q4" value="a"> 18</label>
-<label><input type="radio" name="q4" value="b"> 12</label>
-<label><input type="radio" name="q4" value="c"> 216</label>
-<label><input type="radio" name="q4" value="d"> 247</label>
-</div>
-
-<div class="question">
-<h3>5. தேசியக் கவிஞர் யார்?</h3>
-<label><input type="radio" name="q5" value="a"> பாரதிதாசன்</label>
-<label><input type="radio" name="q5" value="b"> சுப்பிரமணிய பாரதி</label>
-<label><input type="radio" name="q5" value="c"> கம்பர்</label>
-<label><input type="radio" name="q5" value="d"> ஒட்டக்கூத்தர்</label>
-</div>
-
-<!-- HISTORY -->
-
-<div class="question">
-<h3>6. சிந்து சமவெளி நாகரிகம் எந்த நதிக்கரையில்?</h3>
-<label><input type="radio" name="q6" value="a"> காவிரி</label>
-<label><input type="radio" name="q6" value="b"> சிந்து</label>
-<label><input type="radio" name="q6" value="c"> கங்கை</label>
-<label><input type="radio" name="q6" value="d"> நர்மதா</label>
-</div>
-
-<div class="question">
-<h3>7. மௌரிய பேரரசை நிறுவியவர்?</h3>
-<label><input type="radio" name="q7" value="a"> அசோகர்</label>
-<label><input type="radio" name="q7" value="b"> சந்திரகுப்த மௌரியர்</label>
-<label><input type="radio" name="q7" value="c"> ஹர்ஷர்</label>
-<label><input type="radio" name="q7" value="d"> சமுத்திரகுப்தர்</label>
-</div>
-
-<div class="question">
-<h3>8. தஞ்சை பெரிய கோவிலை கட்டியவர்?</h3>
-<label><input type="radio" name="q8" value="a"> ராஜேந்திர சோழன்</label>
-<label><input type="radio" name="q8" value="b"> ராஜராஜ சோழன்</label>
-<label><input type="radio" name="q8" value="c"> கரிகாலன்</label>
-<label><input type="radio" name="q8" value="d"> நரசிம்மவர்மன்</label>
-</div>
-
-<div class="question">
-<h3>9. இந்திய தேசிய காங்கிரஸ் தொடங்கப்பட்ட ஆண்டு?</h3>
-<label><input type="radio" name="q9" value="a"> 1857</label>
-<label><input type="radio" name="q9" value="b"> 1885</label>
-<label><input type="radio" name="q9" value="c"> 1905</label>
-<label><input type="radio" name="q9" value="d"> 1919</label>
-</div>
-
-<div class="question">
-<h3>10. இந்தியா சுதந்திரம் பெற்ற நாள்?</h3>
-<label><input type="radio" name="q10" value="a"> 26.01.1950</label>
-<label><input type="radio" name="q10" value="b"> 15.08.1947</label>
-<label><input type="radio" name="q10" value="c"> 26.11.1949</label>
-<label><input type="radio" name="q10" value="d"> 02.10.1947</label>
-</div>
-
-<!-- GEOGRAPHY -->
-
-<div class="question">
-<h3>11. இந்தியாவின் தேசிய நதி?</h3>
-<label><input type="radio" name="q11" value="a"> காவிரி</label>
-<label><input type="radio" name="q11" value="b"> கங்கை</label>
-<label><input type="radio" name="q11" value="c"> யமுனை</label>
-<label><input type="radio" name="q11" value="d"> கோதாவரி</label>
-</div>
-
-<div class="question">
-<h3>12. உலகின் மிக உயரமான மலை?</h3>
-<label><input type="radio" name="q12" value="a"> ஆல்ப்ஸ்</label>
-<label><input type="radio" name="q12" value="b"> எவரெஸ்ட்</label>
-<label><input type="radio" name="q12" value="c"> காஞ்சன்ஜங்கா</label>
-<label><input type="radio" name="q12" value="d"> அராவல்லி</label>
-</div>
-
-<div class="question">
-<h3>13. இந்தியாவின் தென்முனை?</h3>
-<label><input type="radio" name="q13" value="a"> சென்னை</label>
-<label><input type="radio" name="q13" value="b"> கன்னியாகுமரி</label>
-<label><input type="radio" name="q13" value="c"> மதுரை</label>
-<label><input type="radio" name="q13" value="d"> தூத்துக்குடி</label>
-</div>
-
-<div class="question">
-<h3>14. உலகின் மிகப்பெரிய பெருங்கடல்?</h3>
-<label><input type="radio" name="q14" value="a"> அட்லாண்டிக்</label>
-<label><input type="radio" name="q14" value="b"> இந்தியப் பெருங்கடல்</label>
-<label><input type="radio" name="q14" value="c"> பசிபிக்</label>
-<label><input type="radio" name="q14" value="d"> ஆர்க்டிக்</label>
-</div>
-
-<div class="question">
-<h3>15. தமிழ்நாட்டின் தலைநகர்?</h3>
-<label><input type="radio" name="q15" value="a"> மதுரை</label>
-<label><input type="radio" name="q15" value="b"> திருச்சி</label>
-<label><input type="radio" name="q15" value="c"> சென்னை</label>
-<label><input type="radio" name="q15" value="d"> கோவை</label>
-</div>
-
-<!-- QUESTIONS 16-50 தொடர்ச்சியாக இதே மாதிரி -->
-
-<div class="question">
-<h3>16. இந்திய அரசியலமைப்பின் தந்தை யார்?</h3>
-<label><input type="radio" name="q16" value="a"> நேரு</label>
-<label><input type="radio" name="q16" value="b"> அம்பேத்கர்</label>
-<label><input type="radio" name="q16" value="c"> காந்தி</label>
-<label><input type="radio" name="q16" value="d"> ராஜாஜி</label>
-</div>
-
-<div class="question">
-<h3>17. இந்திய அரசியலமைப்பு நடைமுறைக்கு வந்த நாள்?</h3>
-<label><input type="radio" name="q17" value="a"> 15.08.1947</label>
-<label><input type="radio" name="q17" value="b"> 26.01.1950</label>
-<label><input type="radio" name="q17" value="c"> 26.11.1949</label>
-<label><input type="radio" name="q17" value="d"> 01.01.1950</label>
-</div>
-
-<div class="question">
-<h3>18. RBI நிறுவப்பட்ட ஆண்டு?</h3>
-<label><input type="radio" name="q18" value="a"> 1935</label>
-<label><input type="radio" name="q18" value="b"> 1947</label>
-<label><input type="radio" name="q18" value="c"> 1950</label>
-<label><input type="radio" name="q18" value="d"> 1969</label>
-</div>
-
-<div class="question">
-<h3>19. இந்தியாவின் மத்திய வங்கி?</h3>
-<label><input type="radio" name="q19" value="a"> SBI</label>
-<label><input type="radio" name="q19" value="b"> RBI</label>
-<label><input type="radio" name="q19" value="c"> LIC</label>
-<label><input type="radio" name="q19" value="d"> NABARD</label>
-</div>
-
-<div class="question">
-<h3>20. H₂O என்பது?</h3>
-<label><input type="radio" name="q20" value="a"> ஆக்சிஜன்</label>
-<label><input type="radio" name="q20" value="b"> ஹைட்ரஜன்</label>
-<label><input type="radio" name="q20" value="c"> நீர்</label>
-<label><input type="radio" name="q20" value="d"> உப்பு</label>
-</div>
-
-<h2 style="text-align:center;color:#ffd700;padding:20px;">
-⚠️ கேள்விகள் 21 முதல் 50 வரை இதே வடிவத்தில் தொடரவும்
-(Science, Current Affairs, Aptitude, VAO Special, Patta, Schemes)
-</h2>
-
-<button type="button" class="btn" onclick="checkAnswers()">
-Submit Grand Test
-</button>
-
-<div id="result" class="result"></div>
-
-</form>
+3. GST அறிமுகமான ஆண்டு?
 
 </div>
+
+<label class="option">
+A) 2015
+</label>
+
+<label class="option">
+B) 2016
+</label>
+
+<label class="option">
+C) 2017
+</label>
+
+<label class="option">
+D) 2018
+</label>
+
+</div>
+
+<a href="vao-grand-test-1-result.html" class="btn">
+
+📊 Submit Grand Test
+
+</a>
+
+</div>
+
+<div class="section">
+
+<h2>🏆 Grand Test Series</h2>
+
+<a href="vao-grand-test-1.html" class="btn">
+Grand Test 1
+</a>
+
+<a href="vao-grand-test-2.html" class="btn">
+Grand Test 2
+</a>
+
+<a href="vao-grand-test-3.html" class="btn">
+Grand Test 3
+</a>
+
+<a href="vao-final-grand-test.html" class="btn">
+Final Grand Test
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 VelviHub | VAO Grand Test 1</p>
+
+<p>Learn • Build • Grow</p>
+
+</footer>
 
 <script>
-
-function checkAnswers(){
-
-let score=0;
-
-/* Answer Key
-q1=b
-q2=a
-q3=c
-q4=a
-q5=b
-q6=b
-q7=b
-q8=b
-q9=b
-q10=b
-q11=b
-q12=b
-q13=b
-q14=c
-q15=c
-q16=b
-q17=b
-q18=a
-q19=b
-q20=c
-*/
-
-document.getElementById("result").innerHTML =
-"🏆 Grand Test Submitted Successfully";
-
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'ta,en,hi,te,ml,kn'
+},
+'google_translate_element'
+);
 }
-
 </script>
 
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
-         </html>
+</html>
