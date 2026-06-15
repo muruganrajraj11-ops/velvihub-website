@@ -115,13 +115,31 @@ margin-top:30px;
 <body>
 
 <header>
+<div id="google_translate_element"></div>
 
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+includedLanguages:'ta,en,hi,te,ml,kn'
+},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <h1>📚 VAO Subject Tests</h1>
 
 <p>Subject Wise Online Practice Center</p>
 
 </header>
-
+<div class="top-nav">
+<a href="vao.html" class="nav-btn">📚 VAO Hub</a>
+<a href="vao-model-questions.html" class="nav-btn">📝 Model Questions</a>
+<a href="index.html" class="nav-btn">🏠 Home</a>
+</div>
 <div class="container">
 
 <div class="section">
