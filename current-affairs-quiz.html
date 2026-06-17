@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current Affairs Quiz | VelviHub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#02142d;
+color:white;
+line-height:1.8;
+}
+
+header{
+background:#062b63;
+padding:25px;
+text-align:center;
+box-shadow:0 0 15px #00c3ff;
+}
+
+header h1{
+color:#4fc3ff;
+}
+
+.nav{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.nav a{
+background:#00bfff;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.quiz-card{
+background:#1d2740;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 0 12px rgba(0,191,255,.3);
+}
+
+.quiz-card h2{
+color:#4fc3ff;
+margin-bottom:15px;
+}
+
+.question{
+margin-bottom:25px;
+padding-bottom:15px;
+border-bottom:1px solid #444;
+}
+
+.answer{
+color:#00ff99;
+font-weight:bold;
+margin-top:10px;
+}
+
+.score-box{
+background:#17345d;
+padding:25px;
+border-radius:15px;
+margin-bottom:25px;
+text-align:center;
+}
+
+.translate{
+text-align:center;
+padding:20px;
+}
+
+footer{
+background:#062b63;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📝 Current Affairs Quiz</h1>
+<p>VelviHub TNPSC Hub</p>
+</header>
+
+<div class="nav">
+<a href="index.html">🏠 Home</a>
+<a href="tnpsc-current-affairs.html">📚 Current Affairs Hub</a>
+<a href="today-current-affairs.html">📅 Today CA</a>
+</div>
+
+<div class="container">
+
+<div class="quiz-card">
+
+<h2>🧠 Practice Quiz</h2>
+
+<div class="question">
+<p>1. ISRO Headquarters is located at?</p>
+A) Chennai<br>
+B) Mumbai<br>
+C) Bengaluru<br>
+D) Delhi
+<div class="answer">Answer: C) Bengaluru</div>
+</div>
+
+<div class="question">
+<p>2. RBI Headquarters is located at?</p>
+A) Mumbai<br>
+B) Chennai<br>
+C) Kolkata<br>
+D) Delhi
+<div class="answer">Answer: A) Mumbai</div>
+</div>
+
+<div class="question">
+<p>3. G20 is mainly related to?</p>
+A) Tourism<br>
+B) Economy<br>
+C) Sports<br>
+D) Defence
+<div class="answer">Answer: B) Economy</div>
+</div>
+
+<div class="question">
+<p>4. National Animal of India?</p>
+A) Lion<br>
+B) Tiger<br>
+C) Elephant<br>
+D) Deer
+<div class="answer">Answer: B) Tiger</div>
+</div>
+
+<div class="question">
+<p>5. Indian Constitution came into force on?</p>
+A) 15 August 1947<br>
+B) 26 January 1950<br>
+C) 26 November 1949<br>
+D) 2 October 1950
+<div class="answer">Answer: B) 26 January 1950</div>
+</div>
+
+</div>
+
+<div class="score-box">
+<h2>🏆 Quiz Score</h2>
+<p>Total Questions : 5</p>
+<p>Practice Daily for Better Results</p>
+</div>
+
+<div class="translate">
+<div id="google_translate_element"></div>
+</div>
+
+</div>
+
+<footer>
+© 2026 VelviHub | Current Affairs Quiz
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage:'en'
+},
+'google_translate_element'
+);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
