@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life Skills Hub | VelviHub</title>
+
+<meta name="description"
+content="Life Skills Hub - Self Growth, Productivity, Leadership, Communication Skills, Goal Setting and Personal Development in Tamil.">
+
+<meta name="keywords"
+content="Life Skills, Self Growth, Productivity, Leadership, Goal Setting, Personal Development, VelviHub">
+
+<meta name="author"
+content="VelviHub">
+
+<meta name="robots"
+content="index, follow">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:
+linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#1e293b
+);
+color:white;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+overflow:hidden;
+}
+
+.stars::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background-image:
+radial-gradient(
+white 1px,
+transparent 1px
+);
+background-size:50px 50px;
+opacity:.15;
+animation:moveStars 60s linear infinite;
+}
+
+@keyframes moveStars{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-500px);
+}
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+padding:18px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:
+0 0 25px rgba(56,189,248,.2);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+font-weight:bold;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 80px;
+}
+
+.hero-logo{
+width:220px;
+border-radius:50%;
+box-shadow:0 0 40px #38bdf8;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:60px;
+color:#38bdf8;
+text-shadow:
+0 0 25px #38bdf8;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+}
+
+.hero-buttons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:12px;
+font-weight:bold;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+}
+
+.btn-home{
+background:#22c55e;
+color:white;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+font-weight:bold;
+color:#38bdf8;
+margin-bottom:40px;
+text-shadow:
+0 0 15px rgba(56,189,248,.5);
+}
+
+section{
+padding:90px 20px;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+box-shadow:
+0 0 20px rgba(56,189,248,.15);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 0 40px rgba(56,189,248,.5);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+line-height:1.8;
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.learn-btn{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+border-radius:10px;
+}
+
+.translate-box{
+text-align:center;
+padding:30px;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+margin-top:50px;
+}
+
+.footer h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-logo{
+width:180px;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+🚀 VelviHub
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img
+src="https://velvihub.in/velvihub-logo.png"
+alt="VelviHub"
+class="hero-logo">
+
+<!-- Life Skills Hub -->
+
+<section class="academy-section">
+
+<h2>🌱 Life Skills Hub</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🚀 Self Growth</h3>
+<p>Personal Development & Improvement</p>
+<a href="life-skills.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>⏰ Productivity</h3>
+<p>Time Management & Efficiency</p>
+<a href="productivity-hacks.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🎯 Goal Setting</h3>
+<p>Achieve Personal & Professional Goals</p>
+<a href="goal-setting.html">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🗣️ Communication Skills</h3>
+<p>Speaking, Writing & Presentation Skills</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>👑 Leadership</h3>
+<p>Leadership & Team Management</p>
+<a href="#">Learn More →</a>
+</div>
+
+<div class="card">
+<h3>🧠 Problem Solving</h3>
+<p>Critical Thinking & Decision Making</p>
+<a href="#">Learn More →</a>
+</div>
+
+</div>
+
+</section>
+  </section>
+<section>
+  
+<h2 class="section-title">
+🌍 Google Translate
+</h2>
+
+<div class="translate-box">
+
+<div id="google_translate_element">
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<h3>🚀 VelviHub</h3>
+
+<p>
+Learn • Build • Grow
+</p>
+
+<br>
+
+<p>
+© 2026 VelviHub. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{
+pageLanguage: 'ta'
+},
+'google_translate_element'
+);
+}
+
+</script>
+
+<script
+src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+</body>
+</html>
