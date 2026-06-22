@@ -525,7 +525,7 @@ color:#38bdf8;
 
 .hero{
 
-min-height:100vh;
+min-height:auto;
 
 display:flex;
 
@@ -535,7 +535,7 @@ align-items:center;
 
 text-align:center;
 
-padding:120px 20px;
+padding:90px 20px 60px;
 
 }
 
@@ -844,10 +844,10 @@ transform:scale(1);
 }
 }
 .nav-logo{
-width:50px;
-height:50px;
+width:45px;
+height:45px;
 border-radius:50%;
-box-shadow:0 0 12px #38bdf8;
+box-shadow:0 0 10px #38bdf8;
 }
 .hero-stats{
 
@@ -890,7 +890,13 @@ margin-top:15px;
     @media(max-width:768px){
 
 .hero h1{
-font-size:50px;
+font-size:80px;
+color:#38bdf8;
+
+text-shadow:
+0 0 10px #38bdf8,
+0 0 20px #38bdf8,
+0 0 40px rgba(56,189,248,.7);
 }
 
 .hero h2{
@@ -902,7 +908,8 @@ font-size:18px;
 }
 
 .hero-logo{
-width:280px;
+width:380px;
+max-width:90%;
 }
 
 .nav-links{
