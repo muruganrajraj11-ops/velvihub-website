@@ -540,78 +540,83 @@ padding:120px 20px;
 }
 
 .hero h1{
-
-font-size:90px;
-
+font-size:72px;
 font-weight:900;
-
 color:#38bdf8;
-
 text-shadow:
 0 0 15px #38bdf8,
 0 0 30px #38bdf8,
 0 0 60px #38bdf8,
 0 0 100px #38bdf8;
-
-animation: glow 3s infinite alternate;
-
+animation:glow 3s infinite alternate;
 }
 
 @keyframes glow{
-
 from{
 text-shadow:
 0 0 15px #38bdf8,
 0 0 30px #38bdf8;
 }
-
 to{
 text-shadow:
 0 0 25px #38bdf8,
 0 0 50px #38bdf8,
 0 0 100px #38bdf8;
 }
-
 }
-
 .hero h2{
 font-size:42px;
 margin-top:20px;
 color:white;
 font-weight:700;
 }
-
 .hero p{
 font-size:22px;
 line-height:1.8;
 margin-top:15px;
 color:#e2e8f0;
 }
-
 .hero-buttons{
-
 margin-top:30px;
-
 display:flex;
-
 justify-content:center;
-
 flex-wrap:wrap;
-
 gap:15px;
+}
+.hero-logo{
+width:380px;
+max-width:90%;
+height:auto;
+border-radius:50%;
 
+box-shadow:
+0 0 30px #38bdf8,
+0 0 60px #38bdf8,
+0 0 100px rgba(56,189,248,.7);
+
+animation:pulse 4s infinite ease-in-out;
 }
 
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
 .btn{
-
 padding:14px 28px;
-
 border-radius:12px;
-
 font-weight:bold;
-
 transition:.3s;
-
 }
 
 .btn-primary{
@@ -890,6 +895,29 @@ color:#e2e8f0;
 margin-top:15px;
 
 }  
+    @media(max-width:768px){
+
+.hero h1{
+font-size:50px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-logo{
+width:280px;
+}
+
+.nav-links{
+display:none;
+}
+
+    }
 </style>
 
 </head>
