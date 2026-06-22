@@ -9,6 +9,7 @@
 content="width=device-width, initial-scale=1.0">
 
 <title>
+    <link rel="icon" href="favicon.ico">
 VelviHub | Networking, AI, Career Growth & Technology Learning
 </title>
 
@@ -78,6 +79,16 @@ gtag(
 
 <style>
 
+.section-title{
+text-align:center;
+font-size:38px;
+font-weight:bold;
+color:#38bdf8;
+margin-bottom:35px;
+text-shadow:0 0 20px rgba(56,189,248,.5);
+
+    }
+    
 .contact-box{
 
 text-align:center;
@@ -2035,22 +2046,76 @@ Visit →
 
 function searchPage(){
 
-let q =
-document.getElementById("searchInput")
+let q=document
+.getElementById("searchInput")
 .value
-.toLowerCase();
+.toLowerCase()
+.trim();
 
-if(q.includes("ccna")){
-window.location.href="ccna-career-path.html";
-}
-else if(q.includes("ai")){
-window.location.href="ai-future.html";
-}
-else if(q.includes("network")){
-window.location.href="networking-career.html";
+const pages={
+
+"ip":"ip-address.html",
+"ip address":"ip-address.html",
+
+"dns":"dns.html",
+
+"gateway":"gateway.html",
+
+"dhcp":"dhcp.html",
+
+"router":"router.html",
+
+"switch":"switch.html",
+
+"vlan":"vlan.html",
+
+"ospf":"ospf.html",
+
+"bgp":"bgp.html",
+
+"mpls":"mpls.html",
+
+"vpn":"vpn.html",
+
+"firewall":"firewall.html",
+
+"linux":"linux.html",
+
+"ccna":"ccna.html",
+
+"ipv6":"ipv6.html",
+
+"tnpsc":"tnpsc-hub.html",
+
+"group1":"group1.html",
+
+"group2":"group2.html",
+
+"group4":"group4.html",
+
+"vao":"vao.html",
+
+"trb":"trb-syllabus.html",
+
+"ai":"ai-future.html",
+
+"chatgpt":"chatgpt.html",
+
+"gemini":"gemini.html",
+
+"youtube":"youtube-channel.html"
+
+};
+
+if(pages[q]){
+
+window.location.href=pages[q];
+
 }
 else{
-alert("Topic not found");
+
+alert("❌ Topic not found");
+
 }
 
 }
@@ -2069,7 +2134,6 @@ window.speechSynthesis.speak(speech);
 }
 
 </script>
-
 <!-- GOOGLE TRANSLATE -->
 <div style="text-align:center;padding:30px;">
 <h2 style="color:#38bdf8;">🌐 Translate Website</h2>
