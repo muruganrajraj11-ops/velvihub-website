@@ -30,6 +30,14 @@ content="#0f172a">
 
 <meta property="og:site_name" content="VelviHub">
 
+<meta property="og:image" content="https://velvihub.in/file_0000000016c0722f94a008a093516611.png">
+
+<meta property="og:site_name" content="VelviHub">
+
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:image" content="https://velvihub.in/file_0000000016c0722f94a008a093516611.png">
+
 <link rel="canonical" href="https://velvihub.in/">
 
 <!-- Open Graph -->
@@ -525,12 +533,36 @@ padding:120px 20px;
 
 .hero h1{
 
-font-size:80px;
+font-size:90px;
+
+font-weight:900;
 
 color:#38bdf8;
 
 text-shadow:
-0 0 35px #38bdf8;
+0 0 15px #38bdf8,
+0 0 30px #38bdf8,
+0 0 60px #38bdf8,
+0 0 100px #38bdf8;
+
+animation: glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+text-shadow:
+0 0 15px #38bdf8,
+0 0 30px #38bdf8;
+}
+
+to{
+text-shadow:
+0 0 25px #38bdf8,
+0 0 50px #38bdf8,
+0 0 100px #38bdf8;
+}
 
 }
 
@@ -594,9 +626,15 @@ color:white;
 }
 
 .btn:hover{
-transform:translateY(-5px);
-}
 
+transform:
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+0 0 30px rgba(56,189,248,.8);
+
+}
 *{
 margin:0;
 padding:0;
@@ -611,12 +649,10 @@ font-family:
 sans-serif;
 
 background:
-linear-gradient(
-135deg,
-#020617,
-#0f172a,
-#1e293b
-);
+radial-gradient(circle at top,
+#0ea5e9,
+#020617 30%,
+#020617 100%);
 
 color:white;
 
