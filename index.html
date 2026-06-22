@@ -790,13 +790,30 @@ cursor:pointer;
     }
 
 }  
-    .hero-logo{
-width:220px;
+.hero-logo{
+width:320px;
 height:auto;
+max-width:90%;
 border-radius:50%;
-box-shadow:0 0 40px #38bdf8;
-margin-bottom:20px;
+margin-bottom:25px;
+
+box-shadow:
+0 0 25px #38bdf8,
+0 0 50px #38bdf8,
+0 0 80px rgba(56,189,248,.6);
+
+animation:pulse 4s infinite ease-in-out;
+transition:.4s;
 }
+
+.hero-logo:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 35px #38bdf8,
+0 0 70px #38bdf8,
+0 0 120px rgba(56,189,248,.8);
+}
+
 @keyframes pulse{
 
 0%{
@@ -813,6 +830,13 @@ transform:scale(1);
 
 }
 
+@media(max-width:768px){
+
+.hero-logo{
+width:280px;
+}
+
+}
 .nav-logo{
 
 height:50px;
