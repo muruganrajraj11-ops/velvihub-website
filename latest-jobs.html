@@ -66,7 +66,40 @@ padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
 }
+.jobs-section{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+padding:40px 20px;
+}
 
+.job-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(56,189,248,.25);
+text-align:center;
+}
+
+.job-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.job-card p{
+margin:8px 0;
+}
+
+.apply-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+background:#38bdf8;
+color:black;
+border-radius:10px;
+font-weight:bold;
+text-decoration:none;
+}
 body{
 font-family:'Segoe UI',sans-serif;
 background:
