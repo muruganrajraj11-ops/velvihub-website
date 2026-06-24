@@ -931,22 +931,27 @@ text-align:center;
 <body>
 
 <!-- GOOGLE TRANSLATE -->
-<div style="text-align:center;padding:30px;">
-<h2 style="color:#38bdf8;">🌐 Translate Website</h2>
-<p>Select your language</p>
-<div id="google_translate_element"></div>
+<section>
+
+<p style="
+text-align:center;
+margin-bottom:20px;
+font-size:18px;">
+Choose your preferred language and read content easily.
+</p>
+
+<h2 class="section-title">
+🌍 Google Translate
+</h2>
+
+<div class="translate-box">
+
+<div id="google_translate_element">
 </div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement(
-{pageLanguage:'en'},
-'google_translate_element'
-);
-}
-</script>
+</div>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</section>
 <!-- NAVBAR -->
 
 <nav class="navbar">
@@ -2076,7 +2081,24 @@ document.getElementById(
 }
 
 </script>
+<script>
 
+function googleTranslateElementInit() {
+
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta'
+},
+'google_translate_element'
+);
+
+}
+
+</script>
+
+<script
+src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </body>
 
 </html>
