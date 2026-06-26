@@ -27,7 +27,421 @@ rel="stylesheet">
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <style>
+<!-- ========================================= -->
+<!-- PART 6 : PREMIUM ANIMATIONS & EFFECTS -->
+<!-- ========================================= -->
 
+<style>
+
+/* ==========================
+      Fade Animation
+========================== */
+
+.fade-up{
+
+opacity:0;
+
+transform:
+
+translateY(60px);
+
+transition:
+
+all .9s ease;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:
+
+translateY(0);
+
+}
+
+/* ==========================
+      Floating Orbs
+========================== */
+
+.orb{
+
+position:fixed;
+
+border-radius:50%;
+
+filter:blur(60px);
+
+pointer-events:none;
+
+z-index:-2;
+
+animation:orbMove 14s ease-in-out infinite;
+
+}
+
+.orb1{
+
+width:220px;
+height:220px;
+
+background:#2563eb;
+
+top:15%;
+
+left:8%;
+
+opacity:.18;
+
+}
+
+.orb2{
+
+width:180px;
+height:180px;
+
+background:#38bdf8;
+
+bottom:15%;
+
+right:10%;
+
+opacity:.18;
+
+animation-delay:2s;
+
+}
+
+.orb3{
+
+width:260px;
+height:260px;
+
+background:#0ea5e9;
+
+top:55%;
+
+left:45%;
+
+opacity:.10;
+
+animation-delay:5s;
+
+}
+
+@keyframes orbMove{
+
+50%{
+
+transform:
+
+translateY(-25px)
+translateX(20px)
+scale(1.08);
+
+}
+
+}
+
+/* ==========================
+      Mouse Glow
+========================== */
+
+.cursor-glow{
+
+position:fixed;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(56,189,248,.18),
+transparent 70%);
+
+pointer-events:none;
+
+transform:
+
+translate(-50%,-50%);
+
+z-index:-1;
+
+}
+
+/* ==========================
+      Card Hover
+========================== */
+
+.blog-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.blog-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+
+left:-40%;
+
+width:80%;
+
+height:320%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.15),
+
+transparent
+
+);
+
+transform:
+
+rotate(25deg);
+
+transition:.8s;
+
+}
+
+.blog-card:hover::before{
+
+left:170%;
+
+}
+
+/* ==========================
+      Button Hover
+========================== */
+
+.read-btn,
+
+.home-btn,
+
+.blog-btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.read-btn::before,
+
+.home-btn::before,
+
+.blog-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:120%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.25),
+
+transparent
+
+);
+
+transition:.7s;
+
+}
+
+.read-btn:hover::before,
+
+.home-btn:hover::before,
+
+.blog-btn:hover::before{
+
+left:130%;
+
+}
+
+/* ==========================
+      Image Zoom
+========================== */
+
+.blog-card img{
+
+transition:.45s;
+
+}
+
+.blog-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* ==========================
+      Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+
+width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#06101f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#2563eb,
+
+#38bdf8
+
+);
+
+border-radius:30px;
+
+}
+
+/* ==========================
+      Selection
+========================== */
+
+::selection{
+
+background:#38bdf8;
+
+color:#fff;
+
+}
+
+</style>
+
+<!-- Floating Glow -->
+
+<div class="orb orb1"></div>
+
+<div class="orb orb2"></div>
+
+<div class="orb orb3"></div>
+
+<div class="cursor-glow"></div>
+
+<script>
+
+/* Mouse Glow */
+
+const glow=
+
+document.querySelector(
+
+".cursor-glow"
+
+);
+
+document.addEventListener(
+
+"mousemove",
+
+e=>{
+
+glow.style.left=e.clientX+"px";
+
+glow.style.top=e.clientY+"px";
+
+});
+
+/* Scroll Reveal */
+
+const observer=
+
+new IntersectionObserver(
+
+entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add(
+
+"show"
+
+);
+
+}
+
+});
+
+},
+
+{
+
+threshold:.15
+
+}
+
+);
+
+document.querySelectorAll(
+
+".blog-card,.heading,.hero"
+
+)
+
+.forEach(el=>{
+
+el.classList.add(
+
+"fade-up"
+
+);
+
+observer.observe(el);
+
+});
+
+</script>
+
+<style>
+      
 *{
 
 margin:0;
@@ -534,7 +948,149 @@ translateY(-12px);
 }
 
 }
+/* ==========================================
+            PREMIUM SEARCH
+========================================== */
 
+.search-section{
+
+max-width:1450px;
+
+margin:80px auto;
+
+padding:0 20px;
+
+}
+
+.search-box{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+background:
+
+linear-gradient(
+180deg,
+rgba(18,32,60,.95),
+rgba(8,18,35,.98));
+
+border:
+
+1px solid rgba(56,189,248,.35);
+
+border-radius:18px;
+
+padding:18px 24px;
+
+box-shadow:
+
+0 0 25px rgba(56,189,248,.15);
+
+}
+
+.search-box i{
+
+font-size:24px;
+
+color:#38bdf8;
+
+}
+
+.search-box input{
+
+flex:1;
+
+background:transparent;
+
+border:none;
+
+outline:none;
+
+color:#fff;
+
+font-size:18px;
+
+}
+
+.search-box input::placeholder{
+
+color:#94a3b8;
+
+}
+
+/* ========================= */
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.stat-card{
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+180deg,
+rgba(18,32,60,.95),
+rgba(8,18,35,.98));
+
+border:
+
+1px solid rgba(56,189,248,.25);
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 0 28px rgba(56,189,248,.35);
+
+}
+
+.stat-card h2{
+
+font-size:50px;
+
+color:#38bdf8;
+
+margin-bottom:10px;
+
+text-shadow:
+
+0 0 18px #38bdf8;
+
+}
+
+.stat-card p{
+
+font-size:18px;
+
+color:#dbeafe;
+
+      }
 </style>
 
 </head>
@@ -1070,7 +1626,92 @@ Read More →
 </div>
 
 </section>
+<section class="search-section">
 
+<div class="search-box">
+
+<i class="fas fa-search"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Articles, Courses, Networking...">
+
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h2 class="counter"
+data-target="250">
+
+0
+
+</h2>
+
+<p>
+
+Premium Articles
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter"
+data-target="120">
+
+0
+
+</h2>
+
+<p>
+
+Learning Paths
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter"
+data-target="50">
+
+0
+
+</h2>
+
+<p>
+
+Practice MCQs
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter"
+data-target="100">
+
+0
+
+</h2>
+
+<p>
+
+Free Resources
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 <!-- PART 3 -->
 <!-- ========================================= -->
 <!-- PART 3 : LEARNING PATHS -->
@@ -2373,7 +3014,85 @@ autoDisplay:false
 "google_translate_element");
 
 }
+/* Counter Animation */
 
+document.querySelectorAll(".counter")
+
+.forEach(counter=>{
+
+let update=()=>{
+
+let target=
+
++counter.dataset.target;
+
+let count=
+
++counter.innerText;
+
+let speed=
+
+target/80;
+
+if(count<target){
+
+counter.innerText=
+
+Math.ceil(count+speed);
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=
+
+target+"+";
+
+}
+
+};
+
+update();
+
+});
+
+/* Live Search */
+
+document
+
+.getElementById("searchInput")
+
+.addEventListener("keyup",function(){
+
+let value=
+
+this.value.toLowerCase();
+
+document
+
+.querySelectorAll(".blog-card")
+
+.forEach(card=>{
+
+card.style.display=
+
+card.innerText
+
+.toLowerCase()
+
+.includes(value)
+
+?
+
+"block"
+
+:
+
+"none";
+
+});
+
+});
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
