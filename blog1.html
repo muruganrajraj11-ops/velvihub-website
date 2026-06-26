@@ -1,1314 +1,1036 @@
 <!DOCTYPE html>
-<html lang="ta">
-
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VelviHub Blog | எளிய தமிழில் தொழில்நுட்ப அறிவு</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
+<title>VelviHub | Networking, AI, Career Growth & Technology Learning</title>
+
+<link rel="icon" type="image/png" href="https://velvihub.in/velvihub-logo.png">
 <meta name="description"
-content="Networking, AI, Programming, Cyber Security, Cloud Computing, Career Guidance, Online Earning மற்றும் அரசு தேர்வு தயாரிப்பை எளிய தமிழில் கற்றுக்கொள்ளுங்கள்.">
+content="VelviHub is a complete technology learning platform for Networking, AI Tools, Career Growth, Online Earning, Web Development and Digital Skills.">
 
 <meta name="keywords"
-content="VelviHub, Networking, AI, Cloud, Programming, Career, TNPSC, TRB, TET, Blog">
+content="CCNA, Networking, AI, ChatGPT, Career Growth, Online Earning, YouTube, Technology, VelviHub">
 
-<meta name="author" content="VelviHub">
+<meta name="author"
+content="VelviHub">
 
-<meta name="theme-color" content="#08111f">
+<meta name="robots"
+content="index, follow">
+
+<meta name="theme-color" content="#0f172a">
+
+<meta property="og:image"
+content="https://velvihub.in/velvihub-logo.png">
+
+<meta property="og:site_name"
+content="VelviHub">
+
+<meta property="og:locale"
+content="en_US">
+
+<meta name="twitter:image"
+content="https://velvihub.in/velvihub-logo.png">
 
 <link rel="canonical"
-href="https://velvihub.in/blog.html">
+href="https://velvihub.in/">
+<!-- Open Graph -->
 
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
+<meta property="og:title"
+content="VelviHub">
 
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+<meta property="og:description"
+content="Learn • Build • Grow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+<meta property="og:type"
+content="website">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta property="og:url"
+content="https://velvihub.in">
+
+<!-- Twitter -->
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="VelviHub">
+
+<meta name="twitter:description"
+content="Networking, AI, Career Growth & Technology">
+
+<!-- Google Analytics -->
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=G-WRENY46HW4">
+</script>
+
+<script>
+
+window.dataLayer =
+window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag(
+'config',
+'G-WRENY46HW4'
+);
+
+</script>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-background:
-linear-gradient(180deg,#050b16,#08162b,#091b34);
-
-color:#fff;
-
-overflow-x:hidden;
-
-}
-
-/* Animated Stars */
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-inset:0;
-
-background-image:
-
-radial-gradient(#7dd3fc 1px,transparent 1px),
-
-radial-gradient(#ffffff 1px,transparent 1px);
-
-background-size:
-
-70px 70px,
-
-140px 140px;
-
-opacity:.13;
-
-z-index:-3;
-
-}
-
-/* Blue Glow */
-
-body::after{
-
-content:"";
-
-position:fixed;
-
-width:700px;
-
-height:700px;
-
-left:50%;
-
-top:-260px;
-
-transform:translateX(-50%);
-
-background:#1fb6ff;
-
-filter:blur(220px);
-
-opacity:.15;
-
-border-radius:50%;
-
-z-index:-2;
-
-}
-
-/* Main Container */
-
-.container{
-
-width:min(1500px,95%);
-
-margin:auto;
-
-}
-
-/* Navbar */
-
-.navbar{
-
-position:fixed;
-
-top:10px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-width:min(1500px,95%);
-
-height:74px;
-
+.translate-box{
 display:flex;
-
+justify-content:center;
 align-items:center;
+margin-top:20px;
+}
 
-justify-content:space-between;
+#google_translate_element{
+display:inline-block;
+padding:15px 25px;
+background:#1e293b;
+border-radius:15px;
+border:1px solid #38bdf8;
+box-shadow:0 0 20px rgba(56,189,248,.3);
+}
 
-padding:0 22px;
+.goog-te-gadget{
+color:white !important;
+font-size:16px !important;
+}
 
-background:rgba(6,12,24,.82);
+.goog-te-combo{
+padding:10px 15px !important;
+border-radius:10px !important;
+border:1px solid #38bdf8 !important;
+background:#0f172a !important;
+color:white !important;
+font-size:16px !important;
+cursor:pointer;
+}
+.section-title{
+text-align:center;
+font-size:38px;
+font-weight:bold;
+color:#38bdf8;
+margin-bottom:35px;
+text-shadow:0 0 20px rgba(56,189,248,.5);
 
-backdrop-filter:blur(18px);
+    }
+    
+.contact-box{
 
-border:1px solid rgba(49,184,255,.18);
+text-align:center;
 
-border-radius:16px;
+font-size:20px;
+
+line-height:2;
+
+}
+
+.footer{
+
+background:#020617;
+
+padding:50px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+#cookieBanner{
+
+position:fixed;
+
+bottom:0;
+
+width:100%;
+
+background:#020617;
+
+padding:15px;
+
+text-align:center;
 
 z-index:9999;
 
-box-shadow:
+}
 
-0 10px 30px rgba(0,0,0,.35);
+#cookieBanner button{
+
+padding:8px 15px;
+
+margin-left:10px;
+
+background:#38bdf8;
+
+border:none;
+
+cursor:pointer;
 
 }
 
-/* Logo */
+#topBtn{
 
-.logo{
+position:fixed;
 
-display:flex;
+bottom:90px;
 
-align-items:center;
+right:20px;
 
-gap:12px;
+width:50px;
 
-}
+height:50px;
 
-.logo img{
-
-width:54px;
-
-height:54px;
+border:none;
 
 border-radius:50%;
 
-box-shadow:
+background:#38bdf8;
 
-0 0 18px #31b8ff;
+font-size:22px;
 
-}
-
-.logo h2{
-
-font-size:34px;
-
-font-weight:800;
-
-color:#31b8ff;
+cursor:pointer;
 
 }
 
-.logo p{
+.learn-btn{
 
-font-size:12px;
+display:inline-block;
 
-color:#cbd5e1;
+margin-top:15px;
 
-margin-top:-6px;
+padding:10px 18px;
 
-}
+background:#38bdf8;
 
-/* Menu */
+color:black;
 
-.menu{
+border-radius:8px;
 
-display:flex;
-
-gap:28px;
-
-}
-
-.menu a{
-
-color:#fff;
-
-text-decoration:none;
-
-font-size:15px;
-
-font-weight:600;
+font-weight:bold;
 
 transition:.3s;
 
 }
 
-.menu a:hover{
+.learn-btn:hover{
 
-color:#38bdf8;
+transform:scale(1.05);
 
-}
-
-/* Search Button */
-
-.search-btn{
-
-padding:13px 24px;
-
-border-radius:12px;
-
-background:
-
-linear-gradient(135deg,#2563eb,#3b82f6);
-
-color:#fff;
-
-font-weight:700;
-
-text-decoration:none;
-
-box-shadow:
-
-0 0 20px rgba(37,99,235,.35);
+background:white;
 
 }
-
-</style>
-
-</head>
-<!-- ========================= -->
-<!-- PART 2 - HERO SECTION -->
-<!-- Paste after <body> -->
-<!-- ========================= -->
-
-<div class="navbar">
-
-<div class="logo">
-
-<img src="velvihub-logo.png" alt="VelviHub Logo">
-
-<div>
-
-<h2>VelviHub</h2>
-
-<p>Learn • Explore • Grow</p>
-
-</div>
-
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-
-<a href="blog.html">Blog</a>
-
-<a href="courses.html">Courses</a>
-
-<a href="videos.html">Videos</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="resources.html">Resources</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<a href="#" class="search-btn">
-
-<i class="fas fa-search"></i>
-
- Search
-
-</a>
-
-</div>
-
-<div class="container">
-
-<section class="hero">
-
-<div class="hero-left">
-
-<h1>
-
-VelviHub
-
-<span>Blog</span>
-
-</h1>
-
-<h3>
-
-எளிய தமிழில் தொழில்நுட்ப அறிவு
-
-</h3>
-
-<p>
-
-Networking, Artificial Intelligence,
-
-Programming, Cyber Security,
-
-Cloud Computing, Career Guidance,
-
-Government Exams மற்றும்
-
-Online Earning தொடர்பான
-
-Premium கட்டுரைகள்.
-
-</p>
-
-<div class="hero-tags">
-
-<span>🌐 Networking</span>
-
-<span>🤖 AI</span>
-
-<span>💻 Programming</span>
-
-<span>☁️ Cloud</span>
-
-<span>🛡 Cyber Security</span>
-
-<span>🎓 Career</span>
-
-</div>
-
-<div class="hero-buttons">
-
-<a href="index.html" class="home-btn">
-
-🏠 Home
-
-</a>
-
-<a href="#categories" class="blog-btn">
-
-🚀 Explore Blog
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="logo-circle">
-
-<img src="velvihub-logo.png" alt="VelviHub">
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-/* HERO */
-
-.hero{
-
-min-height:95vh;
+.services-grid{
 
 display:grid;
 
-grid-template-columns:1.1fr .9fr;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
 
-align-items:center;
+gap:25px;
 
-gap:60px;
-
-padding-top:130px;
-
-}
-
-.hero-left h1{
-
-font-size:88px;
-
-font-weight:800;
-
-line-height:1;
+padding:30px;
 
 }
 
-.hero-left h1 span{
+.service-card{
 
-display:block;
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.3s;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.15);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 0 45px rgba(56,189,248,.6);
+
+}
+
+.service-card h3{
 
 color:#38bdf8;
 
-text-shadow:
-
-0 0 20px #38bdf8,
-
-0 0 45px #38bdf8;
+margin-bottom:15px;
 
 }
 
-.hero-left h3{
+.service-card p{
 
-margin-top:18px;
+line-height:1.8;
 
-font-size:42px;
-
-color:#7dd3fc;
-
-font-weight:700;
+color:#cbd5e1;
 
 }
-
-.hero-left p{
-
-margin-top:25px;
-
-font-size:21px;
-
-line-height:2;
-
-color:#dbeafe;
-
-max-width:700px;
-
-}
-
-.hero-tags{
-
-margin-top:30px;
+.about-container{
 
 display:flex;
 
 flex-wrap:wrap;
 
-gap:14px;
-
-}
-
-.hero-tags span{
-
-padding:12px 18px;
-
-background:#10213d;
-
-border:1px solid rgba(56,189,248,.25);
-
-border-radius:12px;
-
-font-size:15px;
-
-}
-
-.hero-buttons{
-
-margin-top:35px;
-
-display:flex;
-
-gap:20px;
-
-}
-
-.home-btn,
-
-.blog-btn{
-
-display:flex;
-
-align-items:center;
-
 justify-content:center;
 
-height:56px;
+gap:25px;
 
-padding:0 34px;
-
-border-radius:14px;
-
-text-decoration:none;
-
-font-weight:700;
-
-color:#fff;
+padding:30px;
 
 }
 
-.home-btn{
+.about-card{
 
-background:
+background:#1e293b;
 
-linear-gradient(135deg,#16a34a,#22c55e);
+padding:30px;
 
-}
+width:320px;
 
-.blog-btn{
-
-background:
-
-linear-gradient(135deg,#2563eb,#38bdf8);
-
-}
-
-.hero-right{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-}
-
-.logo-circle{
-
-width:480px;
-
-height:480px;
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-background:
-
-radial-gradient(circle,
-
-rgba(56,189,248,.15),
-
-transparent 70%);
-
-box-shadow:
-
-0 0 80px rgba(56,189,248,.35);
-
-}
-
-.logo-circle img{
-
-width:420px;
-
-height:420px;
-
-border-radius:50%;
-
-box-shadow:
-
-0 0 40px #38bdf8;
-
-object-fit:cover;
-
-}
-
-@media(max-width:1000px){
-
-.hero{
-
-grid-template-columns:1fr;
+border-radius:20px;
 
 text-align:center;
 
-}
-
-.hero-left p{
-
-margin:auto;
-
-}
-
-.hero-tags{
-
-justify-content:center;
-
-}
-
-.hero-buttons{
-
-justify-content:center;
-
-}
-
-.logo-circle{
-
-width:300px;
-
-height:300px;
-
-}
-
-.logo-circle img{
-
-width:260px;
-
-height:260px;
-
-}
-
-}
-
-</style>
-
-<!-- PART 3 STARTS NEXT -->
-<!-- ========================================= -->
-<!-- PART 3 - BLOG CATEGORIES -->
-<!-- Paste below Hero Section -->
-<!-- ========================================= -->
-
-<section id="categories">
-
-<div class="section-title">
-
-<h2>
-
-📚 VelviHub Learning Categories
-
-</h2>
-
-<p>
-
-எளிய தமிழில் கற்றுக்கொள்ளுங்கள்
-
-</p>
-
-</div>
-
-<div class="category-grid">
-
-<div class="category-card">
-
-<div class="icon">
-
-🌐
-
-</div>
-
-<h3>
-
-Networking Academy
-
-</h3>
-
-<p>
-
-IP Address, DNS, DHCP,
-
-Routing, Switching,
-
-CCNA,
-
-MPLS,
-
-BGP
-
-</p>
-
-<a href="networking.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-🤖
-
-</div>
-
-<h3>
-
-Artificial Intelligence
-
-</h3>
-
-<p>
-
-ChatGPT,
-
-AI Tools,
-
-AI Images,
-
-AI Videos,
-
-Automation
-
-</p>
-
-<a href="ai.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-💻
-
-</div>
-
-<h3>
-
-Programming
-
-</h3>
-
-<p>
-
-HTML,
-
-CSS,
-
-JavaScript,
-
-Python,
-
-GitHub
-
-</p>
-
-<a href="programming.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-☁️
-
-</div>
-
-<h3>
-
-Cloud Computing
-
-</h3>
-
-<p>
-
-AWS,
-
-Azure,
-
-Google Cloud,
-
-Virtualization
-
-</p>
-
-<a href="cloud.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-🛡️
-
-</div>
-
-<h3>
-
-Cyber Security
-
-</h3>
-
-<p>
-
-Firewall,
-
-VPN,
-
-IDS,
-
-IPS,
-
-Network Security
-
-</p>
-
-<a href="security.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-🎓
-
-</div>
-
-<h3>
-
-Career Guidance
-
-</h3>
-
-<p>
-
-Resume,
-
-Interview,
-
-Career Planning,
-
-IT Jobs
-
-</p>
-
-<a href="career-guidance.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-#categories{
-
-padding:90px 0;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:55px;
-
-}
-
-.section-title h2{
-
-font-size:52px;
-
-font-weight:800;
-
-color:#fff;
-
-}
-
-.section-title p{
-
-margin-top:12px;
-
-font-size:20px;
-
-color:#94a3b8;
-
-}
-
-.category-grid{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(3,1fr);
-
-gap:28px;
-
-}
-
-.category-card{
-
-background:
-
-linear-gradient(
-
-180deg,
-
-rgba(18,35,65,.95),
-
-rgba(10,20,40,.98)
-
-);
-
-border:
-
-1px solid rgba(56,189,248,.20);
-
-border-radius:22px;
-
-padding:32px;
-
-transition:.35s;
-
 box-shadow:
+0 0 20px rgba(56,189,248,.2);
 
-0 15px 35px rgba(0,0,0,.30);
+transition:.3s;
 
 }
 
-.category-card:hover{
+.about-card:hover{
 
 transform:translateY(-10px);
 
-border-color:#38bdf8;
-
 box-shadow:
-
-0 0 35px rgba(56,189,248,.28);
+0 0 40px rgba(56,189,248,.6);
 
 }
 
-.icon{
+.about-card h3{
 
-width:80px;
+color:#38bdf8;
 
-height:80px;
+margin-bottom:15px;
 
-border-radius:18px;
+}
+
+.about-card p{
+
+line-height:1.8;
+
+color:#cbd5e1;
+
+}
+.stats-section{
 
 display:flex;
 
-align-items:center;
+flex-wrap:wrap;
 
 justify-content:center;
 
-font-size:38px;
+gap:25px;
 
-background:
+padding:80px 20px;
 
-linear-gradient(
+}
 
-135deg,
+.stat-card{
 
-#2563eb,
+background:#1e293b;
 
-#38bdf8
+padding:25px;
 
+width:220px;
+
+text-align:center;
+
+border-radius:18px;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.2);
+
+}
+
+.stat-card h3{
+
+color:#38bdf8;
+
+font-size:35px;
+
+}
+
+.floating-section{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:20px;
+
+padding:50px 20px;
+
+}
+
+.float-card{
+
+background:#0f172a;
+
+padding:20px 25px;
+
+border-radius:15px;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.25);
+
+animation:floatCard 4s ease-in-out infinite;
+
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.stars{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+z-index:-1;
+
+overflow:hidden;
+
+}
+
+.stars::before{
+
+content:"";
+
+position:absolute;
+
+width:200%;
+
+height:200%;
+
+background-image:
+radial-gradient(
+white 1px,
+transparent 1px
 );
 
-margin-bottom:24px;
+background-size:
+50px 50px;
+
+opacity:.2;
+
+animation:
+moveStars 60s linear infinite;
 
 }
 
-.category-card h3{
+@keyframes moveStars{
 
-font-size:28px;
+from{
+transform:translateY(0);
+}
 
-margin-bottom:16px;
+to{
+transform:translateY(-500px);
+}
+
+}  
+.navbar{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+background:#020617;
+
+padding:15px 25px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:999;
+
+box-shadow:
+0 0 25px rgba(56,189,248,.2);
 
 }
 
-.category-card p{
+.logo{
+display:flex;
+align-items:center;
+gap:8px;
+}
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+box-shadow:0 0 12px #38bdf8;
+}
+.nav-text{
+font-size:24px;
+font-weight:800;
+color:#38bdf8;
+text-shadow:
+0 0 8px #38bdf8;
+0 0 20px rgba(56,189,248,.6);
+}
+.nav-links{
 
-line-height:1.9;
+display:flex;
 
-color:#dbeafe;
-
-margin-bottom:28px;
+gap:25px;
 
 }
 
-.category-card a{
+.nav-links a{
 
-display:inline-block;
+color:white;
 
-padding:14px 24px;
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:#38bdf8;
+
+}
+
+.hero{
+
+min-height:auto;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:90px 20px 60px;
+
+}
+
+.hero h1{
+font-size:72px;
+font-weight:900;
+color:#38bdf8;
+text-shadow:
+0 0 15px #38bdf8,
+0 0 30px #38bdf8,
+0 0 60px #38bdf8,
+0 0 100px #38bdf8;
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow{
+from{
+text-shadow:
+0 0 15px #38bdf8,
+0 0 30px #38bdf8;
+}
+to{
+text-shadow:
+0 0 25px #38bdf8,
+0 0 50px #38bdf8,
+0 0 100px #38bdf8;
+}
+}
+.hero h2{
+font-size:42px;
+margin-top:20px;
+color:white;
+font-weight:700;
+}
+.hero p{
+font-size:22px;
+line-height:1.8;
+margin-top:15px;
+color:#e2e8f0;
+}
+.hero-buttons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+.hero-logo{
+width:250px;
+height:auto;
+max-width:90%;
+border-radius:50%;
+
+box-shadow:
+0 0 30px #38bdf8,
+0 0 60px #38bdf8,
+0 0 100px rgba(56,189,248,.7);
+
+animation:pulse 4s infinite ease-in-out;
+}
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+.btn{
+padding:14px 28px;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+}
+
+.btn-whatsapp{
+background:#25D366;
+color:white;
+}
+
+.btn-telegram{
+background:#229ED9;
+color:white;
+}
+
+.btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+0 0 30px rgba(56,189,248,.8);
+
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+'Segoe UI',
+sans-serif;
+
+background:
+radial-gradient(circle at top,
+#0ea5e9,
+#020617 30%,
+#020617 100%);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+}
+
+section{
+padding:100px 20px;
+}
+
+.search-box{
+
+text-align:center;
+
+margin:20px;
+
+}
+
+#searchInput{
+
+width:80%;
+
+max-width:500px;
+
+padding:15px;
+
+font-size:18px;
 
 border-radius:12px;
 
-background:
+border:none;
 
-linear-gradient(
-
-135deg,
-
-#2563eb,
-
-#38bdf8
-
-);
-
-color:#fff;
-
-text-decoration:none;
-
-font-weight:700;
+outline:none;
 
 }
 
-@media(max-width:1000px){
+.search-box button{
 
-.category-grid{
+padding:15px 20px;
 
-grid-template-columns:1fr;
+margin:5px;
 
+border:none;
+
+border-radius:10px;
+
+background:#38bdf8;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+/* HUB SECTIONS */
+
+.academy-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.academy-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0,191,255,0.8);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,191,255,0.35);
+    border-color: rgba(0,191,255,0.6);
+}
+
+.card h3 {
+    color: #4fc3ff;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#00bfff,#0080ff);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,191,255,0.7);
+}
+
+@media (max-width: 768px) {
+
+    .academy-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+}  
+.hero-logo{
+width:320px;
+height:auto;
+max-width:90%;
+border-radius:50%;
+margin-bottom:25px;
+
+box-shadow:
+0 0 25px #38bdf8,
+0 0 50px #38bdf8,
+0 0 80px rgba(56,189,248,.6);
+
+animation:pulse 4s infinite ease-in-out;
+transition:.4s;
+}
+
+.hero-logo:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 35px #38bdf8,
+0 0 70px #38bdf8,
+0 0 120px rgba(56,189,248,.8);
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
 }
 
 }
 
+.nav-logo{
+width:45px;
+height:45px;
+border-radius:50%;
+box-shadow:0 0 10px #38bdf8;
+}
+.hero-stats{
+margin-top:20px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+.hero-stats span{
+background:#0f172a;
+padding:10px 15px;
+border-radius:10px;
+border:1px solid #38bdf8;
+font-size:14px;
+}
+.hero-topics{
+font-size:22px;
+line-height:2;
+color:#e2e8f0;
+margin-top:15px;
+}  
+@media(max-width:768px){
+.hero h1{
+font-size:48px;
+color:#38bdf8;
+text-shadow:
+0 0 10px #38bdf8,
+0 0 20px #38bdf8,
+0 0 40px rgba(56,189,248,.7);
+}
+.hero h2{
+font-size:28px;
+}
+.hero p{
+font-size:18px;
+}
+.hero-logo{
+width:380px;
+max-width:90%;
+}
+.nav-links{
+display:flex;
+gap:10px;
+overflow-x:auto;
+}
+}
+.hero-content{
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
 </style>
+</head>
+<body>
 
-<!-- PART 4 -->
-<!-- ========================================= -->
-<!-- PART 4 - GROWTH HUB -->
-<!-- Paste below Learning Categories -->
-<!-- ========================================= -->
 
-<section id="growth">
+<!-- NAVBAR -->
 
-<div class="section-title">
+<nav class="navbar">
 
-<h2>
+<div class="logo">
 
-🚀 VelviHub Growth Hub
+<img
+src="https://velvihub.in/velvihub-logo.png"
+alt="VelviHub"
+class="nav-logo">
 
-</h2>
-
-<p>
-
-திறமையை வளர்த்து, தொழில்நுட்ப உலகில் முன்னேறுங்கள்
-
-</p>
+<span class="nav-text">
+🚀 VelviHub
+</span>
 
 </div>
 
-<div class="category-grid">
-
-<div class="category-card">
-
-<div class="icon">
-
-💰
-
+<div class="nav-links">
+  
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#learning">Learning</a>
+<a href="#contact">Contact</a>
+<a href="blog.html">Blog</a>
+<!-- <a href="blog1.html">Blog</a> -->
+<a href="videos.html">Videos</a>
+<a href="courses.html">Courses</a>
+<a href="gallery.html">Gallery</a>
+  
 </div>
 
-<h3>
+</nav>
 
-Online Earning
+<!-- HERO SECTION -->
 
-</h3>
+<section
+class="hero"
+id="home">
 
+<div class="hero-content">
+
+
+<img
+src="https://velvihub.in/velvihub-logo.png"
+alt="VelviHub"
+class="hero-logo">
+<h1>🚀 VelviHub</h1>
+<h2>Learn • Build • Grow</h2>
 <p>
+தமிழில் Networking, AI, Career Growth மற்றும் Technology கற்றுக்கொள்ளுங்கள்
+</p>
 
-Affiliate Marketing,
+<p class="hero-topics">
 
-Blogging,
-
-Google AdSense,
-
-Freelancing,
-
-Digital Income
+🌐 Networking •
+🤖 AI Tools •
+🎓 Career Growth •
+💰 Online Earning •
+🎥 YouTube •
+🚀 Technology
 
 </p>
 
-<a href="online-earning.html">
+<div class="hero-stats">
+<span>📚 150+ Articles</span>
+<span>🤖 AI Hub</span>
+<span>🎯 TNPSC Hub</span>
+<span>🌍 Multi Language</span>
+<span>🔥 Daily Updates</span>
+<span>🚀 Free Learning</span>
+</div>
+    
+<div class="hero-buttons">
 
-கற்றுக்கொள்ளுங்கள் →
+<a
+href="#learning"
+class="btn btn-primary">
+
+🚀 Start Learning
 
 </a>
 
-</div>
+<a
+href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v"
+target="_blank"
+class="btn btn-whatsapp">
 
-<div class="category-card">
-
-<div class="icon">
-
-🎥
-
-</div>
-
-<h3>
-
-YouTube Creator Hub
-
-</h3>
-
-<p>
-
-Channel Growth,
-
-AI Video Tools,
-
-Thumbnail,
-
-SEO,
-
-Monetization
-
-</p>
-
-<a href="youtube-ai-tools.html">
-
-கற்றுக்கொள்ளுங்கள் →
+📢 WhatsApp
 
 </a>
 
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-📱
-
-</div>
-
-<h3>
-
-Mobile Apps & Tools
-
-</h3>
-
-<p>
-
-Useful Apps,
-
-Productivity,
-
-Cloud Storage,
-
-AI Apps,
-
-Utility Tools
-
-</p>
-
-<a href="mobile-apps-tools.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-🏛
-
-</div>
-
-<h3>
-
-Government Exams
-
-</h3>
-
-<p>
-
-TNPSC,
-
-TRB,
-
-TET,
-
-RRB,
-
-Bank,
-
-SSC
-
-</p>
-
-<a href="government-jobs.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-🎯
-
-</div>
-
-<h3>
-
-Career Success
-
-</h3>
-
-<p>
-
-Resume,
-
-Interview,
-
-Communication,
-
-Skill Development,
-
-Career Planning
-
-</p>
-
-<a href="career-success-tips.html">
-
-கற்றுக்கொள்ளுங்கள் →
-
-</a>
-
-</div>
-
-<div class="category-card">
-
-<div class="icon">
-
-⭐
-
-</div>
-
-<h3>
-
-VelviHub Specials
-
-</h3>
-
-<p>
-
-Success Stories,
-
-Motivation,
-
-Daily Learning,
-
-Technology Updates
-
-</p>
-
-<a href="velvihub-specials.html">
-
-கற்றுக்கொள்ளுங்கள் →
+<a
+href="https://t.me/VelviHub"
+target="_blank"
+class="btn btn-telegram">
+
+📱 Telegram
 
 </a>
 
@@ -1318,127 +1040,796 @@ Technology Updates
 
 </section>
 
-<!-- =============================== -->
-<!-- COMMUNITY -->
-<!-- =============================== -->
+<!-- GOOGLE TRANSLATE -->
+<section>
 
-<section id="community">
+<h2 class="section-title">
+🌍 Google Translate
+</h2>
 
-<div class="section-title">
+<p style="
+text-align:center;
+margin-bottom:20px;
+font-size:18px;">
+Choose your preferred language and read content easily.
+</p>
 
-<h2>
+<div class="translate-box">
+<div id="google_translate_element"></div>
+</div>
 
-🌍 VelviHub Community
+</section>
+<!-- STATS SECTION -->
+
+<section class="stats-section">
+
+<div class="stat-card">
+
+<h3>🌐 150+</h3>
+
+<p>Technology Articles</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🎓 50+</h3>
+
+<p>Learning Guides</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🤖 AI Hub</h3>
+
+<p>Future Technologies</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>💰 Growth</h3>
+
+<p>Online Earning Ideas</p>
+
+</div>
+
+</section>
+
+<!-- FLOATING INFO CARDS -->
+
+<section class="floating-section">
+
+<div class="float-card">
+
+🌐 Networking Academy
+
+</div>
+
+<div class="float-card">
+
+🤖 AI Tools Hub
+
+</div>
+
+<div class="float-card">
+
+🎥 YouTube Creator Hub
+
+</div>
+
+<div class="float-card">
+
+💰 Online Earning
+
+</div>
+
+<div class="float-card">
+
+🎓 Career Growth
+
+</div>
+
+<div class="float-card">
+
+🚀 Digital Skills
+
+</div>
+
+</section>
+
+<!-- ANIMATED BACKGROUND -->
+
+<div class="stars"></div>
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+🌟 About VelviHub
 
 </h2>
 
+<div class="about-container">
+
+<div class="about-card">
+
+<h3>🚀 Who We Are</h3>
+
 <p>
 
-எங்களுடன் இணைந்து தொடர்ந்து கற்றுக்கொள்ளுங்கள்
+VelviHub என்பது Networking,
+AI, Technology, Career Growth,
+Online Earning மற்றும் Digital Skills
+கற்றுக்கொடுக்க உருவாக்கப்பட்ட
+ஒரு Learning Platform.
 
 </p>
 
 </div>
 
-<div class="category-grid">
+<div class="about-card">
 
-<div class="category-card">
-
-<div class="icon">
-
-▶️
-
-</div>
-
-<h3>
-
-YouTube
-
-</h3>
+<h3>🎯 Our Mission</h3>
 
 <p>
 
-Networking,
-
-AI,
-
-Programming,
-
-Career Videos
+தமிழில் தரமான தொழில்நுட்ப
+கல்வியை அனைவருக்கும்
+இலவசமாக வழங்குவது.
 
 </p>
 
-<a href="https://youtube.com/@velvi2020">
+</div>
 
-Watch →
+<div class="about-card">
+
+<h3>🌍 Our Vision</h3>
+
+<p>
+
+ஒவ்வொரு மாணவரும்,
+வேலை தேடுபவரும்,
+தொழில்நுட்ப திறன்களை
+வளர்த்து முன்னேற உதவுவது.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- SERVICES SECTION -->
+
+<section id="services">
+
+<h2 class="section-title">
+
+🚀 Our Services
+
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🌐 Networking Academy</h3>
+<p>CCNA, Routing, Switching, MPLS, Security</p>
+</div>
+
+<div class="service-card">
+<h3>🤖 AI Tools Hub</h3>
+<p>ChatGPT, Gemini, AI Images, AI Videos</p>
+</div>
+
+<div class="service-card">
+<h3>🎥 YouTube Growth</h3>
+<p>SEO, Shorts, Monetization, Branding</p>
+</div>
+
+<div class="service-card">
+<h3>💰 Online Earning</h3>
+<p>Affiliate Marketing, Blogging, AdSense</p>
+</div>
+
+<div class="service-card">
+<h3>🎓 Career Guidance</h3>
+<p>Interview, Resume, Skill Development</p>
+</div>
+
+<div class="service-card">
+<h3>💻 Web Development</h3>
+<p>HTML, CSS, GitHub, Domains, Hosting</p>
+</div>
+
+</div>
+
+</section>
+<!-- NETWORKING ACADEMY -->
+
+<section id="learning">
+
+<h2 class="section-title">
+
+🌐 Networking Academy
+
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🌍 IP Fundamentals</h3>
+<p>IP Address, Subnet Mask, Gateway, DNS</p>
+<a href="ip-fundamentals.html" class="learn-btn">Learn More →</a>
+</div>
+
+<div class="service-card">
+<h3>🌐 IPv6 Complete Guide</h3>
+<p>Learn IPv6 from Basics to Advanced</p>
+<a href="ipv6-complete-guide-premium.html" class="learn-btn">
+Learn More →
+</a>
+</div>
+  
+<div class="service-card">
+<h3>🔀 Switching</h3>
+<p>VLAN, STP, RSTP, EtherChannel</p>
+<a href="switching-technologies.html" class="learn-btn">Learn More →</a>
+</div>
+
+<div class="service-card">
+<h3>📡 Routing</h3>
+<p>Static, OSPF, BGP, MPLS</p>
+<a href="routing.html" class="learn-btn">Learn More →</a>
+</div>
+
+<div class="service-card">
+<h3>🛡️ Security</h3>
+<p>Firewall, VPN, IDS, IPS</p>
+<a href="security.html" class="learn-btn">Learn More →</a>
+</div>
+
+<div class="service-card">
+<h3>☁️ Cloud</h3>
+<p>Cloud Networking & Automation</p>
+<a href="cloud.html" class="learn-btn">Learn More →</a>
+</div>
+
+<div class="service-card">
+<h3>🎓 RailTel Preparation</h3>
+<p>Network/IP Exam Preparation</p>
+<a href="railtel.html" class="learn-btn">Learn More →</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- TECHNOLOGY HUB -->
+<div class="card">
+
+<h3>🌐 Technology Hub</h3>
+
+<p>
+Networking, Linux,
+Programming, AI,
+Cloud Computing மற்றும்
+Cyber Security கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="technology.html">
+Open Hub →
+</a>
+
+</div>
+    
+
+
+<!-- CAREER HUB -->
+
+<!--<section id="career">
+
+<h2 class="section-title">
+🎓 Career Growth Hub
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>📄 Resume Building</h3>
+<p>Create Professional Resumes</p>
+</div>
+
+<div class="service-card">
+<h3>🎤 Interview Preparation</h3>
+<p>Technical & HR Questions</p>
+</div>
+
+<div class="service-card">
+<h3>🚀 Skill Development</h3>
+<p>Learn High-Demand Skills</p>
+</div>
+
+<div class="service-card">
+<h3>💼 Job Opportunities</h3>
+<p>Career Growth & Guidance</p>
+</div>
+
+</div>
+
+</section> -->
+
+
+    
+ <!-- Government Jobs Hub -->
+<div class="card">
+<h3>🏛 Government Jobs Hub</h3>
+<p>
+Railway Jobs, Banking Jobs,
+TNPSC, SSC, UPSC, TRB, TET
+மற்றும் அனைத்து Government Job
+Updates-ஐ அறியுங்கள்.
+</p>
+<a href="Government-jobs-hub.html">
+Open Hub →
+</a>
+</div>
+<!-- GOVERNMENT EXAMS HUB -->
+
+<div class="card">
+<h3>🏛 Government Exams Hub ➕ Current Affairs Hub</h3>
+
+<p>
+TNPSC, TRB, TET, RRB, SSC, UPSC,
+Current Affairs, Notes, MCQs,
+Study Materials மற்றும் Exam Preparation
+வழிகாட்டுதல்களை கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="government-exams-hub.html">
+Open Hub →
+</a>
+
+</div>
+    
+<!-- Education Hub -->
+<div class="card">
+<h3>📚 Education Hub</h3>
+<p>
+பள்ளி கல்வி, கல்லூரி கல்வி,
+Study Materials, Notes, MCQs,
+Competitive Exams மற்றும் Learning Resources
+அனைத்தையும் ஒரே இடத்தில் பெறுங்கள்.
+</p>
+<a href="education-hub.html">
+Open Hub →
+</a>
+</div>
+
+<!-- Career Hub -->
+
+<div class="card">
+
+<h3>🎓 Career Growth Hub</h3>
+
+<p>
+Resume, Interview,
+Skill Development,
+Career Roadmap மற்றும்
+Government Jobs வழிகாட்டுதல்கள்.
+</p>
+
+<a href="career-hub.html">
+Open Hub →
+</a>
+
+</div>
+    
+
+
+<!-- Online Income Hub -->
+
+<div class="card">
+<h3>💰 Online Income Hub</h3>
+<p>
+Affiliate Marketing, Blogging,
+YouTube Income, Freelancing மற்றும்
+Online Earning வழிகளை கற்றுக்கொள்ளுங்கள்.
+</p>
+<a href="online-income-hub.html">
+Open Hub →
+</a>
+</div>
+
+    <!-- Online Income Hub --> 
+    
+<div class="card">
+<h3>🏦 Finance & Banking Hub</h3>
+
+<p>
+Banking, Savings, Mutual Funds,
+Insurance, Digital Payments மற்றும்
+Personal Finance பற்றிய தகவல்களை
+தமிழில் கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="finance-banking-hub.html">
+Open Hub →
+</a>
+
+</div>
+    
+   <!-- 🌱 Life Skills Hub -->
+    
+<div class="card">
+<h3>🌱 Life Skills Hub</h3>
+<p>
+Self Growth, Productivity,
+Leadership மற்றும் Life Skills
+கற்றுக்கொள்ளுங்கள்.
+</p>
+<a href="Life-skills.html">
+Open Hub →
+</a>
+</div>
+
+<!-- Motivation & Philosophy Hub -->
+
+<div class="card">
+<h3>📚 Motivation & Philosophy Hub</h3>
+
+<p>
+Daily Motivation, Success Stories,
+Life Philosophy, Thirukkural,
+Positive Mindset மற்றும் Inspirational Lessons
+பற்றிய வழிகாட்டுதல்களை கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="motivation-philosophy-hub.html">
+Open Hub →
+</a>
+
+</div>
+
+<!-- Health & Cooking Hub -->
+
+<div class="card">
+<h3>🍲 Health & Cooking Hub</h3>
+
+<p>
+Healthy Living, Fitness, Nutrition,
+Cooking Recipes, Healthy Recipes மற்றும்
+Health Awareness பற்றிய தகவல்களை
+தமிழில் கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="health-cooking-hub.html">
+Open Hub →
+</a>
+
+</div>
+
+<!-- Family & Parenting Hub -->
+
+<div class="card">
+<h3>👨‍👩‍👧 Family & Parenting Hub</h3>
+
+<p>
+Parenting, Child Development,
+Family Life, Relationships,
+Education Support மற்றும் Family Wellness
+பற்றிய தகவல்களை கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="family-parenting-hub.html">
+Open Hub →
+</a>
+
+</div>
+
+<!-- Kids Zone -->
+
+<div class="card">
+<h3>🧒 Kids Zone</h3>
+
+<p>
+Stories, Rhymes, General Knowledge,
+Activities, Science மற்றும் Educational Games
+பற்றிய குழந்தைகளுக்கான கற்றல் உள்ளடக்கங்களை அறியுங்கள்.
+</p>
+
+<a href="kids-zone.html">
+Open Hub →
+</a>
+
+</div>
+
+<!-- Community Hub -->
+
+<div class="card">
+<h3>👥 Community Hub</h3>
+
+<p>
+YouTube, Telegram, WhatsApp,
+Blog Updates, Newsletter மற்றும்
+VelviHub Community மூலம்
+இணைந்து கற்றுக்கொள்ளுங்கள்.
+</p>
+
+<a href="community-hub.html">
+Open Hub →
+</a>
+
+</div>
+<!-- AI HUB -->
+
+<section id="ai-hub">
+
+<h2 class="section-title">
+🤖 AI Tools Hub
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🤖 ChatGPT</h3>
+<p>AI Assistant & Productivity</p>
+</div>
+
+<div class="service-card">
+<h3>✨ Gemini AI</h3>
+<p>Google AI Platform</p>
+</div>
+
+<div class="service-card">
+<h3>🎨 AI Image Tools</h3>
+<p>Create Images using AI</p>
+</div>
+
+<div class="service-card">
+<h3>🎬 AI Video Tools</h3>
+<p>Create Videos with AI</p>
+</div>
+
+</div>
+
+</section>
+
+    
+<!-- ONLINE EARNING -->
+
+<section id="earning">
+
+<h2 class="section-title">
+💰 Online Earning Hub
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>💸 Affiliate Marketing</h3>
+<p>Earn through product promotion</p>
+</div>
+
+<div class="service-card">
+<h3>📝 Blogging</h3>
+<p>Build content and passive income</p>
+</div>
+
+<div class="service-card">
+<h3>🎯 Google AdSense</h3>
+<p>Monetize websites and blogs</p>
+</div>
+
+<div class="service-card">
+<h3>🚀 Freelancing</h3>
+<p>Earn using your skills online</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- YOUTUBE HUB -->
+
+<section id="youtube">
+
+<h2 class="section-title">
+🎥 YouTube Creator Hub
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>📺 YouTube Growth</h3>
+<p>Channel Growth Strategies</p>
+</div>
+
+<div class="service-card">
+<h3>⚡ Shorts Creation</h3>
+<p>Create Viral Shorts</p>
+</div>
+
+<div class="service-card">
+<h3>🔍 Video SEO</h3>
+<p>Rank Videos on Search</p>
+</div>
+
+<div class="service-card">
+<h3>💰 Monetization</h3>
+<p>Earn from YouTube</p>
+</div>
+
+</div>
+
+</section>
+<!-- LATEST UPDATES -->
+
+<section id="updates">
+
+<h2 class="section-title">
+🔥 Latest Updates
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🌐 Networking Updates</h3>
+<p>Latest Networking Technologies</p>
+</div>
+
+<div class="service-card">
+<h3>🤖 AI News</h3>
+<p>Artificial Intelligence Trends</p>
+</div>
+
+<div class="service-card">
+<h3>🎥 YouTube Growth</h3>
+<p>Creator Economy Updates</p>
+</div>
+
+<div class="service-card">
+<h3>💰 Online Income</h3>
+<p>New Earning Opportunities</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED ARTICLES -->
+
+<section id="articles">
+
+<h2 class="section-title">
+📚 Featured Articles
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🌍 What is IP Address?</h3>
+<p>Complete Beginner Guide</p>
+</div>
+
+<div class="service-card">
+<h3>🔀 VLAN Explained</h3>
+<p>Switching Fundamentals</p>
+</div>
+
+<div class="service-card">
+<h3>📡 OSPF Routing</h3>
+<p>Dynamic Routing Basics</p>
+</div>
+
+<div class="service-card">
+<h3>🌎 BGP Routing</h3>
+<p>Internet Routing Explained</p>
+</div>
+
+<div class="service-card">
+<h3>☁️ Cloud Networking</h3>
+<p>Future of Infrastructure</p>
+</div>
+
+<div class="service-card">
+<h3>🛡️ Firewall Security</h3>
+<p>Protect Modern Networks</p>
+</div>
+
+</div>
+
+</section>
+<!-- SMART SEARCH -->
+
+<section id="search">
+
+<h2 class="section-title">
+🔍 Smart Search
+</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Networking, AI, CCNA, BGP..."
+>
+
+<button onclick="searchPage()">
+Search
+</button>
+
+<button onclick="speakPage()">
+🎙 Listen
+</button>
+
+</div>
+
+</section>
+
+<!-- COMMUNITY HUB -->
+
+<section id="community">
+
+<h2 class="section-title">
+📢 Join Our Community
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<h3>📢 WhatsApp Channel</h3>
+
+<p>
+Daily Updates & Learning Content
+</p>
+
+<a
+href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v"
+target="_blank"
+class="learn-btn">
+
+Join Now →
 
 </a>
 
 </div>
 
-<div class="category-card">
+<div class="service-card">
 
-<div class="icon">
-
-📨
-
-</div>
-
-<h3>
-
-Telegram
-
-</h3>
+<h3>📱 Telegram</h3>
 
 <p>
-
-Daily Notes,
-
-MCQs,
-
-PDF,
-
-Updates,
-
-Study Materials
-
+Notes, PDFs & Updates
 </p>
 
-<a href="https://t.me/VelviHub">
+<a
+href="https://t.me/VelviHub"
+target="_blank"
+class="learn-btn">
 
-Join →
+Join Now →
 
 </a>
 
 </div>
 
-<div class="category-card">
+<div class="service-card">
 
-<div class="icon">
-
-🌐
-
-</div>
-
-<h3>
-
-Official Website
-
-</h3>
+<h3>🎥 YouTube</h3>
 
 <p>
-
-Explore all
-
-Premium Articles,
-
-Courses,
-
-Learning Paths
-
+Watch Learning Videos
 </p>
 
-<a href="index.html">
+<a
+href="https://youtube.com/@velvi2020"
+target="_blank"
+class="learn-btn">
 
 Visit →
 
@@ -1450,223 +1841,259 @@ Visit →
 
 </section>
 
-<!-- PART 5 -->
-<!-- ========================================= -->
-<!-- PART 5 - GOOGLE TRANSLATE + FOOTER -->
-<!-- Paste below Community Section -->
-<!-- ========================================= -->
+<!-- VISITOR COUNTER -->
 
-<section id="translate">
+<section id="counter">
 
-<div class="section-title">
-
-<h2>
-
-🌐 உங்கள் மொழியில் படியுங்கள்
-
+<h2 class="section-title">
+📈 VelviHub Statistics
 </h2>
 
-<p>
+<div class="services-grid">
 
-Google Translate மூலம் VelviHub-ஐ உங்கள் விருப்பமான மொழியில் பயன்படுத்தலாம்.
-
-</p>
-
+<div class="service-card">
+<h3>🌐 Learning Platform</h3>
+<p>Technology & Knowledge Hub</p>
 </div>
 
-<div class="translate-box">
-
-<div class="translate-icon">
-
-🌍
-
+<div class="service-card">
+<h3>🚀 Growing Community</h3>
+<p>Daily Visitors & Learners</p>
 </div>
 
-<h3>
-
-Select Your Language
-
-</h3>
-
-<p>
-
-Networking, AI, Career Guidance, Programming,
-Cloud Computing மற்றும் அனைத்து கட்டுரைகளையும்
-உங்கள் மொழியில் படிக்கலாம்.
-
-</p>
-
-<div id="google_translate_element"></div>
+<div class="service-card">
+<h3>🎓 Skill Development</h3>
+<p>Career Growth Resources</p>
+</div>
 
 </div>
 
 </section>
 
-<footer class="footer">
+<script>
 
-<div class="footer-grid">
+function searchPage(){
 
-<div>
+let q=document
+.getElementById("searchInput")
+.value
+.toLowerCase()
+.trim();
 
-<div class="logo">
+const pages={
 
-<img src="velvihub-logo.png" alt="VelviHub Logo">
+"ip":"ip-address.html",
+"ip address":"ip-address.html",
 
-<div>
+"dns":"dns.html",
 
-<h2>VelviHub</h2>
+"gateway":"gateway.html",
 
-<p>Learn • Explore • Grow</p>
+"dhcp":"dhcp.html",
 
+"router":"router.html",
+
+"switch":"switch.html",
+
+"vlan":"vlan.html",
+
+"ospf":"ospf.html",
+
+"bgp":"bgp.html",
+
+"mpls":"mpls.html",
+
+"vpn":"vpn.html",
+
+"firewall":"firewall.html",
+
+"linux":"linux.html",
+
+"ccna":"ccna.html",
+
+"ipv6":"ipv6.html",
+
+"tnpsc":"tnpsc-hub.html",
+
+"group1":"group1.html",
+
+"group2":"group2.html",
+
+"group4":"group4.html",
+
+"vao":"vao.html",
+
+"trb":"trb-syllabus.html",
+
+"ai":"ai-future.html",
+
+"chatgpt":"chatgpt.html",
+
+"gemini":"gemini.html",
+
+"youtube":"youtube-channel.html"
+
+};
+
+if(pages[q]){
+
+window.location.href=pages[q];
+
+}
+else{
+
+alert("❌ Topic not found");
+
+}
+
+}
+
+function speakPage(){
+
+let speech =
+new SpeechSynthesisUtterance(
+document.body.innerText
+);
+
+speech.lang="en-US";
+
+window.speechSynthesis.speak(speech);
+
+}
+
+</script>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+📧 Contact Us
+</h2>
+
+<div class="contact-box">
+
+<p>📧 Email: velvihub@gmail.com</p>
+
+<!--📱 Phone: +91 9025777032 -->
+
+<p>🌐 Website: velvihub.in</p>
+
+</div>
+
+</section>
+
+<!-- LEGAL -->
+
+<section id="legal">
+
+<h2 class="section-title">
+🔐 Legal Information
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<a href="about.html">
+About Us
+</a>
+</div>
+  
+<div class="service-card">
+<a href="privacy.html">
+Privacy Policy
+</a>
+</div>
+
+<div class="service-card">
+<a href="terms.html">
+Terms & Conditions
+</a>
+</div>
+
+<div class="service-card">
+<a href="disclaimer.html">
+Disclaimer
+</a>
 </div>
 
 </div>
 
-<p>
+</section>
 
-எளிய தமிழில் தொழில்நுட்ப அறிவை அனைவருக்கும் கொண்டு சேர்ப்பதே
-VelviHub-ன் நோக்கம்.
+<!-- COOKIE BANNER -->
 
-</p>
+<div id="cookieBanner">
 
-</div>
+🍪 This website uses cookies.
 
-<div>
-
-<h3>
-
-Quick Links
-
-</h3>
-
-<a href="index.html">🏠 Home</a>
-
-<a href="blog.html">📰 Blog</a>
-
-<a href="courses.html">📚 Courses</a>
-
-<a href="videos.html">🎥 Videos</a>
-
-<a href="gallery.html">🖼 Gallery</a>
+<button onclick="acceptCookies()">
+Accept
+</button>
 
 </div>
 
-<div>
+<!-- BACK TO TOP -->
 
-<h3>
-
-Learning
-
-</h3>
-
-<a href="networking.html">Networking</a>
-
-<a href="ai.html">Artificial Intelligence</a>
-
-<a href="programming.html">Programming</a>
-
-<a href="cloud.html">Cloud Computing</a>
-
-<a href="career-guidance.html">Career Guidance</a>
-
-</div>
-
-<div>
-
-<h3>
-
-Support
-
-</h3>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="privacy.html">Privacy Policy</a>
-
-<a href="disclaimer.html">Disclaimer</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-
-© 2026 VelviHub. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-<button id="topBtn">
+<button
+id="topBtn"
+onclick="window.scrollTo({top:0,behavior:'smooth'})">
 
 ⬆
 
 </button>
 
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<h3>
+🚀 VelviHub
+</h3>
+
+<p>
+Learn • Build • Grow
+</p>
+
+<p>
+🌐 Networking | 🤖 AI | 🎓 Career | 💰 Earning
+</p>
+
+<p>
+© 2026 VelviHub. All Rights Reserved.
+</p>
+
+</footer>
+
 <script>
 
-const topBtn=document.getElementById("topBtn");
+function acceptCookies(){
 
-window.onscroll=function(){
-
-if(window.scrollY>300){
-
-topBtn.style.display="flex";
-
-}else{
-
-topBtn.style.display="none";
+document.getElementById(
+"cookieBanner"
+).style.display="none";
 
 }
 
-}
+</script>
+<script>
 
-topBtn.onclick=function(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-}
-
-function googleTranslateElementInit(){
+function googleTranslateElementInit() {
 
 new google.translate.TranslateElement(
-
 {
-
-pageLanguage:"ta",
-
-includedLanguages:"ta,en,hi,te,ml,kn",
-
-layout:google.translate.TranslateElement.InlineLayout.SIMPLE,
-
-autoDisplay:false
-
+pageLanguage:'ta'
 },
-
-"google_translate_element"
-
+'google_translate_element'
 );
 
 }
 
 </script>
 
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-</div>
-
+<script
+src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </body>
 
-</html>
+ </html>
