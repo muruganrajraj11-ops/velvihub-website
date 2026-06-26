@@ -1,295 +1,854 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VelviHub Blog Advanced</title>
+<title>VelviHub Blog | Premium Learning Articles</title>
+
+<meta name="description"
+content="Explore premium educational articles, networking tutorials, technology guides, AI resources, career guidance, government exam preparation, and much more on VelviHub.">
+
+<meta name="keywords"
+content="VelviHub Blog, Networking, CCNA, AI, Technology, Career, TNPSC, TRB, TET, Government Jobs">
+
+<meta name="author" content="VelviHub">
+
+<meta name="theme-color" content="#0f172a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===== BASE ===== */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
-color:white;
+
+background:
+linear-gradient(135deg,#020617,#0f172a,#111827);
+
+color:#ffffff;
+
 overflow-x:hidden;
+
 }
 
-/* ===== NAVBAR ===== */
-.navbar{
-position:sticky;
-top:0;
-background:#020617;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 0 20px rgba(56,189,248,.2);
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:10px;
 }
 
-.navbar a{
-color:#38bdf8;
-text-decoration:none;
-margin:0 10px;
-font-weight:bold;
+::-webkit-scrollbar-track{
+background:#111827;
 }
 
-/* ===== HERO ===== */
+::-webkit-scrollbar-thumb{
+
+background:#38bdf8;
+border-radius:30px;
+
+}
+
+/* Animated Background */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:700px;
+height:700px;
+
+background:#0ea5e9;
+
+filter:blur(220px);
+
+opacity:.12;
+
+top:-200px;
+right:-150px;
+
+border-radius:50%;
+
+animation:float1 18s infinite linear;
+
+z-index:-2;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:600px;
+height:600px;
+
+background:#14b8a6;
+
+filter:blur(220px);
+
+opacity:.10;
+
+bottom:-220px;
+left:-180px;
+
+border-radius:50%;
+
+animation:float2 20s infinite linear;
+
+z-index:-2;
+
+}
+
+@keyframes float1{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(40px);}
+100%{transform:translateY(0);}
+
+}
+
+@keyframes float2{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-50px);}
+100%{transform:translateY(0);}
+
+}
+
+/* Hero */
+
 .hero{
+
+padding:120px 20px 90px;
+
 text-align:center;
-padding:60px 20px 20px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 26px;
+
+border-radius:50px;
+
+background:rgba(56,189,248,.15);
+
+border:1px solid rgba(56,189,248,.4);
+
+color:#7dd3fc;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+backdrop-filter:blur(20px);
+
 }
 
 .hero h1{
-font-size:45px;
-color:#38bdf8;
-text-shadow:0 0 20px #38bdf8;
+
+font-size:3.5rem;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+background:
+
+linear-gradient(to right,
+#ffffff,
+#7dd3fc,
+#38bdf8);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
 }
 
 .hero p{
-color:#cbd5e1;
-margin-top:10px;
-}
 
-/* ===== SEARCH ===== */
-.search-box{
-text-align:center;
-margin:20px;
-}
+max-width:850px;
 
-.search-box input{
-width:320px;
-max-width:90%;
-padding:12px;
-border-radius:10px;
-border:none;
-outline:none;
-text-align:center;
-}
-
-/* ===== FILTER ===== */
-.filter{
-text-align:center;
-margin:10px;
-}
-
-.filter button{
-padding:10px 15px;
-margin:5px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-background:#1e293b;
-color:white;
-font-weight:bold;
-transition:.3s;
-}
-
-.filter button:hover{
-background:#38bdf8;
-color:black;
-}
-
-/* ===== GRID ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-padding:20px;
-max-width:1200px;
 margin:auto;
+
+font-size:1.12rem;
+
+line-height:1.9;
+
+color:#d1d5db;
+
+margin-bottom:40px;
+
 }
 
-/* ===== CARD ===== */
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:18px;
-box-shadow:0 0 20px rgba(56,189,248,.2);
-transition:.3s;
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
 }
 
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 40px rgba(56,189,248,.6);
-}
+.hero-buttons a{
 
-.card h3{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-.card p{
-color:#cbd5e1;
-line-height:1.6;
-margin-bottom:10px;
-}
-
-.tag{
-font-size:12px;
-padding:5px 10px;
-background:#38bdf8;
-color:black;
-border-radius:6px;
-display:inline-block;
-margin-bottom:10px;
-}
-
-/* ===== BUTTON ===== */
-.card a{
-display:inline-block;
-margin-top:10px;
-padding:10px 15px;
-background:#38bdf8;
-color:black;
-font-weight:bold;
-border-radius:8px;
 text-decoration:none;
+
+padding:15px 34px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.35s;
+
 }
 
-/* ===== FOOTER ===== */
-.footer{
-text-align:center;
-padding:20px;
-margin-top:30px;
-background:#020617;
-color:#cbd5e1;
+.btn-primary{
+
+background:#0ea5e9;
+
+color:#fff;
+
+box-shadow:0 10px 30px rgba(14,165,233,.35);
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+
+background:#0284c7;
+
+}
+
+.btn-secondary{
+
+border:2px solid #38bdf8;
+
+color:#7dd3fc;
+
+}
+
+.btn-secondary:hover{
+
+background:#38bdf8;
+
+color:#000;
+
+transform:translateY(-5px);
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:90px 20px 70px;
+
+}
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons a{
+
+width:100%;
+
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="navbar">
-<div style="color:#38bdf8;font-weight:bold;">🚀 VelviHub Blog</div>
-<div>
-<a href="#">Home</a>
-<a href="#">Courses</a>
-<a href="#">Contact</a>
-</div>
+<section class="hero">
+
+<div class="hero-badge">
+📚 VelviHub Premium Blog
 </div>
 
-<!-- HERO -->
-<div class="hero">
-<h1>VelviHub Advanced Blog</h1>
-<p>Search • Learn • Grow 🚀 Networking + AI + Career Guide</p>
+<h1>
+Explore Premium Knowledge Without Limits
+</h1>
+
+<p>
+
+Discover high-quality articles on Networking, AI, Technology,
+Government Exams, Career Development, Digital Skills,
+Programming, Cyber Security, Cloud Computing, and much more —
+all organized in one place to help you learn faster and smarter.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#latest-articles" class="btn-primary">
+Latest Articles
+</a>
+
+<a href="index.html" class="btn-secondary">
+Back to Home
+</a>
+
 </div>
 
-<!-- SEARCH -->
-<div class="search-box">
-<input type="text" id="searchInput" placeholder="Search articles..." onkeyup="filterCards()">
+</section>
+<!-- ========================= -->
+<!-- Premium Blog Section -->
+<!-- ========================= -->
+
+<section id="latest-articles" class="premium-blog">
+
+<div class="section-title">
+
+<span>VelviHub Blog</span>
+
+<h2>Latest Premium Articles</h2>
+
+<p>
+Explore our latest articles on Networking, AI, Technology,
+Programming, Career Guidance, Government Exams and much more.
+</p>
+
 </div>
 
-<!-- FILTER -->
-<div class="filter">
-<button onclick="filterCategory('all')">All</button>
-<button onclick="filterCategory('network')">Networking</button>
-<button onclick="filterCategory('ai')">AI Tools</button>
-<button onclick="filterCategory('career')">Career</button>
+<!-- Search -->
+
+<div class="blog-search">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Articles...">
+
 </div>
 
-<!-- BLOG GRID -->
-<div class="grid" id="blogGrid"></div>
+<!-- Categories -->
 
-<!-- FOOTER -->
-<div class="footer">
-© 2026 VelviHub | Advanced Learning Platform
+<div class="category-wrapper">
+
+<button class="active">All</button>
+
+<button>Networking</button>
+
+<button>Artificial Intelligence</button>
+
+<button>Programming</button>
+
+<button>Cyber Security</button>
+
+<button>Cloud Computing</button>
+
+<button>Career</button>
+
+<button>Government Exams</button>
+
+<button>Technology</button>
+
 </div>
+
+<!-- Blog Grid -->
+
+<div class="blog-grid">
+
+<!-- Paste Existing Blog Card 1 Here -->
+
+<!-- Paste Existing Blog Card 2 Here -->
+
+<!-- Paste Existing Blog Card 3 Here -->
+
+<!-- Paste Existing Blog Card 4 Here -->
+
+<!-- Continue Existing Cards Without Any Changes -->
+
+</div>
+
+</section>
+
+<style>
+
+.premium-blog{
+
+max-width:1300px;
+
+margin:auto;
+
+padding:90px 20px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.section-title span{
+
+display:inline-block;
+
+padding:8px 22px;
+
+border-radius:30px;
+
+background:rgba(56,189,248,.15);
+
+color:#7dd3fc;
+
+margin-bottom:18px;
+
+font-weight:600;
+
+}
+
+.section-title h2{
+
+font-size:2.7rem;
+
+margin-bottom:20px;
+
+font-weight:700;
+
+}
+
+.section-title p{
+
+max-width:800px;
+
+margin:auto;
+
+line-height:1.9;
+
+color:#d1d5db;
+
+}
+
+.blog-search{
+
+margin:45px auto;
+
+max-width:700px;
+
+}
+
+.blog-search input{
+
+width:100%;
+
+padding:18px 22px;
+
+border:none;
+
+border-radius:50px;
+
+outline:none;
+
+background:#1e293b;
+
+color:#fff;
+
+font-size:16px;
+
+}
+
+.category-wrapper{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:14px;
+
+margin-bottom:55px;
+
+}
+
+.category-wrapper button{
+
+padding:12px 22px;
+
+border:none;
+
+border-radius:30px;
+
+background:#1e293b;
+
+color:#fff;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.category-wrapper button:hover,
+
+.category-wrapper .active{
+
+background:#0ea5e9;
+
+}
+
+.blog-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+
+font-size:2rem;
+
+}
+
+.category-wrapper{
+
+justify-content:flex-start;
+
+overflow:auto;
+
+padding-bottom:10px;
+
+}
+
+.category-wrapper::-webkit-scrollbar{
+
+display:none;
+
+}
+
+}
+
+</style>
+<!-- ===================================================== -->
+<!-- PART 3 - Footer + JavaScript -->
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h3>VelviHub</h3>
+
+<p>
+
+Your trusted learning platform for Networking, AI,
+Programming, Technology, Government Exams,
+Career Guidance and Digital Skills.
+
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Popular Categories</h3>
+
+<ul>
+
+<li><a href="#">Networking</a></li>
+
+<li><a href="#">Artificial Intelligence</a></li>
+
+<li><a href="#">Programming</a></li>
+
+<li><a href="#">Cyber Security</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Stay Connected</h3>
+
+<p>
+
+Keep learning every day with VelviHub Premium.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 VelviHub. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<style>
+
+.footer{
+
+margin-top:100px;
+
+background:#0b1120;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-container{
+
+max-width:1300px;
+
+margin:auto;
+
+padding:70px 20px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:40px;
+
+}
+
+.footer-box h3{
+
+font-size:22px;
+
+margin-bottom:20px;
+
+color:#38bdf8;
+
+}
+
+.footer-box p{
+
+line-height:1.8;
+
+color:#cbd5e1;
+
+}
+
+.footer-box ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-box ul li{
+
+margin-bottom:14px;
+
+}
+
+.footer-box ul li a{
+
+text-decoration:none;
+
+color:#cbd5e1;
+
+transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+color:#38bdf8;
+
+padding-left:8px;
+
+}
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+padding:22px;
+
+text-align:center;
+
+color:#94a3b8;
+
+font-size:15px;
+
+}
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(35px);
+
+transition:.8s ease;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+</style>
 
 <script>
 
-/* ===== BLOG DATA ===== */
-const blogs = [
-{
-title:"IP Address Basics",
-desc:"IP Address, IPv4, IPv6 முழுமையான அடிப்படை விளக்கம்.",
-tag:"network",
-link:"ip.html"
-},
-{
-title:"Subnet Mask Tricks",
-desc:"Subnet Mask calculation easy method.",
-tag:"network",
-link:"#"
-},
-{
-title:"AI Tools for YouTube",
-desc:"YouTube growth-க்கு best AI tools.",
-tag:"ai",
-link:"#"
-},
-{
-title:"CCNA Roadmap",
-desc:"Step by step CCNA exam preparation guide.",
-tag:"career",
-link:"#"
-},
-{
-title:"Networking Fundamentals",
-desc:"Router, Switch, DNS basics explained simply.",
-tag:"network",
-link:"#"
-},
-{
-title:"Job Interview Tips",
-desc:"IT interview success strategies.",
-tag:"career",
-link:"#"
+/* Reveal Animation */
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
 }
-];
-
-let currentFilter = "all";
-
-/* ===== LOAD CARDS ===== */
-function loadCards(){
-const grid = document.getElementById("blogGrid");
-grid.innerHTML = "";
-
-blogs.forEach(blog => {
-
-if(currentFilter !== "all" && blog.tag !== currentFilter){
-return;
-}
-
-grid.innerHTML += `
-<div class="card">
-<span class="tag">${blog.tag.toUpperCase()}</span>
-<h3>${blog.title}</h3>
-<p>${blog.desc}</p>
-<a href="${blog.link}">Read More</a>
-</div>
-`;
 
 });
-}
 
-loadCards();
-
-/* ===== SEARCH ===== */
-function filterCards(){
-let input = document.getElementById("searchInput").value.toLowerCase();
-let cards = document.querySelectorAll(".card");
-
-cards.forEach(card => {
-let text = card.innerText.toLowerCase();
-card.style.display = text.includes(input) ? "block" : "none";
 });
+
+document.querySelectorAll(
+".section-title,.blog-grid,.footer-box"
+).forEach(el=>{
+
+el.classList.add("fade-up");
+
+observer.observe(el);
+
+});
+
+/* Search */
+
+const searchInput=document.getElementById("searchBox");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let cards=document.querySelectorAll(".blog-card");
+
+cards.forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+card.style.display=text.includes(value)
+? ""
+: "none";
+
+});
+
+});
+
 }
 
-/* ===== CATEGORY FILTER ===== */
-function filterCategory(cat){
-currentFilter = cat;
-loadCards();
-}
+/* Active Category */
+
+document.querySelectorAll(".category-wrapper button")
+.forEach(button=>{
+
+button.addEventListener("click",function(){
+
+document.querySelectorAll(
+".category-wrapper button"
+).forEach(btn=>btn.classList.remove("active"));
+
+this.classList.add("active");
+
+});
+
+});
 
 </script>
 
