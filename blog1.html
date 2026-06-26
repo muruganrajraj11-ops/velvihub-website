@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 
 <head>
 
@@ -11,7 +11,7 @@ content="width=device-width, initial-scale=1.0">
 <title>VelviHub Blog | Premium Learning Portal</title>
 
 <meta name="description"
-content="VelviHub Premium Blog">
+content="VelviHub Premium Learning Portal">
 
 <link rel="preconnect"
 href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@ crossorigin>
 rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <style>
 
@@ -46,18 +46,21 @@ scroll-behavior:smooth;
 body{
 
 background:
-radial-gradient(circle at top,#10254f 0%,#09111f 40%,#050914 100%);
-
-color:#fff;
+linear-gradient(180deg,
+#050b17,
+#08172c,
+#0b1f3b);
 
 overflow-x:hidden;
+
+color:#fff;
 
 position:relative;
 
 }
 
 /* ==========================
-      Animated Stars
+      STARS
 ========================== */
 
 body::before{
@@ -74,24 +77,25 @@ height:100%;
 
 background-image:
 
-radial-gradient(#ffffff 1px,transparent 1px),
-radial-gradient(#38bdf8 1px,transparent 1px),
-radial-gradient(#60a5fa 1px,transparent 1px);
+radial-gradient(circle,#ffffff 1px,transparent 1px),
+radial-gradient(circle,#38bdf8 1px,transparent 1px);
 
 background-size:
-70px 70px,
-130px 130px,
-200px 200px;
+60px 60px,
+140px 140px;
 
-opacity:.22;
+opacity:.18;
 
-animation:stars 90s linear infinite;
+animation:
+starsMove 120s linear infinite;
 
-z-index:-3;
+pointer-events:none;
+
+z-index:-5;
 
 }
 
-@keyframes stars{
+@keyframes starsMove{
 
 0%{
 
@@ -101,43 +105,45 @@ transform:translateY(0);
 
 100%{
 
-transform:translateY(-400px);
+transform:translateY(-500px);
 
 }
 
 }
 
 /* ==========================
-      Glow Effect
+      BLUE GLOW
 ========================== */
 
 .glow{
 
 position:fixed;
 
-width:650px;
-height:650px;
+width:900px;
+height:900px;
 
-background:#0ea5e9;
-
-filter:blur(220px);
-
-opacity:.15;
-
-border-radius:50%;
-
-top:-250px;
 left:50%;
+
+top:-420px;
 
 transform:translateX(-50%);
 
-z-index:-2;
+background:#00b7ff;
 
-animation:glow 8s ease-in-out infinite;
+filter:blur(260px);
+
+opacity:.18;
+
+border-radius:50%;
+
+z-index:-4;
+
+animation:
+pulseGlow 8s infinite ease-in-out;
 
 }
 
-@keyframes glow{
+@keyframes pulseGlow{
 
 50%{
 
@@ -152,22 +158,36 @@ scale(1.08);
 }
 
 /* ==========================
-      Navbar
+      CONTAINER
+========================== */
+
+.container{
+
+width:min(1450px,95%);
+
+margin:auto;
+
+}
+
+/* ==========================
+      NAVBAR
 ========================== */
 
 .navbar{
 
 position:fixed;
 
-top:15px;
+top:12px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-width:96%;
+width:min(1450px,96%);
 
-max-width:1450px;
+padding:
+
+18px 35px;
 
 display:flex;
 
@@ -175,69 +195,83 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:18px 35px;
-
 background:
 
-rgba(8,18,40,.70);
+rgba(8,15,35,.72);
 
-backdrop-filter:blur(20px);
+backdrop-filter:blur(18px);
 
 border:
 
-1px solid rgba(56,189,248,.25);
+1px solid rgba(56,189,248,.20);
 
 border-radius:18px;
 
 box-shadow:
 
-0 0 30px rgba(56,189,248,.18);
+0 0 30px rgba(56,189,248,.15);
 
-z-index:999;
+z-index:9999;
 
 }
 
 .logo{
 
-font-size:36px;
+display:flex;
 
-font-weight:800;
+align-items:center;
+
+gap:12px;
+
+}
+
+.logo img{
+
+width:52px;
+
+}
+
+.logo h2{
+
+font-size:40px;
 
 color:#38bdf8;
 
+font-weight:800;
+
 text-shadow:
 
-0 0 20px #38bdf8;
+0 0 18px #38bdf8;
 
 }
 
-.logo span{
+.logo small{
 
 display:block;
 
-font-size:13px;
+font-size:14px;
 
 font-weight:500;
 
-color:#dbeafe;
+color:#cbd5e1;
 
-margin-top:-5px;
+margin-top:-4px;
 
 }
 
-.nav-links{
+.menu{
 
 display:flex;
 
-gap:28px;
+gap:34px;
 
 }
 
-.nav-links a{
-
-color:#fff;
+.menu a{
 
 text-decoration:none;
+
+color:#fff;
 
 font-size:16px;
 
@@ -245,97 +279,94 @@ font-weight:600;
 
 transition:.35s;
 
-padding-bottom:8px;
-
 }
 
-.nav-links a:hover{
+.menu a:hover{
 
 color:#38bdf8;
-
-border-bottom:2px solid #38bdf8;
 
 }
 
 .search-btn{
 
-padding:14px 28px;
+padding:
 
-border-radius:14px;
+14px 28px;
 
 background:
 
-linear-gradient(90deg,#2563eb,#3b82f6);
+linear-gradient(
+90deg,
+#2563eb,
+#3b82f6);
+
+border-radius:14px;
 
 color:#fff;
 
-font-weight:700;
-
 text-decoration:none;
+
+font-weight:700;
 
 box-shadow:
 
-0 0 18px rgba(37,99,235,.55);
+0 0 18px
+rgba(59,130,246,.45);
 
 }
 
 /* ==========================
-      Hero
+      HERO
 ========================== */
 
 .hero{
 
-max-width:1400px;
-
-margin:auto;
-
-padding:
-
-170px 30px
-90px;
+padding-top:150px;
 
 display:grid;
 
 grid-template-columns:
 
-1.1fr 1fr;
+1.05fr .95fr;
+
+align-items:center;
 
 gap:60px;
 
-align-items:center;
+min-height:90vh;
 
 }
 
 .hero h1{
 
-font-size:82px;
+font-size:90px;
 
 font-weight:800;
 
 line-height:1.05;
 
-margin-bottom:20px;
+margin-bottom:15px;
 
 }
 
 .hero h1 span{
 
-color:#38bdf8;
+color:#28b8ff;
 
 text-shadow:
 
-0 0 20px #38bdf8,
-0 0 45px #38bdf8;
+0 0 18px #28b8ff,
+0 0 45px #28b8ff;
 
 }
 
 .hero h2{
 
-font-size:46px;
+font-size:48px;
+
+color:#4dd4ff;
 
 margin-bottom:25px;
-
-color:#7dd3fc;
 
 }
 
@@ -345,15 +376,15 @@ font-size:22px;
 
 line-height:1.9;
 
-max-width:700px;
-
 color:#dbeafe;
+
+max-width:760px;
 
 margin-bottom:35px;
 
 }
 
-.category-buttons{
+.category{
 
 display:flex;
 
@@ -361,17 +392,17 @@ flex-wrap:wrap;
 
 gap:15px;
 
-margin-bottom:40px;
+margin-bottom:35px;
 
 }
 
-.category-buttons a{
+.category a{
 
 text-decoration:none;
 
-padding:12px 24px;
+padding:
 
-border-radius:12px;
+12px 22px;
 
 background:
 
@@ -379,7 +410,9 @@ rgba(255,255,255,.05);
 
 border:
 
-1px solid #38bdf8;
+1px solid rgba(56,189,248,.35);
+
+border-radius:12px;
 
 color:#fff;
 
@@ -387,65 +420,83 @@ transition:.35s;
 
 box-shadow:
 
-0 0 15px rgba(56,189,248,.18);
+0 0 18px rgba(56,189,248,.10);
 
 }
 
-.category-buttons a:hover{
+.category a:hover{
 
 background:#0ea5e9;
 
+transform:translateY(-3px);
+
 }
 
-.hero-actions{
+.hero-buttons{
 
 display:flex;
 
-gap:20px;
+gap:22px;
 
 flex-wrap:wrap;
 
 }
 
-.hero-actions a{
+.home-btn{
 
-text-decoration:none;
+padding:
 
-padding:17px 36px;
+18px 40px;
+
+background:
+
+linear-gradient(
+90deg,
+#16a34a,
+#22c55e);
 
 border-radius:14px;
 
+text-decoration:none;
+
 font-weight:700;
-
-font-size:18px;
-
-}
-
-.home-btn{
-
-background:#16a34a;
 
 color:#fff;
 
 box-shadow:
 
-0 0 25px #16a34a;
+0 0 25px rgba(34,197,94,.40);
 
 }
 
 .blog-btn{
 
-background:#2563eb;
+padding:
+
+18px 42px;
+
+background:
+
+linear-gradient(
+90deg,
+#2563eb,
+#3b82f6);
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-weight:700;
 
 color:#fff;
 
 box-shadow:
 
-0 0 25px #2563eb;
+0 0 25px rgba(59,130,246,.45);
 
 }
 
-.hero-logo{
+.hero-image{
 
 display:flex;
 
@@ -455,28 +506,29 @@ align-items:center;
 
 }
 
-.hero-logo img{
+.hero-image img{
 
-width:440px;
+width:480px;
 
 max-width:100%;
 
 filter:
 
-drop-shadow(0 0 35px #38bdf8);
+drop-shadow(
+0 0 35px
+#38bdf8);
 
 animation:
 
-float 4s ease-in-out infinite;
+floating 5s ease-in-out infinite;
 
 }
 
-@keyframes float{
+@keyframes floating{
 
 50%{
 
 transform:
-
 translateY(-12px);
 
 }
@@ -491,48 +543,56 @@ translateY(-12px);
 
 <div class="glow"></div>
 
-<header class="navbar">
+<div class="navbar">
 
 <div class="logo">
 
-🚀 VelviHub
+<img src="velvihub-logo.png">
 
-<span>
+<div>
+
+<h2>VelviHub</h2>
+
+<small>
 
 Learn • Explore • Grow
 
-</span>
+</small>
 
 </div>
 
-<nav class="nav-links">
+</div>
 
-<a href="index.html">Home</a>
+<div class="menu">
 
-<a href="blog.html">Blog</a>
+<a href="#">Home</a>
 
-<a href="courses.html">Courses</a>
+<a href="#">Blog</a>
 
-<a href="videos.html">Videos</a>
+<a href="#">Courses</a>
 
-<a href="gallery.html">Gallery</a>
+<a href="#">Videos</a>
 
-<a href="resources.html">Resources</a>
+<a href="#">Gallery</a>
 
-<a href="about.html">About</a>
+<a href="#">Resources</a>
 
-<a href="contact.html">Contact</a>
+<a href="#">About</a>
 
-</nav>
+<a href="#">Contact</a>
+
+</div>
 
 <a href="#"
 class="search-btn">
 
-Search 🔍
+🔍 Search
 
 </a>
 
-</header>
+</div>
+
+<div class="container">
 
 <section class="hero">
 
@@ -558,17 +618,18 @@ Learn • Explore • Grow
 
 <p>
 
-Networking, Programming,
+Networking,
+Programming,
 Artificial Intelligence,
 Cyber Security,
 Cloud Computing,
 Career Guidance,
 Government Exams
-மற்றும் Premium Articles.
+and Premium Articles.
 
 </p>
 
-<div class="category-buttons">
+<div class="category">
 
 <a href="#">🌐 Networking</a>
 
@@ -584,16 +645,16 @@ Government Exams
 
 </div>
 
-<div class="hero-actions">
+<div class="hero-buttons">
 
-<a href="index.html"
+<a href="#"
 class="home-btn">
 
 🏠 Home
 
 </a>
 
-<a href="#featured"
+<a href="#"
 class="blog-btn">
 
 🚀 Explore Blog
@@ -604,7 +665,7 @@ class="blog-btn">
 
 </div>
 
-<div class="hero-logo">
+<div class="hero-image">
 
 <img src="velvihub-logo.png">
 
@@ -613,118 +674,113 @@ class="blog-btn">
 </section>
 
 <!-- PART 2 -->
-  <!-- ========================================= -->
-<!-- FEATURED ARTICLES -->
+<!-- ========================================= -->
+<!-- PART 2 : PREMIUM BLOG GRID -->
 <!-- ========================================= -->
 
 <style>
 
 .section{
 
-max-width:1450px;
-
-margin:auto;
-
-padding:40px 25px 90px;
+padding:80px 0;
 
 }
 
-.section-title{
+.heading{
 
 text-align:center;
 
-font-size:48px;
-
-font-weight:800;
-
-margin-bottom:18px;
-
-color:#fff;
+margin-bottom:55px;
 
 }
 
-.section-title span{
+.heading h2{
+
+font-size:52px;
+
+font-weight:800;
+
+color:#fff;
+
+text-shadow:
+0 0 20px rgba(56,189,248,.35);
+
+}
+
+.heading span{
 
 color:#38bdf8;
 
 text-shadow:
-
-0 0 15px #38bdf8,
+0 0 18px #38bdf8,
 0 0 35px #38bdf8;
 
 }
 
-.section-line{
+.heading .line{
 
-width:140px;
+width:160px;
 
 height:4px;
 
-margin:0 auto 55px;
+margin:20px auto;
+
+border-radius:30px;
 
 background:
-
 linear-gradient(90deg,
 transparent,
 #38bdf8,
 transparent);
 
-border-radius:50px;
-
 }
 
-.card-grid{
+.blog-grid{
 
 display:grid;
 
 grid-template-columns:
-
 repeat(auto-fit,minmax(320px,1fr));
 
 gap:28px;
 
 }
 
-.card{
+.blog-card{
 
 background:
-
 linear-gradient(
 180deg,
-rgba(17,35,65,.95),
-rgba(10,22,42,.98));
+rgba(17,30,58,.96),
+rgba(9,18,38,.98));
 
 border:
-
-1px solid rgba(56,189,248,.30);
+1px solid rgba(56,189,248,.28);
 
 border-radius:22px;
 
 overflow:hidden;
 
-transition:.4s;
+transition:.35s;
 
 box-shadow:
-
-0 0 25px rgba(56,189,248,.15);
+0 0 18px rgba(56,189,248,.10);
 
 }
 
-.card:hover{
+.blog-card:hover{
 
 transform:
-
-translateY(-8px);
+translateY(-10px);
 
 border-color:#38bdf8;
 
 box-shadow:
-
 0 0 35px rgba(56,189,248,.45);
 
 }
 
-.card img{
+.blog-card img{
 
 width:100%;
 
@@ -734,23 +790,23 @@ object-fit:cover;
 
 }
 
-.card-body{
+.blog-content{
 
-padding:22px;
-
-}
-
-.card h3{
-
-font-size:28px;
-
-margin-bottom:12px;
-
-color:#7dd3fc;
+padding:24px;
 
 }
 
-.card p{
+.blog-content h3{
+
+font-size:30px;
+
+color:#5ecbff;
+
+margin-bottom:16px;
+
+}
+
+.blog-content p{
 
 font-size:17px;
 
@@ -762,35 +818,34 @@ margin-bottom:22px;
 
 }
 
-.card a{
+.read-btn{
 
 display:inline-block;
 
-padding:13px 28px;
-
-border-radius:12px;
+padding:14px 28px;
 
 background:
-
-linear-gradient(90deg,
+linear-gradient(
+90deg,
 #2563eb,
 #38bdf8);
 
-color:#fff;
+border-radius:12px;
 
 text-decoration:none;
 
 font-weight:700;
 
+color:#fff;
+
 box-shadow:
+0 0 20px rgba(56,189,248,.28);
 
-0 0 18px rgba(56,189,248,.35);
-
-transition:.35s;
+transition:.3s;
 
 }
 
-.card a:hover{
+.read-btn:hover{
 
 transform:scale(1.05);
 
@@ -798,25 +853,27 @@ transform:scale(1.05);
 
 </style>
 
-<section
-class="section"
-id="featured">
+<section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 🔥 <span>Featured Articles</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
 
-<div class="card-grid">
+</div>
 
-<div class="card">
+<div class="blog-grid">
+
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -826,13 +883,14 @@ id="featured">
 
 <p>
 
-25+ Important
-IP Address MCQ Questions
-with Detailed Answers.
+25+ Important IP Address
+MCQ Questions with
+Detailed Answers.
 
 </p>
 
-<a href="ip-mcq.html">
+<a href="ip-mcq.html"
+class="read-btn">
 
 Read More →
 
@@ -842,11 +900,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -865,7 +923,8 @@ Routing.
 
 </p>
 
-<a href="ip-fundamentals.html">
+<a href="ip-fundamentals.html"
+class="read-btn">
 
 Read More →
 
@@ -875,11 +934,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -898,7 +957,8 @@ Security Best Practices.
 
 </p>
 
-<a href="security.html">
+<a href="security.html"
+class="read-btn">
 
 Read More →
 
@@ -908,11 +968,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -930,7 +990,8 @@ Data Center.
 
 </p>
 
-<a href="cloud.html">
+<a href="cloud.html"
+class="read-btn">
 
 Read More →
 
@@ -940,11 +1001,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -958,11 +1019,13 @@ HTML,
 CSS,
 JavaScript,
 Python,
-GitHub Projects.
+Git,
+Projects.
 
 </p>
 
-<a href="programming.html">
+<a href="programming.html"
+class="read-btn">
 
 Read More →
 
@@ -972,11 +1035,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -993,7 +1056,8 @@ Professional Growth.
 
 </p>
 
-<a href="career-guidance.html">
+<a href="career-guidance.html"
+class="read-btn">
 
 Read More →
 
@@ -1008,27 +1072,31 @@ Read More →
 </section>
 
 <!-- PART 3 -->
-  <!-- ========================================= -->
-<!-- LEARNING PATHS -->
+<!-- ========================================= -->
+<!-- PART 3 : LEARNING PATHS -->
 <!-- ========================================= -->
 
 <section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 🎓 <span>Learning Paths</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
 
-<div class="card-grid">
+</div>
 
-<div class="card">
+<div class="blog-grid">
 
-<div class="card-body">
+<div class="blog-card">
 
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
+<div class="blog-content">
+
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 🌐
 </div>
 
@@ -1041,10 +1109,12 @@ IP Fundamentals
 <p style="text-align:center;">
 
 IP Address,
-Subnet,
+IPv4,
+IPv6,
+Subnetting,
 Gateway,
-DNS,
 DHCP,
+DNS,
 NAT,
 PAT
 
@@ -1052,7 +1122,8 @@ PAT
 
 <div style="text-align:center;">
 
-<a href="ip-fundamentals.html">
+<a href="ip-fundamentals.html"
+class="read-btn">
 
 Start Learning →
 
@@ -1064,11 +1135,11 @@ Start Learning →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 🔀
 </div>
 
@@ -1083,13 +1154,16 @@ Switching Technologies
 VLAN,
 STP,
 RSTP,
-EtherChannel
+EtherChannel,
+Layer 2,
+Layer 3
 
 </p>
 
 <div style="text-align:center;">
 
-<a href="switching-technologies.html">
+<a href="switching-technologies.html"
+class="read-btn">
 
 Start Learning →
 
@@ -1101,11 +1175,11 @@ Start Learning →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 🌍
 </div>
 
@@ -1118,6 +1192,7 @@ Routing Technologies
 <p style="text-align:center;">
 
 Router,
+Static Routing,
 OSPF,
 BGP,
 MPLS,
@@ -1127,7 +1202,8 @@ Inter-VLAN Routing
 
 <div style="text-align:center;">
 
-<a href="routing.html">
+<a href="routing.html"
+class="read-btn">
 
 Start Learning →
 
@@ -1139,49 +1215,12 @@ Start Learning →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
-⚡
-</div>
-
-<h3 style="text-align:center;">
-
-High Availability
-
-</h3>
-
-<p style="text-align:center;">
-
-HSRP,
-VRRP,
-QoS,
-Load Balancer
-
-</p>
-
-<div style="text-align:center;">
-
-<a href="high-availability.html">
-
-Start Learning →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-body">
-
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
-🛡️
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
+🛡
 </div>
 
 <h3 style="text-align:center;">
@@ -1196,13 +1235,15 @@ Firewall,
 VPN,
 ACL,
 IDS,
-IPS
+IPS,
+Security Policies
 
 </p>
 
 <div style="text-align:center;">
 
-<a href="security.html">
+<a href="security.html"
+class="read-btn">
 
 Start Learning →
 
@@ -1214,11 +1255,50 @@ Start Learning →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:65px;text-align:center;margin-bottom:18px;">
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
+⚡
+</div>
+
+<h3 style="text-align:center;">
+
+High Availability
+
+</h3>
+
+<p style="text-align:center;">
+
+HSRP,
+VRRP,
+Load Balancing,
+QoS,
+Redundancy
+
+</p>
+
+<div style="text-align:center;">
+
+<a href="high-availability.html"
+class="read-btn">
+
+Start Learning →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="blog-card">
+
+<div class="blog-content">
+
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 ☁️
 </div>
 
@@ -1230,7 +1310,9 @@ Cloud & Automation
 
 <p style="text-align:center;">
 
-Cloud Computing,
+AWS,
+Azure,
+Google Cloud,
 SD-WAN,
 Automation,
 Data Center
@@ -1239,7 +1321,8 @@ Data Center
 
 <div style="text-align:center;">
 
-<a href="cloud.html">
+<a href="cloud.html"
+class="read-btn">
 
 Start Learning →
 
@@ -1256,40 +1339,53 @@ Start Learning →
 </section>
 
 <!-- ========================================= -->
-<!-- GROWTH HUB -->
+<!-- VELVIHUB GROWTH HUB -->
 <!-- ========================================= -->
 
 <section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 🚀 <span>VelviHub Growth Hub</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
 
-<div class="card-grid">
+</div>
 
-<div class="card">
+<div class="blog-grid">
 
-<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<h3>💰 Online Earning</h3>
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
+💰
+</div>
 
-<p>
+<h3 style="text-align:center;">
+
+Online Earning
+
+</h3>
+
+<p style="text-align:center;">
 
 Affiliate Marketing,
 Blogging,
 Google AdSense,
 Freelancing,
-Passive Income.
+Passive Income
 
 </p>
 
-<a href="online-earning.html">
+<div style="text-align:center;">
+
+<a href="online-earning.html"
+class="read-btn">
 
 Explore →
 
@@ -1299,24 +1395,35 @@ Explore →
 
 </div>
 
-<div class="card">
+</div>
 
-<img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=900">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<h3>🎥 YouTube & AI Tools</h3>
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
+🎥
+</div>
 
-<p>
+<h3 style="text-align:center;">
 
-YouTube Growth,
+YouTube & AI Tools
+
+</h3>
+
+<p style="text-align:center;">
+
 AI Tools,
 Video Editing,
-Content Creation.
+YouTube Growth,
+Content Creation
 
 </p>
 
-<a href="youtube-ai-tools.html">
+<div style="text-align:center;">
+
+<a href="youtube-ai-tools.html"
+class="read-btn">
 
 Explore →
 
@@ -1326,84 +1433,41 @@ Explore →
 
 </div>
 
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900">
-
-<div class="card-body">
-
-<h3>🎓 Government Exams</h3>
-
-<p>
-
-TNPSC,
-TRB,
-TET,
-Railway,
-SSC,
-Current Affairs.
-
-</p>
-
-<a href="government-jobs.html">
-
-Explore →
-
-</a>
-
 </div>
 
+<div class="blog-card">
+
+<div class="blog-content">
+
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
+📱
 </div>
 
-<div class="card">
+<h3 style="text-align:center;">
 
-<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900">
+Mobile Apps
 
-<div class="card-body">
+</h3>
 
-<h3>📱 Apps & Tools</h3>
+<p style="text-align:center;">
 
-<p>
-
-Useful Apps,
+Productivity Apps,
 AI Apps,
-Productivity,
-Editing Tools.
+Cloud Storage,
+Useful Mobile Tools
 
 </p>
 
-<a href="mobile-apps-tools.html">
+<div style="text-align:center;">
+
+<a href="mobile-apps-tools.html"
+class="read-btn">
 
 Explore →
 
 </a>
 
 </div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900">
-
-<div class="card-body">
-
-<h3>🏆 VelviHub Specials</h3>
-
-<p>
-
-Success Stories,
-Motivation,
-Productivity,
-Self Growth.
-
-</p>
-
-<a href="velvihub-specials.html">
-
-Explore →
-
-</a>
 
 </div>
 
@@ -1414,27 +1478,31 @@ Explore →
 </section>
 
 <!-- PART 4 -->
-  <!-- ========================================= -->
-<!-- COMMUNITY -->
+<!-- ========================================= -->
+<!-- PART 4 : COMMUNITY + GOOGLE TRANSLATE -->
 <!-- ========================================= -->
 
 <section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 🌍 <span>VelviHub Community</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
 
-<div class="card-grid">
+</div>
 
-<div class="card">
+<div class="blog-grid">
 
-<div class="card-body">
+<div class="blog-card">
 
-<div style="font-size:70px;text-align:center;">
+<div class="blog-content">
+
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 🎥
 </div>
 
@@ -1446,7 +1514,7 @@ YouTube Channel
 
 <p style="text-align:center;">
 
-Watch Networking,
+Networking,
 Programming,
 AI,
 Technology,
@@ -1457,7 +1525,8 @@ Videos.
 
 <div style="text-align:center;">
 
-<a href="https://youtube.com/@velvi2020">
+<a href="https://youtube.com/@velvi2020"
+class="read-btn">
 
 Watch Now →
 
@@ -1469,11 +1538,11 @@ Watch Now →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:70px;text-align:center;">
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 📨
 </div>
 
@@ -1487,15 +1556,16 @@ Telegram Channel
 
 Daily Notes,
 MCQs,
-PDFs,
 Current Affairs,
-Study Materials.
+PDF Notes,
+Learning Updates.
 
 </p>
 
 <div style="text-align:center;">
 
-<a href="https://t.me/VelviHub">
+<a href="https://t.me/VelviHub"
+class="read-btn">
 
 Join Now →
 
@@ -1507,11 +1577,11 @@ Join Now →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
-<div class="card-body">
+<div class="blog-content">
 
-<div style="font-size:70px;text-align:center;">
+<div style="font-size:70px;text-align:center;margin-bottom:20px;">
 🌐
 </div>
 
@@ -1523,16 +1593,18 @@ Official Website
 
 <p style="text-align:center;">
 
-Explore Premium
-Learning Resources,
+Explore Hundreds of
 Technology Articles,
-Career Guides.
+Learning Paths,
+Career Guides
+and Premium Resources.
 
 </p>
 
 <div style="text-align:center;">
 
-<a href="index.html">
+<a href="index.html"
+class="read-btn">
 
 Visit Website →
 
@@ -1554,13 +1626,17 @@ Visit Website →
 
 <section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 🌍 <span>Translate Website</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
+
+</div>
 
 <div style="
 
@@ -1568,36 +1644,70 @@ max-width:900px;
 
 margin:auto;
 
-padding:45px;
+padding:50px;
 
 background:
 
 linear-gradient(
 180deg,
-rgba(17,35,65,.95),
-rgba(10,22,42,.98));
+rgba(17,30,58,.97),
+rgba(8,18,35,.98));
 
-border-radius:25px;
+border-radius:26px;
 
-border:1px solid rgba(56,189,248,.35);
+border:
+
+1px solid rgba(56,189,248,.35);
 
 box-shadow:
 
-0 0 35px rgba(56,189,248,.20);
+0 0 40px rgba(56,189,248,.20);
 
 text-align:center;
 
 ">
 
-<div style="font-size:75px;">
+<div style="
+
+width:110px;
+height:110px;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:
+
+linear-gradient(
+135deg,
+#2563eb,
+#38bdf8);
+
+font-size:48px;
+
+box-shadow:
+
+0 0 28px rgba(56,189,248,.45);
+
+margin-bottom:25px;
+
+">
+
 🌐
+
 </div>
 
 <h2 style="
 
-margin:20px 0;
+font-size:42px;
 
-font-size:38px;
+margin-bottom:18px;
 
 color:#7dd3fc;
 
@@ -1611,17 +1721,18 @@ Choose Your Language
 
 font-size:18px;
 
+line-height:1.9;
+
 color:#dbeafe;
 
 margin-bottom:30px;
 
-line-height:1.8;
-
 ">
 
-Translate the complete VelviHub website
-into your preferred language using
-Google Translate.
+Translate the complete
+VelviHub website into
+your preferred language
+using Google Translate.
 
 </p>
 
@@ -1632,26 +1743,30 @@ Google Translate.
 </section>
 
 <!-- ========================================= -->
-<!-- SPECIAL ARTICLES -->
+<!-- VELVIHUB SPECIALS -->
 <!-- ========================================= -->
 
 <section class="section">
 
-<h2 class="section-title">
+<div class="heading">
+
+<h2>
 
 ⭐ <span>VelviHub Specials</span>
 
 </h2>
 
-<div class="section-line"></div>
+<div class="line"></div>
 
-<div class="card-grid">
+</div>
 
-<div class="card">
+<div class="blog-grid">
+
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -1661,14 +1776,16 @@ Google Translate.
 
 <p>
 
-Host your website
-FREE using GitHub
-Pages with HTML,
-CSS and JavaScript.
+Learn how to host
+your website FREE
+using GitHub Pages,
+HTML, CSS &
+JavaScript.
 
 </p>
 
-<a href="#">
+<a href="#"
+class="read-btn">
 
 Read More →
 
@@ -1678,11 +1795,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -1694,12 +1811,14 @@ Read More →
 
 The complete
 journey of building
-VelviHub from
-scratch.
+VelviHub into a
+Premium Learning
+Platform.
 
 </p>
 
-<a href="#">
+<a href="#"
+class="read-btn">
 
 Read More →
 
@@ -1709,11 +1828,11 @@ Read More →
 
 </div>
 
-<div class="card">
+<div class="blog-card">
 
 <img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
 
-<div class="card-body">
+<div class="blog-content">
 
 <h3>
 
@@ -1723,14 +1842,16 @@ Read More →
 
 <p>
 
-Watch the latest
+Watch our latest
 Networking,
-Technology and
-AI videos.
+Technology,
+AI &
+Career videos.
 
 </p>
 
-<a href="https://youtube.com/@velvi2020">
+<a href="https://youtube.com/@velvi2020"
+class="read-btn">
 
 Watch Now →
 
@@ -1744,94 +1865,126 @@ Watch Now →
 
 </section>
 
-<!-- PART 5 : Footer + JavaScript -->
-  
-  <!-- ========================================= -->
-<!-- FOOTER -->
+<!-- PART 5 : FOOTER + JAVASCRIPT -->
+<!-- ========================================= -->
+<!-- PART 5 : PREMIUM FOOTER + JAVASCRIPT -->
 <!-- ========================================= -->
 
 <style>
 
 .footer{
 
-margin-top:100px;
+margin-top:120px;
+
+padding:80px 0 30px;
 
 background:
+
 linear-gradient(
 180deg,
-#07101f,
-#050b16);
+#07101d,
+#040812);
 
 border-top:
-1px solid rgba(56,189,248,.25);
 
-padding:70px 25px 25px;
+1px solid rgba(56,189,248,.20);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.footer::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:#38bdf8;
+
+filter:blur(240px);
+
+opacity:.08;
+
+left:50%;
+
+top:-420px;
+
+transform:translateX(-50%);
 
 }
 
 .footer-grid{
 
-max-width:1450px;
+width:min(1450px,95%);
 
 margin:auto;
 
 display:grid;
 
 grid-template-columns:
+
 2fr 1fr 1fr 1fr;
 
-gap:40px;
+gap:45px;
+
+position:relative;
+
+z-index:2;
 
 }
 
-.footer-box h2{
+.footer h2{
 
-font-size:34px;
-
-margin-bottom:20px;
+font-size:38px;
 
 color:#38bdf8;
 
+margin-bottom:18px;
+
 text-shadow:
+
 0 0 18px #38bdf8;
 
 }
 
-.footer-box h3{
+.footer h3{
 
 font-size:22px;
 
-margin-bottom:18px;
+margin-bottom:20px;
 
 color:#7dd3fc;
 
 }
 
-.footer-box p{
+.footer p{
 
 line-height:1.9;
 
 color:#dbeafe;
 
-font-size:16px;
-
 }
 
-.footer-box a{
+.footer a{
 
 display:block;
 
-margin:12px 0;
+text-decoration:none;
 
 color:#dbeafe;
 
-text-decoration:none;
+margin:12px 0;
 
-transition:.3s;
+transition:.35s;
 
 }
 
-.footer-box a:hover{
+.footer a:hover{
 
 color:#38bdf8;
 
@@ -1839,20 +1992,21 @@ padding-left:8px;
 
 }
 
-.social-icons{
+.social{
 
 display:flex;
 
-gap:18px;
+gap:15px;
 
-margin-top:25px;
+margin-top:28px;
 
 }
 
-.social-icons a{
+.social a{
 
-width:50px;
-height:50px;
+width:52px;
+
+height:52px;
 
 display:flex;
 
@@ -1863,35 +2017,43 @@ justify-content:center;
 border-radius:50%;
 
 background:
+
 rgba(255,255,255,.06);
 
 border:
+
 1px solid rgba(56,189,248,.35);
 
 font-size:22px;
-
-color:#38bdf8;
 
 transition:.35s;
 
 }
 
-.social-icons a:hover{
+.social a:hover{
+
+background:#38bdf8;
+
+color:#fff;
 
 transform:translateY(-6px);
 
 box-shadow:
-0 0 22px #38bdf8;
+
+0 0 25px #38bdf8;
 
 }
 
 .footer-bottom{
 
-margin-top:60px;
+width:min(1450px,95%);
+
+margin:55px auto 0;
 
 padding-top:25px;
 
 border-top:
+
 1px solid rgba(255,255,255,.08);
 
 display:flex;
@@ -1904,11 +2066,11 @@ flex-wrap:wrap;
 
 gap:20px;
 
-}
-
-.footer-bottom p{
-
 color:#cbd5e1;
+
+position:relative;
+
+z-index:2;
 
 }
 
@@ -1920,17 +2082,18 @@ right:25px;
 
 bottom:25px;
 
-width:58px;
+width:60px;
 
-height:58px;
+height:60px;
 
 border:none;
 
 border-radius:50%;
 
 background:
+
 linear-gradient(
-90deg,
+135deg,
 #2563eb,
 #38bdf8);
 
@@ -1943,9 +2106,12 @@ cursor:pointer;
 display:none;
 
 box-shadow:
-0 0 22px rgba(56,189,248,.45);
 
-z-index:9999;
+0 0 25px rgba(56,189,248,.45);
+
+z-index:99999;
+
+transition:.35s;
 
 }
 
@@ -1960,6 +2126,14 @@ transform:scale(1.08);
 .footer-grid{
 
 grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.social{
+
+justify-content:center;
 
 }
 
@@ -1979,7 +2153,7 @@ text-align:center;
 
 <div class="footer-grid">
 
-<div class="footer-box">
+<div>
 
 <h2>
 
@@ -1989,40 +2163,48 @@ text-align:center;
 
 <p>
 
-Your Premium Learning Platform
-for Networking,
+Premium Learning Portal for
+Networking,
 Programming,
 Artificial Intelligence,
 Cyber Security,
 Cloud Computing,
-Career Guidance and
-Government Exam Preparation.
+Career Guidance
+and Government Exams.
 
 </p>
 
-<div class="social-icons">
+<div class="social">
 
 <a href="https://youtube.com/@velvi2020">
+
 ▶
+
 </a>
 
 <a href="https://t.me/VelviHub">
+
 ✈
+
 </a>
 
 <a href="blog.html">
+
 📰
+
 </a>
 
 <a href="contact.html">
+
 ✉
+
 </a>
 
 </div>
 
 </div>
 
-<div class="footer-box">
+<div>
 
 <h3>
 
@@ -2036,43 +2218,19 @@ Quick Links
 
 <a href="courses.html">📚 Courses</a>
 
-<a href="gallery.html">🖼 Gallery</a>
-
 <a href="videos.html">🎥 Videos</a>
+
+<a href="gallery.html">🖼 Gallery</a>
 
 </div>
 
-<div class="footer-box">
+<div>
 
 <h3>
 
-Learning
+Resources
 
 </h3>
-
-<a href="ip-fundamentals.html">
-
-IP Fundamentals
-
-</a>
-
-<a href="routing.html">
-
-Routing
-
-</a>
-
-<a href="security.html">
-
-Network Security
-
-</a>
-
-<a href="cloud.html">
-
-Cloud Computing
-
-</a>
 
 <a href="career-guidance.html">
 
@@ -2080,9 +2238,27 @@ Career Guidance
 
 </a>
 
+<a href="online-earning.html">
+
+Online Earning
+
+</a>
+
+<a href="mobile-apps-tools.html">
+
+Mobile Apps
+
+</a>
+
+<a href="youtube-ai-tools.html">
+
+YouTube & AI
+
+</a>
+
 </div>
 
-<div class="footer-box">
+<div>
 
 <h3>
 
@@ -2150,15 +2326,17 @@ document.getElementById("topBtn");
 
 window.addEventListener("scroll",()=>{
 
-if(window.scrollY>250){
+topBtn.style.display=
 
-topBtn.style.display="flex";
+window.scrollY>300
 
-}else{
+?
 
-topBtn.style.display="none";
+"flex"
 
-}
+:
+
+"none";
 
 });
 
@@ -2176,25 +2354,23 @@ behavior:"smooth"
 
 function googleTranslateElementInit(){
 
-new google.translate.TranslateElement(
-
-{
+new google.translate.TranslateElement({
 
 pageLanguage:"ta",
 
 includedLanguages:
+
 "ta,en,hi,te,ml,kn",
 
 layout:
+
 google.translate.TranslateElement.InlineLayout.SIMPLE,
 
 autoDisplay:false
 
 },
 
-"google_translate_element"
-
-);
+"google_translate_element");
 
 }
 
