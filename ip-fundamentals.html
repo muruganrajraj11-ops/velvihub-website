@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IP Fundamentals | VelviHub - Complete IP Address Guide in Tamil</title>
+
+<meta name="description"
+content="IP Fundamentals பற்றிய முழுமையான தமிழ் வழிகாட்டி. IP Address, IPv4, IPv6, Subnet Mask, Default Gateway, DNS, Public IP, Private IP மற்றும் Networking Basics அனைத்தையும் VelviHub-ல் கற்றுக்கொள்ளுங்கள்.">
+
+<meta name="keywords"
+content="IP Fundamentals, IP Address, IPv4, IPv6, Subnet Mask, Default Gateway, DNS, Networking Basics, CCNA, Computer Network, VelviHub">
+
+<meta name="author"
+content="VelviHub">
+
+<meta name="robots"
+content="index, follow">
+
+<meta name="theme-color"
+content="#0f172a">
+
+<meta property="og:title"
+content="IP Fundamentals | VelviHub">
+
+<meta property="og:description"
+content="தமிழில் IP Address, IPv4, IPv6, Subnetting மற்றும் Networking Basics பற்றிய முழுமையான வழிகாட்டி.">
+
+<meta property="og:type"
+content="article">
+
+<meta property="og:url"
+content="https://velvihub.in/ip-fundamentals.html">
+
+<meta property="og:image"
+content="https://velvihub.in/velvihub-logo.png">
+
+<meta property="og:site_name"
+content="VelviHub">
+
+<meta property="og:locale"
+content="en_US">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="IP Fundamentals | VelviHub">
+
+<meta name="twitter:description"
+content="Learn IP Address, IPv4, IPv6, Subnet Mask, Gateway, DNS and Networking Basics in Tamil.">
+
+<meta name="twitter:image"
+content="https://velvihub.in/velvihub-logo.png">
+
+<link rel="canonical"
+href="https://velvihub.in/ip-fundamentals.html">
+
+<link rel="icon"
+type="image/png"
+href="https://velvihub.in/velvihub-logo.png">
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=G-WRENY46HW4">
+</script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-WRENY46HW4');
+
+</script>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+overflow:hidden;
+}
+
+.stars::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background-image:
+radial-gradient(white 1px,transparent 1px);
+background-size:50px 50px;
+opacity:.15;
+animation:moveStars 60s linear infinite;
+}
+
+@keyframes moveStars{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-500px);
+}
+
+}
+
+.header{
+padding:130px 20px 60px;
+text-align:center;
+}
+
+.header h1{
+font-size:58px;
+color:#38bdf8;
+text-shadow:
+0 0 15px #38bdf8,
+0 0 35px rgba(56,189,248,.8);
+margin-bottom:15px;
+}
+
+.header p{
+font-size:20px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+color:#cbd5e1;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:#38bdf8;
+color:#000;
+font-weight:bold;
+border-radius:12px;
+transition:.3s;
+box-shadow:0 0 20px rgba(56,189,248,.4);
+}
+
+.back-btn:hover{
+background:#fff;
+transform:translateY(-5px);
+box-shadow:0 0 35px rgba(56,189,248,.8);
+}
+
+.blog-container{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+max-width:1400px;
+margin:auto;
+padding:40px 20px;
+}
+
+.blog-card{
+background:linear-gradient(
+135deg,
+#1e293b,
+#0f172a);
+padding:25px;
+border-radius:22px;
+border:1px solid rgba(56,189,248,.35);
+box-shadow:0 0 20px rgba(56,189,248,.25);
+transition:.35s;
+overflow:hidden;
+}
+
+.blog-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px rgba(56,189,248,.75);
+}
+
+.blog-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
+transition:.35s;
+}
+
+.blog-card:hover img{
+transform:scale(1.05);
+}
+
+.blog-card h3{
+font-size:24px;
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.blog-card p{
+font-size:17px;
+line-height:1.9;
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.blog-card a{
+display:inline-block;
+padding:12px 24px;
+background:#38bdf8;
+color:#000;
+font-weight:bold;
+border-radius:10px;
+transition:.3s;
+}
+
+.blog-card a:hover{
+background:#fff;
+transform:scale(1.05);
+}
+
+.footer{
+margin-top:60px;
+padding:45px 20px;
+text-align:center;
+background:#020617;
+border-top:2px solid #38bdf8;
+}
+
+.footer h3{
+color:#38bdf8;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.footer p{
+color:#cbd5e1;
+margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.header{
+padding-top:110px;
+}
+
+.header h1{
+font-size:42px;
+}
+
+.header p{
+font-size:18px;
+}
+
+.blog-container{
+grid-template-columns:1fr;
+}
+
+.blog-card img{
+height:200px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+🚀 VelviHub
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="blog.html">Blog</a>
+
+<a href="technology.html">Technology</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img
+src="https://velvihub.in/velvihub-logo.png"
+alt="VelviHub"
+class="hero-logo">
+
+<h1>🌐 IP Fundamentals</h1>
+
+<h2 style="
+color:#ffffff;
+margin-top:15px;
+font-size:28px;">
+
+Learn • Practice • Master
+
+</h2>
+
+<p>
+
+IP Address,
+IPv4,
+IPv6,
+Subnet Mask,
+Gateway,
+DNS,
+DHCP,
+NAT,
+PAT மற்றும்
+Networking Fundamentals
+பற்றிய முழுமையான
+தமிழ் வழிகாட்டி.
+
+</p>
+
+<div class="hero-stats">
+
+<span>🌐 IP Address</span>
+
+<span>📡 IPv4 & IPv6</span>
+
+<span>🔀 Subnetting</span>
+
+<span>🚀 CCNA Basics</span>
+
+</div>
+
+<div class="hero-buttons">
+
+<a href="blog.html"
+class="btn btn-home">
+
+🏠 Back To Blog
+
+</a>
+
+<a href="#ip-topics"
+class="btn btn-primary">
+
+📚 Start Learning
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="ip-topics">
+
+<h2 class="section-title">
+
+🌍 IP Fundamentals Topics
+
+</h2>
+
+<div class="blog-container">
+  <!-- IP Address -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+<h3>🌐 What is IP Address?</h3>
+<p>Network-ல் ஒரு Device-ன் தனிப்பட்ட அடையாளம்.</p>
+<a href="ip-address.html">Read More</a>
+</div>
+
+<!-- IPv4 vs IPv6 -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
+<h3>🌍 IPv4 vs IPv6</h3>
+<p>IPv4 மற்றும் IPv6 இடையேயான வித்தியாசங்களை அறியுங்கள்.</p>
+<a href="ipv4-vs-ipv6.html">Read More</a>
+</div>
+
+<!-- Subnet Mask -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
+<h3>🌐 What is Subnet Mask?</h3>
+<p>Network மற்றும் Host பகுதியை பிரிக்கும் முக்கிய Concept.</p>
+<a href="subnet-mask.html">Read More</a>
+</div>
+
+<!-- Gateway -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?w=800">
+<h3>🚪 What is Gateway?</h3>
+<p>Internet-க்கு செல்லும் Network Exit Door.</p>
+<a href="gateway.html">Read More</a>
+</div>
+
+<!-- DHCP -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+<h3>📡 What is DHCP?</h3>
+<p>Devices-க்கு தானாக IP Address வழங்கும் Service.</p>
+<a href="dhcp.html">Read More</a>
+</div>
+
+<!-- DNS -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
+<h3>🌍 What is DNS?</h3>
+<p>Website Name-ஐ IP Address-ஆக மாற்றும் Service.</p>
+<a href="dns.html">Read More</a>
+</div>
+
+<!-- Static vs Dynamic -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
+<h3>🔄 Static IP vs Dynamic IP</h3>
+<p>Static மற்றும் Dynamic IP வித்தியாசங்களை அறியுங்கள்.</p>
+<a href="static-vs-dynamic-ip.html">Read More</a>
+</div>
+
+<!-- NAT -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
+<h3>🌐 What is NAT?</h3>
+<p>Private IP-ஐ Public IP-ஆக மாற்றும் Technology.</p>
+<a href="nat.html">Read More</a>
+</div>
+
+<!-- PAT -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+<h3>🔄 What is PAT?</h3>
+<p>ஒரே Public IP-யை பல Devices பயன்படுத்த உதவுகிறது.</p>
+<a href="pat.html">Read More</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GOOGLE TRANSLATE -->
+<!-- ========================= -->
+
+<section class="translate-section">
+
+<h2 class="section-title">
+🌍 Google Translate
+</h2>
+
+<p>
+Choose your preferred language and read the content easily.
+</p>
+
+<div class="translate-box">
+
+<div id="google_translate_element"></div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="footer">
+
+<h3>
+🚀 VelviHub
+</h3>
+
+<p>
+Learn • Build • Grow
+</p>
+
+<p>
+🌐 Networking |
+🤖 AI |
+🎓 Education |
+💼 Career |
+💰 Online Income
+</p>
+
+<p>
+📧 Email :
+velvihub@gmail.com
+</p>
+
+<p>
+🌍 Website :
+https://velvihub.in
+</p>
+
+<p>
+© 2026 VelviHub.
+All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+function googleTranslateElementInit(){
+
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta'
+},
+'google_translate_element'
+);
+
+}
+
+</script>
+
+<script
+src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+</body>
+</html>
