@@ -274,6 +274,8 @@ background:#38bdf8;
 color:black;
 font-weight:bold;
 border-radius:10px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(56,189,248,.30);
 }
 
 .translate-box{
@@ -293,23 +295,14 @@ padding:10px !important;
 border-radius:8px !important;
 }
 .footer{
-
-width:100%;
-
-background:#020617;
-
-border-top:3px solid #38bdf8;
-
-padding:45px 20px;
-
-margin-top:0;
-
-text-align:center;
-
-box-shadow:0 -5px 25px rgba(56,189,248,.20);
-
+border-top:1px solid rgba(56,189,248,.5);
+box-shadow:0 -8px 25px rgba(56,189,248,.15);
 }
-
+.footer{
+width:100%;
+margin:0;
+border-radius:0;
+}
 .footer p{
 
 margin:8px 0;
@@ -330,10 +323,9 @@ font-size:30px;
 
 color:#38bdf8;
 
-text-shadow:0 0 15px #38bdf8;
+text-shadow:0 0 10px rgba(56,189,248,.6);
 
 }
-
 @media(max-width:768px){
 
 .hero h1{
@@ -441,7 +433,8 @@ border-radius:22px;
 padding:18px;
 height:100%;
 min-height:520px;
-box-shadow:0 0 18px rgba(56,189,248,.25);
+box-shadow:0 10px 25px rgba(0,0,0,.35),
+0 0 18px rgba(56,189,248,.20);
 transition:.35s;
 }
 
@@ -464,7 +457,7 @@ color:#38bdf8;
 margin:15px 0;
 }
 
-blog-card p{
+.blog-card p{
 flex:1;
 line-height:1.7;
 color:#cbd5e1;
