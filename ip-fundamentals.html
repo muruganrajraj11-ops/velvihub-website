@@ -293,12 +293,25 @@ border-radius:10px;
 text-align:center;
 padding:30px;
 }
+#google_translate_element{
+padding:20px;
+background:#1e293b;
+border:1px solid #38bdf8;
+border-radius:15px;
+box-shadow:0 0 20px rgba(56,189,248,.35);
+}
 
+.goog-te-combo{
+padding:10px !important;
+border-radius:8px !important;
+}
 .footer{
+width:100%;
 background:#020617;
-padding:40px;
+padding:40px 20px;
 text-align:center;
 margin-top:50px;
+border-top:2px solid #38bdf8;
 }
 
 .footer h3{
@@ -383,7 +396,8 @@ align-items:center;
 }
   .blog-card{
 background:#1e293b;
-width:320px;
+width:100%;
+max-width:320px;
 padding:20px;
 border-radius:20px;
 border:1px solid #38bdf8;
@@ -428,6 +442,15 @@ transition:.3s;
 .blog-card a:hover{
 background:#ffffff;
 transform:scale(1.05);
+}
+.blog-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+max-width:1400px;
+margin:0 auto;
+padding:20px;
+justify-items:center;
 }
 </style>
 
