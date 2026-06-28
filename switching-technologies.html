@@ -307,7 +307,7 @@ border-radius:8px !important;
 .footer{
 width:100%;
 background:#020617;
-padding:40px 20px;
+padding:55px 20px;
 text-align:center;
 margin-top:50px;
 border-top:2px solid #38bdf8;
@@ -376,10 +376,11 @@ transform:translateY(-5px);
 box-shadow:
 0 0 25px rgba(56,189,248,.8);
 }
-  .translate-section{
-padding-top:20px;
-padding-bottom:60px;
+.translate-section{
+padding-top:10px;
+padding-bottom:30px;
 text-align:center;
+
 }
 @media(max-width:1200px){
 
@@ -638,6 +639,31 @@ transition:.3s;
 transform:translateY(-6px) scale(1.2);
 
 }
+.social-icons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin:25px 0;
+
+}
+
+.social-icons a{
+
+font-size:30px;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-6px);
+
+}
 </style>
 </head>
 <body>
@@ -810,79 +836,113 @@ RSTP எப்படி STP-ஐ விட வேகமாக Loop Recovery ச�
 
 <section class="translate-section">
 
-<h2 class="section-title">
-🌍 Google Translate
-</h2>
+    <h2 class="section-title">
+        🌍 Google Translate
+    </h2>
 
-<p>
-Choose your preferred language and read the content easily.
-</p>
+    <p>
+        Choose your preferred language and read the content easily.
+    </p>
 
-<div class="translate-box">
-<div id="google_translate_element"></div>
-</div>
+    <div class="translate-box">
+        <div id="google_translate_element"></div>
+    </div>
 
 </section>
+
+<!-- ========================= -->
+<!-- MOBILE MENU SCRIPT -->
+<!-- ========================= -->
+
 <script>
-
 function toggleMenu(){
-
-document.querySelector(".nav-links")
-
-.classList.toggle("active");
-
+    document.querySelector(".nav-links").classList.toggle("active");
 }
-
 </script>
-<div class="footer-social">
 
-<a href="https://youtube.com/@velvi2020">▶️</a>
+<!-- ========================= -->
+<!-- SOCIAL ICONS -->
+<!-- ========================= -->
 
-<a href="https://t.me/VelviHub">📨</a>
+<div class="social-icons">
 
-<a href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v">💬</a>
+    <a href="https://youtube.com/@velvi2020"
+       target="_blank"
+       title="YouTube">
+       ▶️
+    </a>
 
+    <a href="https://t.me/VelviHub"
+       target="_blank"
+       title="Telegram">
+       📨
+    </a>
+
+    <a href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v"
+       target="_blank"
+       title="WhatsApp">
+       💬
+    </a>
+
+    <p>
+🌍 Website :
+<a href="https://velvihub.in" target="_blank">
+velvihub.in
+</a>
+</p>
 </div>
+
 <!-- ========================= -->
 <!-- FOOTER -->
 <!-- ========================= -->
 
 <footer class="footer">
 
-<h3>🚀 VelviHub</h3>
+    <h3>🚀 VelviHub</h3>
 
-<p>
-Learn • Build • Grow
-</p>
+    <p>
+        Learn • Build • Grow
+    </p>
 
-<p>
-🌐 Networking •
-🤖 AI •
-🎓 Education •
-💼 Career •
-💰 Online Income
-</p>
+    <br>
 
-<p>
-📚 Technology •
-🏛 Government Jobs •
-🎯 Competitive Exams
-</p>
+    <p>
+        🌐 Networking •
+        🤖 AI •
+        🎓 Education •
+        💼 Career •
+        💰 Online Income
+    </p>
 
-<p>
-📧 Email :
-velvihub@gmail.com
-</p>
+    <p>
+        📚 Technology •
+        🏛 Government Jobs •
+        🎯 Competitive Exams
+    </p>
 
-<p>
-🌍 Website :
-velvihub.in
-</p>
+    <br>
 
-<p>
-© 2026 VelviHub.
-All Rights Reserved.
-</p>
+    <p>
+        📧 Email :
+        <a href="mailto:velvihub@gmail.com">
+            velvihub@gmail.com
+        </a>
+    </p>
+
+    <p>
+        🌍 Website :
+        <a href="https://velvihub.in"
+           target="_blank">
+           velvihub.in
+        </a>
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 VelviHub.
+        All Rights Reserved.
+    </p>
 
 </footer>
 
@@ -894,14 +954,15 @@ All Rights Reserved.
 
 function googleTranslateElementInit(){
 
-new google.translate.TranslateElement(
-{
-pageLanguage:'ta',
-includedLanguages:'en,ta,hi,te,ml,kn',
-layout:google.translate.TranslateElement.InlineLayout.SIMPLE
-},
-'google_translate_element'
-);
+    new google.translate.TranslateElement({
+
+        pageLanguage:'ta',
+
+        includedLanguages:'en,ta,hi,te,ml,kn',
+
+        layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+
+    }, 'google_translate_element');
 
 }
 
