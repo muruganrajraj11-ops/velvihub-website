@@ -88,7 +88,8 @@ gtag('config','G-WRENY46HW4');
 <style>
 
 /* ========================================= */
-/* VelviHub Premium Metallic CSS v4.0 */
+/* VelviHub Premium CSS v5.0 */
+/* Reset + Body + Background */
 /* ========================================= */
 
 *{
@@ -98,28 +99,18 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
-html,
-body{
-width:100%;
-overflow-x:hidden;
+html{
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Segoe UI',sans-serif;
-background:
-linear-gradient(
-135deg,
-#020617,
-#0f172a,
-#1e293b
-);
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
 color:#ffffff;
 line-height:1.7;
+overflow-x:hidden;
+min-height:100vh;
 }
-
-/* ========================= */
-/* LINKS */
-/* ========================= */
 
 a{
 text-decoration:none;
@@ -128,13 +119,14 @@ transition:.35s;
 }
 
 img{
-max-width:100%;
 display:block;
+max-width:100%;
+height:auto;
 }
 
-/* ========================= */
-/* ANIMATED STARS */
-/* ========================= */
+/* ========================================= */
+/* Animated Stars Background */
+/* ========================================= */
 
 .stars{
 position:fixed;
@@ -142,109 +134,72 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-overflow:hidden;
 z-index:-1;
+overflow:hidden;
 }
 
 .stars::before{
-
 content:"";
-
 position:absolute;
-
 width:200%;
-
 height:200%;
-
 background-image:
-radial-gradient(
-white 1px,
-transparent 1px
-);
-
-background-size:50px 50px;
-
-opacity:.15;
-
-animation:moveStars 60s linear infinite;
-
+radial-gradient(rgba(255,255,255,.9) 1px,transparent 1px);
+background-size:48px 48px;
+opacity:.12;
+animation:starsMove 60s linear infinite;
 }
 
-@keyframes moveStars{
+@keyframes starsMove{
 
-from{
+0%{
 transform:translateY(0);
 }
 
-to{
+100%{
 transform:translateY(-500px);
 }
 
 }
 
-/* ========================= */
-/* NAVBAR */
-/* ========================= */
+/* ========================================= */
+/* Navbar */
+/* ========================================= */
 
 .navbar{
-
 position:fixed;
-
 top:0;
-
 left:0;
-
 width:100%;
-
-padding:18px 25px;
-
+height:75px;
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
-background:#020617;
-
-box-shadow:
-0 0 20px rgba(56,189,248,.25);
-
+padding:0 30px;
+background:rgba(2,6,23,.95);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(56,189,248,.25);
+box-shadow:0 0 20px rgba(56,189,248,.18);
 z-index:9999;
-
 }
-
-/* ========================= */
-/* LOGO */
-/* ========================= */
 
 .logo{
-
 font-size:30px;
-
 font-weight:700;
-
 color:#38bdf8;
-
-text-shadow:
-0 0 15px rgba(56,189,248,.8);
-
+text-shadow:0 0 15px rgba(56,189,248,.8);
 }
-
-/* தொடரும்... */
-/* ========================= */
-/* MENU */
-/* ========================= */
 
 .nav-links{
 display:flex;
-gap:22px;
 align-items:center;
+gap:20px;
 }
 
 .nav-links a{
-font-size:16px;
+padding:10px 16px;
+font-size:15px;
 font-weight:600;
-padding:10px 14px;
 border-radius:10px;
 transition:.35s;
 }
@@ -252,208 +207,182 @@ transition:.35s;
 .nav-links a:hover{
 background:#38bdf8;
 color:#000;
-box-shadow:
-0 0 20px rgba(56,189,248,.7);
+box-shadow:0 0 20px rgba(56,189,248,.7);
 }
-
-/* ========================= */
-/* MOBILE MENU */
-/* ========================= */
 
 .menu-btn{
 display:none;
-font-size:34px;
-color:#38bdf8;
+font-size:32px;
 cursor:pointer;
+color:#38bdf8;
 }
-
-/* ========================= */
-/* HERO SECTION */
-/* ========================= */
+/* ========================================= */
+/* VelviHub Premium CSS v5.0 */
+/* PART 2 - HERO SECTION */
+/* ========================================= */
 
 .hero{
-
-padding-top:140px;
-
-padding-bottom:80px;
-
+padding-top:120px;
+padding-bottom:60px;
 text-align:center;
-
+max-width:1200px;
+margin:auto;
+padding-left:20px;
+padding-right:20px;
 }
 
 .hero-logo{
-width:160px;
-margin:auto;
-margin-bottom:20px;
+width:150px;
+height:150px;
+margin:0 auto 25px;
+border-radius:50%;
+border:3px solid #38bdf8;
+box-shadow:
+0 0 20px rgba(56,189,248,.6),
+0 0 50px rgba(56,189,248,.25);
+transition:.35s;
 }
 
 .hero-logo:hover{
-
-transform:scale(1.05);
-
+transform:scale(1.06) rotate(2deg);
+box-shadow:
+0 0 30px rgba(56,189,248,.9),
+0 0 70px rgba(56,189,248,.35);
 }
 
 .hero h1{
-font-size:46px;
-margin-bottom:10px;
-}
-.hero h2{
-font-size:24px;
+font-size:52px;
+font-weight:700;
+color:#38bdf8;
 margin-bottom:15px;
+text-shadow:
+0 0 15px rgba(56,189,248,.8);
+}
+
+.hero h2{
+font-size:30px;
+font-weight:600;
+color:#ffffff;
+margin-bottom:20px;
 }
 
 .hero p{
-max-width:800px;
+max-width:900px;
+margin:0 auto;
 font-size:18px;
-line-height:1.7;
+line-height:1.9;
+color:#cbd5e1;
 }
 
-/* ========================= */
+/* ========================================= */
 /* HERO STATS */
-/* ========================= */
+/* ========================================= */
 
 .hero-stats{
-
 display:flex;
-
 justify-content:center;
-
+align-items:center;
 flex-wrap:wrap;
-
 gap:15px;
-
 margin-top:35px;
-
 }
 
 .hero-stats span{
-padding:10px 15px;
-font-size:13px;
-}
-
-padding:12px 18px;
-
-border-radius:12px;
-
+padding:12px 20px;
+background:rgba(30,41,59,.85);
 border:1px solid #38bdf8;
-
-font-size:14px;
-
-font-weight:bold;
-
+border-radius:12px;
+font-size:15px;
+font-weight:600;
+color:#ffffff;
 box-shadow:
-0 0 15px rgba(56,189,248,.35);
-
-transition:.3s;
-
+0 0 15px rgba(56,189,248,.25);
+transition:.35s;
 }
 
 .hero-stats span:hover{
-
 transform:translateY(-5px);
-
+background:#38bdf8;
+color:#000;
 box-shadow:
 0 0 25px rgba(56,189,248,.8);
-
 }
 
-/* ========================= */
+/* ========================================= */
 /* HERO BUTTONS */
-/* ========================= */
+/* ========================================= */
 
 .hero-buttons{
-
 display:flex;
-
 justify-content:center;
-
+align-items:center;
 flex-wrap:wrap;
-
 gap:18px;
-
 margin-top:35px;
-
 }
 
 .btn{
-padding:12px 24px;
-font-size:15px;
-}
-
-.btn-primary{
-
-background:#38bdf8;
-
-color:#000;
-
+display:inline-flex;
+justify-content:center;
+align-items:center;
+min-width:190px;
+height:52px;
+padding:0 28px;
+border-radius:12px;
+font-size:16px;
+font-weight:700;
+transition:.35s;
 }
 
 .btn-home{
-
 background:#22c55e;
+color:#ffffff;
+box-shadow:
+0 0 20px rgba(34,197,94,.35);
+}
 
-color:#fff;
-
+.btn-primary{
+background:#38bdf8;
+color:#000000;
+box-shadow:
+0 0 20px rgba(56,189,248,.35);
 }
 
 .btn:hover{
-
 transform:translateY(-5px);
-
 box-shadow:
-0 0 25px rgba(56,189,248,.8);
-
+0 0 30px rgba(56,189,248,.85);
 }
-
-/* ========================= */
-/* SECTION TITLE */
-/* ========================= */
+/* ========================================= */
+/* VelviHub Premium CSS v5.0 */
+/* PART 3 - SECTIONS + PREMIUM CARDS */
+/* ========================================= */
 
 section{
-
-padding:90px 20px;
-
+padding:70px 20px;
 }
 
 .section-title{
-
 text-align:center;
-
 font-size:42px;
-
 font-weight:700;
-
 color:#38bdf8;
-
-margin-bottom:45px;
-
-text-shadow:
-0 0 15px rgba(56,189,248,.6);
-
+margin-bottom:18px;
+text-shadow:0 0 15px rgba(56,189,248,.7);
 }
 
 .section-subtitle{
-
-text-align:center;
-
-font-size:18px;
-
 max-width:900px;
-
-margin:auto;
-
-margin-top:-15px;
-
-margin-bottom:40px;
-
+margin:0 auto 45px;
+text-align:center;
+font-size:18px;
 line-height:1.8;
-
 color:#cbd5e1;
-
 }
-/* ========================= */
-/* BLOG / LEARNING CONTAINERS */
-/* ========================= */
+
+/* ========================================= */
+/* GRID */
+/* ========================================= */
 
 .blog-container,
 .learning-container,
@@ -462,29 +391,49 @@ color:#cbd5e1;
 display:grid;
 
 grid-template-columns:
-repeat(4,1fr);
+repeat(4,minmax(0,1fr));
 
-gap:22px;
+gap:28px;
 
-max-width:1600px;
+max-width:1450px;
 
 margin:auto;
 
-padding:20px;
-
 }
 
-/* ========================= */
-/* PREMIUM BLOG CARD */
-/* ========================= */
+/* ========================================= */
+/* PREMIUM CARD */
+/* ========================================= */
 
 .blog-card,
 .learning-card,
 .special-card{
 
-padding:15px;
-min-height:390px;
-border-radius:18px;
+display:flex;
+
+flex-direction:column;
+
+background:
+linear-gradient(
+145deg,
+#1e293b,
+#0f172a
+);
+
+border:1px solid rgba(56,189,248,.45);
+
+border-radius:20px;
+
+overflow:hidden;
+
+padding:18px;
+
+min-height:430px;
+
+transition:.35s;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.18);
 
 }
 
@@ -492,23 +441,37 @@ border-radius:18px;
 .learning-card:hover,
 .special-card:hover{
 
-transform:translateY(-8px);
+transform:
+translateY(-10px);
 
 box-shadow:
-0 0 35px rgba(56,189,248,.80);
+0 0 35px rgba(56,189,248,.75);
+
+border-color:#38bdf8;
 
 }
 
-/* ========================= */
+/* ========================================= */
 /* CARD IMAGE */
-/* ========================= */
+/* ========================================= */
 
 .blog-card img,
 .special-card img{
 
-height:160px;
+width:100%;
+
+height:190px;
+
+object-fit:cover;
+
+border-radius:14px;
+
+margin-bottom:18px;
+
+transition:.35s;
 
 }
+
 .blog-card:hover img,
 .special-card:hover img{
 
@@ -516,43 +479,90 @@ transform:scale(1.05);
 
 }
 
-/* ========================= */
+/* ========================================= */
 /* CARD TITLE */
-/* ========================= */
+/* ========================================= */
 
 .blog-card h3,
 .learning-card h3,
 .special-card h3{
 
-font-size:22px;
-min-height:55px;
+font-size:24px;
+
+font-weight:700;
+
+color:#38bdf8;
+
+text-align:center;
+
+margin-bottom:15px;
+
+min-height:60px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 
 }
 
-/* ========================= */
-/* CARD DESCRIPTION */
-/* ========================= */
+/* ========================================= */
+/* CARD CONTENT */
+/* ========================================= */
 
 .blog-card p,
 .learning-card p,
 .special-card p{
 
-font-size:15px;
-line-height:1.7;
+flex:1;
+
+font-size:16px;
+
+line-height:1.9;
+
+text-align:center;
+
+color:#d1d5db;
 
 }
 
-/* ========================= */
-/* BUTTON */
-/* ========================= */
+/* ========================================= */
+/* CARD BUTTON */
+/* ========================================= */
 
 .blog-card a,
 .learning-card a,
 .special-card a{
 
-width:170px;
-padding:11px 0;
-font-size:15px;
+margin-top:auto;
+
+align-self:center;
+
+display:inline-flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:190px;
+
+height:50px;
+
+background:#38bdf8;
+
+color:#000;
+
+font-size:16px;
+
+font-weight:700;
+
+border-radius:12px;
+
+transition:.35s;
+
+box-shadow:
+0 0 18px rgba(56,189,248,.30);
 
 }
 
@@ -562,24 +572,29 @@ font-size:15px;
 
 background:#ffffff;
 
-transform:scale(1.05);
+transform:translateY(-3px);
 
 box-shadow:
-0 0 25px rgba(56,189,248,.8);
+0 0 28px rgba(56,189,248,.85);
 
-}
+ }
+/* ========================================= */
+/* VelviHub Premium CSS v5.0 */
+/* PART 4 - Google Translate + Community + Footer */
+/* ========================================= */
+
 /* ========================= */
 /* GOOGLE TRANSLATE */
 /* ========================= */
 
 .translate-section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .translate-section p{
-margin:18px auto 25px;
-max-width:800px;
+max-width:850px;
+margin:15px auto 30px;
 font-size:18px;
 line-height:1.8;
 color:#cbd5e1;
@@ -589,33 +604,46 @@ color:#cbd5e1;
 display:flex;
 justify-content:center;
 align-items:center;
-margin-top:20px;
 }
 
 #google_translate_element{
-display:inline-flex;
-justify-content:center;
-align-items:center;
-width:300px;
-height:70px;
-padding:15px 20px;
-background:#1e293b;
-border:1px solid #38bdf8;
-border-radius:15px;
-box-shadow:
-0 0 20px rgba(56,189,248,.35);
-overflow:hidden;
-}
 
-.goog-te-gadget{
-font-size:16px !important;
-color:#ffffff !important;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:320px;
+
+min-height:75px;
+
+padding:15px;
+
+background:
+linear-gradient(
+145deg,
+#1e293b,
+#0f172a
+);
+
+border:1px solid #38bdf8;
+
+border-radius:16px;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.25);
+
 }
 
 .goog-te-combo{
+
 width:220px !important;
-height:38px !important;
-font-size:15px !important;
+
+padding:8px !important;
+
+border-radius:8px !important;
+
 }
 
 /* ========================= */
@@ -623,53 +651,82 @@ font-size:15px !important;
 /* ========================= */
 
 .social-section{
-padding:60px 20px;
+
+padding:70px 20px;
+
 text-align:center;
-margin-top:40px;
-border-top:1px solid rgba(56,189,248,.15);
-border-bottom:1px solid rgba(56,189,248,.15);
+
 }
 
 .social-section h3{
-font-size:32px;
+
+font-size:34px;
+
+margin-bottom:30px;
+
 color:#38bdf8;
-margin-bottom:25px;
-text-shadow:
-0 0 12px rgba(56,189,248,.7);
+
 }
 
 .social-icons{
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
+gap:25px;
+
 flex-wrap:wrap;
-gap:20px;
+
 }
 
 .social-icons a{
-width:60px;
-height:60px;
+
+width:65px;
+
+height:65px;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
-background:#1e293b;
+
+font-size:30px;
+
+background:
+linear-gradient(
+145deg,
+#1e293b,
+#0f172a
+);
+
 border:1px solid #38bdf8;
+
 border-radius:50%;
-font-size:28px;
-color:#ffffff;
+
 transition:.35s;
+
 box-shadow:
-0 0 15px rgba(56,189,248,.30);
+0 0 18px rgba(56,189,248,.25);
+
 }
 
 .social-icons a:hover{
+
 background:#38bdf8;
+
 color:#000;
+
 transform:
-translateY(-5px)
-scale(1.1);
+translateY(-6px)
+scale(1.08);
+
 box-shadow:
-0 0 30px rgba(56,189,248,.85);
+0 0 30px rgba(56,189,248,.8);
+
 }
 
 /* ========================= */
@@ -677,56 +734,80 @@ box-shadow:
 /* ========================= */
 
 .footer{
-width:100%;
-padding:60px 20px;
-background:#020617;
-border-top:2px solid #38bdf8;
+
+margin-top:40px;
+
+padding:55px 20px;
+
 text-align:center;
-margin-top:0;
+
+background:#020617;
+
+border-top:2px solid #38bdf8;
+
 }
 
 .footer h3{
-font-size:32px;
-color:#38bdf8;
+
+font-size:34px;
+
 margin-bottom:18px;
+
+color:#38bdf8;
+
 text-shadow:
 0 0 12px rgba(56,189,248,.7);
+
 }
 
 .footer p{
+
+margin:10px 0;
+
 font-size:16px;
-line-height:2;
-margin:8px 0;
+
+line-height:1.9;
+
 color:#cbd5e1;
+
 }
 
 .footer a{
+
 color:#38bdf8;
+
 font-weight:600;
-transition:.3s;
+
 }
 
 .footer a:hover{
+
 color:#ffffff;
-text-shadow:
-0 0 10px rgba(56,189,248,.8);
+
 }
 
 .footer hr{
+
 width:180px;
+
 height:2px;
-margin:25px auto;
+
 border:none;
+
+margin:25px auto;
+
 background:#38bdf8;
+
 opacity:.4;
+
 }
-/* ======================================================= */
-/* VelviHub Premium CSS v4.0                               */
-/* Responsive + Animation + Final                          */
-/* ======================================================= */
+/* ========================================= */
+/* VelviHub Premium CSS v5.0 */
+/* PART 5 - Responsive + Mobile + Final */
+/* ========================================= */
 
 /* ========================= */
-/* DESKTOP */
+/* LARGE DESKTOP */
 /* ========================= */
 
 @media (min-width:1400px){
@@ -758,7 +839,7 @@ repeat(3,1fr);
 }
 
 .hero h1{
-font-size:52px;
+font-size:46px;
 }
 
 }
@@ -780,40 +861,41 @@ repeat(2,1fr);
 
 .hero{
 
-padding-top:120px;
+padding-top:110px;
 
 }
 
 .hero-logo{
 
-width:180px;
+width:130px;
+height:130px;
 
 }
 
 .hero h1{
 
-font-size:46px;
+font-size:38px;
 
 }
 
 .hero h2{
 
-font-size:26px;
+font-size:24px;
 
 }
 
 .hero p{
 
-font-size:18px;
+font-size:17px;
 
 }
 
 .section-title{
 
 font-size:34px;
-margin-bottom:35px;
 
 }
+
 }
 
 /* ========================= */
@@ -822,15 +904,11 @@ margin-bottom:35px;
 
 @media (max-width:768px){
 
-.menu-btn{
-
-display:block;
-
-}
-
 .navbar{
 
-padding:15px 18px;
+padding:14px 18px;
+
+height:70px;
 
 }
 
@@ -840,30 +918,36 @@ font-size:22px;
 
 }
 
+.menu-btn{
+
+display:block;
+
+}
+
 .nav-links{
 
 display:none;
 
 position:absolute;
 
-top:72px;
+top:70px;
 
 right:15px;
 
+width:220px;
+
 background:#020617;
-
-flex-direction:column;
-
-padding:18px;
-
-border-radius:15px;
 
 border:1px solid #38bdf8;
 
+border-radius:15px;
+
+padding:15px;
+
+flex-direction:column;
+
 box-shadow:
 0 0 20px rgba(56,189,248,.35);
-
-min-width:220px;
 
 }
 
@@ -875,43 +959,43 @@ display:flex;
 
 .nav-links a{
 
-padding:10px;
-
 text-align:center;
+
+padding:12px;
 
 }
 
 .hero{
 
-padding-top:110px;
-
-padding-bottom:50px;
+padding-top:100px;
+padding-bottom:40px;
 
 }
 
 .hero-logo{
 
-width:150px;
+width:120px;
+height:120px;
 
 }
 
 .hero h1{
 
-font-size:36px;
+font-size:30px;
 
 }
 
 .hero h2{
 
-font-size:22px;
+font-size:20px;
 
 }
 
 .hero p{
 
-font-size:16px;
+font-size:15px;
 
-padding:0 12px;
+padding:0 10px;
 
 }
 
@@ -919,15 +1003,13 @@ padding:0 12px;
 
 flex-direction:column;
 
-align-items:center;
+gap:15px;
 
 }
 
 .btn{
 
 width:220px;
-
-text-align:center;
 
 }
 
@@ -939,9 +1021,9 @@ gap:10px;
 
 .hero-stats span{
 
-font-size:13px;
+font-size:12px;
 
-padding:10px 14px;
+padding:9px 12px;
 
 }
 
@@ -950,6 +1032,8 @@ padding:10px 14px;
 .specials-container{
 
 grid-template-columns:1fr;
+
+gap:20px;
 
 }
 
@@ -964,13 +1048,21 @@ min-height:auto;
 .blog-card img,
 .special-card img{
 
-height:auto;
+height:180px;
 
 }
 
-.section-title{
+.social-icons{
 
-font-size:30px;
+gap:15px;
+
+}
+
+.social-icons a{
+
+width:52px;
+height:52px;
+font-size:24px;
 
 }
 
@@ -990,24 +1082,6 @@ font-size:28px;
 
 font-size:15px;
 
-line-height:1.8;
-
-}
-
-.social-icons{
-
-gap:15px;
-
-}
-
-.social-icons a{
-
-width:48px;
-
-height:48px;
-
-font-size:22px;
-
 }
 
 }
@@ -1020,31 +1094,26 @@ font-size:22px;
 
 .hero h1{
 
-font-size:30px;
+font-size:26px;
 
 }
 
 .hero h2{
 
-font-size:20px;
-
-}
-
-.hero p{
-
-font-size:15px;
-
-}
-
-.section-title{
-
-font-size:26px;
+font-size:18px;
 
 }
 
 .hero-logo{
 
-width:130px;
+width:100px;
+height:100px;
+
+}
+
+.section-title{
+
+font-size:28px;
 
 }
 
@@ -1056,7 +1125,7 @@ width:130px;
 
 ::-webkit-scrollbar{
 
-width:10px;
+width:8px;
 
 }
 
@@ -1089,6 +1158,78 @@ background:#0ea5e9;
 background:#38bdf8;
 
 color:#000;
+}
+<!-- ========================= -->
+<!-- Mobile Menu Script -->
+<!-- ========================= -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("active");
+
+}
+
+</script>
+
+<!-- ========================= -->
+<!-- Scroll To Top Button -->
+<!-- ========================= -->
+
+<button id="topBtn">
+
+⬆
+
+</button>
+
+<style>
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#38bdf8;
+
+color:#000;
+
+font-size:22px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+z-index:999;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.6);
+
+transition:.35s;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-5px);
+
+background:#ffffff;
 
 }
 
