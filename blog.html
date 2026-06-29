@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VelviHub Blog</title>
+
+<style>
+
+.section-subtitle{
+text-align:center;
+color:#cbd5e1;
+font-size:18px;
+margin-top:-10px;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.learning-card{
+background:linear-gradient(145deg,#1e293b,#0f172a);
+width:320px;
+padding:25px;
+border-radius:22px;
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+transition:all .4s ease;
+text-align:center;
+margin:20px;
+border:1px solid rgba(56,189,248,0.2);
+}
+
+.learning-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 0 40px rgba(56,189,248,0.9);
+border:1px solid #38bdf8;
+}
+
+.learning-card h3{
+font-size:26px;
+color:#38bdf8;
+margin-bottom:15px;
+text-shadow:0 0 12px #38bdf8;
+}
+
+.learning-card p{
+font-size:17px;
+line-height:1.8;
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.learning-card a{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+transition:.3s;
+}
+
+.learning-card a:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+.learning-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:30px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#38bdf8;
+margin-top:40px;
+margin-bottom:30px;
+text-shadow:0 0 20px #38bdf8;
+}
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+
+.navbar{
+position:sticky;
+top:0;
+z-index:999;
+background:#0f172a;
+padding:18px;
+box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+.navbar a{
+color:#38bdf8;
+text-decoration:none;
+margin:10px;
+font-size:18px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:white;
+}
+
+.hero{
+padding:70px 20px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero h1{
+font-size:48px;
+color:#38bdf8;
+text-shadow:0 0 25px #38bdf8;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#cbd5e1;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin:30px;
+}
+
+.stat-box{
+background:#1e293b;
+padding:20px;
+width:180px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(56,189,248,.4);
+}
+
+.stat-box h2{
+color:#38bdf8;
+}
+
+.search-box{
+margin:30px;
+}
+
+.search-box input{
+padding:15px;
+width:320px;
+border:none;
+border-radius:12px;
+font-size:16px;
+text-align:center;
+outline:none;
+}
+
+.blog-container,
+.learning-container,
+.specials-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:20px;
+}
+
+.blog-card,
+.learning-card,
+.special-card{
+background:#1e293b;
+width:320px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(56,189,248,.25);
+transition:.3s;
+}
+
+.blog-card:hover,
+.learning-card:hover,
+.special-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 40px rgba(56,189,248,.8);
+}
+
+.blog-card img,
+.special-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.blog-card h3,
+.learning-card h3,
+.special-card h3{
+color:#38bdf8;
+margin-bottom:12px;
+}
+
+.blog-card a,
+.learning-card a,
+.special-card a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+}
+
+.footer{
+margin-top:50px;
+padding:25px;
+background:#0f172a;
+}
+
+#topBtn{
+display:none;
+position:fixed;
+right:20px;
+bottom:20px;
+background:#38bdf8;
+border:none;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+box-shadow:0 0 20px #38bdf8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.search-box input{
+width:90%;
+}
+
+.blog-card,
+.learning-card,
+.special-card{
+width:95%;
+}
+
+}
+
+</style>
+</head>
+<body>
+  
+<div id="google_translate_element"></div>
+
+<div class="navbar">
+
+<a href="index.html">Home</a>
+<a href="videos.html">Videos</a>
+<a href="courses.html">Courses</a>
+<a href="gallery.html">Gallery</a>
+<a href="blog.html">Blog</a>
+<a href="privacy.html">Privacy Policy</a>
+
+</div>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h1>🚀 VelviHub Networking Academy</h1>
+
+<p>
+Learn Networking, CCNA, MPLS, BGP, SD-WAN,
+Security, Cloud & Automation in Simple Tamil
+</p>
+
+</section>
+
+<!-- STATS SECTION -->
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>Articles</p>
+</div>
+
+<div class="stat-box">
+<h2>60+</h2>
+<p>MCQs</p>
+</div>
+
+<div class="stat-box">
+<h2>CCNA</h2>
+<p>Learning Path</p>
+</div>
+
+<div class="stat-box">
+<h2>FREE</h2>
+<p>Learning</p>
+</div>
+
+</div>
+
+<!-- IP Address MCQ -->
+<div class="blog-card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+<h3>📝 IP Address MCQ Test</h3>
+<p>
+IP Address பற்றிய 25 முக்கிய MCQ Questions மற்றும் Answers.
+</p>
+<a href="ip-mcq.html">Start Test</a>
+</div>
+
+  <!-- START -->
+
+  <h2 style="
+width:100%;
+text-align:center;
+color:#38bdf8;
+margin-top:60px;
+margin-bottom:30px;
+text-shadow:0 0 15px #38bdf8;
+">
+🎓 VelviHub Learning Paths
+</h2>
+
+<div class="learning-container">
+
+<div class="learning-card">
+<h3>🌐 IP Fundamentals</h3>
+<p>
+IP Address, IPv4, IPv6,
+Subnet Mask, Gateway,
+DHCP, DNS, NAT, PAT
+</p>
+<a href="ip-fundamentals.html">
+Start Learning
+</a>
+</div>
+
+<div class="learning-card">
+<h3>🔀 Switching Technologies</h3>
+<p>
+Switch, VLAN,
+STP, RSTP,
+EtherChannel
+</p>
+<a href="switching-technologies.html">
+Start Learning
+</a>
+</div>
+
+<div class="learning-card">
+<h3>🌍 Routing Technologies</h3>
+<p>
+Router, OSPF,
+BGP, MPLS,
+Inter-VLAN Routing
+</p>
+<a href="routing.html">
+Start Learning
+</a>
+</div>
+
+<div class="learning-card">
+<h3>🛡️ Network Security</h3>
+<p>
+Firewall, VPN,
+ACL, IDS,
+IPS
+</p>
+<a href="security.html">
+Start Learning
+</a>
+</div>
+
+<div class="learning-card">
+<h3>⚡ High Availability</h3>
+<p>
+HSRP, VRRP,
+Load Balancer,
+QoS
+</p>
+<a href="high-availability.html">
+Start Learning
+</a>
+</div>
+
+<div class="learning-card">
+<h3>☁️ Cloud & Automation</h3>
+<p>
+SD-WAN,
+Cloud Computing,
+Data Center,
+Network Automation
+</p>
+<a href="cloud.html">
+Start Learning
+</a>
+</div>
+
+</div>
+<!-- BLOG PAGE -->
+
+<h2 class="section-title">
+🎥 YouTube & AI Tools
+</h2>
+
+<div class="learning-card">
+
+<h3>🎥 YouTube & AI Tools</h3>
+
+<p>
+YouTube Growth,
+AI Tools,
+Content Creation,
+Monetization
+</p>
+
+<a href="youtube-ai-tools.html">
+Start Learning
+</a>
+</div>
+
+<!-- BLOG PAGE-ல் Mobile Apps & Tools Card -->
+
+<div class="learning-card">
+
+<h3>📱 Mobile Apps & Tools</h3>
+
+<p>
+Useful Apps,
+Productivity Tools,
+Content Creation,
+Cloud Storage
+</p>
+
+<a href="mobile-apps-tools.html">
+Start Learning
+</a>
+</div>
+
+<h2 class="section-title">
+🚀 VelviHub Growth Hub
+</h2>
+
+<p class="section-subtitle">
+Online Income, Career Growth,
+Affiliate Marketing மற்றும் IT Career Learning
+</p>
+<!-- 💰 Online Earning Card -->
+
+>
+
+<div class="learning-card">
+
+<h3>💰 Online Earning</h3>
+
+<p>
+Affiliate Marketing,
+Blogging,
+AdSense,
+Freelancing
+</p>
+
+<a href="online-earning.html">
+Start Learning
+</a>
+
+</div>
+
+
+ <!-- 🎓 Career Guidance Card -->
+<div class="learning-card">
+
+<h3>🎓 Career Guidance</h3>
+
+<p>
+Resume Building,
+Interview Tips,
+CCNA,
+IT Career Growth
+</p>
+
+<a href="career-guidance.html">
+Start Learning
+</a>
+
+</div>
+
+           <!-- VelviHub Specials -->
+
+<div class="learning-card">
+
+<h3>🎬 VelviHub Specials</h3>
+
+<p>
+Motivation,
+Success Stories,
+Productivity,
+Self Growth
+</p>
+
+<a href="velvihub-specials.html">
+Start Learning
+</a>
+
+</div>  
+
+           <!-- 🚀 VelviHub Community -->
+
+<h2 class="section-title">
+🚀 VelviHub Community
+</h2>
+
+<div class="learning-container">
+
+<div class="learning-card">
+
+<h3>🎥 Watch Videos</h3>
+
+<p>
+Networking,
+AI Tools,
+Career Guidance Videos
+</p>
+
+<a href="https://youtube.com/@velvi2020">
+Watch Now
+</a>
+
+</div>
+
+<div class="learning-card">
+
+<h3>📨 Join Telegram</h3>
+
+<p>
+Notes,
+Updates,
+MCQs & Learning Materials
+</p>
+
+<a href="https://t.me/VelviHub">
+Join Now
+</a>
+
+</div>
+
+</div>
+
+</div>  
+<h2 style="
+width:100%;
+text-align:center;
+color:#38bdf8;
+margin-top:60px;
+margin-bottom:30px;
+text-shadow:0 0 15px #38bdf8;
+">
+🎬 VelviHub Specials
+</h2>
+
+<div class="specials-container">
+
+<div class="special-card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
+
+<h3>💻 GitHub Pages</h3>
+
+<p>
+GitHub Pages helps us host websites online for free using HTML and CSS.
+</p>
+
+<a href="#">
+Read More
+</a>
+</div>
+
+<div class="special-card">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
+
+<h3>🚀 VelviHub Journey</h3>
+
+<p>
+Building a modern website step-by-step with learning and creativity.
+</p>
+
+<a href="#">
+Read More
+</a>
+</div>
+
+<div class="special-card">
+<img src="https://img.youtube.com/vi/5yeZ3BI9JnI/0.jpg">
+
+<h3>🎥 Velvi2020 Latest Video</h3>
+
+<p>
+Watch our latest educational and entertainment videos from VelviHub.
+</p>
+
+<a href="https://youtube.com/@velvi2020" target="_blank">
+Watch Now
+</a>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 VelviHub | Networking Knowledge Portal
+</div>
+
+<button id="topBtn">⬆</button>
+
+<script>
+
+function searchBlog(){
+
+let input =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".blog-card");
+
+cards.forEach(card => {
+
+let text =
+card.innerText.toLowerCase();
+
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+const btn =
+document.getElementById("topBtn");
+
+window.onscroll = function(){
+
+if(window.scrollY > 300){
+btn.style.display = "block";
+}else{
+btn.style.display = "none";
+}
+
+}
+
+btn.onclick = function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+function googleTranslateElementInit(){
+
+new google.translate.TranslateElement(
+{
+pageLanguage:'ta',
+autoDisplay:true
+},
+'google_translate_element'
+);
+
+}
+
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
