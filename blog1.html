@@ -760,6 +760,132 @@ text-shadow:
 
 }
 
+/* ===== Premium Medium Cards ===== */
+
+.blog-container,
+.learning-container,
+.specials-container,
+.community-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:28px;
+max-width:1450px;
+margin:auto;
+padding:20px;
+}
+
+.blog-card,
+.learning-card,
+.special-card,
+.community-card{
+
+background:linear-gradient(145deg,#1e293b,#111827);
+
+border:1px solid #38bdf8;
+
+border-radius:22px;
+
+padding:20px;
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:0 0 18px rgba(56,189,248,.25);
+
+}
+
+.blog-card:hover,
+.learning-card:hover,
+.special-card:hover,
+.community-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 35px rgba(56,189,248,.75);
+
+}
+
+.blog-card img,
+.learning-card img,
+.special-card img,
+.community-card img{
+
+width:100%;
+
+height:210px;
+
+object-fit:cover;
+
+border-radius:16px;
+
+margin-bottom:18px;
+
+}
+
+.blog-card h3,
+.learning-card h3,
+.special-card h3,
+.community-card h3{
+
+font-size:30px;
+
+margin:15px 0;
+
+color:#38bdf8;
+
+}
+
+.blog-card p,
+.learning-card p,
+.special-card p,
+.community-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#d1d5db;
+
+margin-bottom:22px;
+
+}
+
+.blog-card a,
+.learning-card a,
+.special-card a,
+.community-card a{
+
+display:inline-block;
+
+width:200px;
+
+padding:14px 0;
+
+background:#38bdf8;
+
+color:#000;
+
+font-size:17px;
+
+font-weight:bold;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.blog-card a:hover,
+.learning-card a:hover,
+.special-card a:hover,
+.community-card a:hover{
+
+background:#ffffff;
+
+transform:scale(1.05);
+
+}
 .footer p{
 
 margin:10px 0;
