@@ -578,6 +578,218 @@ box-shadow:
 0 0 28px rgba(56,189,248,.85);
 
  }
+ /* =======================================
+   VelviHub Premium Vertical Cards
+======================================= */
+
+.blog-container,
+.learning-container,
+.specials-container,
+.community-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+max-width:1500px;
+margin:40px auto;
+padding:20px;
+}
+
+.blog-card,
+.learning-card,
+.special-card,
+.community-card{
+
+background:linear-gradient(180deg,#1e293b,#111827);
+
+border:2px solid #38bdf8;
+
+border-radius:22px;
+
+overflow:hidden;
+
+text-align:center;
+
+padding:18px;
+
+transition:.35s;
+
+box-shadow:0 0 20px rgba(56,189,248,.25);
+
+}
+
+.blog-card:hover,
+.learning-card:hover,
+.special-card:hover,
+.community-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 35px rgba(56,189,248,.80);
+
+}
+
+/* IMAGE */
+
+.blog-card img,
+.learning-card img,
+.special-card img,
+.community-card img{
+
+width:100%;
+
+height:190px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+margin-bottom:18px;
+
+}
+
+/* TITLE */
+
+.blog-card h3,
+.learning-card h3,
+.special-card h3,
+.community-card h3{
+
+font-size:32px;
+
+font-weight:700;
+
+line-height:1.3;
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+}
+
+/* DESCRIPTION */
+
+.blog-card p,
+.learning-card p,
+.special-card p,
+.community-card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#d1d5db;
+
+margin-bottom:25px;
+
+}
+
+/* BUTTON */
+
+.blog-card a,
+.learning-card a,
+.special-card a,
+.community-card a{
+
+display:inline-block;
+
+width:220px;
+
+padding:15px 0;
+
+background:#38bdf8;
+
+color:#000;
+
+font-size:18px;
+
+font-weight:bold;
+
+border-radius:12px;
+
+transition:.3s;
+
+box-shadow:0 0 20px rgba(56,189,248,.45);
+
+}
+
+.blog-card a:hover,
+.learning-card a:hover,
+.special-card a:hover,
+.community-card a:hover{
+
+background:#ffffff;
+
+transform:scale(1.05);
+
+box-shadow:0 0 30px rgba(56,189,248,.80);
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.blog-container,
+.learning-container,
+.specials-container,
+.community-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:16px;
+
+}
+
+.blog-card,
+.learning-card,
+.special-card,
+.community-card{
+
+padding:14px;
+
+}
+
+.blog-card img,
+.learning-card img,
+.special-card img,
+.community-card img{
+
+height:150px;
+
+}
+
+.blog-card h3,
+.learning-card h3,
+.special-card h3,
+.community-card h3{
+
+font-size:24px;
+
+}
+
+.blog-card p,
+.learning-card p,
+.special-card p,
+.community-card p{
+
+font-size:15px;
+
+}
+
+.blog-card a,
+.learning-card a,
+.special-card a,
+.community-card a{
+
+width:180px;
+
+font-size:16px;
+
+padding:12px 0;
+
+}
+
+}
 /* ========================================= */
 /* VelviHub Premium CSS v5.0 */
 /* PART 4 - Google Translate + Community + Footer */
