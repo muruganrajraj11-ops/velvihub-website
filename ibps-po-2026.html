@@ -1323,7 +1323,219 @@ background:#38bdf8;
 color:#000;
 
 }
+/* ========================= */
+/* PREMIUM FOOTER V3 */
+/* ========================= */
 
+.footer{
+
+padding:70px 20px;
+
+background:#020617;
+
+text-align:center;
+
+border-top:2px solid #38bdf8;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.footer::before{
+
+content:"";
+
+position:absolute;
+
+top:-100px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:500px;
+
+height:500px;
+
+background:radial-gradient(
+
+rgba(56,189,248,.18),
+
+transparent 70%
+
+);
+
+pointer-events:none;
+
+}
+
+.footer h2{
+
+font-size:42px;
+
+color:#38bdf8;
+
+margin-bottom:18px;
+
+text-shadow:
+
+0 0 15px #38bdf8,
+
+0 0 35px #38bdf8;
+
+}
+
+.footer-tagline{
+
+font-size:22px;
+
+margin-bottom:30px;
+
+font-weight:600;
+
+color:#ffffff;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+margin:25px 0;
+
+}
+
+.footer-links span{
+
+background:#0f172a;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+border:1px solid #38bdf8;
+
+box-shadow:
+
+0 0 15px rgba(56,189,248,.25);
+
+}
+.footer-contact{
+
+margin:35px 0;
+
+}
+
+.footer-contact p{
+
+margin:15px 0;
+
+font-size:18px;
+
+}
+
+.footer-contact a{
+
+color:#38bdf8;
+
+font-weight:bold;
+
+}
+
+.footer-contact a:hover{
+
+color:#ffffff;
+
+}
+
+.footer-divider{
+
+margin:35px auto;
+
+width:80%;
+
+height:2px;
+
+background:#38bdf8;
+
+box-shadow:
+
+0 0 15px #38bdf8;
+
+}
+
+.footer-copy{
+
+margin-top:25px;
+
+font-size:18px;
+
+color:#cbd5e1;
+
+}
+.social-icons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin:35px 0;
+
+flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+width:65px;
+
+height:65px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:#0f172a;
+
+border:2px solid #38bdf8;
+
+font-size:30px;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 18px rgba(56,189,248,.30);
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-8px) scale(1.1);
+
+background:#38bdf8;
+
+color:#000;
+
+box-shadow:
+
+0 0 35px #38bdf8;
+
+}
 </style>
 <body>
 
@@ -3981,37 +4193,43 @@ Explore Jobs →
 
 <footer class="footer">
 
-<h3>
+<h2>
 
 🚀 VelviHub
 
-</h3>
+</h2>
 
-<p>
+<p class="footer-tagline">
 
-<b>Learn • Build • Grow</b>
-
-</p>
-
-<p>
-
-🏛 Government Jobs • 💼 Career Guidance • 📚 Study Materials
+Learn • Build • Grow
 
 </p>
 
-<p>
+<div class="footer-links">
 
-🤖 AI • 🌐 Networking • ☁️ Cloud • 🛡 Cyber Security
+<span>🏛 Government Jobs</span>
 
-</p>
+<span>📚 Study Materials</span>
 
-<p>
+<span>📰 Current Affairs</span>
 
-📰 Current Affairs • 💰 Online Income • 🎯 Competitive Exams
+<span>🤖 AI</span>
 
-</p>
+<span>🌐 Networking</span>
 
-<hr>
+<span>☁ Cloud</span>
+
+<span>🛡 Cyber Security</span>
+
+<span>💼 Career Guidance</span>
+
+<span>💰 Online Income</span>
+
+<span>🎯 Competitive Exams</span>
+
+</div>
+
+<div class="footer-contact">
 
 <p>
 
@@ -4027,10 +4245,10 @@ velvihub@gmail.com
 
 <p>
 
-🌐 Website :
+🌍 Website :
 
-<a
-href="https://velvihub.in"
+<a href="https://velvihub.in"
+
 target="_blank">
 
 https://velvihub.in
@@ -4039,72 +4257,73 @@ https://velvihub.in
 
 </p>
 
-<p>
+</div>
 
-💬 WhatsApp :
+<div class="social-icons">
 
-<a
-href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v"
+<a href="https://facebook.com/"
 target="_blank">
 
-Join Channel
+📘
 
 </a>
 
-</p>
-
-<p>
-
-📢 Telegram :
-
-<a
-href="https://t.me/VelviHub"
+<a href="https://youtube.com/@velvi2020"
 target="_blank">
 
-Join Channel
+▶
 
 </a>
 
-</p>
-
-<p>
-
-▶ YouTube :
-
-<a
-href="https://youtube.com/@velvi2020"
+<a href="https://t.me/VelviHub"
 target="_blank">
 
-@velvi2020
+✈
 
 </a>
 
+<a href="https://whatsapp.com/channel/0029VbCIE4kAO7RConER5C2v"
+target="_blank">
+
+💬
+
+</a>
+
+<a href="https://instagram.com/"
+target="_blank">
+
+📷
+
+</a>
+
+</div>
+
+<div class="footer-divider"></div>
+
+<p class="footer-copy">
+
+❤️ Thank You for Visiting VelviHub ❤️
+
 </p>
 
-<hr>
+<p class="footer-copy">
 
-<p>
-
-© 2026 VelviHub.
-
-All Rights Reserved.
+© 2026 VelviHub. All Rights Reserved.
 
 </p>
 
-<p>
+<p class="footer-copy">
 
 இந்த இணையதளத்தில் உள்ள தகவல்கள்
-கல்வி மற்றும்
-விழிப்புணர்வு நோக்கத்திற்காக மட்டுமே.
+கல்வி மற்றும் விழிப்புணர்வு நோக்கத்திற்காக மட்டுமே.
 
-விண்ணப்பிக்கும் முன்
+அதிகாரப்பூர்வ தகவல்களுக்கு
 Official Notification-ஐ
-கண்டிப்பாக படிக்கவும்.
+கண்டிப்பாக பார்க்கவும்.
 
 </p>
 
 </footer>
-
 <!-- ========================================= -->
 <!-- MOBILE MENU -->
 <!-- ========================================= -->
