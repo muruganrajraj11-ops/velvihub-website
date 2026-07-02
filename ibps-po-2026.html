@@ -143,16 +143,28 @@ display:block;
 max-width:100%;
 }
 
-/* STARS BACKGROUND */
+/* ===================================== */
+/* PREMIUM GALAXY STARS */
+/* ===================================== */
 
 .stars{
+
 position:fixed;
+
 top:0;
+
 left:0;
+
 width:100%;
+
 height:100%;
-overflow:hidden;
+
 z-index:-1;
+
+background:#020617;
+
+overflow:hidden;
+
 }
 
 .stars::before{
@@ -161,33 +173,55 @@ content:"";
 
 position:absolute;
 
-width:200%;
+width:100%;
 
-height:200%;
+height:100%;
 
 background-image:
-radial-gradient(#ffffff 1px,transparent 1px);
 
-background-size:50px 50px;
+radial-gradient(circle,#ffffff 1.6px,transparent 1.6px),
 
-opacity:.12;
+radial-gradient(circle,#38bdf8 1.2px,transparent 1.2px),
 
-animation:starsMove 70s linear infinite;
+radial-gradient(circle,#ffffff 2px,transparent 2px);
+
+background-size:
+
+120px 120px,
+
+180px 180px,
+
+250px 250px;
+
+background-position:
+
+0 0,
+
+60px 80px,
+
+100px 150px;
+
+opacity:.55;
+
+animation:starMove 90s linear infinite;
 
 }
 
-@keyframes starsMove{
+@keyframes starMove{
 
 from{
+
 transform:translateY(0);
+
 }
 
 to{
-transform:translateY(-600px);
-}
+
+transform:translateY(-700px);
 
 }
 
+}
 /* NAVBAR */
 
 .navbar{
@@ -1645,6 +1679,35 @@ background:linear-gradient(
 #515BD4
 
 );
+
+}
+body::after{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:radial-gradient(
+
+circle at top,
+
+rgba(56,189,248,.12),
+
+transparent 70%
+
+);
+
+pointer-events:none;
+
+z-index:-1;
 
 }
 </style>
@@ -3449,9 +3512,10 @@ Download செய்து
 
 </p>
 
-<a href="https://www.ibps.in/"
-
-target="_blank">
+<a
+href="https://www.ibps.in/wp-content/uploads/IBPS_PO_MT_XVI_Notification.pdf"
+target="_blank"
+class="learn-btn">
 
 📄 Download PDF
 
@@ -3481,9 +3545,10 @@ Online-ல்
 
 </p>
 
-<a href="https://www.ibps.in/"
-
-target="_blank">
+<a
+href="https://ibpsonline.ibps.in/"
+target="_blank"
+class="learn-btn">
 
 🚀 Apply Now
 
