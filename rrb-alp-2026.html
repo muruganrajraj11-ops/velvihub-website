@@ -1680,6 +1680,59 @@ flex:1;
 color:#cbd5e1;
 
 }
+.info-row{
+
+display:grid;
+
+grid-template-columns:260px 1fr;
+
+gap:20px;
+
+padding:15px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+align-items:center;
+
+}
+
+.label{
+
+font-weight:700;
+
+color:#ffffff;
+
+font-size:18px;
+
+}
+
+.value{
+
+color:#dbeafe;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+.info-row{
+
+grid-template-columns:1fr;
+
+gap:8px;
+
+}
+
+.label{
+
+color:#38bdf8;
+
+}
+
+}
 </style>
   </head>
 <body>
@@ -1882,115 +1935,45 @@ class="btn btn-secondary">
 
 <div class="highlight-box">
 
-<p>
+<div class="info-row">
+    <span class="label">🏛 Organization</span>
+    <span class="value">Railway Recruitment Board (RRB)</span>
+</div>
 
-🏛 <b>Organization</b>
+<div class="info-row">
+    <span class="label">💼 Post Name</span>
+    <span class="value">Assistant Loco Pilot (ALP)</span>
+</div>
 
-<br>
+<div class="info-row">
+    <span class="label">👥 Total Vacancies</span>
+    <span class="value">9,900+ Posts</span>
+</div>
 
-Railway Recruitment Board (RRB)
+<div class="info-row">
+    <span class="label">🎓 Qualification</span>
+    <span class="value">ITI / Diploma / Engineering</span>
+</div>
 
-</p>
+<div class="info-row">
+    <span class="label">🎂 Age Limit</span>
+    <span class="value">18 – 30 Years</span>
+</div>
 
-<p>
+<div class="info-row">
+    <span class="label">💰 Salary</span>
+    <span class="value">₹19,900 + Allowances</span>
+</div>
 
-💼 <b>Post Name</b>
+<div class="info-row">
+    <span class="label">📍 Job Location</span>
+    <span class="value">Across India</span>
+</div>
 
-<br>
-
-Assistant Loco Pilot (ALP)
-
-</p>
-
-<p>
-
-👥 <b>Total Vacancies</b>
-
-<br>
-
-9,900+ Posts (As Per Official Notification)
-
-</p>
-
-<p>
-
-🎓 <b>Educational Qualification</b>
-
-<br>
-
-ITI / Diploma / Engineering
-
-(As Per Post Requirement)
-
-</p>
-
-<p>
-
-🎂 <b>Age Limit</b>
-
-<br>
-
-18 – 30 Years
-
-(Age Relaxation Applicable)
-
-</p>
-
-<p>
-
-💰 <b>Salary</b>
-
-<br>
-
-₹19,900 Basic Pay
-
-+
-
-Allowances
-
-(Approx ₹35,000 – ₹45,000 / Month)
-
-</p>
-
-<p>
-
-📍 <b>Job Location</b>
-
-<br>
-
-Across India
-
-</p>
-
-<p>
-
-📝 <b>Application Mode</b>
-
-<br>
-
-Online
-
-</p>
-
-<p>
-
-📅 <b>Notification Status</b>
-
-<br>
-
-Latest Recruitment 2026
-
-</p>
-
-<p>
-
-🌐 <b>Official Website</b>
-
-<br>
-
-www.rrbapply.gov.in
-
-</p>
+<div class="info-row">
+    <span class="label">🌐 Official Website</span>
+    <span class="value">www.rrbapply.gov.in</span>
+</div>
 
 </div>
 
