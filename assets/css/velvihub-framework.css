@@ -1,1 +1,38 @@
+/* ==========================================================
+   VelviHub Framework v1.0
+   Professional CSS Foundation
+   Author : VelviHub
+   ========================================================== */
 
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#1e40af;
+
+    --success:#16a34a;
+    --warning:#f59e0b;
+    --danger:#dc2626;
+
+    --white:#ffffff;
+
+    --bg:#f8fafc;
+
+    --text:#222222;
+
+    --text-light:#666666;
+
+    --border:#e5e7eb;
+
+    --radius:12px;
+
+    --shadow:0 5px 15px rgba(0,0,0,.08);
+
+    --transition:.3s;
+
+    --container:1200px;
+
+}
