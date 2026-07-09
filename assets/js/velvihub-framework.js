@@ -1142,5 +1142,5 @@ document.addEventListener("DOMContentLoaded", () => {
     VelviHub.modules.core.init();
 
     VelviHub.modules.init.start();
-
+VelviHub.modules.progress.init();
 });
