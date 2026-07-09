@@ -1461,3 +1461,36 @@ body.vh-modal-open{
     background:#2563eb;
 
 }
+/* ==========================================================
+   VH PROGRESS SYSTEM
+========================================================== */
+
+.vh-progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#e5e7eb;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin:20px 0;
+
+}
+
+.vh-progress-bar{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#2563eb,#22c55e);
+
+    border-radius:999px;
+
+    transition:width .8s ease;
+
+}
