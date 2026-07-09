@@ -1391,3 +1391,73 @@ body.vh-modal-open{
     }
 
 }
+/* ==========================================================
+   VH TOAST SYSTEM
+========================================================== */
+
+.vh-toast-container{
+
+    position:fixed;
+
+    top:20px;
+    right:20px;
+
+    z-index:10000;
+
+}
+
+.vh-toast{
+
+    min-width:280px;
+
+    padding:15px 20px;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
+    color:#fff;
+
+    font-weight:600;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    opacity:0;
+
+    transform:translateX(100%);
+
+    transition:.3s;
+
+}
+
+.vh-toast.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.vh-toast-success{
+
+    background:#16a34a;
+
+}
+
+.vh-toast-error{
+
+    background:#dc2626;
+
+}
+
+.vh-toast-warning{
+
+    background:#f59e0b;
+
+}
+
+.vh-toast-info{
+
+    background:#2563eb;
+
+}
