@@ -1051,6 +1051,73 @@ background:#d97706;
 transform:translateY(-3px);
 
 }
+/* ==========================================
+VELVIHUB NEWS BAR
+========================================== */
+
+.vh-news-bar{
+
+position:fixed;
+
+top:85px;
+
+left:0;
+
+width:100%;
+
+height:42px;
+
+background:#0ea5e9;
+
+overflow:hidden;
+
+z-index:998;
+
+display:flex;
+
+align-items:center;
+
+box-shadow:0 2px 10px rgba(0,0,0,.25);
+
+}
+
+.vh-news-track{
+
+display:inline-block;
+
+white-space:nowrap;
+
+padding-left:100%;
+
+font-size:16px;
+
+font-weight:700;
+
+color:#ffffff;
+
+animation:vhNewsMove 25s linear infinite;
+
+}
+
+@keyframes vhNewsMove{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-100%);
+}
+
+}
+
+/* Hero Section கீழே தள்ள */
+
+.hero{
+
+padding-top:150px !important;
+
+}
 </style>
 </head>
 <body>
@@ -1110,6 +1177,23 @@ id="navMenu">
 </div>
 
 </nav>
+<div class="vh-news-bar">
+
+<div class="vh-news-track">
+
+🔥 Welcome to VelviHub &nbsp;&nbsp;|&nbsp;&nbsp;
+🌐 Networking &nbsp;&nbsp;|&nbsp;&nbsp;
+🏛 Government Jobs &nbsp;&nbsp;|&nbsp;&nbsp;
+📚 TNPSC Hub &nbsp;&nbsp;|&nbsp;&nbsp;
+🤖 AI Hub &nbsp;&nbsp;|&nbsp;&nbsp;
+💰 Finance &nbsp;&nbsp;|&nbsp;&nbsp;
+🎥 YouTube &nbsp;&nbsp;|&nbsp;&nbsp;
+👨‍💻 Web Development &nbsp;&nbsp;|&nbsp;&nbsp;
+🧒 Kids Zone
+
+</div>
+
+</div>
 <!-- =========================================
 LIVE ANNOUNCEMENT BAR
 ========================================= 
