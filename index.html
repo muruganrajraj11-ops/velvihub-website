@@ -943,19 +943,25 @@ ANNOUNCEMENT BAR
 
 .announcement-bar{
 
+margin-top:70px;
+
 position:relative;
 
 width:100%;
+
+height:42px;
 
 background:#0ea5e9;
 
 color:#ffffff;
 
-padding:12px 0;
-
 overflow:hidden;
 
-z-index:999;
+display:flex;
+
+align-items:center;
+
+z-index:1;
 
 }
 
@@ -967,11 +973,11 @@ white-space:nowrap;
 
 padding-left:100%;
 
-animation:announcementMove 20s linear infinite;
-
 font-size:16px;
 
-font-weight:bold;
+font-weight:700;
+
+animation:announcementMove 20s linear infinite;
 
 }
 
@@ -988,6 +994,33 @@ transform:translateX(0);
 transform:translateX(-100%);
 
 }
+
+}
+.btn-success{
+
+display:inline-block;
+
+padding:14px 28px;
+
+background:#22c55e;
+
+color:#fff !important;
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.btn-success:hover{
+
+background:#16a34a;
+
+transform:translateY(-3px);
 
 }
 </style>
