@@ -288,3 +288,34 @@ img{
     color:#555;
     line-height:1.7;
 }
+/* ===========================
+   Call To Action
+=========================== */
+
+.cta{
+    padding:90px 20px;
+    background:linear-gradient(135deg,#0b5d3b,#1b7a52);
+    color:#ffffff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:800px;
+    margin:0 auto 35px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cta .btn{
+    background:#ffd54f;
+    color:#222;
+}
+
+.cta .btn:hover{
+    background:#ffffff;
+}
