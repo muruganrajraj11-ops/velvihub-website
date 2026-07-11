@@ -237,3 +237,54 @@ img{
     font-size:18px;
     font-weight:600;
 }
+/* ===========================
+   Popular Places
+=========================== */
+
+.popular-places{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.popular-places h2{
+    text-align:center;
+    font-size:36px;
+    color:#0b5d3b;
+    margin-bottom:50px;
+}
+
+.places-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.place-card{
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.place-card:hover{
+    transform:translateY(-10px);
+}
+
+.place-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.place-card h3{
+    padding:20px 20px 10px;
+    color:#0b5d3b;
+    font-size:24px;
+}
+
+.place-card p{
+    padding:0 20px 25px;
+    color:#555;
+    line-height:1.7;
+}
