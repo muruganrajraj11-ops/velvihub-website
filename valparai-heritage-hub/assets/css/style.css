@@ -319,3 +319,198 @@ img{
 .cta .btn:hover{
     background:#ffffff;
 }
+/* ===========================
+   History Page
+=========================== */
+
+#history{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+#history h2{
+    font-size:36px;
+    color:#0b5d3b;
+    margin-bottom:25px;
+}
+
+#history p{
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#444;
+}
+
+.info-card{
+    background:#f8faf8;
+    border-left:6px solid #0b5d3b;
+    border-radius:12px;
+    padding:25px;
+    margin:30px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:#0b5d3b;
+    margin-bottom:15px;
+}
+
+.history-timeline{
+    margin-top:60px;
+}
+
+.timeline-item{
+    background:#ffffff;
+    border-left:5px solid #ffd54f;
+    padding:20px 25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.timeline-item h3{
+    color:#0b5d3b;
+    margin-bottom:10px;
+}
+/* ===========================
+   Tea History
+=========================== */
+
+.tea-history,
+.british-era,
+.tribal-heritage,
+.valparai-today,
+.did-you-know,
+.history-gallery,
+.history-faq{
+
+    padding:80px 0;
+    background:#ffffff;
+
+}
+
+.tea-history:nth-child(even),
+.british-era:nth-child(even),
+.tribal-heritage:nth-child(even),
+.valparai-today:nth-child(even),
+.did-you-know:nth-child(even),
+.history-gallery:nth-child(even),
+.history-faq:nth-child(even){
+
+    background:#f8faf8;
+
+}
+
+.tea-history h2,
+.british-era h2,
+.tribal-heritage h2,
+.valparai-today h2,
+.did-you-know h2,
+.history-gallery h2,
+.history-faq h2{
+
+    text-align:center;
+    font-size:36px;
+    color:#0b5d3b;
+    margin-bottom:25px;
+
+}
+
+.tea-history p,
+.british-era p,
+.tribal-heritage p,
+.valparai-today p,
+.did-you-know p,
+.history-gallery p,
+.history-faq p{
+
+    font-size:18px;
+    line-height:1.9;
+    color:#444;
+
+}
+/* ===========================
+   History Gallery
+=========================== */
+
+.history-gallery .gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+
+}
+
+.history-gallery img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.4s;
+
+}
+
+.history-gallery img:hover{
+
+    transform:scale(1.05);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+/* ===========================
+   Breadcrumb
+=========================== */
+
+.breadcrumb{
+
+    background:#eef5ef;
+    padding:15px 0;
+
+}
+
+.breadcrumb .container{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+}
+
+.breadcrumb a{
+
+    color:#0b5d3b;
+    font-weight:600;
+    text-decoration:none;
+
+}
+
+.breadcrumb span{
+
+    color:#666;
+    font-size:15px;
+
+   }
+/* ===========================
+   Reading Progress Bar
+=========================== */
+
+#reading-progress{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:0%;
+
+    height:4px;
+
+    background:#ffd54f;
+
+    z-index:9999;
+
+    transition:width .15s linear;
+
+}
