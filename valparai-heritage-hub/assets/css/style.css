@@ -533,3 +533,10 @@ img{
     position: relative;
     z-index: 2;
 }
+.hero-line{
+    width:120px;
+    height:4px;
+    background:#ffd54f;
+    margin:18px auto 28px;
+    border-radius:50px;
+}
