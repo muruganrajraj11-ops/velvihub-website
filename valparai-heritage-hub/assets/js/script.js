@@ -15,3 +15,17 @@ window.addEventListener("scroll", () => {
         progress + "%";
 
 });
+// Mobile Menu
+
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+if (menuButton && nav) {
+
+    menuButton.addEventListener("click", () => {
+
+        nav.classList.toggle("menu-open");
+
+    });
+
+}
