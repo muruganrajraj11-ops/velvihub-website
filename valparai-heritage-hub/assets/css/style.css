@@ -557,3 +557,19 @@ img{
 .hero .btn{
     margin-top: 15px;
 }
+.hero .btn{
+    background:#ffd54f;
+    color:#0b5d3b;
+    font-weight:700;
+    padding:16px 36px;
+    border-radius:50px;
+    transition:all .3s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+}
+
+.hero .btn:hover{
+    background:#ffffff;
+    color:#0b5d3b;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
