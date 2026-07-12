@@ -627,3 +627,17 @@ header nav a:hover{
     }
 
 }
+@media (max-width:768px){
+
+    header nav a{
+        display:none;
+        width:100%;
+        text-align:center;
+    }
+
+    header nav.menu-open a{
+        display:block;
+        padding:12px;
+    }
+
+}
