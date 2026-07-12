@@ -677,3 +677,21 @@ header nav a:hover{
     transform:translateY(-5px);
     box-shadow:0 16px 35px rgba(0,0,0,.15);
 }
+/* ===== Timeline Vertical Line ===== */
+
+.history-timeline{
+    position:relative;
+    max-width:900px;
+    margin:60px auto;
+}
+
+.history-timeline::before{
+    content:"";
+    position:absolute;
+    left:28px;
+    top:0;
+    bottom:0;
+    width:4px;
+    background:linear-gradient(to bottom,#0b5d3b,#ffd54f);
+    border-radius:10px;
+}
