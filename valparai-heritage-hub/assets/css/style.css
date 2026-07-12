@@ -573,3 +573,35 @@ img{
     transform:translateY(-3px);
     box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
+/* ===== Premium Navigation ===== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(11,93,59,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+
+header nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+    flex-wrap:wrap;
+    padding:16px 20px;
+}
+
+header nav a{
+    color:#ffffff;
+    font-weight:600;
+    transition:.3s;
+    padding:8px 14px;
+    border-radius:8px;
+}
+
+header nav a:hover{
+    background:#ffd54f;
+    color:#0b5d3b;
+}
