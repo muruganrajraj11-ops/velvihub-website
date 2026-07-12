@@ -319,3 +319,56 @@ img{
 .cta .btn:hover{
     background:#ffffff;
 }
+/* ===========================
+   History Page
+=========================== */
+
+#history{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+#history h2{
+    font-size:36px;
+    color:#0b5d3b;
+    margin-bottom:25px;
+}
+
+#history p{
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#444;
+}
+
+.info-card{
+    background:#f8faf8;
+    border-left:6px solid #0b5d3b;
+    border-radius:12px;
+    padding:25px;
+    margin:30px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:#0b5d3b;
+    margin-bottom:15px;
+}
+
+.history-timeline{
+    margin-top:60px;
+}
+
+.timeline-item{
+    background:#ffffff;
+    border-left:5px solid #ffd54f;
+    padding:20px 25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.timeline-item h3{
+    color:#0b5d3b;
+    margin-bottom:10px;
+}
