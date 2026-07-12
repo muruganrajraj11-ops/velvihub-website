@@ -40,3 +40,24 @@ document.querySelectorAll(".gallery-image").forEach(image => {
     });
 
 });
+// Smooth Scroll Reveal
+
+const revealItems = document.querySelectorAll(
+".timeline-item, .info-card, .gallery-image"
+);
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+revealItems.forEach(item=>observer.observe(item));
