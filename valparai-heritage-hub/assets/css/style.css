@@ -493,3 +493,24 @@ img{
     font-size:15px;
 
 }
+/* ===========================
+   Reading Progress Bar
+=========================== */
+
+#reading-progress{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:0%;
+
+    height:4px;
+
+    background:#ffd54f;
+
+    z-index:9999;
+
+    transition:width .15s linear;
+
+}
