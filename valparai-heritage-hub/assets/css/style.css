@@ -459,3 +459,37 @@ img{
     box-shadow:0 12px 30px rgba(0,0,0,.25);
 
    }
+/* ===========================
+   Breadcrumb
+=========================== */
+
+.breadcrumb{
+
+    background:#eef5ef;
+    padding:15px 0;
+
+}
+
+.breadcrumb .container{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+}
+
+.breadcrumb a{
+
+    color:#0b5d3b;
+    font-weight:600;
+    text-decoration:none;
+
+}
+
+.breadcrumb span{
+
+    color:#666;
+    font-size:15px;
+
+}
