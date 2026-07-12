@@ -605,3 +605,25 @@ header nav a:hover{
     background:#ffd54f;
     color:#0b5d3b;
 }
+/* ===== Mobile Menu Button ===== */
+
+.menu-toggle{
+    display:none;
+    background:#ffd54f;
+    color:#0b5d3b;
+    border:none;
+    font-size:24px;
+    font-weight:bold;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        margin:0 auto 15px;
+    }
+
+}
