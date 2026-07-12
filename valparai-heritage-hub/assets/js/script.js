@@ -29,3 +29,14 @@ if (menuButton && nav) {
     });
 
 }
+// Gallery Image Click Effect
+
+document.querySelectorAll(".gallery-image").forEach(image => {
+
+    image.addEventListener("click", () => {
+
+        window.open(image.src, "_blank");
+
+    });
+
+});
