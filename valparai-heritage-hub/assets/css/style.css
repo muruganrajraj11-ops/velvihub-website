@@ -737,3 +737,95 @@ header nav a:hover{
     transform:translateY(0);
 
 }
+/* ===========================
+   PREMIUM FOOTER
+=========================== */
+
+footer{
+
+    background:#111827;
+
+    color:#ffffff;
+
+    padding:60px 20px 30px;
+
+    margin-top:80px;
+
+}
+
+.footer-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.footer-section h3{
+
+    margin-bottom:15px;
+
+    color:#22c55e;
+
+}
+
+.footer-section p{
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+}
+
+.footer-section ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-section ul li{
+
+    margin:10px 0;
+
+}
+
+.footer-section ul li a{
+
+    color:#d1d5db;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-section ul li a:hover{
+
+    color:#22c55e;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
