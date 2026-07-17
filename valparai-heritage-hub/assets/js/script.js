@@ -61,3 +61,15 @@ const observer = new IntersectionObserver((entries)=>{
 });
 
 revealItems.forEach(item=>observer.observe(item));
+/* ===== Mobile Menu ===== */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+
+}
