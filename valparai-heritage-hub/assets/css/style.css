@@ -80,6 +80,96 @@ img{
 .navbar a:hover{
     color:#ffd54f;
 }
+/* ==========================================
+   HEADER MODULE V2
+========================================== */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:rgba(8,72,46,.95);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.header .container{
+    max-width:1300px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#ffffff;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+.menu-toggle{
+    display:none;
+    background:#ffd54f;
+    color:#0b5d3b;
+    border:none;
+    border-radius:12px;
+    padding:10px 14px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.navbar{
+    display:flex;
+    gap:18px;
+}
+
+.navbar a{
+    color:#ffffff;
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#ffd54f;
+    color:#0b5d3b;
+}
+
+@media (max-width:900px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        margin-top:15px;
+        background:#ffffff;
+        border-radius:16px;
+        overflow:hidden;
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .navbar a{
+        color:#0b5d3b;
+        border-bottom:1px solid #ececec;
+    }
+
+    .header .container{
+        flex-wrap:wrap;
+    }
+
+}
 /* ===========================
    Hero Section
 =========================== */
