@@ -35,3 +35,72 @@
   --container:1280px;
 
 }
+/* ==========================================
+   PREMIUM HEADER
+========================================== */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.88);
+    border-bottom:1px solid rgba(255,255,255,.25);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.header .container{
+    max-width:1280px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 24px;
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:800;
+    color:var(--primary);
+    text-decoration:none;
+    letter-spacing:.5px;
+    transition:var(--transition);
+}
+
+.logo:hover{
+    color:var(--accent);
+}
+
+.navbar{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:600;
+    transition:var(--transition);
+    position:relative;
+}
+
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background:var(--accent);
+    border-radius:20px;
+    transition:var(--transition);
+}
+
+.navbar a:hover::after{
+    width:100%;
+}
+
+.navbar a:hover{
+    color:var(--primary);
+}
