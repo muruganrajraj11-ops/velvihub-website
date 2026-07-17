@@ -1,40 +1,37 @@
+/* ==========================================
+   VALPARAI HERITAGE HUB
+   PREMIUM DESIGN SYSTEM
+========================================== */
+
 :root{
 
-    /* Brand Colors */
+  /* Brand Colors */
+  --primary:#0F766E;
+  --primary-light:#14B8A6;
+  --secondary:#15803D;
+  --accent:#F59E0B;
 
-    --primary:#0f766e;
-    --primary-dark:#115e59;
-    --secondary:#16a34a;
-    --accent:#f59e0b;
+  /* Background */
+  --background:#F8FAFC;
+  --surface:#FFFFFF;
 
-    /* Background */
+  /* Text */
+  --text:#1F2937;
+  --text-light:#6B7280;
 
-    --bg:#f8fafc;
-    --surface:#ffffff;
+  /* Border */
+  --border:#E5E7EB;
 
-    /* Text */
+  /* Radius */
+  --radius:18px;
 
-    --text:#1f2937;
-    --text-light:#6b7280;
+  /* Shadow */
+  --shadow:0 12px 35px rgba(0,0,0,.08);
 
-    /* Borders */
+  /* Transition */
+  --transition:.35s ease;
 
-    --border:#e5e7eb;
-
-    /* Radius */
-
-    --radius:18px;
-
-    /* Shadow */
-
-    --shadow:0 10px 30px rgba(0,0,0,.08);
-
-    /* Transition */
-
-    --transition:.35s ease;
-
-    /* Max Width */
-
-    --container:1280px;
+  /* Max Width */
+  --container:1280px;
 
 }
