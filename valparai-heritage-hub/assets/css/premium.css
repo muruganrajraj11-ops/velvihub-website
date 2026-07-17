@@ -104,3 +104,73 @@
 .navbar a:hover{
     color:var(--primary);
 }
+/* ==========================================
+   PREMIUM HEADER V2
+========================================== */
+
+.header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.header .container{
+    max-width:1400px;
+    margin:auto;
+    padding:18px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#0f766e;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:18px;
+    flex-wrap:nowrap;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#1f2937;
+    font-size:.95rem;
+    font-weight:600;
+    padding:10px 14px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#0f766e;
+    color:white;
+    transform:translateY(-2px);
+}
+
+@media(max-width:1100px){
+
+.header .container{
+    flex-direction:column;
+}
+
+.navbar{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
