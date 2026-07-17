@@ -1,1 +1,40 @@
-.
+:root{
+
+    /* Brand Colors */
+
+    --primary:#0f766e;
+    --primary-dark:#115e59;
+    --secondary:#16a34a;
+    --accent:#f59e0b;
+
+    /* Background */
+
+    --bg:#f8fafc;
+    --surface:#ffffff;
+
+    /* Text */
+
+    --text:#1f2937;
+    --text-light:#6b7280;
+
+    /* Borders */
+
+    --border:#e5e7eb;
+
+    /* Radius */
+
+    --radius:18px;
+
+    /* Shadow */
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+    /* Max Width */
+
+    --container:1280px;
+
+}
