@@ -879,3 +879,50 @@ footer{
 
 }
 
+/* ===== Premium Mobile Menu ===== */
+
+@media (max-width:768px){
+
+    .navbar{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#ffffff;
+        margin-top:15px;
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 15px 40px rgba(0,0,0,.18);
+    }
+
+    .navbar.active{
+        display:flex;
+        animation:menuDrop .35s ease;
+    }
+
+    .navbar a{
+        color:#0b5d3b;
+        padding:16px 20px;
+        border-bottom:1px solid #ececec;
+        font-size:17px;
+    }
+
+    .navbar a:hover{
+        background:#0b5d3b;
+        color:#ffffff;
+    }
+
+}
+
+@keyframes menuDrop{
+
+    from{
+        opacity:0;
+        transform:translateY(-15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
