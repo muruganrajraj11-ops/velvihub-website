@@ -1003,3 +1003,27 @@ footer{
     color:#555;
     line-height:1.7;
 }
+/* ==========================================
+   WHY VISIT VALPARAI
+========================================== */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.why-visit .feature-card{
+    text-align:left;
+    padding:28px;
+    border-left:6px solid #16a34a;
+}
+
+.why-visit .feature-card h3{
+    margin-bottom:12px;
+}
+
+.why-visit .feature-card p{
+    margin:0;
+}
