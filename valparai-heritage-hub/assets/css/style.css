@@ -1018,3 +1018,76 @@ footer{
     }
 
 }
+/* ==========================================
+   HERO MODULE V2
+========================================== */
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+    padding:45px 35px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#ffd54f;
+    color:#0b5d3b;
+    font-weight:700;
+    padding:10px 22px;
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,6vw,5rem);
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffd54f;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.9;
+    max-width:720px;
+    margin:0 auto 35px;
+    color:#f8fafc;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.hero-btn{
+    background:#ffd54f;
+    color:#0b5d3b;
+    padding:16px 34px;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.hero-btn-outline{
+    background:transparent;
+    color:#ffffff;
+    border:2px solid #ffffff;
+    padding:16px 34px;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.hero-btn:hover,
+.hero-btn-outline:hover{
+    transform:translateY(-4px);
+    transition:.3s;
+}
