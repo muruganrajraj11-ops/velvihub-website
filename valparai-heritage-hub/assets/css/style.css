@@ -1099,3 +1099,26 @@ footer{
     font-size:.95rem;
     color:#9ca3af;
 }
+/* ==========================================
+   CTA BUTTON FIX
+========================================== */
+
+.cta .hero-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ffd54f;
+    color:#0b5d3b;
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.cta .hero-btn:hover{
+    transform:translateY(-4px);
+    background:#ffffff;
+    color:#0b5d3b;
+}
