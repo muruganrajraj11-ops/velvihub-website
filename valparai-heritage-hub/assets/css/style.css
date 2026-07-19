@@ -878,7 +878,20 @@ footer{
 /* ==========================================
    HERO MODULE V2
 ========================================== */
-
+.hero{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    background:
+        linear-gradient(rgba(6,45,31,.65), rgba(6,45,31,.65)),
+        url('../images/hero.jpg') center center/cover no-repeat;
+    overflow: hidden;
+}
 .hero-content{
     max-width:900px;
     margin:auto;
