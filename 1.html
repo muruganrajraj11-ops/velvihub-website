@@ -1210,3 +1210,9 @@ animation:loading 2s linear forwards;
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
 } -->
+window.onload = function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.display = "none";
+    }
+};
