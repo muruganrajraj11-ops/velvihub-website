@@ -1150,7 +1150,7 @@ footer{
     color:#0b5d3b;
     transform:translateY(-4px);
 }
-/* Loading Screen */
+<!-- /* Loading Screen */
 
 #loader{
 position:fixed;
@@ -1215,4 +1215,4 @@ animation:loading 2s linear forwards;
 @keyframes spin{
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
-}
+} -->
