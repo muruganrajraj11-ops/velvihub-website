@@ -1,35 +1,50 @@
-// Reading Progress Bar
+/* ==========================
+   Reading Progress Bar
+========================== */
 
 window.addEventListener("scroll", () => {
 
-    const winScroll =
-        document.documentElement.scrollTop || document.body.scrollTop;
+    const progressBar = document.getElementById("reading-progress");
 
-    const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+    if (progressBar) {
 
-    const progress = (winScroll / height) * 100;
+        const winScroll =
+            document.documentElement.scrollTop || document.body.scrollTop;
 
-    document.getElementById("reading-progress").style.width =
-        progress + "%";
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const progress = (winScroll / height) * 100;
+
+        progressBar.style.width = progress + "%";
+
+    }
 
 });
-// Mobile Menu
 
-const menuButton = document.querySelector(".menu-toggle");
-const nav = document.querySelector("header nav");
 
-if (menuButton && nav) {
+/* ==========================
+   Mobile Menu
+========================== */
 
-    menuButton.addEventListener("click", () => {
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
 
-        nav.classList.toggle("menu-open");
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", () => {
+
+        navbar.classList.toggle("active");
 
     });
 
 }
-// Gallery Image Click Effect
+
+
+/* ==========================
+   Gallery Image Click
+========================== */
 
 document.querySelectorAll(".gallery-image").forEach(image => {
 
@@ -40,39 +55,37 @@ document.querySelectorAll(".gallery-image").forEach(image => {
     });
 
 });
-// Smooth Scroll Reveal
+
+
+/* ==========================
+   Scroll Reveal
+========================== */
 
 const revealItems = document.querySelectorAll(
 ".timeline-item, .info-card, .gallery-image"
 );
 
-const observer = new IntersectionObserver((entries)=>{
+if (revealItems.length > 0) {
 
-    entries.forEach(entry=>{
+    const observer = new IntersectionObserver((entries) => {
 
-        if(entry.isIntersecting){
+        entries.forEach(entry => {
 
-            entry.target.classList.add("show");
+            if (entry.isIntersecting) {
 
-        }
+                entry.target.classList.add("show");
+
+            }
+
+        });
 
     });
 
-});
-
-revealItems.forEach(item=>observer.observe(item));
-/* ===== Mobile Menu ===== */
-
-const menuToggle = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
-
-if (menuToggle && navbar) {
-
-    menuToggle.addEventListener("click", () => {
-        navbar.classList.toggle("active");
-    });
+    revealItems.forEach(item => observer.observe(item));
 
 }
+
+
 /* ==========================
    Premium Back To Top
 ========================== */
@@ -83,10 +96,14 @@ if (backToTop) {
 
     window.addEventListener("scroll", () => {
 
-        if (window.pageYOffset > 300) {
+        if (window.scrollY > 300) {
+
             backToTop.classList.add("show");
+
         } else {
+
             backToTop.classList.remove("show");
+
         }
 
     });
@@ -94,8 +111,10 @@ if (backToTop) {
     backToTop.addEventListener("click", () => {
 
         window.scrollTo({
+
             top: 0,
             behavior: "smooth"
+
         });
 
     });
