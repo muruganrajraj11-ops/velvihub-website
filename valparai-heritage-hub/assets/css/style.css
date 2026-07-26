@@ -605,40 +605,99 @@ background:#ffd54f;
 color:#0b5d3b;
 }
 /* ===== Mobile Menu Button ===== */
+/* ===== FINAL HEADER & MOBILE MENU ===== */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:rgba(11,93,59,.96);
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1300px;
+    margin:auto;
+    padding:14px 20px;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#fff;
+    white-space:nowrap;
+}
 
 .menu-toggle{
-display:none;
-background:#ffd54f;
-color:#0b5d3b;
-border:none;
-font-size:24px;
-font-weight:bold;
-padding:8px 14px;
-border-radius:8px;
-cursor:pointer;
+    display:none;
+    background:#ffd54f;
+    color:#0b5d3b;
+    border:none;
+    border-radius:10px;
+    padding:10px 14px;
+    font-size:28px;
+    cursor:pointer;
 }
 
-@media (max-width:768px){
-
-.menu-toggle{
-display:block;
-margin:0 auto 15px;
+.navbar{
+    display:flex;
+    gap:18px;
 }
 
-}
-@media (max-width:768px){
-
-header nav a{
-display:none;
-width:100%;
-text-align:center;
-}
-
-header nav.menu-open a{
-display:block;
-padding:12px;
+.navbar a{
+    color:#fff;
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
 }
 
+.navbar a:hover{
+    background:#ffd54f;
+    color:#0b5d3b;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .header .container{
+        flex-wrap:wrap;
+    }
+
+    .navbar{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        margin-top:15px;
+        background:#ffffff;
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 15px 40px rgba(0,0,0,.18);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .navbar a{
+        color:#0b5d3b;
+        padding:16px 20px;
+        border-bottom:1px solid #ececec;
+    }
+
+    .navbar a:hover{
+        background:#0b5d3b;
+        color:#ffffff;
+    }
 }
 .timeline-subtitle{
 text-align:center;
